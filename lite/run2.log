@@ -1,0 +1,42 @@
+>> /workspace/venv/bin/python extra.py f1 f2 f3 f4 f5 f6 eval
+f1 (351560, 39) 11s
+f2 (351120, 39) 12s
+f3 (349120, 39) 12s
+f4 (350400, 39) 12s
+f5 (352300, 39) 13s
+f6 (351380, 39) 13s
+eval (529390, 39) 16s
+[stage feat_x] 92s
+>> /workspace/venv/bin/python extra2.py f1 f2 f3 f4 f5 f6 eval
+f1 (351560, 20) 20s
+f2 (351120, 20) 25s
+f3 (349120, 20) 29s
+f4 (350400, 20) 31s
+f5 (352300, 20) 39s
+f6 (351380, 20) 42s
+eval (529390, 20) 49s
+[stage feat_x2] 237s
+>> /workspace/venv/bin/python ens.py 27 base --seeds 0,1 --threads 4
+{"cut": 27, "tag": "base", "seed": 0, "n": 2105880, "nf": 325, "min": 3.7}
+{"cut": 27, "tag": "base", "seed": 1, "n": 2105880, "nf": 325, "min": 6.3}
+[stage base] 382s
+>> /workspace/venv/bin/python ens.py 27 slow --seeds 0 --rounds 500 --threads 4 --params '{"learning_rate":0.03,"feature_fraction":0.55,"num_leaves":95,"lambda_l2":30}'
+{"cut": 27, "tag": "slow", "seed": 0, "n": 2105880, "nf": 325, "min": 4.4}
+[stage slow] 266s
+>> /workspace/venv/bin/python blend_lite.py
+corr base/slow 0.9957
+wrote eval_pred.parquet 529390
+[stage blend] 2s
+>> PRED=/workspace/huawei/lite/eval_pred.parquet /workspace/venv/bin/python write_sub.py /workspace/huawei/v2work/out/submission_v4_lite.csv
+missing preds filled: 0
+rows=529390 unique=529390 min=0.0008702 mean=0.06244 max=0.7555 distinct=518356
+VALID
+zip contents ['submission_v4_lite.csv']
+sha256 69b2b6b0dd5f36817095661979c6659494c9309063601fe9df96e4d4a90a1fd2
+[stage write] 3s
+>> /workspace/venv/bin/python validate.py /workspace/huawei/v2work/out/submission_v4_lite.csv
+rows=529390 unique=529390 min=0.0008702 mean=0.062445 max=0.7555 distinct=518356
+VALID
+[stage validate] 1s
+TOTAL this run 16.4 min; all stages 16.4 min
+submission: /workspace/huawei/v2work/out/submission_v4_lite.csv

@@ -1,0 +1,19 @@
+03:41:00 build C=1737417600 rows=351560 cols=170 21s
+03:41:24 build C=1737504000 rows=351120 cols=170 23s
+03:41:52 build C=1737590400 rows=349120 cols=170 28s
+03:42:22 build C=1737676800 rows=350400 cols=170 30s
+03:42:58 build C=1737763200 rows=352300 cols=170 35s
+03:43:48 build C=1737763200 rows=439640 cols=170 49s
+03:44:41 build C=1737849600 rows=351380 cols=170 52s
+03:45:22 build C=1737849600 rows=351380 cols=170 40s
+03:46:09 build C=1737936000 rows=529390 cols=170 47s
+03:46:09 feature build total 329s
+final fit: 2105880 rows, 164 feats, lr=0.05, n_iter=454
+{"feature_build_secs": 331, "fit_secs": 403, "total_secs": 742, "n_iter": 454, "n_train_rows": 2105880, "n_feats": 164, "top15": [["ev_sv_k64_con05_z", 0.24303506922267187], ["ev_sv_k32_hcos_z", 0.05992248511210323], ["ev_sv_k64_con025_z", 0.05904789627635464], ["sv_k64_con1", 0.05410889766460966], ["ev_sv_k64_con05_rk", 0.04371935961901522], ["sv_k64_con05", 0.042802881908328684], ["sv_k64_con025", 0.04227337982029233], ["sv_k32_hcos", 0.036541897865003996], ["ev_hist_n_all_z", 0.028072934886911656], ["sv_k16_hcos", 0.027209211239346626], ["us_ctr", 0.016434040032099008], ["sv_k16_udot", 0.01459353109411119], ["ev_sv_k16_ucos_z", 0.01294441906260795], ["ev_hist_n_all_rk", 0.012912612101386261], ["ev_sv_k64_ucos_z", 0.012103028923998619]]}
+file=/workspace/huawei/submission_v2.csv rows=529390 unique=529390 same_order_as_example=True
+min=0.000859377 p50=0.0407235 max=0.748593 mean=0.061596 distinct=528135
+VALID
+
+real	12m24.620s
+user	31m52.769s
+sys	1m39.272s

@@ -1,0 +1,12 @@
+{
+ "rows_v2work_sub": 529390,
+ "rows_ours": 529390,
+ "rows_joined": 529390,
+ "sha256_v2work_sub": "466f3d64b8b273ac1c87c32a8d271761add9a925cb1f56979945a5d004cd2680",
+ "max_abs_diff_sub_vs_eval_pred_v3": 4.999948649553332e-09,
+ "max_abs_diff_sub_vs_old_eval_pred": 0.3421561458022263,
+ "spearman_v2work_v3sub_vs_our_submission_v2": 0.918370953690478,
+ "pearson": 0.929376737588619,
+ "mean_v2work": 0.062459955810750804,
+ "mean_ours": 0.061596035254176694
+}

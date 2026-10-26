@@ -1,0 +1,21 @@
+=== 17:55:55 25 i_lr2all --lr feat_lr2
+{"cut": 25, "tag": "i_lr2all", "lr": "feat_lr2", "drop": null, "mods": "", "maxfold": 99, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "binary", "n_feats": 
+=== 17:57:28 25 i_lr2_1012c --lr feat_lr2 --drop ^lr(4|6|8|16)_|_con1
+{"cut": 25, "tag": "i_lr2_1012c", "lr": "feat_lr2", "drop": "^lr(4|6|8|16)_|_con1", "mods": "", "maxfold": 99, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": 
+=== 17:58:53 25 i_lr2_81012 --lr feat_lr2 --drop ^lr(4|6|16)_|_con
+{"cut": 25, "tag": "i_lr2_81012", "lr": "feat_lr2", "drop": "^lr(4|6|16)_|_con", "mods": "", "maxfold": 99, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "bi
+=== 18:00:04 26 i_lr2all --lr feat_lr2
+{"cut": 26, "tag": "i_lr2all", "lr": "feat_lr2", "drop": null, "mods": "", "maxfold": 99, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "binary", "n_feats": 
+=== 18:01:28 26 i_lr2_1012c --lr feat_lr2 --drop ^lr(4|6|8|16)_|_con1
+{"cut": 26, "tag": "i_lr2_1012c", "lr": "feat_lr2", "drop": "^lr(4|6|8|16)_|_con1", "mods": "", "maxfold": 99, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": 
+=== 18:02:53 26 i_lr2_81012 --lr feat_lr2 --drop ^lr(4|6|16)_|_con
+{"cut": 26, "tag": "i_lr2_81012", "lr": "feat_lr2", "drop": "^lr(4|6|16)_|_con", "mods": "", "maxfold": 99, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "bi
+=== 18:04:26 25 gap_lr2all --lr feat_lr2 --maxfold 3
+{"cut": 25, "tag": "gap_lr2all", "lr": "feat_lr2", "drop": null, "mods": "", "maxfold": 3, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "binary", "n_feats":
+=== 18:05:44 25 gap_lrall --lr feat_lr --maxfold 3
+{"cut": 25, "tag": "gap_lrall", "lr": "feat_lr", "drop": null, "mods": "", "maxfold": 3, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "binary", "n_feats": 3
+=== 18:06:54 26 gap_lr2all --lr feat_lr2 --maxfold 3
+{"cut": 26, "tag": "gap_lr2all", "lr": "feat_lr2", "drop": null, "mods": "", "maxfold": 3, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "binary", "n_feats":
+=== 18:08:02 26 gap_lrall --lr feat_lr --maxfold 3
+{"cut": 26, "tag": "gap_lrall", "lr": "feat_lr", "drop": null, "mods": "", "maxfold": 3, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "binary", "n_feats": 3
+DONE

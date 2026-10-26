@@ -1,0 +1,20 @@
+== 13:52:44 v2
+eval.parquet
+h1.parquet
+h2.parquet
+h3.parquet
+h4.parquet
+h5.parquet
+val23.parquet
+val25.parquet
+val26.parquet
+== 13:53:47 v3
+13:53:59 wrote f1 (351560, 170)
+13:54:12 wrote f2 (351120, 170)
+13:54:28 wrote f3 (349120, 170)
+13:54:47 wrote f4 (350400, 170)
+13:55:10 wrote f5 (352300, 170)
+13:55:28 wrote val23 (501550, 170)
+13:55:53 wrote val25 (439640, 170)
+13:56:19 wrote val26 (351380, 170)
+== 13:56:19 BV_DONE

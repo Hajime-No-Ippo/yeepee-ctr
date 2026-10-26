@@ -1,0 +1,13 @@
+{"name": "x_con025_k32_bm2505", "k": 32, "w": "bm25", "beta": 0.5, "alpha": 0.25, "auc_raw": 0.70924, "auc_z": 0.71714, "within": 0.71642, "corr_ref": 0.9596, "runtime_s": 32.6}
+{"name": "x_con1_k32_bm2505", "k": 32, "w": "bm25", "beta": 0.5, "alpha": 1, "auc_raw": 0.71557, "auc_z": 0.72071, "within": 0.71879, "corr_ref": 0.8521, "runtime_s": 32.6}
+{"name": "x_con025_k32_bm250", "k": 32, "w": "bm25", "beta": 0, "alpha": 0.25, "auc_raw": 0.71369, "auc_z": 0.71936, "within": 0.71845, "corr_ref": 0.9649, "runtime_s": 34.9}
+{"name": "x_con1_k32_bm250", "k": 32, "w": "bm25", "beta": 0, "alpha": 1, "auc_raw": 0.71243, "auc_z": 0.71531, "within": 0.71407, "corr_ref": 0.834, "runtime_s": 35.0}
+{"name": "x_con025_k32_bm251", "k": 32, "w": "bm25", "beta": 1, "alpha": 0.25, "auc_raw": 0.70038, "auc_z": 0.71072, "within": 0.71026, "corr_ref": 0.9297, "runtime_s": 37.3}
+{"name": "x_con1_k32_bm251", "k": 32, "w": "bm25", "beta": 1, "alpha": 1, "auc_raw": 0.71596, "auc_z": 0.7241, "within": 0.72257, "corr_ref": 0.8562, "runtime_s": 34.8}
+{"name": "x_con025_k32_tfidf05", "k": 32, "w": "tfidf", "beta": 0.5, "alpha": 0.25, "auc_raw": 0.7093, "auc_z": 0.71682, "within": 0.71614, "corr_ref": 0.9787, "runtime_s": 33.3}
+{"name": "x_con1_k32_tfidf05", "k": 32, "w": "tfidf", "beta": 0.5, "alpha": 1, "auc_raw": 0.71463, "auc_z": 0.71957, "within": 0.7186, "corr_ref": 0.8691, "runtime_s": 31.9}
+{"name": "x_con025_k32_tfidf0", "k": 32, "w": "tfidf", "beta": 0, "alpha": 0.25, "auc_raw": 0.71348, "auc_z": 0.71871, "within": 0.71838, "corr_ref": 0.9847, "runtime_s": 32.0}
+{"name": "x_con1_k32_tfidf0", "k": 32, "w": "tfidf", "beta": 0, "alpha": 1, "auc_raw": 0.71122, "auc_z": 0.7139, "within": 0.71264, "corr_ref": 0.8516, "runtime_s": 32.0}
+{"name": "x_con025_k32_tfidf1", "k": 32, "w": "tfidf", "beta": 1, "alpha": 0.25, "auc_raw": 0.70049, "auc_z": 0.71059, "within": 0.70985, "corr_ref": 0.9468, "runtime_s": 30.9}
+{"name": "x_con1_k32_tfidf1", "k": 32, "w": "tfidf", "beta": 1, "alpha": 1, "auc_raw": 0.71516, "auc_z": 0.72317, "within": 0.72196, "corr_ref": 0.8717, "runtime_s": 30.2}
+DONE

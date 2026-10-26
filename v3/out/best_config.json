@@ -1,0 +1,2 @@
+{"groups": ["it","hist","us","co","ev","tm","sv","mf"], "drop": [], "lr": 0.05, "best_iter": 395, "scale": 1.15,
+ "source": "cutoff-26 run (folds f1..f5, val26) lr0.05 val AUC 0.7744; final trains f1..f6 (+1 fold) so iterations x1.15 = 454"}

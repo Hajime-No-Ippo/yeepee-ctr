@@ -1,0 +1,12 @@
+f1 351560 rows_match True new_cols 31 removed ['x_con05_k64', 'x_con05_k64_z', 'x_con05_k64_rk'] nonfinite 0
+f2 351120 rows_match True new_cols 31 removed ['x_con05_k64', 'x_con05_k64_z', 'x_con05_k64_rk'] nonfinite 0
+f3 349120 rows_match True new_cols 31 removed ['x_con05_k64', 'x_con05_k64_z', 'x_con05_k64_rk'] nonfinite 0
+f4 350400 rows_match True new_cols 31 removed ['x_con05_k64', 'x_con05_k64_z', 'x_con05_k64_rk'] nonfinite 0
+f5 352300 rows_match True new_cols 31 removed ['x_con05_k64', 'x_con05_k64_z', 'x_con05_k64_rk'] nonfinite 0
+f6 351380 rows_match True new_cols 31 removed ['x_con05_k64', 'x_con05_k64_z', 'x_con05_k64_rk'] nonfinite 0
+val23 501550 rows_match True new_cols 31 removed ['x_con05_k64', 'x_con05_k64_z', 'x_con05_k64_rk'] nonfinite 0
+val25 439640 rows_match True new_cols 31 removed ['x_con05_k64', 'x_con05_k64_z', 'x_con05_k64_rk'] nonfinite 0
+val26 351380 rows_match True new_cols 31 removed ['x_con05_k64', 'x_con05_k64_z', 'x_con05_k64_rk'] nonfinite 0
+eval 529390 rows_match True new_cols 31 removed ['x_con05_k64', 'x_con05_k64_z', 'x_con05_k64_rk'] nonfinite 0
+NEWCOLS ["x_con05_k32_norm", "x_con05_k32_dot", "x_con05_k32_dmax", "x_icon05_k32", "x_icon1_k32", "x_icos_k32", "x_icon025_k64", "x_con05_k24_tfidf0", "x_con05_k24_tfidf0_norm", "x_con05_k24_tfidf0_dot", "x_con1_k32_bm251", "x_con05_k48_bm251", "x_con05_k16_tfidf0", "x_nclk_cl", "x_nskip_p", "x_icon05_k32_z", "x_icon1_k32_z", "x_icos_k32_z", "x_icon025_k64_z", "x_con05_k24_tfidf0_z", "x_con1_k32_bm251_z", "x_con05_k48_bm251_z", "x_con05_k16_tfidf0_z", "x_icon05_k32_rk", "x_icon1_k32_rk", "x_icos_k32_rk", "x_icon025_k64_rk", "x_con05_k24_tfidf0_rk", "x_con1_k32_bm251_rk", "x_con05_k48_bm251_rk", "x_con05_k16_tfidf0_rk"]
+BUILT

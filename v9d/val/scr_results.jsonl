@@ -1,0 +1,13 @@
+{"tag": "ctl", "cut": 25, "base": 0.81097, "slow": 0.81159, "blend": 0.81167}
+{"tag": "wadv", "cut": 25, "base": 0.81029, "slow": 0.81075, "blend": 0.81116}
+{"tag": "wadv", "cut": 26, "base": 0.81949, "slow": 0.82036, "blend": 0.82047}
+{"tag": "wadv", "cut": 23, "base": 0.7858, "slow": 0.78721, "blend": 0.78746}
+{"tag": "nf3", "cut": 25, "base": 0.81068, "slow": 0.81118, "blend": 0.81141}
+{"tag": "nf3", "cut": 26, "base": 0.82042, "slow": 0.82076, "blend": 0.821}
+{"tag": "nf2", "cut": 25, "base": 0.81028, "slow": 0.81062, "blend": 0.81106}
+{"tag": "nf2", "cut": 26, "base": 0.81986, "slow": 0.82041, "blend": 0.82069}
+{"tag": "nf1", "cut": 23, "base": 0.78509, "slow": 0.78638, "blend": 0.78687}
+{"tag": "nf5", "cut": 26, "base": 0.82068, "slow": 0.82123, "blend": 0.82125}
+{"tag": "neg1", "cut": 25, "base": 0.81131, "slow": 0.81149, "blend": 0.81177}
+{"tag": "neg1", "cut": 26, "base": 0.82118, "slow": 0.82124, "blend": 0.82154}
+{"tag": "neg1", "cut": 23, "base": 0.7876, "slow": 0.7885, "blend": 0.78872}

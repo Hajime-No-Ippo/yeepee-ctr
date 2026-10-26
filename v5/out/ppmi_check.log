@@ -1,0 +1,3 @@
+{"step": "C1", "kind": "ppmi_check", "feature": "x_pp_con05_k32", "cut": 25, "auc": 0.73769, "within": 0.74163, "max_abs_corr": ["rc_u_ctr_inh", 0.3244], "skip": false, "runtime_s": 46}
+{"step": "C1", "kind": "ppmi_check", "feature": "x_pp_hcos", "cut": 25, "auc": 0.70043, "within": 0.70459, "max_abs_corr": ["rc_i_ctr_inh", 0.41], "skip": false, "runtime_s": 83}
+{"step": "C1", "kind": "ppmi_check", "feature": "x_pp_last3", "cut": 25, "auc": 0.64268, "within": 0.64376, "max_abs_corr": ["rc_dec7d", 0.4727], "skip": false, "runtime_s": 121}

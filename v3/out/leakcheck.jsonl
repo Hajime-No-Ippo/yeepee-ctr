@@ -1,0 +1,2 @@
+{"mode": "notgt", "val25_auc": 0.7569559488295975, "best_iter": 148, "secs": 425, "single": {"sv_k64_hcos": 0.6939, "sv_k64_con05": 0.7092, "sv_k32_ucos": 0.6742}}
+{"mode": "lag1d", "val25_auc": 0.7390786507757422, "best_iter": 158, "secs": 273, "single": {"sv_k64_hcos": 0.6814, "sv_k64_con05": 0.6952, "sv_k32_ucos": 0.6587}}

@@ -1,0 +1,91 @@
+=== 19:38:15 /workspace/venv/bin/python screen.py 26 v7_AB --lr feat_lr2,feat_tt --threads 4
+{"cut": 26, "tag": "v7_AB", "lr": "feat_lr2,feat_tt", "drop": null, "mods": "", "maxfold": 99, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "binary", "n_feats": 387, "curve": {"100": 0.81822, "200": 0.81854, "300": 0.81838, "400": 0.81792}, "event_auc": 0.62302, "within_auc": 0.808, "seg": {"warm": 0.81915, "hist_only": 0.75814, "empty": 0.50778, "stale_
+--- 80s
+=== 19:39:35 /workspace/venv/bin/python screen.py 26 v7_A --lr feat_lr2,feat_tt --drop ^tB_ --threads 4
+{"cut": 26, "tag": "v7_A", "lr": "feat_lr2,feat_tt", "drop": "^tB_", "mods": "", "maxfold": 99, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "binary", "n_feats": 382, "curve": {"100": 0.81157, "200": 0.8122, "300": 0.81197, "400": 0.81176}, "event_auc": 0.62822, "within_auc": 0.80156, "seg": {"warm": 0.81305, "hist_only": 0.7469, "empty": 0.50984, "stale
+--- 79s
+=== 19:40:54 /workspace/venv/bin/python screen.py 26 v7_B --lr feat_lr2,feat_tt --drop ^tA_ --threads 4
+{"cut": 26, "tag": "v7_B", "lr": "feat_lr2,feat_tt", "drop": "^tA_", "mods": "", "maxfold": 99, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "binary", "n_feats": 384, "curve": {"100": 0.81801, "200": 0.81814, "300": 0.81798, "400": 0.81785}, "event_auc": 0.62293, "within_auc": 0.80743, "seg": {"warm": 0.8191, "hist_only": 0.75524, "empty": 0.51971, "stal
+--- 77s
+=== 19:42:11 /workspace/venv/bin/python screen.py 25 gap_v7_AB --lr feat_lr2,feat_tt --maxfold 3 --threads 4
+{"cut": 25, "tag": "gap_v7_AB", "lr": "feat_lr2,feat_tt", "drop": null, "mods": "", "maxfold": 3, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "binary", "n_feats": 387, "curve": {"100": 0.80754, "200": 0.80724, "300": 0.80654, "400": 0.80553}, "event_auc": 0.61904, "within_auc": 0.79497, "seg": {"warm": 0.80783, "hist_only": 0.74381, "empty": 0.5169, "st
+--- 71s
+=== 19:43:22 /workspace/venv/bin/python screen.py 25 gap_v7_A --lr feat_lr2,feat_tt --drop ^tB_ --maxfold 3 --threads 4
+{"cut": 25, "tag": "gap_v7_A", "lr": "feat_lr2,feat_tt", "drop": "^tB_", "mods": "", "maxfold": 3, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "binary", "n_feats": 382, "curve": {"100": 0.80059, "200": 0.80056, "300": 0.79975, "400": 0.79878}, "event_auc": 0.61972, "within_auc": 0.78864, "seg": {"warm": 0.80094, "hist_only": 0.7433, "empty": 0.5411, "st
+--- 74s
+=== 19:44:36 /workspace/venv/bin/python screen.py 25 gap_v7_B --lr feat_lr2,feat_tt --drop ^tA_ --maxfold 3 --threads 4
+{"cut": 25, "tag": "gap_v7_B", "lr": "feat_lr2,feat_tt", "drop": "^tA_", "mods": "", "maxfold": 3, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "binary", "n_feats": 384, "curve": {"100": 0.80738, "200": 0.8071, "300": 0.80624, "400": 0.80551}, "event_auc": 0.61518, "within_auc": 0.79498, "seg": {"warm": 0.80782, "hist_only": 0.74344, "empty": 0.5496, "st
+--- 70s
+=== 19:45:47 /workspace/venv/bin/python screen.py 26 gap_v7_AB --lr feat_lr2,feat_tt --maxfold 3 --threads 4
+{"cut": 26, "tag": "gap_v7_AB", "lr": "feat_lr2,feat_tt", "drop": null, "mods": "", "maxfold": 3, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "binary", "n_feats": 387, "curve": {"100": 0.81625, "200": 0.8157, "300": 0.81506, "400": 0.81421}, "event_auc": 0.62342, "within_auc": 0.80415, "seg": {"warm": 0.81548, "hist_only": 0.74788, "empty": 0.50492, "st
+--- 63s
+=== 19:46:50 /workspace/venv/bin/python screen.py 26 gap_v7_A --lr feat_lr2,feat_tt --drop ^tB_ --maxfold 3 --threads 4
+{"cut": 26, "tag": "gap_v7_A", "lr": "feat_lr2,feat_tt", "drop": "^tB_", "mods": "", "maxfold": 3, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "binary", "n_feats": 382, "curve": {"100": 0.80897, "200": 0.80863, "300": 0.80755, "400": 0.80657}, "event_auc": 0.6236, "within_auc": 0.79651, "seg": {"warm": 0.80793, "hist_only": 0.73723, "empty": 0.49262, "s
+--- 62s
+=== 19:47:52 /workspace/venv/bin/python screen.py 26 gap_v7_B --lr feat_lr2,feat_tt --drop ^tA_ --maxfold 3 --threads 4
+{"cut": 26, "tag": "gap_v7_B", "lr": "feat_lr2,feat_tt", "drop": "^tA_", "mods": "", "maxfold": 3, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "binary", "n_feats": 384, "curve": {"100": 0.81618, "200": 0.81596, "300": 0.81523, "400": 0.81439}, "event_auc": 0.62031, "within_auc": 0.80471, "seg": {"warm": 0.81567, "hist_only": 0.74767, "empty": 0.51502, "
+--- 62s
+SCREEN_DONE
+AB deltas std25,std26,gap25,gap26: [0.01108, 0.0102, 0.01175, 0.01135]
+A deltas std25,std26,gap25,gap26: [0.00512, 0.00386, 0.0048, 0.00407]
+B deltas std25,std26,gap25,gap26: [0.01108, 0.0098, 0.01159, 0.01128]
+PASS AB
+=== 19:48:54 /workspace/venv/bin/python ens.py 25 v7base --seeds 0,1 --threads 4 --lr feat_lr2,feat_tt
+{"cut": 25, "tag": "v7base", "seed": 0, "n": 1402200, "nf": 387, "min": 2.5, "load_s": 17, "ds_s": 13, "fit_s": 113, "pred_s": 5, "auc": {"300": 0.81085, "400": 0.81081}}
+{"cut": 25, "tag": "v7base", "seed": 1, "n": 1402200, "nf": 387, "min": 4.5, "load_s": 17, "ds_s": 13, "fit_s": 116, "pred_s": 5, "auc": {"300": 0.81094, "400": 0.81095}}
+--- 273s
+=== 19:53:27 /workspace/venv/bin/python ens.py 25 v7slow --seeds 0 --rounds 500 --threads 4 --lr feat_lr2,feat_tt --params {"learning_rate":0.03,"feature_fraction":0.55,"num_leaves":95,"lambda_l2":30}
+{"cut": 25, "tag": "v7slow", "seed": 0, "n": 1402200, "nf": 387, "min": 3.0, "load_s": 14, "ds_s": 14, "fit_s": 141, "pred_s": 11, "auc": {"300": 0.81121, "400": 0.81135, "500": 0.81138}}
+--- 184s
+=== 19:56:31 /workspace/venv/bin/python ens.py 26 v7base --seeds 0,1 --threads 4 --lr feat_lr2,feat_tt
+{"cut": 26, "tag": "v7base", "seed": 0, "n": 1754500, "nf": 387, "min": 3.0, "load_s": 20, "ds_s": 16, "fit_s": 139, "pred_s": 4, "auc": {"300": 0.82024, "400": 0.82025}}
+{"cut": 26, "tag": "v7base", "seed": 1, "n": 1754500, "nf": 387, "min": 5.3, "load_s": 20, "ds_s": 16, "fit_s": 135, "pred_s": 4, "auc": {"300": 0.82044, "400": 0.82062}}
+--- 321s
+=== 20:01:52 /workspace/venv/bin/python ens.py 26 v7slow --seeds 0 --rounds 500 --threads 4 --lr feat_lr2,feat_tt --params {"learning_rate":0.03,"feature_fraction":0.55,"num_leaves":95,"lambda_l2":30}
+{"cut": 26, "tag": "v7slow", "seed": 0, "n": 1754500, "nf": 387, "min": 3.7, "load_s": 8, "ds_s": 15, "fit_s": 188, "pred_s": 10, "auc": {"300": 0.82046, "400": 0.82073, "500": 0.82077}}
+--- 224s
+=== 20:05:36 /workspace/venv/bin/python ens.py 27 v7base --seeds 0,1 --threads 4 --lr feat_lr2,feat_tt
+{"cut": 27, "tag": "v7base", "seed": 0, "n": 2105880, "nf": 387, "min": 3.9, "load_s": 13, "ds_s": 22, "fit_s": 184, "pred_s": 7}
+{"cut": 27, "tag": "v7base", "seed": 1, "n": 2105880, "nf": 387, "min": 7.0, "load_s": 13, "ds_s": 22, "fit_s": 179, "pred_s": 6}
+--- 419s
+=== 20:12:35 /workspace/venv/bin/python ens.py 27 v7slow --seeds 0 --rounds 500 --threads 4 --lr feat_lr2,feat_tt --params {"learning_rate":0.03,"feature_fraction":0.55,"num_leaves":95,"lambda_l2":30}
+{"cut": 27, "tag": "v7slow", "seed": 0, "n": 2105880, "nf": 387, "min": 4.7, "load_s": 13, "ds_s": 18, "fit_s": 233, "pred_s": 15}
+--- 283s
+=== 20:17:18 env V6PFX=v7 EXD=feat_lr2,feat_tt /workspace/venv/bin/python lite_build/blend_v7.py val
+Traceback (most recent call last):
+  File "/workspace/huawei/v2work/lite_build/blend_v7.py", line 3, in <module>
+    from cl import matrix
+ModuleNotFoundError: No module named 'cl'
+--- 0s
+=== 20:17:18 env V6PFX=v7 EXD=feat_lr2,feat_tt PRED_OUT=eval_pred_v7.parquet /workspace/venv/bin/python lite_build/blend_v7.py eval
+Traceback (most recent call last):
+  File "/workspace/huawei/v2work/lite_build/blend_v7.py", line 3, in <module>
+    from cl import matrix
+ModuleNotFoundError: No module named 'cl'
+--- 0s
+V7DONE
+=== 20:17:19 /workspace/venv/bin/python ens.py 25 lt_neg50 --seeds 0 --threads 4 --lr feat_lr2,feat_tt --negfrac 0.5
+{"cut": 25, "tag": "lt_neg50", "seed": 0, "n": 745456, "nf": 387, "min": 1.3, "load_s": 7, "ds_s": 8, "fit_s": 59, "pred_s": 5, "auc": {"300": 0.81076, "400": 0.81072}}
+--- 82s
+=== 20:18:41 /workspace/venv/bin/python ens.py 25 lt_f3 --seeds 0 --threads 4 --lr feat_lr2,feat_tt --nfolds 3
+{"cut": 25, "tag": "lt_f3", "seed": 0, "n": 1050640, "nf": 387, "min": 1.7, "load_s": 4, "ds_s": 10, "fit_s": 81, "pred_s": 5, "auc": {"300": 0.81079, "400": 0.81081}}
+--- 102s
+=== 20:20:23 /workspace/venv/bin/python ens.py 25 lt_top175 --seeds 0 --threads 4 --lr feat_lr2,feat_tt --keep keep175_c25.txt
+{"cut": 25, "tag": "lt_top175", "seed": 0, "n": 1402200, "nf": 175, "min": 1.2, "load_s": 6, "ds_s": 6, "fit_s": 55, "pred_s": 5, "auc": {"300": 0.8108, "400": 0.81073}}
+--- 76s
+=== 20:21:39 /workspace/venv/bin/python ens.py 25 lt_bin63 --seeds 0 --threads 4 --lr feat_lr2,feat_tt --params {"max_bin":63,"force_col_wise":true}
+{"cut": 25, "tag": "lt_bin63", "seed": 0, "n": 1402200, "nf": 387, "min": 2.1, "load_s": 6, "ds_s": 10, "fit_s": 106, "pred_s": 5, "auc": {"300": 0.8109, "400": 0.8109}}
+--- 130s
+=== 20:23:50 /workspace/venv/bin/python ens.py 26 lt_neg50 --seeds 0 --threads 4 --lr feat_lr2,feat_tt --negfrac 0.5
+{"cut": 26, "tag": "lt_neg50", "seed": 0, "n": 932352, "nf": 387, "min": 1.5, "load_s": 8, "ds_s": 9, "fit_s": 70, "pred_s": 4, "auc": {"300": 0.82005, "400": 0.82009}}
+--- 94s
+=== 20:25:24 /workspace/venv/bin/python ens.py 26 lt_f3 --seeds 0 --threads 4 --lr feat_lr2,feat_tt --nfolds 3
+{"cut": 26, "tag": "lt_f3", "seed": 0, "n": 1051820, "nf": 387, "min": 1.7, "load_s": 4, "ds_s": 10, "fit_s": 82, "pred_s": 4, "auc": {"300": 0.81996, "400": 0.81992}}
+--- 103s
+=== 20:27:07 /workspace/venv/bin/python ens.py 26 lt_top175 --seeds 0 --threads 4 --lr feat_lr2,feat_tt --keep keep175_c26.txt
+{"cut": 26, "tag": "lt_top175", "seed": 0, "n": 1754500, "nf": 175, "min": 1.6, "load_s": 9, "ds_s": 8, "fit_s": 74, "pred_s": 4, "auc": {"300": 0.82, "400": 0.82001}}
+--- 97s
+=== 20:28:44 /workspace/venv/bin/python ens.py 26 lt_bin63 --seeds 0 --threads 4 --lr feat_lr2,feat_tt --params {"max_bin":63,"force_col_wise":true}
+{"cut": 26, "tag": "lt_bin63", "seed": 0, "n": 1754500, "nf": 387, "min": 3.1, "load_s": 9, "ds_s": 13, "fit_s": 159, "pred_s": 4, "auc": {"300": 0.82051, "400": 0.82058}}
+--- 188s
+LITE_DONE

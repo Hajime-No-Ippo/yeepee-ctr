@@ -1,0 +1,2 @@
+{"step": "B_precheck", "feature": "sl_cand_cent_cos", "cut": 25, "within": 0.50601, "within_flipped": 0.49399, "global_auc": 0.50706, "runtime_s": 36}
+PRECHECK_DONE

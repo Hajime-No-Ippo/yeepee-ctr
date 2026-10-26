@@ -1,0 +1,9 @@
+bin k=16 a=0.0: hist cos 0.6064 dm 0.6081 | ucos 0.5953 dm 0.6021
+bin k=16 a=0.5: hist cos 0.6020 dm 0.6033 | ucos 0.5928 dm 0.6007
+bin k=16 a=1.0: hist cos 0.5964 dm 0.5971 | ucos 0.5890 dm 0.5982
+bin k=32 a=0.0: hist cos 0.6406 dm 0.6452 | ucos 0.6214 dm 0.6293
+bin k=32 a=0.5: hist cos 0.6359 dm 0.6407 | ucos 0.6194 dm 0.6293
+bin k=32 a=1.0: hist cos 0.6287 dm 0.6332 | ucos 0.6150 dm 0.6275
+bin k=64 a=0.0: hist cos 0.6545 dm 0.6611 | ucos 0.6324 dm 0.6400
+bin k=64 a=0.5: hist cos 0.6529 dm 0.6604 | ucos 0.6340 dm 0.6435
+bin k=64 a=1.0: hist cos 0.6474 dm 0.6556 | ucos 0.6325 dm 0.6452

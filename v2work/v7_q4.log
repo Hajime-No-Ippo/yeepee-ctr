@@ -1,0 +1,25 @@
+=== 20:39:30 /workspace/venv/bin/python screen.py 25 xAn_lr2 --lr feat_lr2,feat_xAn --threads 4
+{"cut": 25, "tag": "xAn_lr2", "lr": "feat_lr2,feat_xAn", "drop": null, "mods": "", "maxfold": 99, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "binary", "n_feats": 410, "curve": {"100": 0.79901, "200": 0.79933, "300": 0.7989, "400": 0.79828}, "event_auc": 
+--- 87s
+=== 20:40:57 /workspace/venv/bin/python screen.py 25 xAn_v7 --lr feat_lr2,feat_tt,feat_xAn --threads 4
+{"cut": 25, "tag": "xAn_v7", "lr": "feat_lr2,feat_tt,feat_xAn", "drop": null, "mods": "", "maxfold": 99, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "binary", "n_feats": 418, "curve": {"100": 0.8087, "200": 0.80864, "300": 0.80807, "400": 0.80737}, "event
+--- 88s
+=== 20:42:25 /workspace/venv/bin/python screen.py 26 xAn_lr2 --lr feat_lr2,feat_xAn --threads 4
+{"cut": 26, "tag": "xAn_lr2", "lr": "feat_lr2,feat_xAn", "drop": null, "mods": "", "maxfold": 99, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "binary", "n_feats": 410, "curve": {"100": 0.81005, "200": 0.81069, "300": 0.81047, "400": 0.81009}, "event_auc":
+--- 83s
+=== 20:43:48 /workspace/venv/bin/python screen.py 26 xAn_v7 --lr feat_lr2,feat_tt,feat_xAn --threads 4
+{"cut": 26, "tag": "xAn_v7", "lr": "feat_lr2,feat_tt,feat_xAn", "drop": null, "mods": "", "maxfold": 99, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "binary", "n_feats": 418, "curve": {"100": 0.8186, "200": 0.81891, "300": 0.81851, "400": 0.81817}, "event
+--- 81s
+=== 20:45:09 /workspace/venv/bin/python screen.py 25 gap_xAn_lr2 --lr feat_lr2,feat_xAn --maxfold 3 --threads 4
+{"cut": 25, "tag": "gap_xAn_lr2", "lr": "feat_lr2,feat_xAn", "drop": null, "mods": "", "maxfold": 3, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "binary", "n_feats": 410, "curve": {"100": 0.7976, "200": 0.7974, "300": 0.79668, "400": 0.79547}, "event_auc"
+--- 71s
+=== 20:46:20 /workspace/venv/bin/python screen.py 25 gap_xAn_v7 --lr feat_lr2,feat_tt,feat_xAn --maxfold 3 --threads 4
+{"cut": 25, "tag": "gap_xAn_v7", "lr": "feat_lr2,feat_tt,feat_xAn", "drop": null, "mods": "", "maxfold": 3, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "binary", "n_feats": 418, "curve": {"100": 0.80785, "200": 0.80755, "300": 0.80676, "400": 0.80598}, "e
+--- 111s
+=== 20:48:11 /workspace/venv/bin/python screen.py 26 gap_xAn_lr2 --lr feat_lr2,feat_xAn --maxfold 3 --threads 4
+{"cut": 26, "tag": "gap_xAn_lr2", "lr": "feat_lr2,feat_xAn", "drop": null, "mods": "", "maxfold": 3, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "binary", "n_feats": 410, "curve": {"100": 0.8072, "200": 0.80726, "300": 0.80631, "400": 0.80519}, "event_auc
+--- 66s
+=== 20:49:17 /workspace/venv/bin/python screen.py 26 gap_xAn_v7 --lr feat_lr2,feat_tt,feat_xAn --maxfold 3 --threads 4
+{"cut": 26, "tag": "gap_xAn_v7", "lr": "feat_lr2,feat_tt,feat_xAn", "drop": null, "mods": "", "maxfold": 3, "folds": "f", "stale": false, "rc": false, "cv": false, "frac": 0.25, "seeds": 1, "obj": "binary", "n_feats": 418, "curve": {"100": 0.81652, "200": 0.81616, "300": 0.81515, "400": 0.8142}, "ev
+--- 63s
+Q4_DONE

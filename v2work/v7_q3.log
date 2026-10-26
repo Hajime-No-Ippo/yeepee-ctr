@@ -1,0 +1,25 @@
+=== 20:32:00 env LR_OUT=/tmp/lrtime LR_KS=4,6,8,10,12,16 LR_CON=1 /workspace/venv/bin/python lrfeat2.py f1 f2 f3 f4 f5 f6 eval
+f4 (350400, 55) 12s
+20:32:38 C 1737763200 pairs 731030 sv [4.11 2.47 2.36 2.35 2.34 2.34 2.33 2.33 2.32 2.32 2.3  2.28 2.25 2.19
+ 2.15]
+f5 (352300, 55) 15s
+20:32:53 C 1737849600 pairs 773354 sv [4.22 2.51 2.4  2.39 2.39 2.38 2.38 2.37 2.36 2.36 2.35 2.32 2.28 2.23
+ 2.18]
+f6 (351380, 55) 16s
+20:33:09 C 1737936000 pairs 811543 sv [4.32 2.55 2.44 2.43 2.43 2.42 2.41 2.41 2.4  2.4  2.38 2.35 2.31 2.25
+ 2.21]
+eval (529390, 55) 23s
+--- 91s
+=== 20:33:31 /workspace/venv/bin/python ens.py 25 lt_cmb_base --seeds 0 --threads 4 --lr feat_lr2,feat_tt --negfrac 0.5 --nfolds 4 --params {"max_bin":63,"force_col_wise":true}
+{"cut": 25, "tag": "lt_cmb_base", "seed": 0, "n": 745456, "nf": 387, "min": 1.2, "load_s": 6, "ds_s": 7, "fit_s": 50, "pred_s": 5, "auc": {"300": 0.81071, "400": 0.81064}}
+--- 72s
+=== 20:34:43 /workspace/venv/bin/python ens.py 25 lt_cmb_slow --seeds 0 --rounds 500 --threads 4 --lr feat_lr2,feat_tt --negfrac 0.5 --nfolds 4 --params {"learning_rate":0.03,"feature_fraction":0.55,"num_leaves":95,"lambda_l2":30,"max_bin":63,"force_col_wise":true}
+{"cut": 25, "tag": "lt_cmb_slow", "seed": 0, "n": 745456, "nf": 387, "min": 1.5, "load_s": 6, "ds_s": 7, "fit_s": 67, "pred_s": 12, "auc": {"300": 0.81092, "400": 0.81103, "500": 0.81112}}
+--- 94s
+=== 20:36:17 /workspace/venv/bin/python ens.py 26 lt_cmb_base --seeds 0 --threads 4 --lr feat_lr2,feat_tt --negfrac 0.5 --nfolds 4 --params {"max_bin":63,"force_col_wise":true}
+{"cut": 26, "tag": "lt_cmb_base", "seed": 0, "n": 745889, "nf": 387, "min": 1.2, "load_s": 6, "ds_s": 7, "fit_s": 52, "pred_s": 4, "auc": {"300": 0.82019, "400": 0.82009}}
+--- 72s
+=== 20:37:29 /workspace/venv/bin/python ens.py 26 lt_cmb_slow --seeds 0 --rounds 500 --threads 4 --lr feat_lr2,feat_tt --negfrac 0.5 --nfolds 4 --params {"learning_rate":0.03,"feature_fraction":0.55,"num_leaves":95,"lambda_l2":30,"max_bin":63,"force_col_wise":true}
+{"cut": 26, "tag": "lt_cmb_slow", "seed": 0, "n": 745889, "nf": 387, "min": 2.0, "load_s": 6, "ds_s": 7, "fit_s": 95, "pred_s": 9, "auc": {"300": 0.82023, "400": 0.82034, "500": 0.82042}}
+--- 120s
+Q3_DONE

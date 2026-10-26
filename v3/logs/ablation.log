@@ -1,0 +1,25 @@
+25:it {'auc': 0.5370317796053952, 'best_iter': 6, 'n_feats': 17, 'secs': 8}
+25:it+hist {'auc': 0.576274773792188, 'best_iter': 17, 'n_feats': 27, 'secs': 17}
+25:it+hist+us {'auc': 0.5980434769781056, 'best_iter': 37, 'n_feats': 40, 'secs': 16}
+25:it+hist+us+co {'auc': 0.6091457655955259, 'best_iter': 34, 'n_feats': 52, 'secs': 12}
+[200]	val's auc: 0.74887
+25:it+hist+us+co+sv {'auc': 0.7489698006348487, 'best_iter': 160, 'n_feats': 69, 'secs': 39}
+[200]	val's auc: 0.748783
+25:it+hist+us+co+sv+mf {'auc': 0.7489692035096662, 'best_iter': 133, 'n_feats': 72, 'secs': 37}
+[200]	val's auc: 0.755209
+25:it+hist+us+co+sv+mf+ev {'auc': 0.7554179484459838, 'best_iter': 143, 'n_feats': 160, 'secs': 107}
+[200]	val's auc: 0.75548
+25:it+hist+us+co+sv+mf+ev+tm {'auc': 0.7555584440191112, 'best_iter': 171, 'n_feats': 164, 'secs': 112}
+26:it {'auc': 0.533359070758731, 'best_iter': 7, 'n_feats': 17, 'secs': 10}
+26:it+hist {'auc': 0.5756153443644543, 'best_iter': 25, 'n_feats': 27, 'secs': 10}
+26:it+hist+us {'auc': 0.5985799379644277, 'best_iter': 26, 'n_feats': 40, 'secs': 17}
+26:it+hist+us+co {'auc': 0.6134123026493827, 'best_iter': 59, 'n_feats': 52, 'secs': 22}
+[200]	val's auc: 0.767133
+[400]	val's auc: 0.767106
+26:it+hist+us+co+sv {'auc': 0.767262289815495, 'best_iter': 327, 'n_feats': 69, 'secs': 58}
+[200]	val's auc: 0.766949
+26:it+hist+us+co+sv+mf {'auc': 0.7669995392352769, 'best_iter': 214, 'n_feats': 72, 'secs': 41}
+[200]	val's auc: 0.773644
+26:it+hist+us+co+sv+mf+ev {'auc': 0.7738211061114142, 'best_iter': 246, 'n_feats': 160, 'secs': 83}
+[200]	val's auc: 0.773988
+26:it+hist+us+co+sv+mf+ev+tm {'auc': 0.7740605816121898, 'best_iter': 209, 'n_feats': 164, 'secs': 76}

@@ -1,0 +1,27 @@
+=== 18:49:32 env X_OUT=/workspace/huawei/v2work/feat_xf /workspace/venv/bin/python extra.py f1 f2 f3 f4 f5 f6 val25 val26 eval
+val25 (439640, 39) 12s
+val26 (351380, 39) 12s
+eval (529390, 39) 13s
+--- 100s
+=== 18:51:12 /workspace/venv/bin/python ens.py 25 v6base --seeds 0,1 --threads 4 --lr feat_lr2
+{"cut": 25, "tag": "v6base", "seed": 0, "n": 1402200, "nf": 379, "min": 2.5, "auc": {"300": 0.80113, "400": 0.80116}}
+{"cut": 25, "tag": "v6base", "seed": 1, "n": 1402200, "nf": 379, "min": 4.3, "auc": {"300": 0.80109, "400": 0.80107}}
+--- 262s
+=== 18:55:34 /workspace/venv/bin/python ens.py 25 v6slow --seeds 0 --rounds 500 --threads 4 --lr feat_lr2 --params {"learning_rate":0.03,"feature_fraction":0.55,"num_leaves":95,"lambda_l2":30}
+{"cut": 25, "tag": "v6slow", "seed": 0, "n": 1402200, "nf": 379, "min": 2.8, "auc": {"300": 0.80101, "400": 0.80133, "500": 0.80141}}
+--- 169s
+=== 18:58:23 /workspace/venv/bin/python ens.py 26 v6base --seeds 0,1 --threads 4 --lr feat_lr2
+{"cut": 26, "tag": "v6base", "seed": 0, "n": 1754500, "nf": 379, "min": 3.0, "auc": {"300": 0.81115, "400": 0.81128}}
+{"cut": 26, "tag": "v6base", "seed": 1, "n": 1754500, "nf": 379, "min": 5.4, "auc": {"300": 0.81112, "400": 0.81133}}
+--- 324s
+=== 19:03:47 /workspace/venv/bin/python ens.py 26 v6slow --seeds 0 --rounds 500 --threads 4 --lr feat_lr2 --params {"learning_rate":0.03,"feature_fraction":0.55,"num_leaves":95,"lambda_l2":30}
+{"cut": 26, "tag": "v6slow", "seed": 0, "n": 1754500, "nf": 379, "min": 3.6, "auc": {"300": 0.81114, "400": 0.81146, "500": 0.81162}}
+--- 220s
+=== 19:07:27 /workspace/venv/bin/python ens.py 27 v6base --seeds 0,1 --threads 4 --lr feat_lr2
+{"cut": 27, "tag": "v6base", "seed": 0, "n": 2105880, "nf": 379, "min": 3.9}
+{"cut": 27, "tag": "v6base", "seed": 1, "n": 2105880, "nf": 379, "min": 6.9}
+--- 412s
+=== 19:14:20 /workspace/venv/bin/python ens.py 27 v6slow --seeds 0 --rounds 500 --threads 4 --lr feat_lr2 --params {"learning_rate":0.03,"feature_fraction":0.55,"num_leaves":95,"lambda_l2":30}
+{"cut": 27, "tag": "v6slow", "seed": 0, "n": 2105880, "nf": 379, "min": 4.7}
+--- 283s
+V6DONE

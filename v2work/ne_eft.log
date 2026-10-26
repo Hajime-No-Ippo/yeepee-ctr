@@ -1,0 +1,108 @@
+sh: 1: kill: No such process
+
+sh: 1: kill: No such process
+
+sh: 1: kill: No such process
+
+sh: 1: kill: No such process
+
+sh: 1: kill: No such process
+
+sh: 1: kill: No such process
+
+sh: 1: kill: No such process
+
+sh: 1: kill: No such process
+
+sh: 1: kill: No such process
+
+04:25:03 pool 634943
+04:25:05 cooc pairs 7498308
+04:25:12 svd done
+04:25:34 build C=1737417600 rows=501370 32s
+04:25:35 wrote e1 (501370, 125)
+04:25:36 pool 696900
+04:25:38 cooc pairs 10118802
+04:25:46 svd done
+04:26:08 build C=1737504000 rows=479570 33s
+04:26:09 wrote e2 (479570, 125)
+04:26:10 pool 758885
+04:26:13 cooc pairs 12580862
+04:26:16 svd done
+04:26:35 build C=1737590400 rows=439000 26s
+04:26:36 wrote e3 (439000, 125)
+04:26:37 pool 820066
+04:26:39 cooc pairs 15164046
+04:26:43 svd done
+04:27:01 build C=1737676800 rows=350400 25s
+04:27:01 wrote e4 (350400, 125)
+04:27:02 pool 639775
+04:27:02 cooc pairs 7498308
+04:27:05 svd done
+04:27:24 build C=1737417600 rows=523590 23s
+04:27:25 wrote E1 (523590, 125)
+04:27:25 pool 701732
+04:27:26 cooc pairs 10118802
+04:27:27 svd done
+04:27:46 build C=1737504000 rows=514880 21s
+04:27:46 wrote E2 (514880, 125)
+04:27:48 pool 763717
+04:27:49 cooc pairs 12580862
+04:27:51 svd done
+04:28:10 build C=1737590400 rows=501550 23s
+04:28:10 wrote E3 (501550, 125)
+04:28:11 pool 824898
+04:28:12 cooc pairs 15164046
+04:28:14 svd done
+04:28:33 build C=1737676800 rows=479280 23s
+04:28:33 wrote E4 (479280, 125)
+04:28:34 pool 886177
+04:28:36 cooc pairs 18012356
+04:28:37 svd done
+04:28:57 build C=1737763200 rows=439640 24s
+04:28:58 wrote E5 (439640, 125)
+04:28:59 pool 947991
+04:29:01 cooc pairs 21111352
+04:29:03 svd done
+04:29:21 build C=1737849600 rows=351380 24s
+04:29:22 wrote E6 (351380, 125)
+04:30:03 build C=1737417600 rows=501370 cols=170 38s
+04:30:03 wrote e1 (501370, 170)
+04:30:42 build C=1737504000 rows=479570 cols=170 38s
+04:30:42 wrote e2 (479570, 170)
+04:31:31 build C=1737590400 rows=439000 cols=170 49s
+04:31:32 wrote e3 (439000, 170)
+04:32:22 build C=1737676800 rows=350400 cols=170 50s
+04:32:23 wrote e4 (350400, 170)
+04:33:08 build C=1737417600 rows=523590 cols=170 45s
+04:33:08 wrote E1 (523590, 170)
+04:33:58 build C=1737504000 rows=514880 cols=170 49s
+04:33:59 wrote E2 (514880, 170)
+04:34:50 build C=1737590400 rows=501550 cols=170 51s
+04:34:51 wrote E3 (501550, 170)
+04:35:43 build C=1737676800 rows=479280 cols=170 52s
+04:35:43 wrote E4 (479280, 170)
+04:36:41 build C=1737763200 rows=439640 cols=170 57s
+04:36:41 wrote E5 (439640, 170)
+04:37:36 build C=1737849600 rows=351380 cols=170 55s
+04:37:37 wrote E6 (351380, 170)
+e1 (501370, 39) 63s
+e2 (479570, 39) 59s
+e3 (439000, 39) 62s
+e4 (350400, 39) 61s
+E1 (523590, 39) 64s
+E2 (514880, 39) 62s
+E3 (501550, 39) 64s
+E4 (479280, 39) 62s
+E5 (439640, 39) 120s
+E6 (351380, 39) 70s
+e1 (501370, 20) 29s
+e2 (479570, 20) 35s
+e3 (439000, 20) 39s
+e4 (350400, 20) 38s
+E1 (523590, 20) 24s
+E2 (514880, 20) 30s
+E3 (501550, 20) 34s
+E4 (479280, 20) 38s
+E5 (439640, 20) 46s
+E6 (351380, 20) 49s

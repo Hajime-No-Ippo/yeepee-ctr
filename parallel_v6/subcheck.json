@@ -1,0 +1,12 @@
+{
+ "sha256": "0494968e720bbf6da54474dd8e9b89cbc5b14f1a3809c37e951a7b3b79fb2c23",
+ "rows": 529390,
+ "unique": 529390,
+ "nulls_eval_pred": 0,
+ "maxabs_sub_vs_eval_pred_v6": 4.999942779249089e-09,
+ "maxabs_sub_vs_recomputed_blend_c27": 4.999942779249089e-09,
+ "min": 0.00050832244,
+ "max": 0.74372596,
+ "mean": 0.06227334431796707,
+ "spearman_vs_v2work_submission_v3": 0.9056021589859374
+}

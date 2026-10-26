@@ -1,0 +1,57 @@
+50 0.70127
+100 0.70319
+150 0.70444
+200 0.70495
+250 0.70519
+300 0.70527
+350 0.70532
+400 0.70533
+450 0.70535
+500 0.7053
+550 0.70529
+600 0.70526
+650 0.70523
+700 0.70524
+750 0.70522
+800 0.70516
+850 0.70513
+900 0.70504
+950 0.70499
+1000 0.70496
+BEST binary ['g1', 'g2', 'g3'] [] (450, 0.7053502878464384)
+svd32_cos_dm           0.1757
+uip_n_dm               0.1538
+uip_n_rk               0.0798
+svd32_cos              0.0653
+uip_since              0.0494
+svd32_cos_rk           0.0457
+u_ctr                  0.0234
+uip_n                  0.0212
+svd_cos_dm             0.0206
+svd_cos_rmax           0.0188
+co_sum_rmax            0.0148
+co_sum_dm              0.0141
+svd_cos                0.0129
+co_sum                 0.0091
+co_mean                0.0082
+svd_ucos_dm            0.0082
+u_since_ev             0.0081
+ip_per_imp             0.0081
+i_imp                  0.0078
+ip_n_dm                0.0077
+co_max_dm              0.0073
+co_rw_rmax             0.0070
+h_since_first          0.0067
+ev_svd_max             0.0067
+svd_top3               0.0066
+svd_last               0.0065
+u_ev                   0.0064
+svd_hnorm              0.0063
+ip_warm                0.0058
+co_rw_dm               0.0057
+  seg all            rows= 479280 auc=0.7054
+  seg warm           rows= 450680 auc=0.7074
+  seg hist_only      rows=  25350 auc=0.6811
+  seg empty_hist     rows=   5520 auc=0.5709
+  seg weekday        rows= 350400 auc=0.7103
+  seg weekend        rows= 128880 auc=0.6914

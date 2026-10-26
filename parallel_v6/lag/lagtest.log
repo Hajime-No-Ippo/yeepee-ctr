@@ -1,0 +1,5 @@
+train (1402200, 379)
+val25 (v2work cache, as v6 run) {"auc": 0.80116, "n": 439640, "auc_<=1d": 0.8052, "share_<=1d": 0.80134, "auc_1-2d": 0.78408, "share_1-2d": 0.19866, "auc_>2d": null, "share_>2d": 0.0, "auc_evalw": 0.80115, "evalw_buckets_present": 2, "auc_event": 0.66605, "auc300": 0.80113}
+val25repro (xf+lr2 rebuilt here, C=Jan25) {"auc": 0.8011, "n": 439640, "auc_<=1d": 0.80515, "share_<=1d": 0.80134, "auc_1-2d": 0.784, "share_1-2d": 0.19866, "auc_>2d": null, "share_>2d": 0.0, "auc_evalw": 0.8011, "evalw_buckets_present": 2, "auc_event": 0.66583, "auc300": 0.80105}
+{'n_cols': 92, 'n_nonzero(>1e-5)': 90, 'max': 120.0, 'worst': [('x_climp64', 120.0), ('x_climp256', 99.0), ('x_clctr256_lift', 9.003508627414703), ('x_clctr64_rk', 9.0), ('x_clctr64_lift_rk', 9.0)]}
+val25lag (all stats frozen at Jan24) {"auc": 0.79412, "n": 439640, "auc_<=1d": 0.79806, "share_<=1d": 0.80134, "auc_1-2d": 0.77746, "share_1-2d": 0.19866, "auc_>2d": null, "share_>2d": 0.0, "auc_evalw": 0.79411, "evalw_buckets_present": 2, "auc_event": 0.66101, "auc300": 0.79421}

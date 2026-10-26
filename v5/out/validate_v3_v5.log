@@ -1,0 +1,4 @@
+file=/workspace/huawei/v5/submission_v5.csv rows=529390 unique=529390 same_order_as_example=True
+min=0.000568855 p50=0.0365972 max=0.723299 mean=0.0626529 distinct=528280
+VALID
+v3 validator rc=0

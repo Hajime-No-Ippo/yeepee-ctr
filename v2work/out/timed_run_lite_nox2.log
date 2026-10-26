@@ -1,0 +1,140 @@
+[stage setup] wall 0.0s cpu 0.0s
+>> load_prep_v3 /workspace/venv/bin/python prep.py /workspace/huawei/data
+[  12.6s] train (6868240, 4) (686824, 7)
+[  13.3s] evaluation (529390, 3) (52939, 7)
+[  14.7s] items 50000 users 54456 events 739763
+[  18.1s] done
+[stage load_prep_v3] wall 18.5s cpu 37.4s
+>> load_prep_v2 /workspace/venv/bin/python prep.py
+evaluation rows done 0.28467631340026855
+evaluation events done 0.6318473815917969
+train rows done 2.944775342941284
+train events done 8.446775436401367
+[stage load_prep_v2] wall 9.3s cpu 25.0s
+>> feat_v3 /workspace/venv/bin/python v3fold.py f3 f4 f5 f6 eval
+23:40:31 build C=1737590400 rows=349120 cols=170 25s
+23:40:31 wrote f3 (349120, 170)
+23:41:00 build C=1737676800 rows=350400 cols=170 29s
+23:41:00 wrote f4 (350400, 170)
+23:41:31 build C=1737763200 rows=352300 cols=170 30s
+23:41:31 wrote f5 (352300, 170)
+23:42:03 build C=1737849600 rows=351380 cols=170 32s
+23:42:04 wrote f6 (351380, 170)
+23:42:45 build C=1737936000 rows=529390 cols=170 41s
+23:42:45 wrote eval (529390, 170)
+[stage feat_v3] wall 161.1s cpu 273.4s
+>> feat_v2 /workspace/venv/bin/python build_folds.py lite
+23:42:49 pool 753289
+23:42:51 cooc pairs 12580862
+23:42:52 svd done
+23:43:08 build C=1737590400 rows=349120 19s
+23:43:08 wrote h3 (349120, 125)
+23:43:09 pool 820066
+23:43:10 cooc pairs 15164046
+23:43:12 svd done
+23:43:27 build C=1737676800 rows=350400 19s
+23:43:27 wrote h4 (350400, 125)
+23:43:28 pool 884413
+23:43:31 cooc pairs 18012356
+23:43:32 svd done
+23:43:50 build C=1737763200 rows=352300 22s
+23:43:50 wrote h5 (352300, 125)
+23:43:51 pool 947991
+23:43:54 cooc pairs 21111352
+23:43:55 svd done
+23:44:13 build C=1737849600 rows=351380 23s
+23:44:13 wrote val26 (351380, 125)
+23:44:15 pool 1013190
+23:44:18 cooc pairs 24482596
+23:44:19 svd done
+23:50:18 build C=1737936000 rows=529390 365s
+23:50:19 wrote eval (529390, 124)
+[stage feat_v2] wall 454.5s cpu 445.8s
+>> feat_x /workspace/venv/bin/python extra.py f3 f4 f5 f6 eval
+f3 (349120, 39) 11s
+f4 (350400, 39) 10s
+f5 (352300, 39) 11s
+f6 (351380, 39) 12s
+eval (529390, 39) 14s
+[stage feat_x] wall 62.0s cpu 154.2s
+>> feat_lr LR_KS=4,6,8,10,12,16 LR_CON=1 /workspace/venv/bin/python lrfeat2.py f3 f4 f5 f6 eval
+23:51:24 C 1737590400 pairs 629903 sv [3.82 2.36 2.26 2.23 2.23 2.22 2.22 2.21 2.21 2.21 2.19 2.18 2.15 2.1
+ 2.06]
+f3 (349120, 55) 10s
+23:51:34 C 1737676800 pairs 683619 sv [3.98 2.42 2.32 2.3  2.29 2.29 2.28 2.28 2.27 2.27 2.25 2.24 2.2  2.15
+ 2.11]
+f4 (350400, 55) 12s
+23:51:46 C 1737763200 pairs 731030 sv [4.11 2.47 2.36 2.35 2.34 2.34 2.33 2.33 2.32 2.32 2.3  2.28 2.25 2.19
+ 2.15]
+f5 (352300, 55) 14s
+23:52:00 C 1737849600 pairs 773354 sv [4.22 2.51 2.4  2.39 2.39 2.38 2.38 2.37 2.36 2.36 2.35 2.32 2.28 2.23
+ 2.18]
+f6 (351380, 55) 16s
+23:52:16 C 1737936000 pairs 811543 sv [4.32 2.55 2.44 2.43 2.43 2.42 2.41 2.41 2.4  2.4  2.38 2.35 2.31 2.25
+ 2.21]
+eval (529390, 55) 22s
+[stage feat_lr] wall 75.4s cpu 98.1s
+>> feat_tt /workspace/venv/bin/python ttfeat.py f3 f4 f5 f6 eval
+  C 1737590400 ep0 loss 2.0789
+  C 1737590400 ep1 loss 2.0518
+  C 1737590400 ep2 loss 2.0232
+  C 1737590400 ep3 loss 1.9928
+  C 1737590400 ep4 loss 1.9607
+  C 1737590400 ep5 loss 1.9273
+23:52:46 C 1737590400 train events 186038 6s
+f3 (349120, 9) 7s
+  C 1737676800 ep0 loss 2.0774
+  C 1737676800 ep1 loss 2.0439
+  C 1737676800 ep2 loss 2.0081
+  C 1737676800 ep3 loss 1.9698
+  C 1737676800 ep4 loss 1.9296
+  C 1737676800 ep5 loss 1.8878
+23:52:53 C 1737676800 train events 247219 6s
+f4 (350400, 9) 7s
+  C 1737763200 ep0 loss 2.0764
+  C 1737763200 ep1 loss 2.0367
+  C 1737763200 ep2 loss 1.9938
+  C 1737763200 ep3 loss 1.9479
+  C 1737763200 ep4 loss 1.8998
+  C 1737763200 ep5 loss 1.8504
+23:53:02 C 1737763200 train events 308499 8s
+f5 (352300, 9) 8s
+  C 1737849600 ep0 loss 2.0752
+  C 1737849600 ep1 loss 2.0290
+  C 1737849600 ep2 loss 1.9785
+  C 1737849600 ep3 loss 1.9247
+  C 1737849600 ep4 loss 1.8690
+  C 1737849600 ep5 loss 1.8125
+23:53:11 C 1737849600 train events 370313 9s
+f6 (351380, 9) 10s
+  C 1737936000 ep0 loss 2.0739
+  C 1737936000 ep1 loss 2.0211
+  C 1737936000 ep2 loss 1.9632
+  C 1737936000 ep3 loss 1.9019
+  C 1737936000 ep4 loss 1.8391
+  C 1737936000 ep5 loss 1.7767
+23:53:22 C 1737936000 train events 432023 11s
+eval (529390, 9) 12s
+[stage feat_tt] wall 46.9s cpu 136.2s
+>> fit_predict_base /workspace/venv/bin/python ens.py 27 base --seeds 0 --threads 4 --lr feat_lr2,feat_tt --negfrac 0.5 --nfolds 4 --params '{"max_bin":63,"force_col_wise":true}'
+{"cut": 27, "tag": "base", "seed": 0, "n": 745540, "nf": 368, "min": 1.3, "load_s": 13, "ds_s": 7, "fit_s": 49, "pred_s": 6}
+[stage fit_predict_base] wall 79.5s cpu 275.0s
+>> fit_predict_slow /workspace/venv/bin/python ens.py 27 slow --seeds 0 --rounds 500 --threads 4 --lr feat_lr2,feat_tt --negfrac 0.5 --nfolds 4 --params '{"learning_rate":0.03,"feature_fraction":0.55,"num_leaves":95,"lambda_l2":30,"max_bin":63,"force_col_wise":true}'
+{"cut": 27, "tag": "slow", "seed": 0, "n": 745540, "nf": 368, "min": 1.5, "load_s": 5, "ds_s": 6, "fit_s": 63, "pred_s": 13}
+[stage fit_predict_slow] wall 90.6s cpu 335.9s
+>> blend /workspace/venv/bin/python blend_lite.py
+corr base/slow 0.9944
+wrote eval_pred.parquet 529390
+[stage blend] wall 3.2s cpu 7.8s
+>> write PRED=/workspace/huawei/timed_work_v7_lite_nox2/eval_pred.parquet /workspace/venv/bin/python write_sub.py /workspace/huawei/timed_work_v7_lite_nox2/submission_v7_lite_nox2.csv
+missing preds filled: 0
+rows=529390 unique=529390 min=0.001074 mean=0.1087 max=0.8251 distinct=521279
+VALID
+zip contents ['submission_v7_lite_nox2.csv']
+sha256 32208cffea42914228f611101c0ac8c0336f46032445d9c657471525d6cdfe4f
+[stage write] wall 3.8s cpu 3.7s
+>> validate /workspace/venv/bin/python validate.py /workspace/huawei/timed_work_v7_lite_nox2/submission_v7_lite_nox2.csv
+rows=529390 unique=529390 min=0.001074 mean=0.1087 max=0.8251 distinct=521279
+VALID
+[stage validate] wall 1.2s cpu 1.8s
+{"stage": "TOTAL", "wall_s": 1005.98, "cpu_s": 1794.34, "submission": "/workspace/huawei/timed_work_v7_lite_nox2/submission_v7_lite_nox2.csv", "sha256": "32208cffea42914228f611101c0ac8c0336f46032445d9c657471525d6cdfe4f"}

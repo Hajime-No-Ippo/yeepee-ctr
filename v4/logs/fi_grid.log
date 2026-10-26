@@ -1,0 +1,4 @@
+val25 single-feature AUC (raw dot / within-event z), fold-in on k64 SVD (Vn), cutoff Jan25:
+lam1 a0 0.6994/0.6974 | lam1 a2 0.6993/0.6978 | lam10 a0 0.6989/0.7098 | lam10 a2 0.7037/0.7112
+lam30 a2 0.6877/0.7084 | lam100 a2 0.6692/0.7045 | lam300 a2 0.6599/0.7025 | lam30 a0 0.6801/0.7067 | lam30 a5 0.6911/0.7083
+reference: sv_k64_con05 0.7131, ev_sv_k64_con05_z 0.7190

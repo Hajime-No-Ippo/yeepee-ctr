@@ -1,0 +1,18 @@
+{
+ "train_hist_after_event": 0,
+ "eval_hist_after_event": 0,
+ "val25_target_hist_clicks_ge_C": 0,
+ "val25_target_min_ts_ge_C": true,
+ "val26_target_hist_clicks_ge_C": 0,
+ "val26_target_min_ts_ge_C": true,
+ "eval_min_event_ts_ge_Jan27": true,
+ "train_max_event_ts_lt_Jan27": true,
+ "eval_hist_clicks_ge_Jan27": 0
+}
+03:30:15 build C=1737417600 rows=351560 cols=170 33s
+03:30:54 build C=1737504000 rows=351120 cols=170 39s
+03:31:36 build C=1737590400 rows=349120 cols=170 40s
+03:32:20 build C=1737676800 rows=350400 cols=170 44s
+03:33:13 build C=1737763200 rows=439640 cols=170 53s
+[200]	val's auc: 0.739007
+{"mode": "lag1d", "val25_auc": 0.7390786507757422, "best_iter": 158, "secs": 273, "single": {"sv_k64_hcos": 0.6814, "sv_k64_con05": 0.6952, "sv_k32_ucos": 0.6587}}

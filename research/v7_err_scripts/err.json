@@ -1,0 +1,498 @@
+{
+ "25": {
+  "auc": 0.81164,
+  "rows": 439640,
+  "ctr": 0.06335,
+  "segs": {
+   "user": [
+    {
+     "seg": "empty",
+     "share": 0.0082,
+     "ctr": 0.04515,
+     "auc": 0.56477,
+     "eval_share": 0.0126
+    },
+    {
+     "seg": "history-only",
+     "share": 0.0291,
+     "ctr": 0.06549,
+     "auc": 0.75334,
+     "eval_share": 0.0219
+    },
+    {
+     "seg": "warm",
+     "share": 0.9627,
+     "ctr": 0.06344,
+     "auc": 0.81413,
+     "eval_share": 0.9655
+    }
+   ],
+   "lastact": [
+    {
+     "seg": "1-24h",
+     "share": 0.4754,
+     "ctr": 0.06308,
+     "auc": 0.82519,
+     "eval_share": 0.3963
+    },
+    {
+     "seg": "<1h",
+     "share": 0.0045,
+     "ctr": 0.06212,
+     "auc": 0.84188,
+     "eval_share": 0.0037
+    },
+    {
+     "seg": ">=1d",
+     "share": 0.5201,
+     "ctr": 0.06361,
+     "auc": 0.7982,
+     "eval_share": 0.6
+    }
+   ],
+   "stale": [
+    {
+     "seg": "1-2d",
+     "share": 0.1987,
+     "ctr": 0.06333,
+     "auc": 0.79731,
+     "eval_share": 0.1655
+    },
+    {
+     "seg": "<1d",
+     "share": 0.8013,
+     "ctr": 0.06336,
+     "auc": 0.81508,
+     "eval_share": 0.6662
+    }
+   ],
+   "dow": [
+    {
+     "seg": "Sat",
+     "share": 0.8013,
+     "ctr": 0.06336,
+     "auc": 0.81508,
+     "eval_share": 0.017
+    },
+    {
+     "seg": "Sun",
+     "share": 0.1987,
+     "ctr": 0.06333,
+     "auc": 0.79731,
+     "eval_share": 0.0111
+    }
+   ],
+   "act_dec": [
+    {
+     "seg": "0",
+     "share": 0.0734,
+     "ctr": 0.05728,
+     "auc": 0.71955,
+     "eval_share": 0.0951
+    },
+    {
+     "seg": "1",
+     "share": 0.1052,
+     "ctr": 0.06002,
+     "auc": 0.76619,
+     "eval_share": 0.1221
+    },
+    {
+     "seg": "2",
+     "share": 0.1126,
+     "ctr": 0.06048,
+     "auc": 0.7903,
+     "eval_share": 0.1184
+    },
+    {
+     "seg": "3",
+     "share": 0.1027,
+     "ctr": 0.06296,
+     "auc": 0.8122,
+     "eval_share": 0.1005
+    },
+    {
+     "seg": "4",
+     "share": 0.0886,
+     "ctr": 0.06214,
+     "auc": 0.82217,
+     "eval_share": 0.0842
+    },
+    {
+     "seg": "5",
+     "share": 0.1157,
+     "ctr": 0.06376,
+     "auc": 0.8202,
+     "eval_share": 0.1062
+    },
+    {
+     "seg": "6",
+     "share": 0.086,
+     "ctr": 0.06477,
+     "auc": 0.82548,
+     "eval_share": 0.0675
+    },
+    {
+     "seg": "7",
+     "share": 0.0997,
+     "ctr": 0.06606,
+     "auc": 0.8317,
+     "eval_share": 0.0663
+    },
+    {
+     "seg": "8",
+     "share": 0.1143,
+     "ctr": 0.06602,
+     "auc": 0.83467,
+     "eval_share": 0.097
+    },
+    {
+     "seg": "9",
+     "share": 0.1017,
+     "ctr": 0.06848,
+     "auc": 0.83956,
+     "eval_share": 0.1427
+    }
+   ],
+   "item_dec": [
+    {
+     "seg": "0",
+     "share": 0.0931,
+     "ctr": 0.05608,
+     "auc": 0.76815,
+     "eval_share": 0.0141
+    },
+    {
+     "seg": "1",
+     "share": 0.0996,
+     "ctr": 0.05699,
+     "auc": 0.78934,
+     "eval_share": 0.0415
+    },
+    {
+     "seg": "2",
+     "share": 0.1011,
+     "ctr": 0.05997,
+     "auc": 0.79683,
+     "eval_share": 0.0651
+    },
+    {
+     "seg": "3",
+     "share": 0.0996,
+     "ctr": 0.05969,
+     "auc": 0.80838,
+     "eval_share": 0.0788
+    },
+    {
+     "seg": "4",
+     "share": 0.1026,
+     "ctr": 0.06302,
+     "auc": 0.81403,
+     "eval_share": 0.0951
+    },
+    {
+     "seg": "5",
+     "share": 0.1014,
+     "ctr": 0.06407,
+     "auc": 0.81478,
+     "eval_share": 0.1104
+    },
+    {
+     "seg": "6",
+     "share": 0.0998,
+     "ctr": 0.06517,
+     "auc": 0.82092,
+     "eval_share": 0.1268
+    },
+    {
+     "seg": "7",
+     "share": 0.1015,
+     "ctr": 0.06633,
+     "auc": 0.81912,
+     "eval_share": 0.139
+    },
+    {
+     "seg": "8",
+     "share": 0.1012,
+     "ctr": 0.07066,
+     "auc": 0.83128,
+     "eval_share": 0.135
+    },
+    {
+     "seg": "9",
+     "share": 0.1001,
+     "ctr": 0.07089,
+     "auc": 0.83081,
+     "eval_share": 0.1943
+    }
+   ],
+   "evclick": [
+    {
+     "seg": "has-click",
+     "share": 0.6335,
+     "ctr": 0.1,
+     "auc": 0.81501,
+     "eval_share": null
+    },
+    {
+     "seg": "no-click",
+     "share": 0.3665,
+     "ctr": 0.0,
+     "auc": null,
+     "eval_share": null
+    }
+   ]
+  },
+  "decomp": {
+   "event_auc": 0.66887,
+   "within_auc": 0.80031,
+   "top1": 0.3787,
+   "oracle_within": 0.58863,
+   "oracle_between": 0.88739,
+   "gap_within": -0.22301,
+   "gap_between": 0.07576,
+   "event_click_rate": 0.6335
+  }
+ },
+ "26": {
+  "auc": 0.82099,
+  "rows": 351380,
+  "ctr": 0.06337,
+  "segs": {
+   "user": [
+    {
+     "seg": "empty",
+     "share": 0.0056,
+     "ctr": 0.04545,
+     "auc": 0.53804,
+     "eval_share": 0.0126
+    },
+    {
+     "seg": "history-only",
+     "share": 0.0143,
+     "ctr": 0.06561,
+     "auc": 0.75956,
+     "eval_share": 0.0219
+    },
+    {
+     "seg": "warm",
+     "share": 0.9801,
+     "ctr": 0.06344,
+     "auc": 0.82249,
+     "eval_share": 0.9655
+    }
+   ],
+   "lastact": [
+    {
+     "seg": "1-24h",
+     "share": 0.5962,
+     "ctr": 0.06352,
+     "auc": 0.83024,
+     "eval_share": 0.3963
+    },
+    {
+     "seg": "<1h",
+     "share": 0.005,
+     "ctr": 0.05511,
+     "auc": 0.83457,
+     "eval_share": 0.0037
+    },
+    {
+     "seg": ">=1d",
+     "share": 0.3987,
+     "ctr": 0.06324,
+     "auc": 0.80612,
+     "eval_share": 0.6
+    }
+   ],
+   "stale": [
+    {
+     "seg": "<1d",
+     "share": 1.0,
+     "ctr": 0.06337,
+     "auc": 0.82099,
+     "eval_share": 0.6662
+    }
+   ],
+   "dow": [
+    {
+     "seg": "Sun",
+     "share": 1.0,
+     "ctr": 0.06337,
+     "auc": 0.82099,
+     "eval_share": 0.0111
+    }
+   ],
+   "act_dec": [
+    {
+     "seg": "0",
+     "share": 0.0489,
+     "ctr": 0.05562,
+     "auc": 0.72064,
+     "eval_share": 0.0951
+    },
+    {
+     "seg": "1",
+     "share": 0.0784,
+     "ctr": 0.05982,
+     "auc": 0.7797,
+     "eval_share": 0.1221
+    },
+    {
+     "seg": "2",
+     "share": 0.0903,
+     "ctr": 0.05984,
+     "auc": 0.79231,
+     "eval_share": 0.1184
+    },
+    {
+     "seg": "3",
+     "share": 0.0912,
+     "ctr": 0.06167,
+     "auc": 0.80903,
+     "eval_share": 0.1005
+    },
+    {
+     "seg": "4",
+     "share": 0.0837,
+     "ctr": 0.06078,
+     "auc": 0.82393,
+     "eval_share": 0.0842
+    },
+    {
+     "seg": "5",
+     "share": 0.1173,
+     "ctr": 0.0629,
+     "auc": 0.82593,
+     "eval_share": 0.1062
+    },
+    {
+     "seg": "6",
+     "share": 0.0844,
+     "ctr": 0.06398,
+     "auc": 0.83174,
+     "eval_share": 0.0675
+    },
+    {
+     "seg": "7",
+     "share": 0.0982,
+     "ctr": 0.06492,
+     "auc": 0.83555,
+     "eval_share": 0.0663
+    },
+    {
+     "seg": "8",
+     "share": 0.1399,
+     "ctr": 0.0662,
+     "auc": 0.83718,
+     "eval_share": 0.097
+    },
+    {
+     "seg": "9",
+     "share": 0.1677,
+     "ctr": 0.06815,
+     "auc": 0.84256,
+     "eval_share": 0.1427
+    }
+   ],
+   "item_dec": [
+    {
+     "seg": "0",
+     "share": 0.0391,
+     "ctr": 0.05359,
+     "auc": 0.77711,
+     "eval_share": 0.0141
+    },
+    {
+     "seg": "1",
+     "share": 0.069,
+     "ctr": 0.05682,
+     "auc": 0.78057,
+     "eval_share": 0.0415
+    },
+    {
+     "seg": "2",
+     "share": 0.0844,
+     "ctr": 0.05664,
+     "auc": 0.79317,
+     "eval_share": 0.0651
+    },
+    {
+     "seg": "3",
+     "share": 0.0913,
+     "ctr": 0.06239,
+     "auc": 0.80603,
+     "eval_share": 0.0788
+    },
+    {
+     "seg": "4",
+     "share": 0.1021,
+     "ctr": 0.05953,
+     "auc": 0.82038,
+     "eval_share": 0.0951
+    },
+    {
+     "seg": "5",
+     "share": 0.111,
+     "ctr": 0.06312,
+     "auc": 0.8211,
+     "eval_share": 0.1104
+    },
+    {
+     "seg": "6",
+     "share": 0.1164,
+     "ctr": 0.06514,
+     "auc": 0.82284,
+     "eval_share": 0.1268
+    },
+    {
+     "seg": "7",
+     "share": 0.1223,
+     "ctr": 0.0666,
+     "auc": 0.82729,
+     "eval_share": 0.139
+    },
+    {
+     "seg": "8",
+     "share": 0.1169,
+     "ctr": 0.06754,
+     "auc": 0.83862,
+     "eval_share": 0.135
+    },
+    {
+     "seg": "9",
+     "share": 0.1476,
+     "ctr": 0.06893,
+     "auc": 0.84345,
+     "eval_share": 0.1943
+    }
+   ],
+   "evclick": [
+    {
+     "seg": "has-click",
+     "share": 0.6337,
+     "ctr": 0.1,
+     "auc": 0.82432,
+     "eval_share": null
+    },
+    {
+     "seg": "no-click",
+     "share": 0.3663,
+     "ctr": 0.0,
+     "auc": null,
+     "eval_share": null
+    }
+   ]
+  },
+  "decomp": {
+   "event_auc": 0.67456,
+   "within_auc": 0.81054,
+   "top1": 0.3985,
+   "oracle_within": 0.59015,
+   "oracle_between": 0.89303,
+   "gap_within": -0.23083,
+   "gap_between": 0.07205,
+   "event_click_rate": 0.6337
+  }
+ }
+}

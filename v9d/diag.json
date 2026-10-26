@@ -1,0 +1,238 @@
+{
+ "daily": [
+  {
+   "day": 0,
+   "rows": 985140,
+   "events": 98514,
+   "row_ctr": 0.06303266540796232,
+   "n_items": 49996,
+   "event_click_rate": 0.6303266540796232
+  },
+  {
+   "day": 1,
+   "rows": 985030,
+   "events": 98503,
+   "row_ctr": 0.06289859192105825,
+   "n_items": 49999,
+   "event_click_rate": 0.6289859192105824
+  },
+  {
+   "day": 2,
+   "rows": 980970,
+   "events": 98097,
+   "row_ctr": 0.06318745731265991,
+   "n_items": 49996,
+   "event_click_rate": 0.6318745731265992
+  },
+  {
+   "day": 3,
+   "rows": 977170,
+   "events": 97717,
+   "row_ctr": 0.06261039532527606,
+   "n_items": 49998,
+   "event_click_rate": 0.6261039532527605
+  },
+  {
+   "day": 4,
+   "rows": 975890,
+   "events": 97589,
+   "row_ctr": 0.06279396243429075,
+   "n_items": 49997,
+   "event_click_rate": 0.6279396243429075
+  },
+  {
+   "day": 5,
+   "rows": 984530,
+   "events": 98453,
+   "row_ctr": 0.06278528841172945,
+   "n_items": 49998,
+   "event_click_rate": 0.6278528841172946
+  },
+  {
+   "day": 6,
+   "rows": 979510,
+   "events": 97951,
+   "row_ctr": 0.06300088819920165,
+   "n_items": 49996,
+   "event_click_rate": 0.6300088819920164
+  }
+ ],
+ "drift": [
+  {
+   "d": 0,
+   "n_items": 1799,
+   "ctr_spearman": 0.1528,
+   "pop_spearman": 0.7668,
+   "new_item_imp_share": 0.0
+  },
+  {
+   "d": 1,
+   "n_items": 1797,
+   "ctr_spearman": 0.1377,
+   "pop_spearman": 0.7723,
+   "new_item_imp_share": 0.0
+  },
+  {
+   "d": 2,
+   "n_items": 1783,
+   "ctr_spearman": 0.1295,
+   "pop_spearman": 0.7661,
+   "new_item_imp_share": 0.0
+  },
+  {
+   "d": 3,
+   "n_items": 1771,
+   "ctr_spearman": 0.1424,
+   "pop_spearman": 0.763,
+   "new_item_imp_share": 0.0
+  },
+  {
+   "d": 4,
+   "n_items": 1778,
+   "ctr_spearman": 0.1054,
+   "pop_spearman": 0.763,
+   "new_item_imp_share": 0.0
+  },
+  {
+   "d": 5,
+   "n_items": 1824,
+   "ctr_spearman": 0.0798,
+   "pop_spearman": 0.7609,
+   "new_item_imp_share": 0.0
+  }
+ ],
+ "window_auc": [
+  {
+   "cut_day": 2,
+   "ctr_all": 0.5256,
+   "pop_all": 0.524,
+   "ctr_48h": 0.5256,
+   "pop_48h": 0.524,
+   "ctr_24h": 0.5198,
+   "pop_24h": 0.5233,
+   "ctr_12h": 0.518,
+   "pop_12h": 0.522,
+   "ctr_6h": 0.5129,
+   "pop_6h": 0.5213,
+   "ctr_dec6h": 0.5195,
+   "pop_dec6h": 0.5227,
+   "ctr_dec24h": 0.5254,
+   "pop_dec24h": 0.5238,
+   "ctr_dec48h": 0.5259,
+   "pop_dec48h": 0.5239
+  },
+  {
+   "cut_day": 3,
+   "ctr_all": 0.5264,
+   "pop_all": 0.5233,
+   "ctr_48h": 0.5238,
+   "pop_48h": 0.5232,
+   "ctr_24h": 0.5188,
+   "pop_24h": 0.5226,
+   "ctr_12h": 0.5144,
+   "pop_12h": 0.5218,
+   "ctr_6h": 0.5075,
+   "pop_6h": 0.5213,
+   "ctr_dec6h": 0.5163,
+   "pop_dec6h": 0.5224,
+   "ctr_dec24h": 0.5251,
+   "pop_dec24h": 0.5232,
+   "ctr_dec48h": 0.5264,
+   "pop_dec48h": 0.5233
+  },
+  {
+   "cut_day": 4,
+   "ctr_all": 0.5269,
+   "pop_all": 0.5255,
+   "ctr_48h": 0.523,
+   "pop_48h": 0.5252,
+   "ctr_24h": 0.5179,
+   "pop_24h": 0.5246,
+   "ctr_12h": 0.5155,
+   "pop_12h": 0.5239,
+   "ctr_6h": 0.5101,
+   "pop_6h": 0.5225,
+   "ctr_dec6h": 0.5168,
+   "pop_dec6h": 0.5242,
+   "ctr_dec24h": 0.5255,
+   "pop_dec24h": 0.5254,
+   "ctr_dec48h": 0.5271,
+   "pop_dec48h": 0.5255
+  },
+  {
+   "cut_day": 5,
+   "ctr_all": 0.5282,
+   "pop_all": 0.526,
+   "ctr_48h": 0.5239,
+   "pop_48h": 0.5256,
+   "ctr_24h": 0.5187,
+   "pop_24h": 0.5249,
+   "ctr_12h": 0.5157,
+   "pop_12h": 0.5245,
+   "ctr_6h": 0.5123,
+   "pop_6h": 0.5236,
+   "ctr_dec6h": 0.5179,
+   "pop_dec6h": 0.5248,
+   "ctr_dec24h": 0.5265,
+   "pop_dec24h": 0.5259,
+   "ctr_dec48h": 0.5286,
+   "pop_dec48h": 0.526
+  },
+  {
+   "cut_day": 6,
+   "ctr_all": 0.5279,
+   "pop_all": 0.5237,
+   "ctr_48h": 0.5194,
+   "pop_48h": 0.5229,
+   "ctr_24h": 0.5163,
+   "pop_24h": 0.5219,
+   "ctr_12h": 0.5135,
+   "pop_12h": 0.5217,
+   "ctr_6h": 0.5082,
+   "pop_6h": 0.5208,
+   "ctr_dec6h": 0.5145,
+   "pop_dec6h": 0.522,
+   "ctr_dec24h": 0.5235,
+   "pop_dec24h": 0.5232,
+   "ctr_dec48h": 0.5267,
+   "pop_dec48h": 0.5235
+  }
+ ],
+ "mix": [
+  {
+   "day": 0,
+   "cos": 0.9419,
+   "js": 0.0257
+  },
+  {
+   "day": 1,
+   "cos": 0.9421,
+   "js": 0.0256
+  },
+  {
+   "day": 2,
+   "cos": 0.9415,
+   "js": 0.0259
+  },
+  {
+   "day": 3,
+   "cos": 0.9425,
+   "js": 0.0256
+  },
+  {
+   "day": 4,
+   "cos": 0.9415,
+   "js": 0.0259
+  },
+  {
+   "day": 5,
+   "cos": 0.9412,
+   "js": 0.0259
+  },
+  {
+   "day": 6,
+   "cos": 0.9417,
+   "js": 0.0259
+  }
+ ]
+}

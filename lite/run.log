@@ -1,0 +1,108 @@
+[stage setup] 0s
+>> /workspace/venv/bin/python prep.py /workspace/huawei/data
+[  96.9s] train (6868240, 4) (686824, 7)
+[  98.2s] evaluation (529390, 3) (52939, 7)
+[ 100.0s] items 50000 users 54456 events 739763
+[ 107.7s] done
+[stage prep_v3] 108s
+>> /workspace/venv/bin/python prep.py
+evaluation rows done 0.4543604850769043
+evaluation events done 0.8827841281890869
+train rows done 4.469310998916626
+train events done 11.083451509475708
+[stage prep_v2] 12s
+>> /workspace/venv/bin/python v3fold.py f1 f2 f3 f4 f5 f6 eval
+16:53:01 build C=1737417600 rows=351560 cols=170 23s
+16:53:01 wrote f1 (351560, 170)
+16:53:26 build C=1737504000 rows=351120 cols=170 25s
+16:53:26 wrote f2 (351120, 170)
+16:53:54 build C=1737590400 rows=349120 cols=170 28s
+16:53:54 wrote f3 (349120, 170)
+16:54:26 build C=1737676800 rows=350400 cols=170 32s
+16:54:27 wrote f4 (350400, 170)
+16:55:00 build C=1737763200 rows=352300 cols=170 33s
+16:55:00 wrote f5 (352300, 170)
+16:55:36 build C=1737849600 rows=351380 cols=170 36s
+16:55:37 wrote f6 (351380, 170)
+16:56:24 build C=1737936000 rows=529390 cols=170 47s
+16:56:24 wrote eval (529390, 170)
+[stage feat_v3] 229s
+>> /workspace/venv/bin/python build_folds.py lite
+16:56:28 pool 595595
+16:56:29 cooc pairs 7498308
+16:56:31 svd done
+16:56:46 build C=1737417600 rows=351560 18s
+16:56:46 wrote h1 (351560, 125)
+16:56:47 pool 681482
+16:56:48 cooc pairs 10118802
+16:56:49 svd done
+16:57:06 build C=1737504000 rows=351120 19s
+16:57:06 wrote h2 (351120, 125)
+16:57:07 pool 753289
+16:57:08 cooc pairs 12580862
+16:57:10 svd done
+16:57:27 build C=1737590400 rows=349120 21s
+16:57:28 wrote h3 (349120, 125)
+16:57:29 pool 820066
+16:57:31 cooc pairs 15164046
+16:57:33 svd done
+16:57:50 build C=1737676800 rows=350400 22s
+16:57:50 wrote h4 (350400, 125)
+16:57:51 pool 884413
+16:57:54 cooc pairs 18012356
+16:57:55 svd done
+16:58:16 build C=1737763200 rows=352300 26s
+16:58:16 wrote h5 (352300, 125)
+16:58:18 pool 947991
+16:58:21 cooc pairs 21111352
+16:58:22 svd done
+16:58:41 build C=1737849600 rows=351380 25s
+16:58:42 wrote val26 (351380, 125)
+16:58:44 pool 1013190
+16:58:47 cooc pairs 24482596
+16:58:49 svd done
+16:59:14 build C=1737936000 rows=529390 32s
+16:59:15 wrote eval (529390, 124)
+[stage feat_v2] 170s
+>> /workspace/venv/bin/python extra.py f1 f2 f3 f4 f5 f6 eval
+f1 (351560, 39) 8s
+f2 (351120, 39) 9s
+f3 (349120, 39) 10s
+f4 (350400, 39) 10s
+f5 (352300, 39) 11s
+f6 (351380, 39) 12s
+eval (529390, 39) 14s
+[stage feat_x] 78s
+>> /workspace/venv/bin/python extra2.py f1 f2 f3 f4 f5 f6 eval
+f1 (351560, 20) 19s
+f2 (351120, 20) 24s
+f3 (349120, 20) 30s
+f4 (350400, 20) 34s
+f5 (352300, 20) 36s
+f6 (351380, 20) 40s
+eval (529390, 20) 45s
+[stage feat_x2] 231s
+>> /workspace/venv/bin/python ens.py 27 base --seeds 0,1 --threads 4
+{"cut": 27, "tag": "base", "seed": 0, "n": 2105880, "nf": 325, "min": 3.1}
+{"cut": 27, "tag": "base", "seed": 1, "n": 2105880, "nf": 325, "min": 6.1}
+[stage base] 370s
+>> /workspace/venv/bin/python ens.py 27 slow --seeds 0 --rounds 500 --threads 4 --params '{"learning_rate":0.03,"feature_fraction":0.55,"num_leaves":95,"lambda_l2":30}'
+{"cut": 27, "tag": "slow", "seed": 0, "n": 2105880, "nf": 325, "min": 4.3}
+[stage slow] 260s
+>> /workspace/venv/bin/python blend_lite.py
+corr base/slow 0.9957
+wrote eval_pred.parquet 529390
+[stage blend] 3s
+>> PRED=/workspace/huawei/lite/eval_pred.parquet /workspace/venv/bin/python write_sub.py /workspace/huawei/v2work/out/submission_v4_lite.csv
+missing preds filled: 0
+rows=529390 unique=529390 min=0.0008702 mean=0.06244 max=0.7555 distinct=518356
+VALID
+zip contents ['submission_v4_lite.csv']
+sha256 69b2b6b0dd5f36817095661979c6659494c9309063601fe9df96e4d4a90a1fd2
+[stage write] 5s
+>> /workspace/venv/bin/python validate.py /workspace/huawei/v2work/out/submission_v4_lite.csv
+rows=529390 unique=529390 min=0.0008702 mean=0.062445 max=0.7555 distinct=518356
+VALID
+[stage validate] 1s
+TOTAL this run 24.5 min; all stages 24.5 min
+submission: /workspace/huawei/v2work/out/submission_v4_lite.csv

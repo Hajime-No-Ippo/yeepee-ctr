@@ -1,0 +1,4 @@
+tt epoch 0 loss 0.4457 257s
+tt epoch 1 loss 0.4145 278s
+tt epoch 2 loss 0.3285 299s
+TT 3 64 auc 0.5556258699291143 dm 0.5598864174155538

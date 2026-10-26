@@ -1,0 +1,262 @@
+{
+ "25": {
+  "auc400_mean": 0.77766,
+  "auc300_mean": 0.77757,
+  "per_seed": [
+   0.77748,
+   0.77781,
+   0.7777
+  ],
+  "seg_mean": {
+   "warm": 0.77972,
+   "history_only": 0.72353,
+   "empty_history": 0.56456,
+   "weekday": null,
+   "weekend": 0.77766,
+   "stale_lt1d": 0.78207,
+   "stale_ge1d": 0.7589
+  },
+  "event_auc_mean": 0.65403,
+  "within_auc_mean": 0.76654,
+  "n_feats": 325,
+  "top15": [
+   [
+    "x_con05_k32_z",
+    0.1077
+   ],
+   [
+    "x_icon05_k64_z",
+    0.0993
+   ],
+   [
+    "ev_sv_k64_con05_z",
+    0.0739
+   ],
+   [
+    "x_icos_k64_z",
+    0.0499
+   ],
+   [
+    "ev_hist_n_all_z",
+    0.0462
+   ],
+   [
+    "x_icon05_k64",
+    0.0302
+   ],
+   [
+    "v2_svd16_cos_dm",
+    0.0254
+   ],
+   [
+    "x_con05_k32",
+    0.0217
+   ],
+   [
+    "x_con05_k128",
+    0.0198
+   ],
+   [
+    "x_con05_k128_z",
+    0.0181
+   ],
+   [
+    "r_l3n",
+    0.0164
+   ],
+   [
+    "x_con05_k64_z",
+    0.0158
+   ],
+   [
+    "sv_k64_con1",
+    0.0158
+   ],
+   [
+    "sv_k64_ucos",
+    0.0154
+   ],
+   [
+    "v2_svd16_cos",
+    0.0152
+   ]
+  ],
+  "runtime_s": 564
+ },
+ "26": {
+  "auc400_mean": 0.79346,
+  "auc300_mean": 0.79324,
+  "per_seed": [
+   0.79355,
+   0.79342,
+   0.79342
+  ],
+  "seg_mean": {
+   "warm": 0.79476,
+   "history_only": 0.72361,
+   "empty_history": 0.5435,
+   "weekday": null,
+   "weekend": 0.79346,
+   "stale_lt1d": 0.79346,
+   "stale_ge1d": null
+  },
+  "event_auc_mean": 0.6643,
+  "within_auc_mean": 0.78255,
+  "n_feats": 325,
+  "top15": [
+   [
+    "x_con05_k32_z",
+    0.1547
+   ],
+   [
+    "x_icon05_k64_z",
+    0.0983
+   ],
+   [
+    "ev_sv_k64_con05_z",
+    0.0717
+   ],
+   [
+    "x_icon05_k64",
+    0.0387
+   ],
+   [
+    "x_con05_k64_z",
+    0.0378
+   ],
+   [
+    "v2_svd16_cos_dm",
+    0.0299
+   ],
+   [
+    "x_icos_k64_z",
+    0.0297
+   ],
+   [
+    "x_con05_k32",
+    0.0225
+   ],
+   [
+    "ev_hist_n_all_z",
+    0.0211
+   ],
+   [
+    "x_con05_k128",
+    0.0209
+   ],
+   [
+    "sv_k64_con1",
+    0.0192
+   ],
+   [
+    "x_con05_k128_z",
+    0.0191
+   ],
+   [
+    "r_l3n",
+    0.0189
+   ],
+   [
+    "sv_k64_ucos",
+    0.0166
+   ],
+   [
+    "v2_svd16_cos",
+    0.0154
+   ]
+  ],
+  "runtime_s": 744
+ },
+ "23": {
+  "auc400_mean": 0.73672,
+  "auc300_mean": 0.73715,
+  "per_seed": [
+   0.7371,
+   0.7367,
+   0.73636
+  ],
+  "seg_mean": {
+   "warm": 0.74177,
+   "history_only": 0.69419,
+   "empty_history": 0.52295,
+   "weekday": 0.74077,
+   "weekend": 0.70723,
+   "stale_lt1d": 0.74695,
+   "stale_ge1d": 0.71192
+  },
+  "event_auc_mean": 0.62793,
+  "within_auc_mean": 0.72554,
+  "n_feats": 325,
+  "top15": [
+   [
+    "x_icos_k64_z",
+    0.0876
+   ],
+   [
+    "ev_hist_n_all_z",
+    0.0501
+   ],
+   [
+    "x_con05_k32_z",
+    0.0479
+   ],
+   [
+    "v2_uip_n_dm",
+    0.0427
+   ],
+   [
+    "x_icon05_k64_z",
+    0.0384
+   ],
+   [
+    "v2_svd16_cos_dm",
+    0.0262
+   ],
+   [
+    "x_con05_k64_z",
+    0.0248
+   ],
+   [
+    "ev_sv_k64_con05_z",
+    0.0246
+   ],
+   [
+    "x_icon05_k64",
+    0.0189
+   ],
+   [
+    "v2_svd16_cos",
+    0.0173
+   ],
+   [
+    "x_con05_k128_z",
+    0.0169
+   ],
+   [
+    "x_con05_k128",
+    0.0153
+   ],
+   [
+    "sv_k64_ucos",
+    0.0121
+   ],
+   [
+    "ev_sv_k64_ucos_z",
+    0.0119
+   ],
+   [
+    "x_con05_k32",
+    0.011
+   ]
+  ],
+  "runtime_s": 379
+ },
+ "config": "notime, XF=1 XF2=1 (feat_x, feat_x2), f-folds, 400 rounds, seeds 42/43/44, num_threads=3, v5val.py",
+ "acceptance0": {
+  "val25_mean": 0.77766,
+  "target": 0.7775,
+  "diff": 0.00016,
+  "within_tol": true,
+  "n_feats": 325
+ }
+}

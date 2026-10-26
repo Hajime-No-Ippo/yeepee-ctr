@@ -1,0 +1,26 @@
+{
+ "25": {
+  "auc": 0.81164,
+  "oracle_within": 0.96713,
+  "gap_within": 0.1555,
+  "oracle_between": 0.88739,
+  "gap_between": 0.07576,
+  "evalmix_auc": {
+   "stale": 0.81163,
+   "lastact": 0.80945,
+   "user": 0.81155
+  }
+ },
+ "26": {
+  "auc": 0.82099,
+  "oracle_within": 0.96841,
+  "gap_within": 0.14743,
+  "oracle_between": 0.89303,
+  "gap_between": 0.07205,
+  "evalmix_auc": {
+   "stale": 0.82099,
+   "lastact": 0.81613,
+   "user": 0.8197
+  }
+ }
+}

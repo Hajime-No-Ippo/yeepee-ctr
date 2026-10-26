@@ -1,0 +1,7 @@
+[0.0m] vocab 50002 train rows 4904200 target rows 439640
+[0.0m] arrays built
+[1.4m] epoch 0 loss 0.2363
+[1.5m] epoch 0 target AUC 0.53355
+[2.9m] epoch 1 loss 0.2229
+[2.9m] epoch 1 target AUC 0.53376
+[2.9m] done total minutes 2.93

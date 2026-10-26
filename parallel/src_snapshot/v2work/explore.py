@@ -1,0 +1,26 @@
+import polars as pl
+tr=pl.read_parquet('train_rows.parquet'); te=pl.read_parquet('train_events.parquet')
+er=pl.read_parquet('evaluation_rows.parquet'); ee=pl.read_parquet('evaluation_events.parquet')
+print(tr.shape, te.shape, er.shape, ee.shape)
+print('uniq eid', tr['eid'].n_unique(), te['eid'].n_unique(), ee['eid'].n_unique())
+print('ctr', tr['clicked'].mean())
+ev=tr.group_by('eid').agg(pl.col('clicked').sum().alias('c'))
+print('clicks/event dist', ev['c'].value_counts().sort('c'))
+print('users train', te['user'].n_unique(), 'eval', ee['user'].n_unique(), 'eval users in train', ee['user'].is_in(te['user'].implode()).sum())
+print('items train', tr['item'].n_unique(), 'eval', er['item'].n_unique(), 'eval items in train', er['item'].unique().is_in(tr['item'].implode()).sum())
+print('eval rows with item seen', er['item'].is_in(tr['item'].implode()).mean())
+print('hist len train', te['h_items'].list.len().describe())
+print('hist len eval', ee['h_items'].list.len().describe())
+print('events/user', te.group_by('user').len()['len'].describe())
+print('ts range', te['ts'].min(), te['ts'].max(), ee['ts'].min(), ee['ts'].max())
+print(ee.with_columns(pl.from_epoch('ts')).select(pl.col('ts').dt.date()).to_series().value_counts().sort('ts'))
+print(te.with_columns(pl.from_epoch('ts')).select(pl.col('ts').dt.date()).to_series().value_counts().sort('ts'))
+# candidate in history rate
+x=tr.join(te.select('eid','h_items'),on='eid')
+x=x.with_columns(pl.col('h_items').list.contains(pl.col('item')).alias('inh'))
+print(x.group_by('inh').agg(pl.len(), pl.col('clicked').mean()))
+# items per event duplicate?
+print('dup items in event', tr.group_by('eid').agg(pl.col('item').n_unique().alias('n'))['n'].value_counts())
+# item impressions distribution
+ic=tr.group_by('item').agg(pl.len().alias('n'), pl.col('clicked').mean().alias('ctr'))
+print(ic.describe())

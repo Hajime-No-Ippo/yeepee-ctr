@@ -1,0 +1,26 @@
+{
+ "train_hist_after_event": 0,
+ "eval_hist_after_event": 0,
+ "val25_target_hist_clicks_ge_C": 0,
+ "val25_target_min_ts_ge_C": true,
+ "val26_target_hist_clicks_ge_C": 0,
+ "val26_target_min_ts_ge_C": true,
+ "eval_min_event_ts_ge_Jan27": true,
+ "train_max_event_ts_lt_Jan27": true,
+ "eval_hist_clicks_ge_Jan27": 0
+}
+03:19:09 build C=1737417600 rows=351560 cols=170 40s
+03:19:50 build C=1737504000 rows=351120 cols=170 40s
+03:20:36 build C=1737590400 rows=349120 cols=170 45s
+03:23:48 build C=1737676800 rows=350400 cols=170 191s
+03:24:40 build C=1737763200 rows=439640 cols=170 52s
+[200]	val's auc: 0.756729
+{"mode": "notgt", "val25_auc": 0.7569559488295975, "best_iter": 148, "secs": 425, "single": {"sv_k64_hcos": 0.6939, "sv_k64_con05": 0.7092, "sv_k32_ucos": 0.6742}}
+Traceback (most recent call last):
+  File "/workspace/huawei/v3/leakcheck.py", line 35, in <module>
+    build(C, T_ev, TR.join(T_ev.select('eid'), on='eid', how='semi'), TE, TR, NI, NU, sv_mode=mode).write_parquet(out)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/huawei/v3/features.py", line 203, in build
+    assert CLsv['ts'].max() < C and NEGsrc['ts'].max() < C
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'NoneType' and 'int'

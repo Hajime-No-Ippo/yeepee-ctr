@@ -1,0 +1,102 @@
+{
+ "val25": {
+  "rows_v3": 439640,
+  "rows_v2work": 439640,
+  "rows_common": 439640,
+  "only_v3": 0,
+  "only_v2work": 0,
+  "label_mismatch": 0,
+  "v3 (full25.txt)": {
+   "auc": 0.75554,
+   "n": 439640,
+   "auc_<=1d": 0.76059,
+   "share_<=1d": 0.80134,
+   "auc_1-2d": 0.73424,
+   "share_1-2d": 0.19866,
+   "auc_>2d": null,
+   "share_>2d": 0.0,
+   "auc_evalw": 0.75554,
+   "evalw_buckets_present": 2,
+   "auc_event": 0.64894
+  },
+  "v2work_notime_eft_ne (combo_val25_notime.npy, 300r)": {
+   "auc": 0.77749,
+   "n": 439640,
+   "auc_<=1d": 0.78199,
+   "share_<=1d": 0.80134,
+   "auc_1-2d": 0.7583,
+   "share_1-2d": 0.19866,
+   "auc_>2d": null,
+   "share_>2d": 0.0,
+   "auc_evalw": 0.77748,
+   "evalw_buckets_present": 2,
+   "auc_event": 0.65403,
+   "spearman_vs_v3": 0.899
+  },
+  "v2work_notime_x2 (04:26)": {
+   "auc": 0.77536,
+   "n": 439640,
+   "auc_<=1d": 0.77968,
+   "share_<=1d": 0.80134,
+   "auc_1-2d": 0.75708,
+   "share_1-2d": 0.19866,
+   "auc_>2d": null,
+   "share_>2d": 0.0,
+   "auc_evalw": 0.77535,
+   "evalw_buckets_present": 2,
+   "auc_event": 0.65328,
+   "spearman_vs_v3": 0.8989
+  },
+  "v2work_screen_base_25pct": {
+   "auc": 0.77174,
+   "n": 439640,
+   "auc_<=1d": 0.77642,
+   "share_<=1d": 0.80134,
+   "auc_1-2d": 0.75176,
+   "share_1-2d": 0.19866,
+   "auc_>2d": null,
+   "share_>2d": 0.0,
+   "auc_evalw": 0.77173,
+   "evalw_buckets_present": 2,
+   "auc_event": 0.59153,
+   "spearman_vs_v3": 0.8875
+  }
+ }
+}
+{
+ "val26": {
+  "rows_v3": 351380,
+  "rows_v2work": 351380,
+  "rows_common": 351380,
+  "only_v3": 0,
+  "only_v2work": 0,
+  "label_mismatch": 0,
+  "v3 (full26_lr05.txt)": {
+   "auc": 0.77444,
+   "n": 351380,
+   "auc_<=1d": 0.77444,
+   "share_<=1d": 1.0,
+   "auc_1-2d": null,
+   "share_1-2d": 0.0,
+   "auc_>2d": null,
+   "share_>2d": 0.0,
+   "auc_evalw": 0.77444,
+   "evalw_buckets_present": 1,
+   "auc_event": 0.65666
+  },
+  "v2work_screen_base_25pct (scr_base_c26.npy)": {
+   "auc": 0.78921,
+   "n": 351380,
+   "auc_<=1d": 0.78921,
+   "share_<=1d": 1.0,
+   "auc_1-2d": null,
+   "share_1-2d": 0.0,
+   "auc_>2d": null,
+   "share_>2d": 0.0,
+   "auc_evalw": 0.78921,
+   "evalw_buckets_present": 1,
+   "auc_event": 0.59846,
+   "spearman_vs_v3": 0.9115
+  }
+ }
+}

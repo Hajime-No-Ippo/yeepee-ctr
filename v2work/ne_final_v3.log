@@ -1,0 +1,5 @@
+train rows 2105880 feats 325
+seed 0 done
+seed 1 done
+seed 2 done
+top [('x_con05_k32_z', 0.2007), ('x_icon05_k64_z', 0.1209), ('ev_sv_k64_con05_z', 0.0726), ('x_icon05_k64', 0.0393), ('v2_svd16_cos_dm', 0.0254), ('ev_hist_n_all_z', 0.0234), ('sv_k64_con1', 0.0232), ('x_con05_k32', 0.0228), ('v2_svd16_cos', 0.0223), ('x_con05_k32_rk', 0.022), ('r_l3n', 0.0201), ('x_con05_k128_z', 0.0186), ('sv_k64_ucos', 0.0166), ('ev_sv_k64_ucos_z', 0.0157), ('x_con05_k128', 0.0152), ('v2_svd24_cos_dm', 0.0141), ('x_icos_k64_z', 0.0119), ('x_con05_k64', 0.0112), ('v2_svd16_cos_rk', 0.011), ('sv_k16_udot', 0.0103)]

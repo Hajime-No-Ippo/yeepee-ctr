@@ -1,0 +1,5 @@
+base_fix 25 {'seed': 42, 'auc300': 0.77756, 'auc400': 0.77767, 'seg': {'warm': 0.7797, 'history_only': 0.72396, 'empty_history': 0.56767, 'weekday': None, 'weekend': 0.77767, 'stale_lt1d': 0.78211, 'stale_ge1d': 0.75875}, 'event_auc': 0.65399, 'within_auc': 0.76665}
+base_fix 25 {'seed': 43, 'auc300': 0.7776, 'auc400': 0.77773, 'seg': {'warm': 0.77975, 'history_only': 0.72535, 'empty_history': 0.56448, 'weekday': None, 'weekend': 0.77773, 'stale_lt1d': 0.78208, 'stale_ge1d': 0.75926}, 'event_auc': 0.65328, 'within_auc': 0.76691}
+base_fix 25 {'seed': 44, 'auc300': 0.77761, 'auc400': 0.77768, 'seg': {'warm': 0.77973, 'history_only': 0.72397, 'empty_history': 0.56373, 'weekday': None, 'weekend': 0.77768, 'stale_lt1d': 0.7822, 'stale_ge1d': 0.75843}, 'event_auc': 0.65361, 'within_auc': 0.7669}
+RESULT {"tag": "base_fix", "cut": 25, "n_feats": 325, "auc400_mean": 0.77769, "event_auc_mean": 0.65363, "runtime_s": 568}
+DONE

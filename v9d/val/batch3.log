@@ -1,0 +1,10 @@
+  C=1737936000 ep2 loss 0.1800 n=500000 steps=5862 90s
+  fit C=1737936000 tok 8s total 90s
+eval (529390, 5) 92s
+TIME sq27 98
+{"cut": 27, "tag": "ctl_b", "seed": 0, "n": 745540, "nf": 377, "min": 1.2, "load_s": 6, "ds_s": 7, "fit_s": 50, "pred_s": 6}
+{"cut": 27, "tag": "ctl_s", "seed": 0, "n": 745540, "nf": 377, "min": 1.5, "load_s": 5, "ds_s": 6, "fit_s": 65, "pred_s": 14}
+TIME ctl27 168
+{"cut": 27, "C": 0.1, "n": 745540, "s": 40}
+TIME lr27 41
+BATCH3 DONE
