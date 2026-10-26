@@ -47,6 +47,9 @@ Private team repo for our click-through-rate solution to the Huawei TechArena 20
 Each event shows 10 candidate items, and we predict a click probability per row. The score is **global ROC AUC** over all rows.
 It contains **code, logs, reports, metrics and small model dumps only**. There is no competition data, and no feature caches, predictions or submissions.
 
+<img width="1280" height="696" alt="IMG_VBTRACK" src="https://github.com/user-attachments/assets/307f2a3c-5c6d-405f-96aa-965bd2e3251e" />
+
+
 **Current best: v8**, public AUC **0.814419** (v7: 0.814396). Local AUC: 0.81321 (cutoff 25 Jan), 0.82188 (26 Jan), 0.79056 (23 Jan).
 v8 = mean of two LightGBM models (base and slow) on 377 features, blended 0.8/0.2 in logit space with a DIN-style sequence model.
 
