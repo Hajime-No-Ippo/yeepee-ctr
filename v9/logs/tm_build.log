@@ -1,0 +1,15 @@
+load 0.7
+f1 (351560, 98) 58 18 hist>=C share 0.0 s 1.7
+f2 (351120, 98) 58 18 hist>=C share 0.0 s 2.0
+f3 (349120, 98) 58 18 hist>=C share 0.0 s 2.1
+f4 (350400, 98) 58 18 hist>=C share 0.0 s 2.4
+f5 (352300, 98) 58 18 hist>=C share 0.0 s 2.5
+f6 (351380, 98) 58 18 hist>=C share 0.0 s 3.4
+val23 (501550, 98) 58 18 hist>=C share 0.0 s 3.0
+val26 (351380, 98) 58 18 hist>=C share 0.0 s 3.0
+eval (529390, 98) 58 18 hist>=C share 0.0 s 3.8
+total 24.7
+
+real	0m25.076s
+user	1m8.861s
+sys	0m12.359s

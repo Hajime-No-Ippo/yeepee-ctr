@@ -1,0 +1,20 @@
+[     2s] loaded 686824 events 53003 users 50000 items hist 11679175
+[     5s] snapshot 1737417600 nX=98514 clicks=525090 pairs=857983
+[     5s] plain_P21 35156 events stale>=24h 0.000
+[     6s] B_P21_C24 47919 events stale>=24h 0.266
+[     8s] B_P21_C25 50137 events stale>=24h 0.299
+[    11s] snapshot 1737504000 nX=197017 clicks=657552 pairs=1072481
+[    12s] plain_P22 35112 events stale>=24h 0.000
+[    13s] B_P22_C24 43892 events stale>=24h 0.200
+[    14s] B_P22_C25 47957 events stale>=24h 0.268
+[    18s] snapshot 1737590400 nX=295114 clicks=743467 pairs=1217318
+[    19s] plain_P23 34912 events stale>=24h 0.000
+[    19s] B_P23_C24 34912 events stale>=24h 0.000
+[    20s] B_P23_C25 43900 events stale>=24h 0.205
+[    24s] snapshot 1737676800 nX=392831 clicks=814470 pairs=1340947
+[    25s] plain_P24 35040 events stale>=24h 0.000
+[    26s] B_P24_C25 35040 events stale>=24h 0.000
+[    27s] val_C24 47928 events stale>=24h 0.269
+[    32s] snapshot 1737763200 nX=490420 clicks=881345 pairs=1460069
+[    33s] val_C25 43964 events stale>=24h 0.199
+[    33s] done

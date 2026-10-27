@@ -1,0 +1,117 @@
+quiet: MemAvailable 14.2 GB, no v5 jobs (waited 0s)
+[stage setup] wall 0.0s cpu 0.0s memavail 14.2->14.2 GB
+>> prep_v3 /workspace/venv/bin/python prep.py /workspace/huawei/data
+[  23.1s] train (6868240, 4) (686824, 7)
+[  23.9s] evaluation (529390, 3) (52939, 7)
+[  25.7s] items 50000 users 54456 events 739763
+[  29.2s] done
+[stage prep_v3] wall 29.6s cpu 44.3s memavail 14.2->10.8 GB
+>> feat_sq_start SQ_THREADS=3 bash bgseq.sh /workspace/venv/bin/python
+seq10 started in background (SQ_THREADS=3)
+[stage feat_sq_start] wall 0.0s cpu 0.0s memavail 14.0->14.0 GB
+>> prep_v2 /workspace/venv/bin/python prep.py
+evaluation rows done 0.27069926261901855
+evaluation events done 0.6353859901428223
+train rows done 5.676604270935059
+train events done 12.755082607269287
+[stage prep_v2] wall 13.7s cpu 28.9s memavail 14.0->10.6 GB
+>> feat_v3 /workspace/venv/bin/python v3fold.py f3 f4 f5 f6 eval
+16:47:08 build C=1737590400 rows=349120 cols=170 23s
+16:47:08 wrote f3 (349120, 170)
+16:47:37 build C=1737676800 rows=350400 cols=170 28s
+16:47:37 wrote f4 (350400, 170)
+16:48:10 build C=1737763200 rows=352300 cols=170 33s
+16:48:10 wrote f5 (352300, 170)
+16:48:48 build C=1737849600 rows=351380 cols=170 38s
+16:48:49 wrote f6 (351380, 170)
+16:49:30 build C=1737936000 rows=529390 cols=170 41s
+16:49:31 wrote eval (529390, 170)
+[stage feat_v3] wall 168.0s cpu 266.1s memavail 12.1->7.3 GB
+>> feat_v2 /workspace/venv/bin/python build_folds.py lite
+16:49:36 pool 753289
+16:49:37 cooc pairs 12580862
+16:49:43 svd done
+16:49:50 build C=1737590400 rows=349120 15s
+16:49:50 wrote h3 (349120, 125)
+16:49:52 pool 820066
+16:49:53 cooc pairs 15164046
+16:50:01 svd done
+16:50:07 build C=1737676800 rows=350400 17s
+16:50:07 wrote h4 (350400, 125)
+16:50:09 pool 884413
+16:50:10 cooc pairs 18012356
+16:50:13 svd done
+16:50:21 build C=1737763200 rows=352300 13s
+16:50:21 wrote h5 (352300, 125)
+16:50:23 pool 947991
+16:50:26 cooc pairs 21111352
+16:50:31 svd done
+16:50:39 build C=1737849600 rows=351380 17s
+16:50:39 wrote val26 (351380, 125)
+16:50:41 pool 1013190
+16:50:44 cooc pairs 24482596
+16:50:49 svd done
+16:51:00 build C=1737936000 rows=529390 21s
+16:51:00 wrote eval (529390, 124)
+[stage feat_v2] wall 89.5s cpu 155.6s memavail 11.6->7.5 GB
+>> feat_x /workspace/venv/bin/python extra.py f3 f4 f5 f6 eval
+f3 (349120, 39) 26s
+f4 (350400, 39) 320s
+f5 (352300, 39) 22s
+f6 (351380, 39) 26s
+eval (529390, 39) 31s
+[stage feat_x] wall 426.9s cpu 1156.6s memavail 11.3->8.8 GB
+>> feat_lr LR_KS=4,6,8,10,12,16 LR_CON=1 /workspace/venv/bin/python lrfeat2.py f3 f4 f5 f6 eval
+16:58:10 C 1737590400 pairs 629903 sv [3.82 2.36 2.26 2.23 2.23 2.22 2.22 2.21 2.21 2.21 2.19 2.18 2.15 2.1
+ 2.06]
+f3 (349120, 55) 3s
+16:58:17 C 1737676800 pairs 683619 sv [3.98 2.42 2.32 2.3  2.29 2.29 2.28 2.28 2.27 2.27 2.25 2.24 2.2  2.15
+ 2.11]
+f4 (350400, 55) 7s
+16:58:21 C 1737763200 pairs 731030 sv [4.11 2.47 2.36 2.35 2.34 2.34 2.33 2.33 2.32 2.32 2.3  2.28 2.25 2.19
+ 2.15]
+f5 (352300, 55) 5s
+16:58:26 C 1737849600 pairs 773354 sv [4.22 2.51 2.4  2.39 2.39 2.38 2.38 2.37 2.36 2.36 2.35 2.32 2.28 2.23
+ 2.18]
+f6 (351380, 55) 4s
+16:58:31 C 1737936000 pairs 811543 sv [4.32 2.55 2.44 2.43 2.43 2.42 2.41 2.41 2.4  2.4  2.38 2.35 2.31 2.25
+ 2.21]
+eval (529390, 55) 7s
+[stage feat_lr] wall 27.4s cpu 52.9s memavail 11.6->8.7 GB
+>> feat_tt TT_THREADS=4 /workspace/venv/bin/python ttfeat.py f3 f4 f5 f6 eval
+  C 1737590400 ep0 loss 2.0789
+  C 1737590400 ep1 loss 2.0518
+  C 1737590400 ep2 loss 2.0232
+  C 1737590400 ep3 loss 1.9928
+  C 1737590400 ep4 loss 1.9607
+  C 1737590400 ep5 loss 1.9273
+16:59:50 C 1737590400 train events 186038 72s
+f3 (349120, 9) 73s
+  C 1737676800 ep0 loss 2.0774
+  C 1737676800 ep1 loss 2.0439
+  C 1737676800 ep2 loss 2.0081
+  C 1737676800 ep3 loss 1.9698
+  C 1737676800 ep4 loss 1.9296
+  C 1737676800 ep5 loss 1.8878
+17:01:51 C 1737676800 train events 247219 120s
+f4 (350400, 9) 121s
+  C 1737763200 ep0 loss 2.0764
+  C 1737763200 ep1 loss 2.0367
+  C 1737763200 ep2 loss 1.9938
+  C 1737763200 ep3 loss 1.9479
+  C 1737763200 ep4 loss 1.8998
+  C 1737763200 ep5 loss 1.8504
+17:03:58 C 1737763200 train events 308499 126s
+f5 (352300, 9) 127s
+  C 1737849600 ep0 loss 2.0752
+  C 1737849600 ep1 loss 2.0290
+  C 1737849600 ep2 loss 1.9785
+  C 1737849600 ep3 loss 1.9247
+  C 1737849600 ep4 loss 1.8690
+  C 1737849600 ep5 loss 1.8125
+17:06:45 C 1737849600 train events 370313 167s
+f6 (351380, 9) 167s
+  C 1737936000 ep0 loss 2.0739
+  C 1737936000 ep1 loss 2.0211
+  C 1737936000 ep2 loss 1.9632
+  C 1737936000 ep3 loss 1.9019

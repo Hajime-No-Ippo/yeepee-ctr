@@ -1,0 +1,26 @@
+/workspace/huawei/teammate/work33/a5.py:30: DeprecationWarning: `cut` is deprecated; use `bin_intervals` instead
+  x=x.with_columns(sb=pl.col('stale').cut([24,48],labels=['0-24','24-48','48+']))
+zrv8 R2 simple 0.112  +history 0.476
+zrp3 R2 simple 0.131  +history 0.513
+zrp33 R2 simple 0.120  +history 0.457
+residual p33|v8,p3: R2 0.061 dt 0.12, svd64_cos 0.11, hlen 0.10, day 0.10, ltr_h 0.06, svd32_cos 0.06, lit_n 0.05, ut_n 0.04, stale 0.04, rec_h 0.04
+p33 ~ v8,p3 tree R2 0.913; + features 0.920
+   zv 0.880, zp 0.110, hlen 0.001, svd64_cos 0.001, dt 0.001, stale 0.001, day 0.001, ltr_h 0.001, svd32_cos 0.001, lit_n 0.001, ut_n 0.000, ut_ctr 0.000
+Traceback (most recent call last):
+  File "/workspace/huawei/teammate/work33/a5.py", line 31, in <module>
+    print(x.group_by('sb').agg(pl.col('zres').mean(),pl.col('zres').std(),pl.corr('zrv8','zrp33'),pl.corr('zrp3','zrp33').alias('c3')).sort('sb'))
+          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/venv/lib/python3.13/site-packages/polars/dataframe/group_by.py", line 375, in agg
+    ._collect_eager(optimizations=QueryOptFlags._eager())
+     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/venv/lib/python3.13/site-packages/polars/lazyframe/frame.py", line 1947, in _collect_eager
+    return _eager_engine().collect(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        self, optimizations=optimizations, background=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/workspace/venv/lib/python3.13/site-packages/polars/lazyframe/engine.py", line 408, in collect
+    return wrap_df(ldf.collect(self.name, callback))
+                   ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+polars.exceptions.DuplicateError: column with name 'zres' has more than one occurrence

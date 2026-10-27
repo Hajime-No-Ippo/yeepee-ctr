@@ -1,0 +1,7 @@
+  fit C=1737763200 tok 6s total 55s
+feat_sq10_ep2_3e-3 C25 0.76263 C23 - C26 -
+  fit C=1737763200 tok 7s total 58s
+feat_sq10_ep2_4e-3 C25 0.78170 C23 - C26 -
+  fit C=1737763200 tok 6s total 56s
+feat_sq10_ep2_6e-3 C25 0.77841 C23 - C26 -
+EP_DONE

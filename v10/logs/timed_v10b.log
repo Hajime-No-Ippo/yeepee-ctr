@@ -1,0 +1,168 @@
+quiet: MemAvailable 14.3 GB, no v5 jobs (waited 0s)
+[stage setup] wall 0.0s cpu 0.0s memavail 14.3->14.3 GB
+>> prep_v3 /workspace/venv/bin/python prep.py /workspace/huawei/data
+[  13.9s] train (6868240, 4) (686824, 7)
+[  14.7s] evaluation (529390, 3) (52939, 7)
+[  16.5s] items 50000 users 54456 events 739763
+[  20.1s] done
+[stage prep_v3] wall 20.5s cpu 39.2s memavail 14.3->11.1 GB
+>> feat_sq_start SQ_THREADS=1 bash bgseq.sh /workspace/venv/bin/python 3
+seq10 started in background on core 3 (SQ_THREADS=1)
+[stage feat_sq_start] wall 0.0s cpu 0.0s memavail 14.1->14.1 GB
+>> prep_v2 POLARS_MAX_THREADS=3 OMP_NUM_THREADS=3 OPENBLAS_NUM_THREADS=3 MKL_NUM_THREADS=3 NUMEXPR_NUM_THREADS=3 RAYON_NUM_THREADS=3 NUMBA_NUM_THREADS=3 taskset -c 0-2 /workspace/venv/bin/python prep.py
+evaluation rows done 0.29872798919677734
+evaluation events done 0.649855375289917
+train rows done 4.725787878036499
+train events done 11.285670280456543
+[stage prep_v2] wall 12.1s cpu 27.3s memavail 14.1->10.7 GB
+>> feat_v3 POLARS_MAX_THREADS=3 OMP_NUM_THREADS=3 OPENBLAS_NUM_THREADS=3 MKL_NUM_THREADS=3 NUMEXPR_NUM_THREADS=3 RAYON_NUM_THREADS=3 NUMBA_NUM_THREADS=3 taskset -c 0-2 /workspace/venv/bin/python v3fold.py f3 f4 f5 f6 eval
+17:14:03 build C=1737590400 rows=349120 cols=170 20s
+17:14:03 wrote f3 (349120, 170)
+17:14:25 build C=1737676800 rows=350400 cols=170 22s
+17:14:26 wrote f4 (350400, 170)
+17:14:52 build C=1737763200 rows=352300 cols=170 26s
+17:14:52 wrote f5 (352300, 170)
+17:15:23 build C=1737849600 rows=351380 cols=170 31s
+17:15:24 wrote f6 (351380, 170)
+17:16:00 build C=1737936000 rows=529390 cols=170 37s
+17:16:01 wrote eval (529390, 170)
+[stage feat_v3] wall 139.9s cpu 239.3s memavail 12.3->4.3 GB
+>> feat_v2 POLARS_MAX_THREADS=3 OMP_NUM_THREADS=3 OPENBLAS_NUM_THREADS=3 MKL_NUM_THREADS=3 NUMEXPR_NUM_THREADS=3 RAYON_NUM_THREADS=3 NUMBA_NUM_THREADS=3 taskset -c 0-2 /workspace/venv/bin/python build_folds.py lite
+17:16:06 pool 753289
+17:16:07 cooc pairs 12580862
+17:16:08 svd done
+17:16:14 build C=1737590400 rows=349120 9s
+17:16:14 wrote h3 (349120, 125)
+17:16:15 pool 820066
+17:16:16 cooc pairs 15164046
+17:16:18 svd done
+17:16:23 build C=1737676800 rows=350400 9s
+17:16:23 wrote h4 (350400, 125)
+17:16:24 pool 884413
+17:16:26 cooc pairs 18012356
+17:16:28 svd done
+17:16:34 build C=1737763200 rows=352300 11s
+17:16:35 wrote h5 (352300, 125)
+17:20:18 pool 947991
+17:20:20 cooc pairs 21111352
+17:20:21 svd done
+17:20:28 build C=1737849600 rows=351380 233s
+17:20:28 wrote val26 (351380, 125)
+17:20:30 pool 1013190
+17:20:32 cooc pairs 24482596
+17:20:34 svd done
+17:20:43 build C=1737936000 rows=529390 15s
+17:20:43 wrote eval (529390, 124)
+[stage feat_v2] wall 282.2s cpu 327.4s memavail 11.7->7.4 GB
+>> feat_x POLARS_MAX_THREADS=3 OMP_NUM_THREADS=3 OPENBLAS_NUM_THREADS=3 MKL_NUM_THREADS=3 NUMEXPR_NUM_THREADS=3 RAYON_NUM_THREADS=3 NUMBA_NUM_THREADS=3 taskset -c 0-2 /workspace/venv/bin/python extra.py f3 f4 f5 f6 eval
+f3 (349120, 39) 10s
+f4 (350400, 39) 10s
+f5 (352300, 39) 11s
+f6 (351380, 39) 12s
+eval (529390, 39) 13s
+[stage feat_x] wall 58.4s cpu 122.0s memavail 11.5->8.5 GB
+>> feat_lr POLARS_MAX_THREADS=3 OMP_NUM_THREADS=3 OPENBLAS_NUM_THREADS=3 MKL_NUM_THREADS=3 NUMEXPR_NUM_THREADS=3 RAYON_NUM_THREADS=3 NUMBA_NUM_THREADS=3 LR_KS=4,6,8,10,12,16 LR_CON=1 taskset -c 0-2 /workspace/venv/bin/python lrfeat2.py f3 f4 f5 f6 eval
+17:21:44 C 1737590400 pairs 629903 sv [3.82 2.36 2.26 2.23 2.23 2.22 2.22 2.21 2.21 2.21 2.19 2.18 2.15 2.1
+ 2.06]
+f3 (349120, 55) 3s
+17:21:47 C 1737676800 pairs 683619 sv [3.98 2.42 2.32 2.3  2.29 2.29 2.28 2.28 2.27 2.27 2.25 2.24 2.2  2.15
+ 2.11]
+f4 (350400, 55) 3s
+17:21:50 C 1737763200 pairs 731030 sv [4.11 2.47 2.36 2.35 2.34 2.34 2.33 2.33 2.32 2.32 2.3  2.28 2.25 2.19
+ 2.15]
+f5 (352300, 55) 3s
+17:21:54 C 1737849600 pairs 773354 sv [4.22 2.51 2.4  2.39 2.39 2.38 2.38 2.37 2.36 2.36 2.35 2.32 2.28 2.23
+ 2.18]
+f6 (351380, 55) 3s
+17:21:57 C 1737936000 pairs 811543 sv [4.32 2.55 2.44 2.43 2.43 2.42 2.41 2.41 2.4  2.4  2.38 2.35 2.31 2.25
+ 2.21]
+eval (529390, 55) 5s
+[stage feat_lr] wall 18.8s cpu 35.7s memavail 11.4->9.7 GB
+>> feat_tt POLARS_MAX_THREADS=3 OMP_NUM_THREADS=3 OPENBLAS_NUM_THREADS=3 MKL_NUM_THREADS=3 NUMEXPR_NUM_THREADS=3 RAYON_NUM_THREADS=3 NUMBA_NUM_THREADS=3 TT_THREADS=3 taskset -c 0-2 /workspace/venv/bin/python ttfeat.py f3 f4 f5 f6 eval
+  C 1737590400 ep0 loss 2.0789
+  C 1737590400 ep1 loss 2.0518
+  C 1737590400 ep2 loss 2.0232
+  C 1737590400 ep3 loss 1.9928
+  C 1737590400 ep4 loss 1.9607
+  C 1737590400 ep5 loss 1.9273
+17:22:11 C 1737590400 train events 186038 7s
+f3 (349120, 9) 7s
+  C 1737676800 ep0 loss 2.0774
+  C 1737676800 ep1 loss 2.0439
+  C 1737676800 ep2 loss 2.0081
+  C 1737676800 ep3 loss 1.9698
+  C 1737676800 ep4 loss 1.9296
+  C 1737676800 ep5 loss 1.8878
+17:22:18 C 1737676800 train events 247219 7s
+f4 (350400, 9) 8s
+  C 1737763200 ep0 loss 2.0764
+  C 1737763200 ep1 loss 2.0367
+  C 1737763200 ep2 loss 1.9938
+  C 1737763200 ep3 loss 1.9479
+  C 1737763200 ep4 loss 1.8998
+  C 1737763200 ep5 loss 1.8504
+17:22:27 C 1737763200 train events 308499 8s
+f5 (352300, 9) 8s
+  C 1737849600 ep0 loss 2.0752
+  C 1737849600 ep1 loss 2.0290
+  C 1737849600 ep2 loss 1.9785
+  C 1737849600 ep3 loss 1.9247
+  C 1737849600 ep4 loss 1.8690
+  C 1737849600 ep5 loss 1.8125
+17:22:37 C 1737849600 train events 370313 9s
+f6 (351380, 9) 10s
+  C 1737936000 ep0 loss 2.0739
+  C 1737936000 ep1 loss 2.0211
+  C 1737936000 ep2 loss 1.9632
+  C 1737936000 ep3 loss 1.9019
+  C 1737936000 ep4 loss 1.8391
+  C 1737936000 ep5 loss 1.7767
+17:22:47 C 1737936000 train events 432023 10s
+eval (529390, 9) 11s
+[stage feat_tt] wall 47.4s cpu 110.9s memavail 11.5->9.0 GB
+>> feat_pp POLARS_MAX_THREADS=3 OMP_NUM_THREADS=3 OPENBLAS_NUM_THREADS=3 MKL_NUM_THREADS=3 NUMEXPR_NUM_THREADS=3 RAYON_NUM_THREADS=3 NUMBA_NUM_THREADS=3 taskset -c 0-2 /workspace/venv/bin/python ppmi.py f3 f4 f5 f6 eval
+f3 (349120, 10) 6s
+f4 (350400, 10) 7s
+f5 (352300, 10) 7s
+f6 (351380, 10) 8s
+eval (529390, 10) 8s
+[stage feat_pp] wall 37.8s cpu 82.2s memavail 11.7->9.1 GB
+>> feat_sq_wait bash waitseq.sh
+  ppmi C=1737590400 4s
+  fit C=1737590400 tok 4s total 75s
+f3 (349120, 16) 79s
+  ppmi C=1737676800 5s
+  fit C=1737676800 tok 6s total 95s
+f4 (350400, 16) 98s
+  ppmi C=1737763200 5s
+  fit C=1737763200 tok 228s total 332s
+f5 (352300, 16) 335s
+  ppmi C=1737849600 6s
+  fit C=1737849600 tok 8s total 112s
+f6 (351380, 16) 116s
+  ppmi C=1737936000 6s
+  fit C=1737936000 tok 7s total 116s
+eval (529390, 16) 120s
+[stage feat_sq_wait] wall 161.3s cpu 0.2s memavail 11.3->10.3 GB
+>> base /workspace/venv/bin/python ens.py 27 base --seeds 0 --threads 4 --lr feat_lr2,feat_tt,feat_pp,feat_sq10 --negfrac 0.5 --nfolds 4 --params '{"max_bin":63,"force_col_wise":true}'
+{"cut": 27, "tag": "base", "seed": 0, "n": 745540, "nf": 377, "min": 1.2, "load_s": 11, "ds_s": 6, "fit_s": 46, "pred_s": 6}
+[stage base] wall 74.0s cpu 262.7s memavail 14.1->10.0 GB
+>> slow /workspace/venv/bin/python ens.py 27 slow --seeds 0 --rounds 500 --threads 4 --lr feat_lr2,feat_tt,feat_pp,feat_sq10 --negfrac 0.5 --nfolds 4 --params '{"learning_rate":0.03,"feature_fraction":0.55,"num_leaves":95,"lambda_l2":30,"max_bin":63,"force_col_wise":true}'
+{"cut": 27, "tag": "slow", "seed": 0, "n": 745540, "nf": 377, "min": 1.5, "load_s": 6, "ds_s": 6, "fit_s": 63, "pred_s": 14}
+[stage slow] wall 91.5s cpu 338.0s memavail 14.2->10.7 GB
+>> blend /workspace/venv/bin/python blend_lite.py
+corr base/slow 0.9944 corr z/sq 0.8122
+wrote eval_pred.parquet 529390
+[stage blend] wall 3.8s cpu 8.7s memavail 14.3->12.2 GB
+>> write PRED=/workspace/huawei/timed_work_v10b/eval_pred.parquet /workspace/venv/bin/python write_sub.py /workspace/huawei/timed_work_v10b/submission_v10.csv
+missing preds filled: 0
+rows=529390 unique=529390 min=0.0009211 mean=0.1088 max=0.8196 distinct=521905
+VALID
+zip contents ['submission_v10.csv']
+sha256 88ec898b807c0d2bd22b2c690d89a87e4b96b66c9f40110686d8c9fd0d8f808f
+[stage write] wall 3.5s cpu 3.7s memavail 13.6->13.6 GB
+>> validate /workspace/venv/bin/python validate.py /workspace/huawei/timed_work_v10b/submission_v10.csv
+rows=529390 unique=529390 min=0.0009211 mean=0.1088 max=0.8196 distinct=521905
+VALID
+[stage validate] wall 1.4s cpu 2.0s memavail 13.9->13.8 GB
+{"stage": "TOTAL", "wall_s": 952.67, "cpu_s": 1599.43, "memavail_min_gb": 4.31, "v5_seen": false, "submission": "/workspace/huawei/timed_work_v10b/submission_v10.csv", "sha256": "88ec898b807c0d2bd22b2c690d89a87e4b96b66c9f40110686d8c9fd0d8f808f"}
