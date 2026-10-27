@@ -1,0 +1,22 @@
+/workspace/venv/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (745456, 562) 30 s
+ep0 39s auc 0.81056
+ep1 47s auc 0.81289
+ep2 55s auc 0.81420
+ep3 63s auc 0.81456
+/workspace/venv/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (373643, 562) 20 s
+ep0 25s auc 0.78854
+ep1 29s auc 0.79075
+ep2 34s auc 0.79237
+ep3 39s auc 0.79302
+/workspace/venv/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (745889, 562) 31 s
+ep0 39s auc 0.82047
+ep1 47s auc 0.82127
+ep2 56s auc 0.82330
+ep3 64s auc 0.82405
+B5_DONE

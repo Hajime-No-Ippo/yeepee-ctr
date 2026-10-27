@@ -1,0 +1,10 @@
+prep (745456, 562) 33 s
+ep0 42s auc 0.81008
+ep1 50s auc 0.81262
+ep2 59s auc 0.81395
+ep3 67s auc 0.81437
+prep (373643, 562) 22 s
+ep0 27s auc 0.78781
+ep1 31s auc 0.79031
+ep2 36s auc 0.79184
+ep3 40s auc 0.79251

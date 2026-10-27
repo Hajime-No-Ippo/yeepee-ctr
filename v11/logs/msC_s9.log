@@ -1,0 +1,25 @@
+  ppmi C=1737417600 5s
+  fit C=1737417600 tok 1s total 35s
+f1 (351560, 20) 38s
+  ppmi C=1737504000 7s
+  fit C=1737504000 tok 2s total 55s
+f2 (351120, 20) 58s
+  ppmi C=1737590400 7s
+  fit C=1737590400 tok 4s total 76s
+val23 (501550, 20) 81s
+f3 (349120, 20) 3s
+  ppmi C=1737676800 7s
+  fit C=1737676800 tok 5s total 101s
+f4 (350400, 20) 104s
+  ppmi C=1737763200 6s
+  fit C=1737763200 tok 6s total 121s
+val25 (439640, 20) 125s
+f5 (352300, 20) 3s
+  ppmi C=1737849600 8s
+  fit C=1737849600 tok 6s total 126s
+f6 (351380, 20) 129s
+val26 (351380, 20) 3s
+  ppmi C=1737936000 7s
+  fit C=1737936000 tok 6s total 124s
+eval (529390, 20) 129s
+wall 676s

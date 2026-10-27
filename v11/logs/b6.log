@@ -1,0 +1,49 @@
+/workspace/venv/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (745456, 562) 33 s
+ep0 42s auc 0.81214
+ep1 50s auc 0.81286
+ep2 59s auc 0.81365
+ep3 67s auc 0.81447
+/workspace/venv/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (373643, 562) 20 s
+ep0 25s auc 0.78539
+ep1 30s auc 0.79126
+ep2 34s auc 0.79281
+ep3 38s auc 0.79312
+/workspace/venv/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (745456, 562) 32 s
+ep0 41s auc 0.80838
+ep1 49s auc 0.81322
+ep2 57s auc 0.81430
+ep3 65s auc 0.81456
+/workspace/venv/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (373643, 562) 20 s
+ep0 25s auc 0.78770
+ep1 29s auc 0.79032
+ep2 33s auc 0.79258
+ep3 37s auc 0.79291
+/workspace/venv/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (745456, 562) 30 s
+ep0 38s auc 0.80988
+ep1 46s auc 0.81219
+ep2 53s auc 0.81232
+ep3 60s auc 0.81424
+ep4 68s auc 0.81473
+ep5 76s auc 0.81470
+ep6 84s auc 0.81493
+/workspace/venv/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (373643, 562) 21 s
+ep0 26s auc 0.78707
+ep1 30s auc 0.79056
+ep2 35s auc 0.79127
+ep3 39s auc 0.79191
+ep4 43s auc 0.79315
+ep5 48s auc 0.79332
+ep6 53s auc 0.79333
+B6_DONE

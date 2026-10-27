@@ -1,0 +1,33 @@
+  fit C=1737763200 tok 6s total 88s
+val25 (439640, 20) 90s
+base wall 95s SQ_X=0
+sw/base C25 0.78189 C23 - C26 -
+  fit C=1737763200 tok 7s total 133s
+val25 (439640, 20) 135s
+ep5 wall 139s SQ_EP=5 SQ_MAXSTEPS=100000
+sw/ep5 C25 0.78013 C23 - C26 -
+  fit C=1737763200 tok 7s total 88s
+val25 (439640, 20) 90s
+d64 wall 95s SQ_D=64 SQ_DH=32
+sw/d64 C25 0.77837 C23 - C26 -
+  fit C=1737763200 tok 7s total 89s
+val25 (439640, 20) 90s
+temb wall 95s SQ_TEMB=1
+sw/temb C25 0.77251 C23 - C26 -
+  fit C=1737763200 tok 7s total 104s
+val25 (439640, 20) 106s
+hl50 wall 111s SQ_HL=50
+sw/hl50 C25 0.78216 C23 - C26 -
+  fit C=1737763200 tok 7s total 113s
+val25 (439640, 20) 116s
+np6 wall 120s SQ_NP=6
+sw/np6 C25 0.77649 C23 - C26 -
+  fit C=1737763200 tok 7s total 88s
+val25 (439640, 20) 90s
+h4 wall 94s SQ_H=4 SQ_HID=128
+sw/h4 C25 0.78250 C23 - C26 -
+  fit C=1737763200 tok 6s total 78s
+val25 (439640, 20) 80s
+seed1 wall 84s SQ_SEED=1
+sw/seed1 C25 0.78331 C23 - C26 -
+SW1_DONE

@@ -1,0 +1,38 @@
+{"step": "mkdw", "name": "val25", "wall_s": 58}
+{"step": "mkdw", "name": "eval", "wall_s": 74}
+{"step": "mkdw", "name": "val23", "wall_s": 49}
+{"step": "mkdw", "name": "val26", "wall_s": 61}
+{"step": "mkdw", "name": "f1", "wall_s": 33}
+{"step": "mkdw", "name": "f2", "wall_s": 41}
+{"step": "mkdw", "name": "f3", "wall_s": 47}
+{"step": "mkdw", "name": "f4", "wall_s": 53}
+{"step": "mkdw", "name": "f5", "wall_s": 56}
+{"step": "mkdw", "name": "f6", "wall_s": 62}
+{"tag":"dw_s","cut":25,"wall_s":63}
+{"tag":"dwbig","cut":25,"wall_s":229}
+{"tag":"dw_s","cut":23,"wall_s":37}
+{"tag":"dwbig","cut":23,"wall_s":145}
+{"tag":"dw_s","cut":26,"wall_s":55}
+{"tag":"dwbig","cut":26,"wall_s":221}
+{"tag":"dw_s","cut":27,"wall_s":57}
+{"tag":"dwbig","cut":27,"wall_s":229}
+{"tag":"dwmlp","cut":25,"seed":0,"wall_s":67}
+{"tag":"dwmlp","cut":25,"seed":1,"wall_s":67}
+{"tag":"dwmlp","cut":25,"seed":2,"wall_s":69}
+{"tag":"dwmlp","cut":23,"seed":0,"wall_s":41}
+{"tag":"dwmlp","cut":23,"seed":1,"wall_s":41}
+{"tag":"dwmlp","cut":23,"seed":2,"wall_s":41}
+{"tag":"dwmlp","cut":26,"seed":0,"wall_s":64}
+{"tag":"dwmlp","cut":27,"seed":0,"wall_s":70}
+{"tag":"dwmlp","cut":27,"seed":1,"wall_s":70}
+{"tag":"dwmlp","cut":27,"seed":2,"wall_s":69}
+{"tag":"dw_s","cut":25,"wall_s":55}
+{"tag":"dwbig","cut":25,"wall_s":225}
+{"tag":"dw_s","cut":25,"wall_s":56}
+{"tag":"dwbig","cut":25,"wall_s":230}
+{"tag":"sC_s","cut":25,"wall_s":48}
+{"tag":"sCbig","cut":25,"wall_s":200}
+{"tag":"dw_s","cut":23,"wall_s":38}
+{"tag":"dwbig","cut":23,"wall_s":146}
+{"tag":"sC_s","cut":23,"wall_s":31}
+{"tag":"sCbig","cut":23,"wall_s":136}

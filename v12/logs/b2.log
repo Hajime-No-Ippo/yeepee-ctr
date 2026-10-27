@@ -1,0 +1,31 @@
+ep1 50s auc 0.81507
+ep2 57s auc 0.81588
+ep3 64s auc 0.81637
+ep1 49s auc 0.81440
+ep2 57s auc 0.81592
+ep3 65s auc 0.81628
+ep1 51s auc 0.81485
+ep2 58s auc 0.81584
+ep3 66s auc 0.81632
+ep1 31s auc 0.79239
+ep2 35s auc 0.79391
+ep3 39s auc 0.79421
+ep1 30s auc 0.79302
+ep2 35s auc 0.79371
+ep3 39s auc 0.79434
+ep1 31s auc 0.79245
+ep2 35s auc 0.79413
+ep3 39s auc 0.79442
+ep1 47s auc 0.82408
+ep2 54s auc 0.82540
+ep3 61s auc 0.82549
+ep1 53s
+ep2 60s
+ep3 68s
+ep1 53s
+ep2 61s
+ep3 68s
+ep1 52s
+ep2 60s
+ep3 67s
+B2_DONE

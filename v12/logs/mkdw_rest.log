@@ -1,0 +1,15 @@
+eval unseen users 1453
+eval hist items unseen (dropped) 0 of 708389
+/workspace/huawei/dw_signals/common.py:60: RuntimeWarning: Mean of empty slice
+  m=x.reshape(-1,10); mu=np.nanmean(m,1,keepdims=True); sd=np.nanstd(m,1,keepdims=True)+1e-6
+/workspace/venv/lib/python3.13/site-packages/numpy/lib/_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+eval (529390, 43) 74s
+val23 (501550, 43) 49s
+val26 (351380, 43) 61s
+f1 (351560, 43) 33s
+f2 (351120, 43) 41s
+f3 (349120, 43) 47s
+f4 (350400, 43) 53s
+f5 (352300, 43) 56s
+f6 (351380, 43) 62s

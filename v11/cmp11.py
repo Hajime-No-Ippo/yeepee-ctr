@@ -10,9 +10,12 @@ def opt(k,d):
     return d
 sqw=float(opt('--sqw','0')); name,spec=av[0],av[1]
 def load(item,c):
+    w=1.0
+    if '*' in item: w,item=item.split('*'); w=float(w)
     p=item.split(':'); tag,col=p[0],int(p[1]); seeds=p[2].split(',') if len(p)>2 else ['0']
-    return np.mean([np.load(f'ens/{tag}_c{c}_s{s}.npy')[:,col] for s in seeds],0)
-def zspec(spec,c): return np.mean([load(i,c) for i in spec.split('+')],0)
+    return w*np.mean([np.load(f'ens/{tag}_c{c}_s{s}.npy')[:,col] for s in seeds],0)
+def zspec(spec,c):
+    it=spec.split('+'); W=sum(float(i.split('*')[0]) if '*' in i else 1.0 for i in it); return np.sum([load(i,c) for i in it],0)/W
 def ref10(c):
     b=np.load(f'/workspace/huawei/v10/ens/v10B_b_c{c}_s0.npy')[:,1]; s=np.load(f'/workspace/huawei/v10/ens/v10B_s_c{c}_s0.npy')[:,2]; return (b+s)/2
 for c in (25,23,26):
