@@ -1,0 +1,77 @@
+/workspace/venv/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:3029: RuntimeWarning: Degrees of freedom <= 0 for slice
+  c = cov(x, y, rowvar, dtype=dtype)
+/workspace/venv/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:2902: RuntimeWarning: divide by zero encountered in divide
+  c *= np.true_divide(1, fact)
+/workspace/venv/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:2902: RuntimeWarning: invalid value encountered in multiply
+  c *= np.true_divide(1, fact)
+spearman 0.9290753537605462 pearson normal scores 0.9353092488121516
+beta 0.9353110154870751 resid sd 0.35383088162634546
+var share event-level 0.14796606882180696 within 0.852033931178193
+## hist len
+bin n corr mean|res| mean_res mean|within| mean|event|
+  0    6650 0.474 0.142 +0.025 0.127 0.061
+  1   24890 0.897 0.307 -0.117 0.269 0.151
+  2   61790 0.916 0.268 -0.022 0.245 0.108
+  3  102880 0.930 0.269 +0.026 0.247 0.105
+  4   79200 0.937 0.277 +0.041 0.255 0.108
+  5  253980 0.942 0.290 -0.007 0.270 0.106
+## stale h from first-cutoff?
+bin n corr mean|res| mean_res mean|within| mean|event|
+  0     200 0.933 0.320 -0.019 0.302 0.095
+  5     250 0.945 0.293 +0.019 0.268 0.107
+  6  528940 0.935 0.280 -0.000 0.258 0.108
+## hours since last hist click
+bin n corr mean|res| mean_res mean|within| mean|event|
+  5  529390 0.935 0.280 -0.000 0.258 0.108
+## item impressions
+bin n corr mean|res| mean_res mean|within| mean|event|
+  1    5610 0.898 0.271 -0.044 0.251 0.108
+  2  123550 0.922 0.274 -0.036 0.255 0.106
+  3  210560 0.934 0.281 +0.007 0.258 0.107
+  4  128116 0.942 0.284 +0.025 0.261 0.109
+  5   57911 0.947 0.283 +0.002 0.260 0.111
+  6    3643 0.948 0.292 -0.040 0.265 0.110
+## item ctr
+bin n corr mean|res| mean_res mean|within| mean|event|
+  0   24316 0.911 0.275 -0.047 0.255 0.107
+  1  115632 0.926 0.280 -0.012 0.258 0.107
+  2  202972 0.936 0.281 +0.005 0.258 0.108
+  3  163519 0.941 0.281 +0.010 0.259 0.109
+  4   22793 0.945 0.279 +0.001 0.257 0.109
+  5     158 0.935 0.315 -0.042 0.288 0.105
+## ord (slate pos?)
+bin n corr mean|res| mean_res mean|within| mean|event|
+  0       1 nan 0.244 +0.244 0.195 0.048
+  1       2 1.000 0.323 -0.010 0.323 0.048
+  2       2 1.000 0.178 -0.019 0.178 0.048
+  3       2 1.000 0.201 -0.201 0.249 0.048
+  4       2 1.000 0.347 +0.347 0.298 0.048
+  5  529381 0.935 0.280 -0.000 0.258 0.108
+## user n events
+bin n corr mean|res| mean_res mean|within| mean|event|
+  1   14530 0.897 0.259 -0.087 0.225 0.130
+  2   66430 0.910 0.271 -0.031 0.246 0.113
+  3  111600 0.927 0.271 +0.022 0.249 0.106
+  4  108690 0.937 0.278 +0.032 0.256 0.107
+  5  228140 0.943 0.290 -0.012 0.269 0.106
+## cand in own history
+bin n corr mean|res| mean_res mean|within| mean|event|
+  0  515674 0.930 0.279 -0.006 0.257 0.108
+  1   13716 0.877 0.317 +0.222 0.310 0.107
+## item warm clicks
+bin n corr mean|res| mean_res mean|within| mean|event|
+  1    1520 0.872 0.271 -0.037 0.256 0.106
+  2   53711 0.910 0.277 -0.041 0.257 0.107
+  3  304920 0.932 0.279 -0.001 0.258 0.107
+  4  166735 0.945 0.283 +0.016 0.260 0.110
+  5    2504 0.949 0.292 -0.037 0.269 0.108
+## item trend
+bin n corr mean|res| mean_res mean|within| mean|event|
+  3   35273 0.941 0.280 +0.008 0.258 0.109
+  4  494117 0.935 0.280 -0.001 0.258 0.108
+res R2 oof from 166 feats 0.09675264339098932
+[('sv_k64_ncos', 5071), ('ts', 3156), ('us_nclk_all', 3055), ('sv_k32_imax20', 2605), ('sv_k16_hcos', 2324), ('sv_k32_hcos', 2178), ('sv_k64_con1', 2079), ('us_ctr', 1984), ('hist_pos', 1977), ('tm_dt', 1951), ('tm_stale', 1937), ('sv_k32_hnorm', 1849), ('ev_sv_k32_hcos_z', 1641), ('ev_sv_k64_hcos_z', 1625), ('ev_sv_k64_con05_z', 1355)]
+res_event R2 oof from 166 feats 0.23561281045276106
+res_within R2 oof from 166 feats 0.07202565588122822
+['item', 'w_0', 'w_1', 'n_0', 'n_1']
+items with >=5 rows both halves 15295 split-half corr of item mean within-residual 0.36094488917985074

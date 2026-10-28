@@ -1,0 +1,1 @@
+["p_nev", "p_evrate", "p_ctr", "p_ctr_s", "p_l3", "p_streak", "p_gapm", "p_gapsd", "p_since_ev", "p_since_first", "p_gap_ratio", "h_len", "h_span", "h_since_last", "h_gap_mean", "h_gap_sd", "h_gap_last", "h_1d", "h_3d", "h_7d", "h_warm", "h_win", "h_uniq", "h_uniq_ratio", "h_rate_day", "p_clk_per_ev", "implied_cpe", "gap_over_hgap"]

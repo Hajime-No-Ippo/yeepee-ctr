@@ -1,0 +1,9 @@
+[     5s] data loaded
+/workspace/huawei/v12x/mk/mkfeat.py:39: RuntimeWarning: Mean of empty slice
+  'tm_cos_dm':(g-np.nanmean(g,1,keepdims=True)).ravel().astype(np.float32),'tm_inh_n':np.repeat(inh.reshape(-1,10).sum(1),10)}
+val25 (439640, 29) (439640, 14) (439640, 7) 6 s
+val23 (501550, 29) (501550, 14) (501550, 7) 7 s
+f1 (351560, 29) (351560, 14) (351560, 7) 5 s
+f2 (351120, 29) (351120, 14) (351120, 7) 6 s
+f3 (349120, 29) (349120, 14) (349120, 7) 5 s
+f4 (350400, 29) (350400, 14) (350400, 7) 5 s

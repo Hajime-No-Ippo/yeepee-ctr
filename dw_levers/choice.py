@@ -4,7 +4,8 @@ Entry points: fit_choice(D,X,cfg) -> model ; score(model,D,ev_idx) -> (n,10) log
 import numpy as np, torch, torch.nn as nn, time, sys
 sys.path.insert(0,'/workspace/huawei/dw_levers')
 from dwcommon import *
-torch.set_num_threads(8)
+from common import A
+torch.set_num_threads(4)
 HL=20
 def build_hist(D):
     if hasattr(D,'H'): return
@@ -60,7 +61,7 @@ def fit_choice(D,X,cfg,log_every=1,val=None):
     ctx=torch.from_numpy(ctx_feats(D,np.arange(D.NE)))
     yidx=np.where(D.Y.sum(1)>0,D.Y.argmax(1),10); tY=torch.from_numpy(yidx.astype(np.int64))
     opt=torch.optim.Adam([{'params':[p for n_,p in m.named_parameters() if n_.split('.')[0] not in ('free','ob','E','Eh','b')]},
-        {'params':list(m.E.parameters())+list(m.Eh.parameters())+list(m.b.parameters()),'weight_decay':0.0},
+        {'params':list(m.E.parameters())+list(m.Eh.parameters())+list(m.b.parameters()),'weight_decay':0.0,'lr':cfg.get('lr',2e-3)*cfg.get('elr',1.0)},
         {'params':(list(m.free.parameters())+list(m.ob.parameters())) if m.free is not None else [],'weight_decay':0.0}],lr=cfg.get('lr',2e-3))
     bs=cfg.get('bs',512); wd=cfg.get('l2',0.0); fl2=cfg.get('free_l2',1e-4); ep=cfg.get('ep',4); hid=cfg.get('hist_drop',0.0)
     # held-out tail of fit window for early stopping (last 5% of events by time)
@@ -78,7 +79,7 @@ def fit_choice(D,X,cfg,log_every=1,val=None):
             opt.zero_grad(); loss.backward(); opt.step(); tl+=loss.item(); nb+=1
         m.eval(); hl=eval_loss(m,D,hold,tH,tG,tC,tU,ctx,tY); msg=f'  ep{e} train {tl/nb:.4f} hold {hl:.4f} {time.time()-t0:.0f}s'
         if val is not None:
-            lp,_=score(m,D,val['e'][::10],tH,tG,tC,tU,ctx); msg+=f" valAUC {A(val['y'],lp.ravel()):.5f}"
+            lp,_=score(m,D,val['e'][::10],tH,tG,tC,tU,ctx); lp=to_val(lp,val['col']); msg+=f" valAUC {A(val['y'],lp.ravel()):.5f}"
         log(msg)
         if hl<best[0]: best=(hl,{k:v.clone() for k,v in m.state_dict().items()})
     m.load_state_dict(best[1]); m.eval(); m.cache=(tH,tG,tC,tU,ctx); return m
@@ -95,3 +96,10 @@ def score(m,D,ev,tH=None,tG=None,tC=None,tU=None,ctx=None):
     for b in range(0,len(ev),8192):
         j=torch.from_numpy(np.asarray(ev[b:b+8192])); sc,o=m(tH[j],tG[j],tC[j],tU[j],ctx[j]); lg=torch.cat([sc,o[:,None]],1); lp=torch.log_softmax(lg,1); out.append(lp[:,:10].numpy()); on.append(lp[:,10].numpy())
     return np.concatenate(out),np.concatenate(on)
+def align(D,v):
+    """column index (n,10) such that val row (event r, pos p) == D.RI[e_r, col[r,p]]"""
+    ev=v['e'][::10]; n=len(ev); RI=D.RI[ev]; vi=v['item'].reshape(n,10)
+    pd_=np.argsort(RI,1,kind='stable'); ov=np.argsort(vi,1,kind='stable')
+    assert (np.take_along_axis(RI,pd_,1)==np.take_along_axis(vi,ov,1)).all()
+    col=np.zeros((n,10),np.int64); np.put_along_axis(col,ov,pd_,1); return col
+def to_val(lp,col): return np.take_along_axis(lp,col,1)

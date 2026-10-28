@@ -1,5 +1,11 @@
-Traceback (most recent call last):
-  File "/workspace/huawei/dw_levers/run_choice.py", line 5, in <module>
-    D=Data(); v=D.val(cut); m_=meta(cut); assert (m_['clicked'].to_numpy()==v['y']).all()
-                               ^^^^
-NameError: name 'meta' is not defined
+v12 0.8172259475835104
+[     7s] svd done
+[    12s]   ep0 train 1.5714 hold 1.5278 8s valAUC 0.77560
+[    17s]   ep1 train 0.9808 hold 1.8055 12s valAUC 0.74639
+[    22s]   ep2 train 0.5487 hold 2.3603 17s valAUC 0.72596
+[    26s]   ep3 train 0.3437 hold 2.9096 22s valAUC 0.71568
+choice AUC 0.7756003662421029 within 0.7756003662421029
+blend z+w*lp 0.1 0.8172855210762608
+blend z+w*lp 0.2 0.8166980845190918
+blend z+w*lp 0.3 0.8157374588477733
+blend z+w*lp 0.5 0.8133236048636625

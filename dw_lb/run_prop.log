@@ -1,0 +1,6 @@
+25 (439640, 28)
+{"name": "null_event_noise", "cut": 25, "nfeat": 1, "base": 0.81723, "control": 0.81722, "test": 0.81716, "d_vs_z": -7e-05, "d_vs_ctrl": -6e-05, "ci_vs_ctrl": [-0.00010993807087290585, -7.890079290281935e-06], "sd": 3e-05, "evAUC_base": 0.66805, "evAUC_test": 0.66566}
+{"name": "prop_all", "cut": 25, "nfeat": 28, "base": 0.81723, "control": 0.81722, "test": 0.81742, "d_vs_z": 0.00019, "d_vs_ctrl": 0.0002, "ci_vs_ctrl": [8.425431766705683e-05, 0.00032945002107639954], "sd": 6e-05, "evAUC_base": 0.66805, "evAUC_test": 0.66715}
+23 (501550, 28)
+{"name": "null_event_noise", "cut": 23, "nfeat": 1, "base": 0.79566, "control": 0.79555, "test": 0.79555, "d_vs_z": -0.00011, "d_vs_ctrl": 0.0, "ci_vs_ctrl": [-6.393072952146084e-05, 7.37865104797425e-05], "sd": 4e-05, "evAUC_base": 0.64445, "evAUC_test": 0.64411}
+{"name": "prop_all", "cut": 23, "nfeat": 28, "base": 0.79566, "control": 0.79555, "test": 0.79581, "d_vs_z": 0.00015, "d_vs_ctrl": 0.00026, "ci_vs_ctrl": [0.00011603082194248937, 0.000432235776237011], "sd": 8e-05, "evAUC_base": 0.64445, "evAUC_test": 0.64796}

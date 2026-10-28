@@ -1,0 +1,36 @@
+CFG {"d": 32, "ep": 3, "lr": 0.001}
+[    12s] svd done
+[    18s]   ep0 train 1.6461 hold 1.4576 13s valAUC 0.77770
+[    22s]   ep1 train 1.1656 hold 1.5018 18s valAUC 0.77658
+[    27s]   ep2 train 0.8589 hold 1.7046 23s valAUC 0.76555
+RES {"cfg": {"d": 32, "ep": 3, "lr": 0.001}, "cut": 25, "auc": 0.7776973973402646, "blend": {"0.1": -8e-05, "0.2": -0.00076, "0.4": -0.00295}}
+CFG {"d": 32, "ep": 3, "lr": 0.001, "l2": 0.01}
+[    30s] svd done
+[    36s]   ep0 train 1.6652 hold 1.4589 9s valAUC 0.77774
+[    42s]   ep1 train 1.1864 hold 1.5036 15s valAUC 0.77665
+[    48s]   ep2 train 0.8811 hold 1.7076 21s valAUC 0.76554
+RES {"cfg": {"d": 32, "ep": 3, "lr": 0.001, "l2": 0.01}, "cut": 25, "auc": 0.777737651041082, "blend": {"0.1": -8e-05, "0.2": -0.00075, "0.4": -0.00294}}
+CFG {"d": 32, "ep": 3, "lr": 0.001, "l2": 0.1}
+[    51s] svd done
+[    57s]   ep0 train 1.8282 hold 1.4700 8s valAUC 0.77784
+[    63s]   ep1 train 1.3527 hold 1.5188 14s valAUC 0.77686
+[    69s]   ep2 train 1.0524 hold 1.7287 20s valAUC 0.76530
+RES {"cfg": {"d": 32, "ep": 3, "lr": 0.001, "l2": 0.1}, "cut": 25, "auc": 0.7778433663501874, "blend": {"0.1": -7e-05, "0.2": -0.00071, "0.4": -0.00281}}
+CFG {"d": 32, "ep": 3, "lr": 0.001, "hist_drop": 0.3, "l2": 0.01}
+[    72s] svd done
+[    78s]   ep0 train 1.6956 hold 1.4836 9s valAUC 0.77525
+[    84s]   ep1 train 1.2712 hold 1.6013 15s valAUC 0.77353
+[    90s]   ep2 train 1.0243 hold 1.8377 21s valAUC 0.76473
+RES {"cfg": {"d": 32, "ep": 3, "lr": 0.001, "hist_drop": 0.3, "l2": 0.01}, "cut": 25, "auc": 0.775251609736144, "blend": {"0.1": -0.00018, "0.2": -0.00114, "0.4": -0.004}}
+CFG {"d": 32, "ep": 3, "lr": 0.001, "att": true, "l2": 0.01}
+[    92s] svd done
+[   100s]   ep0 train 1.8460 hold 1.7163 9s valAUC 0.76406
+[   107s]   ep1 train 1.5098 hold 1.5874 16s valAUC 0.76832
+[   113s]   ep2 train 1.2045 hold 1.5901 23s valAUC 0.76180
+RES {"cfg": {"d": 32, "ep": 3, "lr": 0.001, "att": true, "l2": 0.01}, "cut": 25, "auc": 0.768316048958352, "blend": {"0.1": -8e-05, "0.2": -0.00059, "0.4": -0.00232}}
+CFG {"d": 64, "ep": 3, "lr": 0.001, "l2": 0.03}
+[   116s] svd done
+[   125s]   ep0 train 1.6851 hold 1.4572 11s valAUC 0.77724
+[   134s]   ep1 train 1.1671 hold 1.5469 20s valAUC 0.77368
+[   142s]   ep2 train 0.6993 hold 1.9402 28s valAUC 0.75787
+RES {"cfg": {"d": 64, "ep": 3, "lr": 0.001, "l2": 0.03}, "cut": 25, "auc": 0.7772370992714306, "blend": {"0.1": -7e-05, "0.2": -0.00076, "0.4": -0.00298}}

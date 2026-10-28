@@ -1,0 +1,13 @@
+[0]	hold-auc:0.79660
+[50]	hold-auc:0.80618
+[100]	hold-auc:0.80795
+[150]	hold-auc:0.80887
+[200]	hold-auc:0.80934
+[250]	hold-auc:0.80966
+[300]	hold-auc:0.80972
+[350]	hold-auc:0.80976
+[400]	hold-auc:0.80983
+[450]	hold-auc:0.80979
+[500]	hold-auc:0.80973
+[503]	hold-auc:0.80973
+{"pick": true, "cut": 25, "train": ["f1", "f2", "f3"], "hold": "f4", "best_iter": 403, "best_auc": 0.8098451883665725, "fit_s": 553}

@@ -1,0 +1,2 @@
+{"name": "v12sig_tmp", "cut": 23, "nfeat": 13, "base": 0.79566, "control": 0.79555, "test": 0.79583, "d_vs_z": 0.00017, "d_vs_ctrl": 0.00028, "ci_vs_ctrl": [0.00012370744361178964, 0.00043968947250715433], "sd": 9e-05, "evAUC_base": 0.64445, "evAUC_test": 0.64503}
+{"name": "v12sig_tmi", "cut": 23, "nfeat": 12, "base": 0.79566, "control": 0.79555, "test": 0.79569, "d_vs_z": 3e-05, "d_vs_ctrl": 0.00014, "ci_vs_ctrl": [-3.351939774114408e-05, 0.00030396100199877875], "sd": 9e-05, "evAUC_base": 0.64445, "evAUC_test": 0.64497}

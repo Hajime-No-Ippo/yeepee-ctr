@@ -1,0 +1,23 @@
+"""Huawei TechArena 2026 Phase 1 - submission_v12: ONE self-contained end-to-end script (raw CSVs -> features -> models -> submission CSV).
+
+v12 recipe (local AUC: C25 0.81723 / C26 0.82604 / C23 0.79566; v10 was 0.8157 / 0.8247 / 0.7938 at C25 / C26 / C23):
+  features   v8/v10 feature families (v3 + v2 + extra similarity + feat_lr2 + feat_tt + feat_pp; 'notime')              -> 377 columns
+             + feat_sqC  : DIN-style sequence model (seq11.py), refit at every fold cutoff, averaged over 11 seeds (0-10; seeds 8-10 use 4 heads/hid 128)
+                           -> 20 stacking columns (logit, within-event z/dm/rank/gaps, attention stats, cosines, seed sd); 4 of them dropped (ens.py --drop)
+             + feat_dw   : DW impression-taste (SVD of the user x item IMPRESSION matrix), slate-centrality and skip-contrast features -> 42 columns
+             = 435 model columns.  All aggregates use train events with ts < fit cutoff only; each eval row only uses its own history and own slate.
+  models     dwbig : LightGBM lr .015, 127 leaves, ff .5, l2 30, min_data 200, max_bin 255, negatives kept 100%, 1000 rounds, folds f3..f6
+             dw_s  : LightGBM lr .03, 95 leaves, ff .55, l2 30, max_bin 63, negatives kept 50% (seed 123), 500 rounds, folds f3..f6
+             dwmlp : 512-256 MLP (rank-gauss inputs, 4 epochs, OneCycle), 3 seeds averaged, folds f3..f6 (negatives kept 50%)
+  blend      z = (dwbig + dw_s + 2 * mean(dwmlp)) / 4 (logit blend 1:1:2),  p = sigmoid(z)  in [0, 1]
+  folds      f_k = first event per user in [Jan20 + k d, + 1 d), k = 3..6 (labels known), stats frozen at that cutoff; eval features at Jan27.
+
+Usage:  python solution_v12.py --raw DIR_WITH_train.csv_AND_evaluation.csv [--work WORKDIR] [--threads 8] [--out submission_v12.csv]
+                                   [--from STAGE] [--to STAGE] [--cut 27|25]
+  --cut 25 : local-validation mode (same recipe, folds f1..f4, scored on val25 = first event per user in [Jan25, Jan27) with the train labels; prints AUC).
+Env knobs: V12_SQ_SEEDS (sequence seeds, default 11; e.g. 3 for a faster, slightly weaker run), V12_SQ_PAR (concurrent seq runs, default min(3, threads//2)),
+           V12_SQ_THREADS (torch threads per seq run), V12_MLP_SEEDS is fixed at 3.
+Stages (resumable with --from/--to): setup prep_v3 prep_v2 feat_v3 feat_v2 feat_x feat_lr feat_tt feat_pp feat_sq feat_dw dwbig dw_s mlp0 mlp1 mlp2 blend write validate
+Needs: python 3.11+ (tested 3.13), see requirements.txt (polars, numpy, scipy, scikit-learn, lightgbm, torch CPU). ~12 GB RAM, ~40 GB disk in WORKDIR.
+The module sources are embedded below (SRC) and written to WORKDIR at start-up (no absolute paths anywhere; everything lives under --raw / --work / --out)."""
+import os, sys, time, json, argparse, subprocess

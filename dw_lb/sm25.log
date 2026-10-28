@@ -1,0 +1,6 @@
+c25 ep0 loss 1.9891 val AUC logP 0.60193  t=6s
+c25 ep1 loss 1.9703 val AUC logP 0.59845  t=10s
+c25 ep2 loss 1.8355 val AUC logP 0.59332  t=13s
+c25 ep3 loss 1.6177 val AUC logP 0.58636  t=17s
+c25 ep4 loss 1.3677 val AUC logP 0.58078  t=20s
+c25 ep5 loss 1.0478 val AUC logP 0.57815  t=24s

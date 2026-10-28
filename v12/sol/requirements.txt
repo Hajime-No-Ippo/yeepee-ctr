@@ -1,0 +1,7 @@
+# solution_v12.py - pinned to the versions it was verified with (Python 3.13.5, Linux x86_64, CPU only)
+polars==2.0.0
+numpy==2.5.4
+scipy==1.18.1
+scikit-learn==1.9.1
+lightgbm==4.7.0
+torch==2.14.1   # CPU build: pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cpu

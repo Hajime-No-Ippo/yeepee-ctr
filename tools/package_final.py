@@ -16,7 +16,7 @@ metrics.json: either {"cut":25,"auc":..,"rw":..} or a list / jsonl of such rows
 import argparse, hashlib, json, math, os, sys, zipfile
 import pandas as pd
 
-REF = "/workspace/huawei/v2work/out/submission_v8.csv"   # reference rowid set
+REF = "/workspace/huawei/data/evaluation.csv"   # reference rowid set (eval set; same set as the former v2work/out/submission_v8.csv, lost in the 2026-10-28 box restore)
 N_ROWS = 529390
 
 def load_c25(path):

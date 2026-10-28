@@ -1,0 +1,2 @@
+{"cut": 25, "ev_lse": 0.66805, "ev_max": 0.62214, "ev_ctx": 0.67124, "ev_ctx_prop": 0.6723, "glob_ctx": 0.81707, "glob_ctx_prop": 0.8172, "glob_z": 0.81723, "glob_oracle_ev": 0.89396}
+{"cut": 23, "ev_lse": 0.64445, "ev_max": 0.60332, "ev_ctx": 0.6488, "ev_ctx_prop": 0.65235, "glob_ctx": 0.79508, "glob_ctx_prop": 0.79525, "glob_z": 0.79566, "glob_oracle_ev": 0.88174}

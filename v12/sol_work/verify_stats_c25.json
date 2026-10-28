@@ -1,0 +1,31 @@
+{
+ "cut": 25,
+ "local_auc": {
+  "dwbig": 0.81661,
+  "dw_s": 0.81611,
+  "mlp": 0.81646,
+  "blend": 0.81727
+ },
+ "v12_ref_blend": 0.81723,
+ "delta": 4e-05,
+ "stage_seconds": {
+  "setup": 0.0,
+  "prep_v3": 33.9,
+  "prep_v2": 7.8,
+  "feat_v3": 113.0,
+  "feat_v2": 55.6,
+  "feat_x": 70.9,
+  "feat_lr": 15.6,
+  "feat_tt": 35.3,
+  "feat_pp": 34.4,
+  "feat_sq": 1799.9,
+  "feat_dw": 304.5,
+  "dwbig": 302.4,
+  "dw_s": 80.6,
+  "mlp0": 481.7,
+  "mlp1": 97.7,
+  "mlp2": 647.0,
+  "blend": 2.5
+ },
+ "note": "clean-dir run of solution_v12.py --cut 25 (raw CSVs only); mlp stages slowed by concurrent DW jobs"
+}
