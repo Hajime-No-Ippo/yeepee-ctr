@@ -1,0 +1,156 @@
+[stage setup] 0s
+>> /workspace/venv/bin/python prep.py /workspace/huawei/data
+[  21.3s] train (6868240, 4) (686824, 7)
+[  22.5s] evaluation (529390, 3) (52939, 7)
+[  24.3s] items 50000 users 54456 events 739763
+[  27.2s] done
+[stage prep_v3] 28s
+>> /workspace/venv/bin/python prep.py
+evaluation rows done 0.377777099609375
+evaluation events done 0.753018856048584
+train rows done 5.761471271514893
+train events done 10.730565071105957
+[stage prep_v2] 12s
+>> /workspace/venv/bin/python v3fold.py f3 f4 f5 f6 eval
+04:42:38 build C=1737590400 rows=349120 cols=170 20s
+04:42:38 wrote f3 (349120, 170)
+04:43:02 build C=1737676800 rows=350400 cols=170 24s
+04:43:02 wrote f4 (350400, 170)
+04:43:29 build C=1737763200 rows=352300 cols=170 27s
+04:43:29 wrote f5 (352300, 170)
+04:43:58 build C=1737849600 rows=351380 cols=170 28s
+04:43:58 wrote f6 (351380, 170)
+04:44:33 build C=1737936000 rows=529390 cols=170 35s
+04:44:34 wrote eval (529390, 170)
+[stage feat_v3] 139s
+>> /workspace/venv/bin/python build_folds.py lite
+04:44:38 pool 753289
+04:44:39 cooc pairs 12580862
+04:44:41 svd done
+04:44:48 build C=1737590400 rows=349120 10s
+04:44:48 wrote h3 (349120, 125)
+04:44:49 pool 820066
+04:44:50 cooc pairs 15164046
+04:44:52 svd done
+04:44:58 build C=1737676800 rows=350400 10s
+04:44:58 wrote h4 (350400, 125)
+04:44:59 pool 884413
+04:45:00 cooc pairs 18012356
+04:45:02 svd done
+04:45:09 build C=1737763200 rows=352300 11s
+04:45:09 wrote h5 (352300, 125)
+04:45:11 pool 947991
+04:45:12 cooc pairs 21111352
+04:45:14 svd done
+04:45:21 build C=1737849600 rows=351380 11s
+04:45:21 wrote val26 (351380, 125)
+04:45:22 pool 1013190
+04:45:24 cooc pairs 24482596
+04:45:25 svd done
+04:45:35 build C=1737936000 rows=529390 14s
+04:45:35 wrote eval (529390, 124)
+[stage feat_v2] 61s
+>> /workspace/venv/bin/python extra.py f3 f4 f5 f6 eval
+f3 (349120, 39) 10s
+f4 (350400, 39) 10s
+f5 (352300, 39) 11s
+f6 (351380, 39) 12s
+eval (529390, 39) 14s
+[stage feat_x] 60s
+>> LR_KS=4,6,8,10,12,16 LR_CON=1 /workspace/venv/bin/python lrfeat2.py f3 f4 f5 f6 eval
+04:46:38 C 1737590400 pairs 629903 sv [3.82 2.36 2.26 2.23 2.23 2.22 2.22 2.21 2.21 2.21 2.19 2.18 2.15 2.1
+ 2.06]
+f3 (349120, 55) 3s
+04:46:40 C 1737676800 pairs 683619 sv [3.98 2.42 2.32 2.3  2.29 2.29 2.28 2.28 2.27 2.27 2.25 2.24 2.2  2.15
+ 2.11]
+f4 (350400, 55) 3s
+04:46:43 C 1737763200 pairs 731030 sv [4.11 2.47 2.36 2.35 2.34 2.34 2.33 2.33 2.32 2.32 2.3  2.28 2.25 2.19
+ 2.15]
+f5 (352300, 55) 3s
+04:46:46 C 1737849600 pairs 773354 sv [4.22 2.51 2.4  2.39 2.39 2.38 2.38 2.37 2.36 2.36 2.35 2.32 2.28 2.23
+ 2.18]
+f6 (351380, 55) 3s
+04:46:49 C 1737936000 pairs 811543 sv [4.32 2.55 2.44 2.43 2.43 2.42 2.41 2.41 2.4  2.4  2.38 2.35 2.31 2.25
+ 2.21]
+eval (529390, 55) 4s
+[stage feat_lr] 17s
+>> TT_THREADS=8 /workspace/venv/bin/python ttfeat.py f3 f4 f5 f6 eval
+  C 1737590400 ep0 loss 2.0789
+  C 1737590400 ep1 loss 2.0518
+  C 1737590400 ep2 loss 2.0232
+  C 1737590400 ep3 loss 1.9928
+  C 1737590400 ep4 loss 1.9608
+  C 1737590400 ep5 loss 1.9273
+04:47:01 C 1737590400 train events 186038 6s
+f3 (349120, 9) 6s
+  C 1737676800 ep0 loss 2.0774
+  C 1737676800 ep1 loss 2.0439
+  C 1737676800 ep2 loss 2.0081
+  C 1737676800 ep3 loss 1.9698
+  C 1737676800 ep4 loss 1.9296
+  C 1737676800 ep5 loss 1.8878
+04:47:07 C 1737676800 train events 247219 6s
+f4 (350400, 9) 6s
+  C 1737763200 ep0 loss 2.0764
+  C 1737763200 ep1 loss 2.0367
+  C 1737763200 ep2 loss 1.9938
+  C 1737763200 ep3 loss 1.9479
+  C 1737763200 ep4 loss 1.8998
+  C 1737763200 ep5 loss 1.8504
+04:47:16 C 1737763200 train events 308499 8s
+f5 (352300, 9) 8s
+  C 1737849600 ep0 loss 2.0752
+  C 1737849600 ep1 loss 2.0290
+  C 1737849600 ep2 loss 1.9785
+  C 1737849600 ep3 loss 1.9247
+  C 1737849600 ep4 loss 1.8690
+  C 1737849600 ep5 loss 1.8125
+04:47:25 C 1737849600 train events 370313 9s
+f6 (351380, 9) 10s
+  C 1737936000 ep0 loss 2.0739
+  C 1737936000 ep1 loss 2.0211
+  C 1737936000 ep2 loss 1.9632
+  C 1737936000 ep3 loss 1.9019
+  C 1737936000 ep4 loss 1.8391
+  C 1737936000 ep5 loss 1.7767
+04:47:38 C 1737936000 train events 432023 12s
+eval (529390, 9) 12s
+[stage feat_tt] 46s
+>> /workspace/venv/bin/python ppmi.py f3 f4 f5 f6 eval
+f3 (349120, 10) 6s
+f4 (350400, 10) 7s
+f5 (352300, 10) 9s
+f6 (351380, 10) 8s
+eval (529390, 10) 9s
+[stage feat_pp] 40s
+>> SQ_THREADS=8 /workspace/venv/bin/python seq.py eval
+  ppmi C=1737936000 5s
+  C=1737936000 ep0 loss 0.2200 n=500000 steps=1954 38s
+  C=1737936000 ep1 loss 0.1880 n=500000 steps=3908 65s
+  C=1737936000 ep2 loss 0.1805 n=500000 steps=5862 90s
+  fit C=1737936000 tok 7s total 90s
+eval (529390, 5) 91s
+[stage feat_sq] 96s
+>> /workspace/venv/bin/python ens.py 27 base --seeds 0 --threads 8 --lr feat_lr2,feat_tt,feat_pp --negfrac 0.5 --nfolds 4 --params '{"max_bin":63,"force_col_wise":true}'
+{"cut": 27, "tag": "base", "seed": 0, "n": 745540, "nf": 377, "min": 0.9, "load_s": 10, "ds_s": 5, "fit_s": 33, "pred_s": 3}
+[stage base] 55s
+>> /workspace/venv/bin/python ens.py 27 slow --seeds 0 --rounds 500 --threads 8 --lr feat_lr2,feat_tt,feat_pp --negfrac 0.5 --nfolds 4 --params '{"learning_rate":0.03,"feature_fraction":0.55,"num_leaves":95,"lambda_l2":30,"max_bin":63,"force_col_wise":true}'
+{"cut": 27, "tag": "slow", "seed": 0, "n": 745540, "nf": 377, "min": 1.0, "load_s": 5, "ds_s": 4, "fit_s": 42, "pred_s": 7}
+[stage slow] 60s
+>> /workspace/venv/bin/python blend_lite.py
+corr base/slow 0.9944 corr z/sq 0.8127
+wrote eval_pred.parquet 529390
+[stage blend] 3s
+>> PRED=/workspace/huawei/v12x/v8regen/work/eval_pred.parquet /workspace/venv/bin/python write_sub.py /workspace/huawei/v12x/v8regen/submission_v8_regen.csv
+missing preds filled: 0
+rows=529390 unique=529390 min=0.0005181 mean=0.09359 max=0.7746 distinct=527977
+VALID
+zip contents ['submission_v8_regen.csv']
+sha256 e8c46f787916b49ff19f31f2bda1304a3dd9052d6473074902c0e93bc795c085
+[stage write] 3s
+>> /workspace/venv/bin/python validate.py /workspace/huawei/v12x/v8regen/submission_v8_regen.csv
+rows=529390 unique=529390 min=0.0005181 mean=0.093588 max=0.7746 distinct=527977
+VALID
+[stage validate] 1s
+TOTAL this run 10.4 min; all stages 10.4 min
+submission: /workspace/huawei/v12x/v8regen/submission_v8_regen.csv

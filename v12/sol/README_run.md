@@ -47,5 +47,6 @@ The sequence stage dominates (about 33 % of the time at 11 seeds); `V12_SQ_SEEDS
 
 ## Verification result
 * Output vs the shipped `submission_v12.csv`: Spearman **0.99943** (Pearson 0.99931, mean p 0.09350 vs 0.09335); seed noise only.
+* Local check at C25 (`--cut 25`, clean dir, raw CSVs only): dwbig .81661, dw_s .81611, mlp .81646, **blend .81727 vs shipped .81723 (+.00004, seed noise)**. Stats in `sol_work/verify_stats_c25.json`.
 * Local check mode: `--cut 25` runs the same recipe on folds f1..f4 and scores `val25` (first event per user in Jan25-Jan27, labels from train); it prints/saves the AUC
   in `WORK/local_auc_c25.json` and does not write a submission. Use a separate `--work` dir per cut. Shipped v12 local AUC at C25 = 0.81723.

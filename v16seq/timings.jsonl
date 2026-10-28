@@ -1,0 +1,12 @@
+{"kind": "gru", "seed": 0, "cut": "C3", "tables": ["val23"], "epochs": 10, "fit_s": 100, "total_s": 107}
+{"kind": "gru", "seed": 0, "cut": "C5", "tables": ["val25"], "epochs": 10, "fit_s": 114, "total_s": 122}
+{"kind": "gru", "seed": 0, "cut": "C6", "tables": ["val26"], "epochs": 10, "fit_s": 118, "total_s": 125}
+{"kind": "gru", "seed": 1, "cut": "C3", "tables": ["val23"], "epochs": 10, "fit_s": 847, "total_s": 853}
+{"kind": "gru", "seed": 1, "cut": "C5", "tables": ["val25"], "epochs": 10, "fit_s": 99, "total_s": 106}
+{"kind": "gru", "seed": 1, "cut": "C6", "tables": ["val26"], "epochs": 10, "fit_s": 114, "total_s": 121}
+{"kind": "gru", "seed": 2, "cut": "C3", "tables": ["val23"], "epochs": 10, "fit_s": 83, "total_s": 90}
+{"kind": "gru", "seed": 2, "cut": "C5", "tables": ["val25"], "epochs": 10, "fit_s": 94, "total_s": 101}
+{"kind": "gru", "seed": 2, "cut": "C6", "tables": ["val26"], "epochs": 10, "fit_s": 107, "total_s": 113}
+{"kind": "sas", "seed": 0, "cut": "C3", "tables": ["val23"], "epochs": 8, "fit_s": 199, "total_s": 211}
+{"kind": "sas", "seed": 0, "cut": "C5", "tables": ["val25"], "epochs": 8, "fit_s": 225, "total_s": 237}
+{"kind": "sas", "seed": 0, "cut": "C6", "tables": ["val26"], "epochs": 8, "fit_s": 256, "total_s": 267}

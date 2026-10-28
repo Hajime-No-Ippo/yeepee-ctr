@@ -1,0 +1,8 @@
+{"cut": 23, "tag": "lrank", "seed": 0, "n": 702680, "nf": 435, "load_s": 5, "ds_s": 6, "fit_s": 106, "min": 2.3, "obj": "lambdarank", "max_bin": 255, "auc": {"500": 0.79018, "1000": 0.78914}}
+{"cut": 25, "tag": "xendcg", "seed": 0, "n": 1402200, "nf": 435, "load_s": 8, "ds_s": 8, "fit_s": 167, "min": 3.3, "obj": "rank_xendcg", "max_bin": 255, "auc": {"500": 0.80962, "1000": 0.80955}}
+{"cut": 23, "tag": "xendcg", "seed": 0, "n": 702680, "nf": 435, "load_s": 3, "ds_s": 5, "fit_s": 96, "min": 2.1, "obj": "rank_xendcg", "max_bin": 255, "auc": {"500": 0.78896, "1000": 0.78764}}
+{"cut": 25, "tag": "mb1023", "seed": 0, "n": 1402200, "nf": 435, "load_s": 6, "ds_s": 397, "fit_s": 340, "min": 12.7, "obj": "binary", "max_bin": 1023, "auc": {"1000": 0.81634}}
+{"cut": 23, "tag": "mb1023", "seed": 0, "n": 702680, "nf": 435, "load_s": 5, "ds_s": 7, "fit_s": 166, "min": 3.2, "obj": "binary", "max_bin": 1023, "auc": {"1000": 0.79459}}
+{"cut": 25, "tag": "mb511", "seed": 0, "n": 1402200, "nf": 435, "load_s": 16, "ds_s": 10, "fit_s": 260, "min": 5.0, "obj": "binary", "max_bin": 511, "auc": {"1000": 0.81644}}
+{"cut": 23, "tag": "mb511", "seed": 0, "n": 702680, "nf": 435, "load_s": 3, "ds_s": 5, "fit_s": 116, "min": 2.3, "obj": "binary", "max_bin": 511, "auc": {"1000": 0.7946}}
+Q4_DONE

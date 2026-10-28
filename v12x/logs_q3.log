@@ -1,0 +1,12 @@
+{"cut": 25, "tag": "f_prtm", "seed": 0, "n": 1402200, "nf": 476, "load_s": 14, "ds_s": 9, "fit_s": 186, "min": 3.7, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81643}}
+{"cut": 25, "tag": "f_tm", "seed": 0, "n": 1402200, "nf": 448, "load_s": 7, "ds_s": 8, "fit_s": 170, "min": 3.3, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.8165}}
+{"cut": 25, "tag": "f_pr", "seed": 0, "n": 1402200, "nf": 463, "load_s": 7, "ds_s": 8, "fit_s": 184, "min": 3.5, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81658}}
+{"cut": 25, "tag": "f_tmx", "seed": 0, "n": 1402200, "nf": 454, "load_s": 7, "ds_s": 8, "fit_s": 173, "min": 3.3, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81653}}
+{"cut": 25, "tag": "f_all", "seed": 0, "n": 1402200, "nf": 482, "load_s": 8, "ds_s": 9, "fit_s": 196, "min": 3.7, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81667}}
+{"cut": 23, "tag": "f_prtm", "seed": 0, "n": 702680, "nf": 476, "load_s": 3, "ds_s": 5, "fit_s": 98, "min": 2.0, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.79486}}
+{"cut": 23, "tag": "f_tm", "seed": 0, "n": 702680, "nf": 448, "load_s": 3, "ds_s": 6, "fit_s": 96, "min": 2.0, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.79475}}
+{"cut": 23, "tag": "f_pr", "seed": 0, "n": 702680, "nf": 463, "load_s": 3, "ds_s": 6, "fit_s": 100, "min": 2.1, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.79469}}
+{"cut": 23, "tag": "f_tmx", "seed": 0, "n": 702680, "nf": 454, "load_s": 4, "ds_s": 6, "fit_s": 103, "min": 2.1, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.79479}}
+{"cut": 23, "tag": "f_all", "seed": 0, "n": 702680, "nf": 482, "load_s": 4, "ds_s": 6, "fit_s": 115, "min": 2.3, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.79471}}
+Q3_DONE
+CHAIN_DONE

@@ -1,0 +1,19 @@
+train (745474, 119) val (439640, 119) pos rate 0.11877275397934736 cats 19
+Warning: Overfitting detector is active, thus evaluation metric is calculated on every iteration. 'metric_period' is ignored for evaluation metric.
+0:	test: 0.7828785	best: 0.7828785 (0)	total: 266ms	remaining: 13m 16s
+100:	test: 0.8124916	best: 0.8124916 (100)	total: 17.1s	remaining: 8m 11s
+200:	test: 0.8134913	best: 0.8134913 (200)	total: 34.5s	remaining: 8m
+300:	test: 0.8139294	best: 0.8139294 (300)	total: 50.3s	remaining: 7m 31s
+400:	test: 0.8141455	best: 0.8141455 (400)	total: 1m 6s	remaining: 7m 12s
+500:	test: 0.8142441	best: 0.8142442 (498)	total: 1m 22s	remaining: 6m 49s
+600:	test: 0.8143225	best: 0.8143225 (600)	total: 1m 37s	remaining: 6m 28s
+700:	test: 0.8144718	best: 0.8144739 (695)	total: 1m 52s	remaining: 6m 9s
+800:	test: 0.8144634	best: 0.8144900 (765)	total: 2m 7s	remaining: 5m 51s
+900:	test: 0.8144238	best: 0.8144969 (847)	total: 2m 23s	remaining: 5m 34s
+Stopped by overfitting detector  (100 iterations wait)
+
+bestTest = 0.8144968823
+bestIteration = 847
+
+Shrink model to first 848 iterations.
+{"cut": 25, "tag": "catA_noid", "set": "A", "n": 745474, "nf": 119, "ncat": 19, "best_iter": 847, "auc": 0.8145, "load_s": 6, "fit_s": 153, "min": 2.7, "es_on_val": true}

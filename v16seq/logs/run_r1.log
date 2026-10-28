@@ -1,0 +1,17 @@
+== gru_s0 Wed Oct 28 06:11:13 GMT 2026
+{"mode": "oof", "spec": "gru_s0", "cut": 25, "seed": 0, "v12": 0.81723, "base": 0.81727, "new": 0.81726, "d_vs_v12": 4e-05, "d_vs_base": -0.0}
+{"mode": "oof", "spec": "gru_s0", "cut": 23, "seed": 0, "v12": 0.79566, "base": 0.79564, "new": 0.79569, "d_vs_v12": 3e-05, "d_vs_base": 5e-05}
+{"mode": "oof", "spec": "gru_s0", "cut": 26, "seed": 0, "v12": 0.82604, "base": 0.82593, "new": 0.82601, "d_vs_v12": -3e-05, "d_vs_base": 8e-05}
+== gru_s0+gru_s1+gru_s2 Wed Oct 28 06:11:52 GMT 2026
+{"mode": "oof", "spec": "gru_s0+gru_s1+gru_s2", "cut": 25, "seed": 0, "v12": 0.81723, "base": 0.81727, "new": 0.81727, "d_vs_v12": 4e-05, "d_vs_base": 0.0}
+{"mode": "oof", "spec": "gru_s0+gru_s1+gru_s2", "cut": 23, "seed": 0, "v12": 0.79566, "base": 0.79564, "new": 0.79576, "d_vs_v12": 0.00011, "d_vs_base": 0.00012}
+{"mode": "oof", "spec": "gru_s0+gru_s1+gru_s2", "cut": 26, "seed": 0, "v12": 0.82604, "base": 0.82593, "new": 0.82604, "d_vs_v12": 0.0, "d_vs_base": 0.00011}
+== sas_s0 Wed Oct 28 06:12:28 GMT 2026
+{"mode": "oof", "spec": "sas_s0", "cut": 25, "seed": 0, "v12": 0.81723, "base": 0.81727, "new": 0.81722, "d_vs_v12": -0.0, "d_vs_base": -5e-05}
+{"mode": "oof", "spec": "sas_s0", "cut": 23, "seed": 0, "v12": 0.79566, "base": 0.79564, "new": 0.79561, "d_vs_v12": -4e-05, "d_vs_base": -3e-05}
+{"mode": "oof", "spec": "sas_s0", "cut": 26, "seed": 0, "v12": 0.82604, "base": 0.82593, "new": 0.82603, "d_vs_v12": -1e-05, "d_vs_base": 0.0001}
+== gru_s0+gru_s1+gru_s2,sas_s0 Wed Oct 28 06:13:02 GMT 2026
+{"mode": "oof", "spec": "gru_s0+gru_s1+gru_s2,sas_s0", "cut": 25, "seed": 0, "v12": 0.81723, "base": 0.81727, "new": 0.81724, "d_vs_v12": 1e-05, "d_vs_base": -3e-05}
+{"mode": "oof", "spec": "gru_s0+gru_s1+gru_s2,sas_s0", "cut": 23, "seed": 0, "v12": 0.79566, "base": 0.79564, "new": 0.7957, "d_vs_v12": 5e-05, "d_vs_base": 6e-05}
+{"mode": "oof", "spec": "gru_s0+gru_s1+gru_s2,sas_s0", "cut": 26, "seed": 0, "v12": 0.82604, "base": 0.82593, "new": 0.82606, "d_vs_v12": 2e-05, "d_vs_base": 0.00013}
+R1_DONE

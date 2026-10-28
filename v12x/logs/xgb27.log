@@ -1,0 +1,1 @@
+{"cut": 27, "tag": "xgb", "seed": 0, "n": 1403200, "nf": 435, "load_s": 9, "fit_s": 330, "min": 6.2, "params": {"objective": "binary:logistic", "tree_method": "hist", "grow_policy": "lossguide", "max_leaves": 127, "max_depth": 0, "eta": 0.03, "subsample": 0.8, "colsample_bytree": 0.5, "min_child_weight": 30, "reg_lambda": 30, "max_bin": 255, "seed": 42, "eval_metric": "auc"}}

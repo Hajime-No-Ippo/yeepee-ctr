@@ -1,0 +1,22 @@
+  [gru C=6] ep0 loss 5.8880 N=66015 13s
+  [gru C=6] ep1 loss 5.4904 N=66015 24s
+  [gru C=6] ep2 loss 5.4108 N=66015 36s
+  [gru C=6] ep3 loss 5.3630 N=66015 48s
+  [gru C=6] ep4 loss 5.3183 N=66015 58s
+  [gru C=6] ep5 loss 5.2765 N=66015 70s
+  [gru C=6] ep6 loss 5.2330 N=66015 82s
+  [gru C=6] ep7 loss 5.2023 N=66015 93s
+  [gru C=6] ep8 loss 5.1870 N=66015 104s
+  [gru C=6] ep9 loss 5.1790 N=66015 115s
+train 123.65014696121216
+feat 6.335644006729126
+dot 0.52823 
+cos 0.52813 
+z 0.52706 
+gap 0.5221 0.4779
+lsm 0.52616 
+rank 0.47428 0.52572
+dot1_dm 0.52428 
+cos1 0.5231 
+dot3_dm 0.52642 
+cos3 0.52516 

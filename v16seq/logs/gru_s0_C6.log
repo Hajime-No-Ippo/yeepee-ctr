@@ -1,0 +1,12 @@
+  [gru C=6] ep0 loss 5.8880 N=66015 11s
+  [gru C=6] ep1 loss 5.4904 N=66015 23s
+  [gru C=6] ep2 loss 5.4108 N=66015 35s
+  [gru C=6] ep3 loss 5.3630 N=66015 46s
+  [gru C=6] ep4 loss 5.3183 N=66015 57s
+  [gru C=6] ep5 loss 5.2765 N=66015 68s
+  [gru C=6] ep6 loss 5.2330 N=66015 79s
+  [gru C=6] ep7 loss 5.2023 N=66015 89s
+  [gru C=6] ep8 loss 5.1870 N=66015 100s
+  [gru C=6] ep9 loss 5.1790 N=66015 111s
+val26 351380 7s
+{"kind": "gru", "seed": 0, "cut": "C6", "tables": ["val26"], "epochs": 10, "fit_s": 118, "total_s": 125}

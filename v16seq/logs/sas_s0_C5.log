@@ -1,0 +1,10 @@
+  [sas C=5] ep0 loss 5.8554 N=62946 26s
+  [sas C=5] ep1 loss 5.4704 N=62946 52s
+  [sas C=5] ep2 loss 5.4159 N=62946 79s
+  [sas C=5] ep3 loss 5.3868 N=62946 112s
+  [sas C=5] ep4 loss 5.3590 N=62946 139s
+  [sas C=5] ep5 loss 5.3265 N=62946 165s
+  [sas C=5] ep6 loss 5.3092 N=62946 191s
+  [sas C=5] ep7 loss 5.2974 N=62946 219s
+val25 439640 13s
+{"kind": "sas", "seed": 0, "cut": "C5", "tables": ["val25"], "epochs": 8, "fit_s": 225, "total_s": 237}

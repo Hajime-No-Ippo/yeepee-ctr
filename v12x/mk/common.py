@@ -5,7 +5,7 @@ import numpy as np, polars as pl, time, gc
 from scipy.sparse import csr_matrix
 from scipy.sparse.linalg import svds
 import os
-L=os.environ.get('DW_WORK','/workspace/huawei/v12/sol_work/clean25/work'); DAY=86400; J20=1737331200   # L = work dir holding train_events/train_rows/evaluation_* parquet (prep.py output)
+L=os.environ.get('DW_WORK','/workspace/huawei/v12x/dwdata'); DAY=86400; J20=1737331200   # L = work dir holding train_events/train_rows/evaluation_* parquet (prep.py output)
 def Jd(d): return J20+(d-20)*DAY
 T0=time.time()
 def log(*a): print(f'[{time.time()-T0:6.0f}s]',*a,flush=True)

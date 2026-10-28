@@ -1,0 +1,10 @@
+  [sas C=3] ep0 loss 5.8757 N=54205 26s
+  [sas C=3] ep1 loss 5.4868 N=54205 51s
+  [sas C=3] ep2 loss 5.4285 N=54205 76s
+  [sas C=3] ep3 loss 5.3866 N=54205 99s
+  [sas C=3] ep4 loss 5.3551 N=54205 123s
+  [sas C=3] ep5 loss 5.3220 N=54205 147s
+  [sas C=3] ep6 loss 5.3018 N=54205 172s
+  [sas C=3] ep7 loss 5.2897 N=54205 194s
+val23 501550 12s
+{"kind": "sas", "seed": 0, "cut": "C3", "tables": ["val23"], "epochs": 8, "fit_s": 199, "total_s": 211}

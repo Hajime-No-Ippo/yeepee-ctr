@@ -1,0 +1,17 @@
+{
+ "setup": 0.0,
+ "prep_v3": 27.6,
+ "prep_v2": 11.7,
+ "feat_v3": 139.0,
+ "feat_v2": 61.3,
+ "feat_x": 59.9,
+ "feat_lr": 17.4,
+ "feat_tt": 46.1,
+ "feat_pp": 39.9,
+ "feat_sq": 96.1,
+ "base": 55.1,
+ "slow": 60.2,
+ "blend": 2.9,
+ "write": 3.2,
+ "validate": 1.3
+}
