@@ -1,0 +1,7 @@
+v12 0.8172259475835104
+event-const cols 60 of 439
+event AUC of e0 0.672879467007552 lse 0.6680507246702352
+{"cut": 25, "set": "zstats", "ev_auc_e0": 0.67288, "ev_auc_new": 0.67131, "glob_a0.5": -0.00136, "glob_a1.0": -0.00488}
+{"cut": 25, "set": "zstats+const", "ev_auc_e0": 0.67288, "ev_auc_new": 0.67419, "glob_a0.5": -0.00125, "glob_a1.0": -0.00531}
+{"cut": 25, "set": "zstats+const+agg", "ev_auc_e0": 0.67288, "ev_auc_new": 0.67466, "glob_a0.5": -0.00132, "glob_a1.0": -0.00562}
+t 36.13779139518738

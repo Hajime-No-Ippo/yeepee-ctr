@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/huawei/dw_levers/run_choice.py", line 5, in <module>
+    D=Data(); v=D.val(cut); m_=meta(cut); assert (m_['clicked'].to_numpy()==v['y']).all()
+                               ^^^^
+NameError: name 'meta' is not defined

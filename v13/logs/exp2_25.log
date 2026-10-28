@@ -1,0 +1,5 @@
+top ['tB_dot_z', 'tB_dmean', 'tB_dot', 'tA_cos', 'tA_dmax', 'tA_z', 'lr10_dmax', 'lr10_cos', 'lr12_con05', 'lr12_con05_dmax', 'lr12_dmax', 'lr12_cos', 'sq_gap2', 'sq_gap', 'sq_logit']
+built {'base': (439640, 9), '+evconst+agg': (439640, 389), '+rowdev': (439640, 89), '+all': (439640, 469)} 11.77814793586731
+{"cut": 25, "seed": 0, "set": "base", "v12": 0.81723, "auc": 0.81726, "d_vs_v12": 3e-05, "d_vs_base": 0.0}
+{"cut": 25, "seed": 0, "set": "+evconst+agg", "v12": 0.81723, "auc": 0.81751, "d_vs_v12": 0.00029, "d_vs_base": 0.00025}
+{"cut": 25, "seed": 0, "set": "+rowdev", "v12": 0.81723, "auc": 0.81755, "d_vs_v12": 0.00033, "d_vs_base": 0.00029}
