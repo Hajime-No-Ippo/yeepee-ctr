@@ -1,6 +1,6 @@
 ---
 library_name: lightgbm
-license: other
+license: apache 2.0
 metrics:
 - roc_auc
 pipeline_tag: tabular-classification
