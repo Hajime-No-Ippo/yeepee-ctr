@@ -1,0 +1,4 @@
+{"cut": 25, "tag": "catA", "set": "A", "n": 745474, "nf": 121, "ncat": 21, "best_iter": 35, "auc": 0.80884, "load_s": 7, "fit_s": 25, "min": 0.6, "es_on_val": true}
+{"cut": 25, "tag": "catA_noid", "set": "A", "n": 745474, "nf": 119, "ncat": 19, "best_iter": 847, "auc": 0.8145, "load_s": 6, "fit_s": 153, "min": 2.7, "es_on_val": true}
+{"cut": 25, "tag": "catA_nocat", "set": "A", "n": 745474, "nf": 100, "ncat": 0, "best_iter": 552, "auc": 0.815, "load_s": 7, "fit_s": 44, "min": 0.8, "es_on_val": true}
+{"cut": 25, "tag": "catB", "set": "B", "n": 745474, "nf": 456, "ncat": 21, "best_iter": 34, "auc": 0.80798, "load_s": 10, "fit_s": 44, "min": 0.9, "es_on_val": true}

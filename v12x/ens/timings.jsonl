@@ -1,0 +1,24 @@
+{"tag":"xgb","cut":25,"seed":0,"wall_s":412}
+{"tag":"xgb","cut":23,"seed":0,"wall_s":221}
+{"tag":"xgb","cut":25,"seed":1,"wall_s":397}
+{"tag":"xgb","cut":23,"seed":1,"wall_s":221}
+{"args":"25 lgb255 --rounds 1000 --save 800,1000","wall_s":235}
+{"tag":"xgb","cut":27,"seed":0,"wall_s":376}
+{"args":"25 lrank --group --rounds 1000 --save 500,1000","wall_s":277,"note":"reconstructed from xlog.jsonl: load 9+ds 9+fit 250 +save/eval ~9; original line lost when run_q4.sh was killed"}
+{"args":"23 lrank --group --rounds 1000 --save 500,1000 --params {"objective":"lambdarank","lambdarank_truncation_level":10,"metric":"None"}","wall_s":136}
+{"args":"25 xendcg --group --rounds 1000 --save 500,1000 --params {"objective":"rank_xendcg","metric":"None"}","wall_s":200}
+{"args":"23 xendcg --group --rounds 1000 --save 500,1000 --params {"objective":"rank_xendcg","metric":"None"}","wall_s":126}
+{"args":"25 mb1023 --rounds 1000 --save 1000 --params {"max_bin":1023}","wall_s":762}
+{"args":"23 mb1023 --rounds 1000 --save 1000 --params {"max_bin":1023}","wall_s":196}
+{"args":"25 mb511 --rounds 1000 --save 1000 --params {"max_bin":511}","wall_s":299}
+{"args":"23 mb511 --rounds 1000 --save 1000 --params {"max_bin":511}","wall_s":140}
+{"args":"25 f_prtm --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_prop,feat_tm --rounds 1000 --save 1000","wall_s":223}
+{"args":"25 f_tm --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_tm --rounds 1000 --save 1000","wall_s":198}
+{"args":"25 f_pr --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_prop --rounds 1000 --save 1000","wall_s":213}
+{"args":"25 f_tmx --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_tm,feat_tmx --rounds 1000 --save 1000","wall_s":202}
+{"args":"25 f_all --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_prop,feat_tm,feat_tmx --rounds 1000 --save 1000","wall_s":225}
+{"args":"23 f_prtm --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_prop,feat_tm --rounds 1000 --save 1000","wall_s":122}
+{"args":"23 f_tm --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_tm --rounds 1000 --save 1000","wall_s":121}
+{"args":"23 f_pr --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_prop --rounds 1000 --save 1000","wall_s":125}
+{"args":"23 f_tmx --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_tm,feat_tmx --rounds 1000 --save 1000","wall_s":128}
+{"args":"23 f_all --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_prop,feat_tm,feat_tmx --rounds 1000 --save 1000","wall_s":141}

@@ -1,0 +1,2 @@
+{"cut": 27, "tag": "base", "seed": 0, "n": 745540, "nf": 377, "min": 0.9, "load_s": 10, "ds_s": 5, "fit_s": 33, "pred_s": 3}
+{"cut": 27, "tag": "slow", "seed": 0, "n": 745540, "nf": 377, "min": 1.0, "load_s": 5, "ds_s": 4, "fit_s": 42, "pred_s": 7}

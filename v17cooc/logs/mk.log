@@ -1,0 +1,14 @@
+A val25 shape=(439640, 61) clicklog=881345 added_by_eval_hist=0 18s
+B val25 shape=(439640, 61) clicklog=886177 added_by_eval_hist=4832 18s
+A f1 shape=(351560, 61) clicklog=525090 added_by_eval_hist=0 10s
+A f2 shape=(351120, 61) clicklog=657552 added_by_eval_hist=0 12s
+A f3 shape=(349120, 61) clicklog=743467 added_by_eval_hist=0 13s
+A f4 shape=(350400, 61) clicklog=814470 added_by_eval_hist=0 17s
+A f5 shape=(352300, 61) clicklog=881345 added_by_eval_hist=0 23s
+A f6 shape=(351380, 61) clicklog=946227 added_by_eval_hist=0 21s
+A val23 shape=(501550, 61) clicklog=743467 added_by_eval_hist=0 20s
+A val25 shape=(439640, 61) clicklog=881345 added_by_eval_hist=0 21s
+A val26 shape=(351380, 61) clicklog=946227 added_by_eval_hist=0 19s
+A eval shape=(529390, 61) clicklog=1009701 added_by_eval_hist=0 21s
+B f1 shape=(351560, 61) clicklog=595595 added_by_eval_hist=70505 10s
+B f2 shape=(351120, 61) clicklog=681482 added_by_eval_hist=23930 11s
