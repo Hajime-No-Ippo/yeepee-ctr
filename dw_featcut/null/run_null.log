@@ -1,0 +1,9 @@
+loaded (1402200, 401) (439640, 401) 12 s
+ds 26
+real 307 s auc 0.81737
+null0 225 s auc 0.49435
+null1 210 s auc None
+null2 216 s auc None
+null3 213 s auc None
+null4 216 s auc None
+DONE 1413

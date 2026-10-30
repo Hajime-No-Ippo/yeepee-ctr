@@ -1,0 +1,6 @@
+{"run": "real", "fit_s": 307, "auc_val25": 0.81737, "label_mean": 0.06314505776636714, "nf": 401}
+{"run": "null0", "fit_s": 225, "auc_val25": 0.49435, "label_mean": 0.06314505776636714, "nf": 401}
+{"run": "null1", "fit_s": 210, "auc_val25": null, "label_mean": 0.06314505776636714, "nf": 401}
+{"run": "null2", "fit_s": 216, "auc_val25": null, "label_mean": 0.06314505776636714, "nf": 401}
+{"run": "null3", "fit_s": 213, "auc_val25": null, "label_mean": 0.06314505776636714, "nf": 401}
+{"run": "null4", "fit_s": 216, "auc_val25": null, "label_mean": 0.06314505776636714, "nf": 401}

@@ -1,0 +1,16 @@
+{"cut": 25, "set": "S", "seed": 0, "nf": 401, "auc": 0.817371, "fit_s": 298}
+{"cut": 25, "set": "a_p90", "seed": 0, "nf": 293, "auc": 0.817597, "fit_s": 779}
+{"cut": 25, "set": "b_mean", "seed": 0, "nf": 306, "auc": 0.817434, "fit_s": 231}
+{"cut": 25, "set": "c_r08", "seed": 0, "nf": 372, "auc": 0.817382, "fit_s": 666}
+{"cut": 25, "set": "S", "seed": 1, "nf": 401, "auc": 0.817578, "fit_s": 1435}
+{"cut": 25, "set": "a_p90", "seed": 1, "nf": 293, "auc": 0.81747, "fit_s": 242}
+{"cut": 25, "set": "b_mean", "seed": 1, "nf": 306, "auc": 0.817571, "fit_s": 562}
+{"cut": 25, "set": "c_r08", "seed": 1, "nf": 372, "auc": 0.817472, "fit_s": 290}
+{"cut": 23, "set": "S", "seed": 0, "nf": 401, "auc": 0.796749, "fit_s": 337}
+{"cut": 23, "set": "a_p90", "seed": 0, "nf": 293, "auc": 0.796843, "fit_s": 116}
+{"cut": 23, "set": "b_mean", "seed": 0, "nf": 306, "auc": 0.796557, "fit_s": 118}
+{"cut": 23, "set": "c_r08", "seed": 0, "nf": 372, "auc": 0.796504, "fit_s": 486}
+{"cut": 23, "set": "S", "seed": 1, "nf": 401, "auc": 0.79644, "fit_s": 154}
+{"cut": 23, "set": "a_p90", "seed": 1, "nf": 293, "auc": 0.796797, "fit_s": 119}
+{"cut": 23, "set": "b_mean", "seed": 1, "nf": 306, "auc": 0.79676, "fit_s": 451}
+{"cut": 23, "set": "c_r08", "seed": 1, "nf": 372, "auc": 0.79673, "fit_s": 149}
