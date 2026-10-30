@@ -1,0 +1,3 @@
+{"cut": 25, "tag": "ref484", "seed": 0, "nf": 484, "fit_s": 391, "rounds": 1000, "params": {}, "auc": {"400": 0.81649, "700": 0.81727, "1000": 0.81748}, "wall_s": 442, "threads": 4, "peak_rss_mb_process": 5417, "stage": "ref"}
+taskset: failed to execute /workspace/venv/bin/python: No such file or directory
+06:00:30 guard waiting on ['46283:172%:/workspace/venv_v17/bin/python seq11.py f1 f2 f3 f4 val25', '46601:176%:/workspace/venv_v17/bin/python seq11.py f1 f2 f3 f4 val25', '46838:174%:/workspace/venv_v17/bin/python seq11.py f1 f2 f3 f4 val25']

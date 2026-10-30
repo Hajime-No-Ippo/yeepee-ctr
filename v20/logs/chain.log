@@ -1,0 +1,15 @@
+03:52:57 START s3_av
+03:53:37 START s3_av
+04:20:08 END s3_av rc=0
+04:20:08 START s0_ref
+05:54:45 RESUME after box restart (04:41)
+05:54:45 START s3_av
+05:54:45 END s3_av rc=127
+05:54:45 START s0_ref
+05:54:45 END s0_ref rc=127
+05:56:28 RESUME after box restart
+05:56:28 START s3_av
+06:00:28 RESUME after repair (venv .venv, out/ rebuilt, s3_av skipped, s7_avdrop added)
+06:00:28 START preflight
+06:00:29 END preflight rc=0
+06:00:29 START s0_ref

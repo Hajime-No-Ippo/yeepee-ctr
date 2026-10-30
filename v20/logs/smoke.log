@@ -1,0 +1,2 @@
+(702680, 484) (501550, 484) 484 True 0.06354955313940912
+{'cut': 23, 'tag': 'smoke', 'seed': 0, 'nf': 30, 'fit_s': 3, 'rounds': 20, 'params': {'learning_rate': 0.1}, 'auc': {'20': 0.58392}, 'wall_s': 4, 'threads': 1, 'peak_rss_mb_process': 3877}

@@ -1,0 +1,1 @@
+{"cut": 25, "tag": "ref484", "seed": 0, "nf": 484, "fit_s": 391, "rounds": 1000, "params": {}, "auc": {"400": 0.81649, "700": 0.81727, "1000": 0.81748}, "wall_s": 442, "threads": 4, "peak_rss_mb_process": 5417, "stage": "ref"}
