@@ -1,0 +1,554 @@
+NOTE: variant B is TRANSDUCTIVE (evaluation-set history entries are added to the item co-occurrence graph; no labels used).
+[cut 27] >> /workspace/venv_v17/bin/python prep.py /workspace/huawei/data
+[  34.2s] train (6868240, 4) (686824, 7)
+[  36.1s] evaluation (529390, 3) (52939, 7)
+[  37.6s] items 50000 users 54456 events 739763
+[  40.0s] done
+[stage prep_v3] 40s
+[cut 27] >> /workspace/venv_v17/bin/python prep.py
+evaluation rows done 0.2621493339538574
+evaluation events done 0.580352783203125
+train rows done 4.8297975063323975
+train events done 8.956921339035034
+[stage prep_v2] 10s
+[cut 27] >> /workspace/venv_v17/bin/python v3fold.py f3 f4 f5 f6 eval
+04:41:23 build C=1737590400 rows=349120 cols=170 14s
+04:41:23 wrote f3 (349120, 170)
+04:41:40 build C=1737676800 rows=350400 cols=170 17s
+04:41:40 wrote f4 (350400, 170)
+04:41:58 build C=1737763200 rows=352300 cols=170 18s
+04:41:58 wrote f5 (352300, 170)
+04:42:19 build C=1737849600 rows=351380 cols=170 20s
+04:42:19 wrote f6 (351380, 170)
+04:42:45 build C=1737936000 rows=529390 cols=170 26s
+04:42:45 wrote eval (529390, 170)
+[stage feat_v3] 98s
+[cut 27] >> /workspace/venv_v17/bin/python build_folds.py lite
+04:42:48 pool 753289
+04:42:49 cooc pairs 12580862
+04:42:50 svd done
+04:42:55 build C=1737590400 rows=349120 7s
+04:42:55 wrote h3 (349120, 125)
+04:42:55 pool 820066
+04:42:56 cooc pairs 15164046
+04:42:57 svd done
+04:43:02 build C=1737676800 rows=350400 7s
+04:43:02 wrote h4 (350400, 125)
+04:43:03 pool 884413
+04:43:04 cooc pairs 18012356
+04:43:05 svd done
+04:43:10 build C=1737763200 rows=352300 8s
+04:43:11 wrote h5 (352300, 125)
+04:43:11 pool 947991
+04:43:13 cooc pairs 21111352
+04:43:14 svd done
+04:43:20 build C=1737849600 rows=351380 9s
+04:43:20 wrote val26 (351380, 125)
+04:43:21 pool 1013190
+04:43:23 cooc pairs 24482596
+04:43:24 svd done
+04:43:32 build C=1737936000 rows=529390 12s
+04:43:32 wrote eval (529390, 124)
+[stage feat_v2] 47s
+[cut 27] >> /workspace/venv_v17/bin/python extra.py f3 f4 f5 f6 eval
+f3 (349120, 39) 9s
+f4 (350400, 39) 9s
+f5 (352300, 39) 9s
+f6 (351380, 39) 10s
+eval (529390, 39) 11s
+[stage feat_x] 49s
+[cut 27] >> LR_KS=4,6,8,10,12,16 LR_CON=1 /workspace/venv_v17/bin/python lrfeat2.py f3 f4 f5 f6 eval
+04:44:23 C 1737590400 pairs 629903 sv [3.82 2.36 2.26 2.23 2.23 2.22 2.22 2.21 2.21 2.21 2.19 2.18 2.15 2.1
+ 2.06]
+f3 (349120, 55) 2s
+04:44:25 C 1737676800 pairs 683619 sv [3.98 2.42 2.32 2.3  2.29 2.29 2.28 2.28 2.27 2.27 2.25 2.24 2.2  2.15
+ 2.11]
+f4 (350400, 55) 2s
+04:44:28 C 1737763200 pairs 731030 sv [4.11 2.47 2.36 2.35 2.34 2.34 2.33 2.33 2.32 2.32 2.3  2.28 2.25 2.19
+ 2.15]
+f5 (352300, 55) 3s
+04:44:30 C 1737849600 pairs 773354 sv [4.22 2.51 2.4  2.39 2.39 2.38 2.38 2.37 2.36 2.36 2.35 2.32 2.28 2.23
+ 2.18]
+f6 (351380, 55) 3s
+04:44:33 C 1737936000 pairs 811543 sv [4.32 2.55 2.44 2.43 2.43 2.42 2.41 2.41 2.4  2.4  2.38 2.35 2.31 2.25
+ 2.21]
+eval (529390, 55) 3s
+[stage feat_lr] 14s
+[cut 27] >> TT_THREADS=8 /workspace/venv_v17/bin/python ttfeat.py f3 f4 f5 f6 eval
+  C 1737590400 ep0 loss 2.0789
+  C 1737590400 ep1 loss 2.0518
+  C 1737590400 ep2 loss 2.0232
+  C 1737590400 ep3 loss 1.9928
+  C 1737590400 ep4 loss 1.9608
+  C 1737590400 ep5 loss 1.9273
+04:44:44 C 1737590400 train events 186038 7s
+f3 (349120, 9) 7s
+  C 1737676800 ep0 loss 2.0774
+  C 1737676800 ep1 loss 2.0439
+  C 1737676800 ep2 loss 2.0081
+  C 1737676800 ep3 loss 1.9698
+  C 1737676800 ep4 loss 1.9296
+  C 1737676800 ep5 loss 1.8878
+04:44:50 C 1737676800 train events 247219 6s
+f4 (350400, 9) 6s
+  C 1737763200 ep0 loss 2.0764
+  C 1737763200 ep1 loss 2.0367
+  C 1737763200 ep2 loss 1.9938
+  C 1737763200 ep3 loss 1.9479
+  C 1737763200 ep4 loss 1.8998
+  C 1737763200 ep5 loss 1.8504
+04:44:58 C 1737763200 train events 308499 7s
+f5 (352300, 9) 7s
+  C 1737849600 ep0 loss 2.0752
+  C 1737849600 ep1 loss 2.0290
+  C 1737849600 ep2 loss 1.9785
+  C 1737849600 ep3 loss 1.9247
+  C 1737849600 ep4 loss 1.8690
+  C 1737849600 ep5 loss 1.8125
+04:45:06 C 1737849600 train events 370313 8s
+f6 (351380, 9) 9s
+  C 1737936000 ep0 loss 2.0739
+  C 1737936000 ep1 loss 2.0211
+  C 1737936000 ep2 loss 1.9632
+  C 1737936000 ep3 loss 1.9019
+  C 1737936000 ep4 loss 1.8391
+  C 1737936000 ep5 loss 1.7767
+04:45:16 C 1737936000 train events 432023 10s
+eval (529390, 9) 10s
+[stage feat_tt] 42s
+[cut 27] >> /workspace/venv_v17/bin/python ppmi.py f3 f4 f5 f6 eval
+f3 (349120, 10) 5s
+f4 (350400, 10) 6s
+f5 (352300, 10) 6s
+f6 (351380, 10) 7s
+eval (529390, 10) 7s
+[stage feat_pp] 32s
+[cut 27] >> V12_THREADS=8 /workspace/venv_v17/bin/python seqrun.py f3 f4 f5 f6 eval
+seqrun: 11 seeds, 3 concurrent, 2 threads each, tables ['f3', 'f4', 'f5', 'f6', 'eval']
+seeds to run [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+[0s] start seed 0
+[15s] start seed 1
+[30s] start seed 2
+[402s] seed 0 done in 402s
+[402s] start seed 3
+[420s] seed 1 done in 405s
+[420s] start seed 4
+[438s] seed 2 done in 408s
+[438s] start seed 5
+[801s] seed 3 done in 399s
+[801s] start seed 6
+[822s] seed 4 done in 402s
+[822s] start seed 7
+[840s] seed 5 done in 402s
+[840s] start seed 8
+[1200s] seed 6 done in 399s
+[1200s] start seed 9
+[1218s] seed 7 done in 396s
+[1218s] start seed 10
+[1332s] seed 8 done in 492s
+[1698s] seed 9 done in 498s
+[1713s] seed 10 done in 495s
+eval (529390, 21)
+f3 (349120, 21)
+f4 (350400, 21)
+f5 (352300, 21)
+f6 (351380, 21)
+seqrun done 1718s
+[stage feat_sq] 1718s
+[cut 27] >> /workspace/venv_v17/bin/python dw/mkdw.py f3 f4 f5 f6 eval
+/workspace/v17run_test/c27/dw/common.py:54: RuntimeWarning: Mean of empty slice
+  m=x.reshape(-1,10); mu=np.nanmean(m,1,keepdims=True); sd=np.nanstd(m,1,keepdims=True)+1e-6
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+f3 (349120, 43) 47s
+f4 (350400, 43) 54s
+f5 (352300, 43) 54s
+f6 (351380, 43) 60s
+eval unseen users 1453
+eval hist items unseen (dropped) 0 of 708389
+eval (529390, 43) 68s
+[stage feat_dw] 287s
+[cut 27] >> /workspace/venv_v17/bin/python cooc/mkcooc.py A f3 f4 f5 f6 eval && /workspace/venv_v17/bin/python cooc/mksel.py A
+/workspace/v17run_test/c27/cooc/sigs.py:30: RuntimeWarning: Mean of empty slice
+  m=x.reshape(-1,10); mu=np.nanmean(m,1,keepdims=True); sd=np.nanstd(m,1,keepdims=True)+1e-6
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+A f3 shape=(349120, 61) clicklog=743467 added_by_eval_hist=0 10s
+A f4 shape=(350400, 61) clicklog=814470 added_by_eval_hist=0 11s
+A f5 shape=(352300, 61) clicklog=881345 added_by_eval_hist=0 13s
+A f6 shape=(351380, 61) clicklog=946227 added_by_eval_hist=0 14s
+A eval shape=(529390, 61) clicklog=1009701 added_by_eval_hist=0 17s
+A 25 ['coA_pp12_cos', 'coA_pp12_cos_z', 'coA_pp12_cos_dm', 'coA_pp8_cos', 'coA_pp8_cos_z', 'coA_pp16_cos', 'coA_pp16_cos_z', 'coA_pp12x_cos', 'coA_pp12x_cos_z', 'coA_pp12_unorm', 'coA_pp12_ucos_dot', 'coA_ppb12_cos', 'coA_ppb12_cos_z', 'coA_pp_prod0', 'coA_pp_prod1', 'coA_pp_prod2', 'coA_pp_prod3', 'coA_pp_prod4', 'coA_pp_prod5', 'coA_pp_prod6', 'coA_pp_prod7', 'coA_pp_prod8', 'coA_pp_prod9', 'coA_pp_prod10', 'coA_pp_prod11']
+[stage cooc_A] 71s
+[cut 27] >> /workspace/venv_v17/bin/python cooc/mkcooc.py B f3 f4 f5 f6 eval && /workspace/venv_v17/bin/python cooc/mksel.py B
+/workspace/v17run_test/c27/cooc/sigs.py:30: RuntimeWarning: Mean of empty slice
+  m=x.reshape(-1,10); mu=np.nanmean(m,1,keepdims=True); sd=np.nanstd(m,1,keepdims=True)+1e-6
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+B f3 shape=(349120, 61) clicklog=753289 added_by_eval_hist=9822 349s
+B f4 shape=(350400, 61) clicklog=820066 added_by_eval_hist=5596 16s
+B f5 shape=(352300, 61) clicklog=884413 added_by_eval_hist=3068 16s
+B f6 shape=(351380, 61) clicklog=947991 added_by_eval_hist=1764 16s
+B eval shape=(529390, 61) clicklog=1013190 added_by_eval_hist=3489 18s
+B 25 ['coB_pp12_cos', 'coB_pp12_cos_z', 'coB_pp12_cos_dm', 'coB_pp8_cos', 'coB_pp8_cos_z', 'coB_pp16_cos', 'coB_pp16_cos_z', 'coB_pp12x_cos', 'coB_pp12x_cos_z', 'coB_pp12_unorm', 'coB_pp12_ucos_dot', 'coB_ppb12_cos', 'coB_ppb12_cos_z', 'coB_pp_prod0', 'coB_pp_prod1', 'coB_pp_prod2', 'coB_pp_prod3', 'coB_pp_prod4', 'coB_pp_prod5', 'coB_pp_prod6', 'coB_pp_prod7', 'coB_pp_prod8', 'coB_pp_prod9', 'coB_pp_prod10', 'coB_pp_prod11']
+[stage cooc_B] 422s
+[cut 27] >> /workspace/venv_v17/bin/python ens.py 27 Abig --seeds 0 --rounds 1000 --save 1000 --threads 8 --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_Ap --nfolds 4 --drop '^sq_(pdot|pcos|mdot|mcos)$' --params '{"learning_rate":0.015,"num_leaves":127,"feature_fraction":0.5,"lambda_l2":30,"min_data_in_leaf":200,"max_bin":255,"force_col_wise":true}'
+{"cut": 27, "tag": "Abig", "seed": 0, "n": 1403200, "nf": 460, "min": 3.9, "load_s": 32, "ds_s": 8, "fit_s": 175, "pred_s": 14}
+[stage A_big] 235s
+[cut 27] >> /workspace/venv_v17/bin/python ens.py 27 A_s --seeds 0 --rounds 500 --save 500 --threads 8 --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_Ap --nfolds 4 --negfrac 0.5 --drop '^sq_(pdot|pcos|mdot|mcos)$' --params '{"learning_rate":0.03,"feature_fraction":0.55,"num_leaves":95,"lambda_l2":30,"max_bin":63,"force_col_wise":true}'
+{"cut": 27, "tag": "A_s", "seed": 0, "n": 745540, "nf": 460, "min": 1.0, "load_s": 8, "ds_s": 5, "fit_s": 43, "pred_s": 3}
+[stage A_s] 62s
+[cut 27] >> MLP_THREADS=8 /workspace/venv_v17/bin/python mlp12.py 27 Amlp --ep 4 --seed 0 --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_Ap
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (745540, 677) 45 s
+ep0 58s
+ep1 67s
+ep2 332s
+ep3 344s
+[stage A_mlp0] 348s
+[cut 27] >> MLP_THREADS=8 /workspace/venv_v17/bin/python mlp12.py 27 Amlp --ep 4 --seed 1 --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_Ap
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (745540, 677) 56 s
+ep0 68s
+ep1 78s
+ep2 88s
+ep3 97s
+[stage A_mlp1] 100s
+[cut 27] >> MLP_THREADS=8 /workspace/venv_v17/bin/python mlp12.py 27 Amlp --ep 4 --seed 2 --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_Ap
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (745540, 677) 43 s
+ep0 53s
+ep1 62s
+ep2 70s
+ep3 79s
+[stage A_mlp2] 82s
+[cut 27] >> /workspace/venv_v17/bin/python cooc/blend_cooc.py 27 A
+wrote eval_pred_A.parquet 529390
+[stage A_blend] 1s
+[cut 27] >> mkdir -p out && PRED=/workspace/v17run_test/c27/eval_pred_A.parquet /workspace/venv_v17/bin/python write_sub.py out/submission_v17cooc_A_trainonly.csv
+missing preds filled: 0
+rows=529390 unique=529390 min=0.0002845 mean=0.09355 max=0.8367 distinct=528317
+VALID
+zip contents ['submission_v17cooc_A_trainonly.csv']
+sha256 0322648699ecb4694484e97a1e57ed4e8e330eeb59e2002638f61dbd11deeba4
+[stage A_write] 4s
+[cut 27] >> /workspace/venv_v17/bin/python validate.py out/submission_v17cooc_A_trainonly.csv > logs/validate_A.txt; cat logs/validate_A.txt; grep -qx VALID logs/validate_A.txt
+rows=529390 unique=529390 min=0.0002845 mean=0.093554 max=0.8367 distinct=528317
+VALID
+[stage A_validate] 1s
+[cut 27] >> /workspace/venv_v17/bin/python ens.py 27 Bbig --seeds 0 --rounds 1000 --save 1000 --threads 8 --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_Bp --nfolds 4 --drop '^sq_(pdot|pcos|mdot|mcos)$' --params '{"learning_rate":0.015,"num_leaves":127,"feature_fraction":0.5,"lambda_l2":30,"min_data_in_leaf":200,"max_bin":255,"force_col_wise":true}'
+{"cut": 27, "tag": "Bbig", "seed": 0, "n": 1403200, "nf": 460, "min": 3.3, "load_s": 11, "ds_s": 9, "fit_s": 166, "pred_s": 14}
+[stage B_big] 202s
+[cut 27] >> /workspace/venv_v17/bin/python ens.py 27 B_s --seeds 0 --rounds 500 --save 500 --threads 8 --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_Bp --nfolds 4 --negfrac 0.5 --drop '^sq_(pdot|pcos|mdot|mcos)$' --params '{"learning_rate":0.03,"feature_fraction":0.55,"num_leaves":95,"lambda_l2":30,"max_bin":63,"force_col_wise":true}'
+{"cut": 27, "tag": "B_s", "seed": 0, "n": 745540, "nf": 460, "min": 1.0, "load_s": 7, "ds_s": 5, "fit_s": 43, "pred_s": 3}
+[stage B_s] 60s
+[cut 27] >> MLP_THREADS=8 /workspace/venv_v17/bin/python mlp12.py 27 Bmlp --ep 4 --seed 0 --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_Bp
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (745540, 677) 35 s
+ep0 46s
+ep1 55s
+ep2 64s
+ep3 73s
+[stage B_mlp0] 75s
+[cut 27] >> MLP_THREADS=8 /workspace/venv_v17/bin/python mlp12.py 27 Bmlp --ep 4 --seed 1 --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_Bp
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (745540, 677) 37 s
+ep0 48s
+ep1 57s
+ep2 67s
+ep3 78s
+[stage B_mlp1] 80s
+[cut 27] >> MLP_THREADS=8 /workspace/venv_v17/bin/python mlp12.py 27 Bmlp --ep 4 --seed 2 --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_Bp
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (745540, 677) 35 s
+ep0 46s
+ep1 55s
+ep2 64s
+ep3 72s
+[stage B_mlp2] 74s
+[cut 27] >> /workspace/venv_v17/bin/python cooc/blend_cooc.py 27 B
+wrote eval_pred_B.parquet 529390
+[stage B_blend] 1s
+[cut 27] >> mkdir -p out && PRED=/workspace/v17run_test/c27/eval_pred_B.parquet /workspace/venv_v17/bin/python write_sub.py out/submission_v17cooc_B_TRANSDUCTIVE.csv
+missing preds filled: 0
+rows=529390 unique=529390 min=0.0002724 mean=0.09349 max=0.8374 distinct=528221
+VALID
+zip contents ['submission_v17cooc_B_TRANSDUCTIVE.csv']
+sha256 ca9bae61df02205ae4b3e9f41fbbe92197641101e53f9258687ad3e7ff660e96
+[stage B_write] 3s
+[cut 27] >> /workspace/venv_v17/bin/python validate.py out/submission_v17cooc_B_TRANSDUCTIVE.csv > logs/validate_B.txt; cat logs/validate_B.txt; grep -qx VALID logs/validate_B.txt
+rows=529390 unique=529390 min=0.0002724 mean=0.093487 max=0.8374 distinct=528221
+VALID
+[stage B_validate] 1s
+cut 27: TOTAL this run 69.3 min; all stages 69.3 min
+submissions in /workspace/v17run_test/c27/out
+[cut 25] >> /workspace/venv_v17/bin/python prep.py /workspace/huawei/data
+[  23.1s] train (6868240, 4) (686824, 7)
+[  23.6s] evaluation (529390, 3) (52939, 7)
+[  25.0s] items 50000 users 54456 events 739763
+[  27.1s] done
+[stage prep_v3] 28s
+[cut 25] >> /workspace/venv_v17/bin/python prep.py
+evaluation rows done 0.237382173538208
+evaluation events done 0.5166893005371094
+train rows done 3.5128653049468994
+train events done 7.038639307022095
+[stage prep_v2] 8s
+[cut 25] >> /workspace/venv_v17/bin/python v3fold.py f1 f2 f3 f4 val25
+05:50:22 build C=1737417600 rows=351560 cols=170 10s
+05:50:22 wrote f1 (351560, 170)
+05:50:33 build C=1737504000 rows=351120 cols=170 11s
+05:50:34 wrote f2 (351120, 170)
+05:50:47 build C=1737590400 rows=349120 cols=170 13s
+05:50:47 wrote f3 (349120, 170)
+05:51:03 build C=1737676800 rows=350400 cols=170 16s
+05:51:03 wrote f4 (350400, 170)
+05:51:22 build C=1737763200 rows=439640 cols=170 18s
+05:51:22 wrote val25 (439640, 170)
+[stage feat_v3] 71s
+[cut 25] >> /workspace/venv_v17/bin/python build_folds.py c25
+05:51:25 pool 886177
+05:51:26 cooc pairs 18012356
+05:51:27 svd done
+05:51:34 build C=1737763200 rows=439640 9s
+05:51:34 wrote val25 (439640, 125)
+05:51:34 pool 595595
+05:51:34 cooc pairs 7498308
+05:51:35 svd done
+05:51:39 build C=1737417600 rows=351560 5s
+05:51:39 wrote h1 (351560, 125)
+05:51:40 pool 681482
+05:51:40 cooc pairs 10118802
+05:51:41 svd done
+05:51:45 build C=1737504000 rows=351120 6s
+05:51:46 wrote h2 (351120, 125)
+05:51:46 pool 753289
+05:51:47 cooc pairs 12580862
+05:51:48 svd done
+05:51:52 build C=1737590400 rows=349120 7s
+05:51:52 wrote h3 (349120, 125)
+05:51:53 pool 820066
+05:51:54 cooc pairs 15164046
+05:51:55 svd done
+05:51:59 build C=1737676800 rows=350400 7s
+05:52:00 wrote h4 (350400, 125)
+[stage feat_v2] 38s
+[cut 25] >> /workspace/venv_v17/bin/python extra.py f1 f2 f3 f4 val25
+f1 (351560, 39) 7s
+f2 (351120, 39) 8s
+f3 (349120, 39) 8s
+f4 (350400, 39) 10s
+val25 (439640, 39) 10s
+[stage feat_x] 45s
+[cut 25] >> LR_KS=4,6,8,10,12,16 LR_CON=1 /workspace/venv_v17/bin/python lrfeat2.py f1 f2 f3 f4 val25
+05:52:46 C 1737417600 pairs 450458 sv [3.42 2.21 2.13 2.09 2.08 2.07 2.07 2.06 2.06 2.06 2.04 2.04 2.03 1.98
+ 1.94]
+f1 (351560, 55) 2s
+05:52:48 C 1737504000 pairs 561157 sv [3.64 2.29 2.19 2.16 2.16 2.15 2.14 2.14 2.14 2.14 2.12 2.11 2.09 2.04
+ 2.01]
+f2 (351120, 55) 2s
+05:52:50 C 1737590400 pairs 629903 sv [3.82 2.36 2.26 2.23 2.23 2.22 2.22 2.21 2.21 2.21 2.19 2.18 2.15 2.1
+ 2.06]
+f3 (349120, 55) 2s
+05:52:52 C 1737676800 pairs 683619 sv [3.98 2.42 2.32 2.3  2.29 2.29 2.28 2.28 2.27 2.27 2.25 2.24 2.2  2.15
+ 2.11]
+f4 (350400, 55) 2s
+05:52:54 C 1737763200 pairs 731030 sv [4.11 2.47 2.36 2.35 2.34 2.34 2.33 2.33 2.32 2.32 2.3  2.28 2.25 2.19
+ 2.15]
+val25 (439640, 55) 2s
+[stage feat_lr] 12s
+[cut 25] >> TT_THREADS=8 /workspace/venv_v17/bin/python ttfeat.py f1 f2 f3 f4 val25
+  C 1737417600 ep0 loss 2.0889
+  C 1737417600 ep1 loss 2.0740
+  C 1737417600 ep2 loss 2.0598
+  C 1737417600 ep3 loss 2.0452
+  C 1737417600 ep4 loss 2.0302
+  C 1737417600 ep5 loss 2.0147
+05:53:03 C 1737417600 train events 62096 5s
+f1 (351560, 9) 5s
+  C 1737504000 ep0 loss 2.0818
+  C 1737504000 ep1 loss 2.0608
+  C 1737504000 ep2 loss 2.0394
+  C 1737504000 ep3 loss 2.0168
+  C 1737504000 ep4 loss 1.9933
+  C 1737504000 ep5 loss 1.9687
+05:53:07 C 1737504000 train events 124053 3s
+f2 (351120, 9) 3s
+  C 1737590400 ep0 loss 2.0789
+  C 1737590400 ep1 loss 2.0518
+  C 1737590400 ep2 loss 2.0232
+  C 1737590400 ep3 loss 1.9928
+  C 1737590400 ep4 loss 1.9608
+  C 1737590400 ep5 loss 1.9273
+05:53:11 C 1737590400 train events 186038 4s
+f3 (349120, 9) 4s
+  C 1737676800 ep0 loss 2.0774
+  C 1737676800 ep1 loss 2.0439
+  C 1737676800 ep2 loss 2.0081
+  C 1737676800 ep3 loss 1.9698
+  C 1737676800 ep4 loss 1.9296
+  C 1737676800 ep5 loss 1.8878
+05:53:16 C 1737676800 train events 247219 5s
+f4 (350400, 9) 6s
+  C 1737763200 ep0 loss 2.0764
+  C 1737763200 ep1 loss 2.0367
+  C 1737763200 ep2 loss 1.9938
+  C 1737763200 ep3 loss 1.9479
+  C 1737763200 ep4 loss 1.8998
+  C 1737763200 ep5 loss 1.8504
+05:53:23 C 1737763200 train events 308499 6s
+val25 (439640, 9) 7s
+[stage feat_tt] 28s
+[cut 25] >> /workspace/venv_v17/bin/python ppmi.py f1 f2 f3 f4 val25
+f1 (351560, 10) 4s
+f2 (351120, 10) 4s
+f3 (349120, 10) 5s
+f4 (350400, 10) 5s
+val25 (439640, 10) 6s
+[stage feat_pp] 26s
+[cut 25] >> V12_THREADS=8 /workspace/venv_v17/bin/python seqrun.py f1 f2 f3 f4 val25
+seqrun: 11 seeds, 3 concurrent, 2 threads each, tables ['f1', 'f2', 'f3', 'f4', 'val25']
+seeds to run [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+[0s] start seed 0
+[15s] start seed 1
+[30s] start seed 2
+[273s] seed 0 done in 273s
+[273s] start seed 3
+[291s] seed 1 done in 276s
+[291s] start seed 4
+[309s] seed 2 done in 279s
+[309s] start seed 5
+[549s] seed 3 done in 276s
+[549s] start seed 6
+[567s] seed 4 done in 276s
+[567s] start seed 7
+[585s] seed 5 done in 276s
+[585s] start seed 8
+[919s] seed 6 done in 369s
+[919s] start seed 9
+[940s] seed 7 done in 373s
+[940s] start seed 10
+[1021s] seed 8 done in 436s
+[1264s] seed 9 done in 345s
+[1288s] seed 10 done in 348s
+f1 (351560, 21)
+f2 (351120, 21)
+f3 (349120, 21)
+f4 (350400, 21)
+val25 (439640, 21)
+seqrun done 1294s
+[stage feat_sq] 1294s
+[cut 25] >> /workspace/venv_v17/bin/python dw/mkdw.py f1 f2 f3 f4 val25
+/workspace/v17run_test/c25/dw/common.py:54: RuntimeWarning: Mean of empty slice
+  m=x.reshape(-1,10); mu=np.nanmean(m,1,keepdims=True); sd=np.nanstd(m,1,keepdims=True)+1e-6
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+f1 (351560, 43) 33s
+f2 (351120, 43) 41s
+f3 (349120, 43) 49s
+f4 (350400, 43) 52s
+val25 (439640, 43) 56s
+[stage feat_dw] 237s
+[cut 25] >> /workspace/venv_v17/bin/python cooc/mkcooc.py A f1 f2 f3 f4 val25 && /workspace/venv_v17/bin/python cooc/mksel.py A
+/workspace/v17run_test/c25/cooc/sigs.py:30: RuntimeWarning: Mean of empty slice
+  m=x.reshape(-1,10); mu=np.nanmean(m,1,keepdims=True); sd=np.nanstd(m,1,keepdims=True)+1e-6
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+A f1 shape=(351560, 61) clicklog=525090 added_by_eval_hist=0 7s
+A f2 shape=(351120, 61) clicklog=657552 added_by_eval_hist=0 9s
+A f3 shape=(349120, 61) clicklog=743467 added_by_eval_hist=0 10s
+A f4 shape=(350400, 61) clicklog=814470 added_by_eval_hist=0 11s
+A val25 shape=(439640, 61) clicklog=881345 added_by_eval_hist=0 13s
+A 25 ['coA_pp12_cos', 'coA_pp12_cos_z', 'coA_pp12_cos_dm', 'coA_pp8_cos', 'coA_pp8_cos_z', 'coA_pp16_cos', 'coA_pp16_cos_z', 'coA_pp12x_cos', 'coA_pp12x_cos_z', 'coA_pp12_unorm', 'coA_pp12_ucos_dot', 'coA_ppb12_cos', 'coA_ppb12_cos_z', 'coA_pp_prod0', 'coA_pp_prod1', 'coA_pp_prod2', 'coA_pp_prod3', 'coA_pp_prod4', 'coA_pp_prod5', 'coA_pp_prod6', 'coA_pp_prod7', 'coA_pp_prod8', 'coA_pp_prod9', 'coA_pp_prod10', 'coA_pp_prod11']
+[stage cooc_A] 56s
+[cut 25] >> /workspace/venv_v17/bin/python cooc/mkcooc.py B f1 f2 f3 f4 val25 && /workspace/venv_v17/bin/python cooc/mksel.py B
+/workspace/v17run_test/c25/cooc/sigs.py:30: RuntimeWarning: Mean of empty slice
+  m=x.reshape(-1,10); mu=np.nanmean(m,1,keepdims=True); sd=np.nanstd(m,1,keepdims=True)+1e-6
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+B f1 shape=(351560, 61) clicklog=595595 added_by_eval_hist=70505 8s
+B f2 shape=(351120, 61) clicklog=681482 added_by_eval_hist=23930 9s
+B f3 shape=(349120, 61) clicklog=753289 added_by_eval_hist=9822 10s
+B f4 shape=(350400, 61) clicklog=820066 added_by_eval_hist=5596 12s
+B val25 shape=(439640, 61) clicklog=886177 added_by_eval_hist=4832 14s
+B 25 ['coB_pp12_cos', 'coB_pp12_cos_z', 'coB_pp12_cos_dm', 'coB_pp8_cos', 'coB_pp8_cos_z', 'coB_pp16_cos', 'coB_pp16_cos_z', 'coB_pp12x_cos', 'coB_pp12x_cos_z', 'coB_pp12_unorm', 'coB_pp12_ucos_dot', 'coB_ppb12_cos', 'coB_ppb12_cos_z', 'coB_pp_prod0', 'coB_pp_prod1', 'coB_pp_prod2', 'coB_pp_prod3', 'coB_pp_prod4', 'coB_pp_prod5', 'coB_pp_prod6', 'coB_pp_prod7', 'coB_pp_prod8', 'coB_pp_prod9', 'coB_pp_prod10', 'coB_pp_prod11']
+[stage cooc_B] 57s
+[cut 25] >> /workspace/venv_v17/bin/python ens.py 25 Abig --seeds 0 --rounds 1000 --save 1000 --threads 8 --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_Ap --nfolds 4 --drop '^sq_(pdot|pcos|mdot|mcos)$' --params '{"learning_rate":0.015,"num_leaves":127,"feature_fraction":0.5,"lambda_l2":30,"min_data_in_leaf":200,"max_bin":255,"force_col_wise":true}'
+{"cut": 25, "tag": "Abig", "seed": 0, "n": 1402200, "nf": 460, "min": 3.4, "load_s": 19, "ds_s": 9, "fit_s": 166, "pred_s": 11, "auc": {"1000": 0.81704}}
+[stage A_big] 208s
+[cut 25] >> /workspace/venv_v17/bin/python ens.py 25 A_s --seeds 0 --rounds 500 --save 500 --threads 8 --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_Ap --nfolds 4 --negfrac 0.5 --drop '^sq_(pdot|pcos|mdot|mcos)$' --params '{"learning_rate":0.03,"feature_fraction":0.55,"num_leaves":95,"lambda_l2":30,"max_bin":63,"force_col_wise":true}'
+{"cut": 25, "tag": "A_s", "seed": 0, "n": 745456, "nf": 460, "min": 0.9, "load_s": 6, "ds_s": 5, "fit_s": 41, "pred_s": 2, "auc": {"500": 0.81664}}
+[stage A_s] 56s
+[cut 25] >> MLP_THREADS=8 /workspace/venv_v17/bin/python mlp12.py 25 Amlp --ep 4 --seed 0 --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_Ap
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (745456, 677) 728 s
+ep0 740s auc 0.81338
+ep1 747s auc 0.81426
+ep2 755s auc 0.81693
+ep3 762s auc 0.81705
+[stage A_mlp0] 765s
+[cut 25] >> MLP_THREADS=8 /workspace/venv_v17/bin/python mlp12.py 25 Amlp --ep 4 --seed 1 --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_Ap
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (745456, 677) 40 s
+ep0 50s auc 0.81197
+ep1 58s auc 0.81519
+ep2 65s auc 0.81641
+ep3 72s auc 0.81685
+[stage A_mlp1] 75s
+[cut 25] >> MLP_THREADS=8 /workspace/venv_v17/bin/python mlp12.py 25 Amlp --ep 4 --seed 2 --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_Ap
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (745456, 677) 34 s
+ep0 43s auc 0.81077
+ep1 51s auc 0.81350
+ep2 58s auc 0.81668
+ep3 65s auc 0.81672
+[stage A_mlp2] 67s
+[cut 25] >> /workspace/venv_v17/bin/python cooc/blend_cooc.py 25 A
+LOCAL AUC cut 25 variant A {'dwbig': 0.81704, 'dw_s': 0.81664, 'mlp': 0.81703, 'blend': 0.8179}
+[stage A_blend] 1s
+[cut 25] >> /workspace/venv_v17/bin/python ens.py 25 Bbig --seeds 0 --rounds 1000 --save 1000 --threads 8 --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_Bp --nfolds 4 --drop '^sq_(pdot|pcos|mdot|mcos)$' --params '{"learning_rate":0.015,"num_leaves":127,"feature_fraction":0.5,"lambda_l2":30,"min_data_in_leaf":200,"max_bin":255,"force_col_wise":true}'
+{"cut": 25, "tag": "Bbig", "seed": 0, "n": 1402200, "nf": 460, "min": 3.3, "load_s": 11, "ds_s": 8, "fit_s": 165, "pred_s": 11, "auc": {"1000": 0.81701}}
+[stage B_big] 196s
+[cut 25] >> /workspace/venv_v17/bin/python ens.py 25 B_s --seeds 0 --rounds 500 --save 500 --threads 8 --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_Bp --nfolds 4 --negfrac 0.5 --drop '^sq_(pdot|pcos|mdot|mcos)$' --params '{"learning_rate":0.03,"feature_fraction":0.55,"num_leaves":95,"lambda_l2":30,"max_bin":63,"force_col_wise":true}'
+{"cut": 25, "tag": "B_s", "seed": 0, "n": 745456, "nf": 460, "min": 0.9, "load_s": 7, "ds_s": 5, "fit_s": 41, "pred_s": 3, "auc": {"500": 0.81662}}
+[stage B_s] 57s
+[cut 25] >> MLP_THREADS=8 /workspace/venv_v17/bin/python mlp12.py 25 Bmlp --ep 4 --seed 0 --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_Bp
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (745456, 677) 34 s
+ep0 43s auc 0.81320
+ep1 50s auc 0.81410
+ep2 58s auc 0.81681
+ep3 67s auc 0.81696
+[stage B_mlp0] 69s
+[cut 25] >> MLP_THREADS=8 /workspace/venv_v17/bin/python mlp12.py 25 Bmlp --ep 4 --seed 1 --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_Bp
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (745456, 677) 34 s
+ep0 44s auc 0.81179
+ep1 52s auc 0.81510
+ep2 59s auc 0.81629
+ep3 66s auc 0.81673
+[stage B_mlp1] 68s
+[cut 25] >> MLP_THREADS=8 /workspace/venv_v17/bin/python mlp12.py 25 Bmlp --ep 4 --seed 2 --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_Bp
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (745456, 677) 33 s
+ep0 43s auc 0.81069
+ep1 52s auc 0.81334
+ep2 59s auc 0.81654
+ep3 66s auc 0.81660
+[stage B_mlp2] 68s
+[cut 25] >> /workspace/venv_v17/bin/python cooc/blend_cooc.py 25 B
+LOCAL AUC cut 25 variant B {'dwbig': 0.81701, 'dw_s': 0.81662, 'mlp': 0.81692, 'blend': 0.81785}
+[stage B_blend] 2s
+cut 25: TOTAL this run 58.8 min; all stages 58.8 min

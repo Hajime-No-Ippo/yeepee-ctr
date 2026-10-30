@@ -1,0 +1,2 @@
+rows=529390 unique=529390 min=0.0002724 mean=0.093487 max=0.8374 distinct=528221
+VALID

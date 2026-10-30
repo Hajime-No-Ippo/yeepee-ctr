@@ -69,3 +69,21 @@ Outputs (cut 27): `$WORK_DIR/c27/out/submission_v17cooc_{A_trainonly,B_TRANSDUCT
 ## Reproducibility
 See the table at the bottom (filled in from the clean rebuild test). Nondeterminism sources: the 11-seed sequence stack (torch, thread-count dependent float order), LightGBM multithreading, MLP threading.
 So a rebuild is **statistically equivalent, not bit-identical**, to the shipped v17cooc files.
+
+## Clean-rebuild test result (Fri 30 Oct 2026, Dublin, UTC+0)
+Fresh `--work /workspace/v17run_test --variant both --cut both`, venv from `requirements.txt`, 8 cores / 15 GB RAM, no cached features.
+Compared against the original v17cooc `ens/*.npy` (the original submission CSVs were no longer on the box, so the comparison is on the saved model scores, not on file hashes).
+
+| check | variant A (train-only) | variant B (TRANSDUCTIVE) |
+|---|---|---|
+| cut 27 Spearman vs original, blend | 0.99945 | 0.99946 |
+| cut 25 Spearman vs original, blend | 0.99936 | 0.99936 |
+| local C25 AUC, original blend | 0.81802 | 0.81793 |
+| local C25 AUC, rebuild blend | 0.81790 | 0.81785 |
+| C25 AUC rebuild components (big / s / mlp) | 0.81704 / 0.81664 / 0.81703 | 0.81701 / 0.81662 / 0.81692 |
+
+The rebuild is about 0.0001 AUC below the original, which is seed/thread noise (no hidden step is missing). `validate.py` reports VALID for both submissions.
+
+Runtime: cut 27 = 69.3 min, cut 25 = 58.8 min, total about 128 min compute, wall clock 04:40 -> 06:49 Dublin (about 2 h 09 min). `feat_sq` is the longest stage (~29 min per cut). Per-stage timings are in `test_logs/`.
+
+Not reproducible exactly: torch 11-seed sequence stack and LightGBM/MLP threading are not bit-deterministic (thread-count dependent float order). The public best `p33` blend (0.8*rank(model) + 0.2*rank(p33)) needs a teammate's p33 rank file (`P33_PATH`), which is not in this repo; without it the probe step is skipped.
