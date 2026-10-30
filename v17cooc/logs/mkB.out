@@ -1,0 +1,11 @@
+/workspace/huawei/dw_v12sig/sigs.py:30: RuntimeWarning: Mean of empty slice
+  m=x.reshape(-1,10); mu=np.nanmean(m,1,keepdims=True); sd=np.nanstd(m,1,keepdims=True)+1e-6
+/workspace/venv/lib/python3.13/site-packages/numpy/lib/_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+B f3 shape=(349120, 61) clicklog=753289 added_by_eval_hist=9822 15s
+B f4 shape=(350400, 61) clicklog=820066 added_by_eval_hist=5596 15s
+B f5 shape=(352300, 61) clicklog=884413 added_by_eval_hist=3068 17s
+B f6 shape=(351380, 61) clicklog=947991 added_by_eval_hist=1764 18s
+B val23 shape=(501550, 61) clicklog=763717 added_by_eval_hist=20250 13s
+B val26 shape=(351380, 61) clicklog=947991 added_by_eval_hist=1764 19s
+B eval shape=(529390, 61) clicklog=1013190 added_by_eval_hist=3489 22s

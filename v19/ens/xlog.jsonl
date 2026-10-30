@@ -1,0 +1,9 @@
+{"cut": 25, "tag": "nmAp", "seed": 0, "n": 1402200, "nf": 519, "load_s": 11, "ds_s": 10, "fit_s": 240, "min": 4.6, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81745}}
+{"cut": 25, "tag": "nmBp", "seed": 0, "n": 1402200, "nf": 519, "load_s": 8, "ds_s": 10, "fit_s": 506, "min": 9.0, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.8171}}
+{"cut": 23, "tag": "nmAp", "seed": 0, "n": 702680, "nf": 519, "load_s": 11, "ds_s": 8, "fit_s": 115, "min": 2.5, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.79673}}
+{"cut": 23, "tag": "nmBp", "seed": 0, "n": 702680, "nf": 519, "load_s": 7, "ds_s": 7, "fit_s": 462, "min": 8.2, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.7964}}
+{"cut": 25, "tag": "nmAs", "seed": 0, "n": 1402200, "nf": 484, "load_s": 11, "ds_s": 9, "fit_s": 226, "min": 4.3, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81751}}
+{"cut": 25, "tag": "nmBs", "seed": 0, "n": 1402200, "nf": 484, "load_s": 10, "ds_s": 10, "fit_s": 208, "min": 4.0, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81742}}
+{"cut": 23, "tag": "nmAs", "seed": 0, "n": 702680, "nf": 484, "load_s": 4, "ds_s": 6, "fit_s": 106, "min": 2.2, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.79679}}
+{"cut": 23, "tag": "nmBs", "seed": 0, "n": 702680, "nf": 484, "load_s": 4, "ds_s": 6, "fit_s": 103, "min": 2.1, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.79647}}
+{"cut": 25, "tag": "xpB6", "seed": 0, "m": 6, "n": 1402200, "nf": 484, "ds_s": 10, "fit_s": 235, "min": 7.2, "lrate": 0.03, "auc": {"200": 0.81588, "400": 0.81659, "600": 0.81652}}

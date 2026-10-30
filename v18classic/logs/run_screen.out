@@ -1,0 +1,6 @@
+{"cut": 25, "tag": "v18fr", "seed": 0, "n": 1402200, "nf": 474, "load_s": 11, "ds_s": 10, "fit_s": 246, "min": 4.7, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81721}}
+{"cut": 25, "tag": "v18au", "seed": 0, "n": 1402200, "nf": 476, "load_s": 10, "ds_s": 11, "fit_s": 596, "min": 10.5, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81707}}
+{"cut": 25, "tag": "v18uc", "seed": 0, "n": 1402200, "nf": 471, "load_s": 32, "ds_s": 10, "fit_s": 214, "min": 4.5, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81719}}
+{"cut": 25, "tag": "v18ty", "seed": 0, "n": 1402200, "nf": 475, "load_s": 253, "ds_s": 12, "fit_s": 244, "min": 8.7, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81712}}
+{"cut": 25, "tag": "v18all", "seed": 0, "n": 1402200, "nf": 516, "load_s": 13, "ds_s": 11, "fit_s": 248, "min": 4.8, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81683}}
+{"cut": 23, "tag": "v18fr", "seed": 0, "n": 702680, "nf": 474, "load_s": 4, "ds_s": 6, "fit_s": 207, "min": 3.9, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.7963}}

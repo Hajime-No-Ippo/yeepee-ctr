@@ -1,0 +1,21 @@
+A f1 shape=(351560, 60) clicklog=525090 added_by_eval_hist=0 nmf_iters=(20, 20) 17s
+A f2 shape=(351120, 60) clicklog=657552 added_by_eval_hist=0 nmf_iters=(20, 30) 20s
+A f3 shape=(349120, 60) clicklog=743467 added_by_eval_hist=0 nmf_iters=(20, 30) 24s
+A f4 shape=(350400, 60) clicklog=814470 added_by_eval_hist=0 nmf_iters=(20, 30) 24s
+A f5 shape=(352300, 60) clicklog=881345 added_by_eval_hist=0 nmf_iters=(20, 30) 26s
+A f6 shape=(351380, 60) clicklog=946227 added_by_eval_hist=0 nmf_iters=(20, 30) 28s
+A val23 shape=(501550, 60) clicklog=743467 added_by_eval_hist=0 nmf_iters=(20, 30) 25s
+A val25 shape=(439640, 60) clicklog=881345 added_by_eval_hist=0 nmf_iters=(20, 30) 28s
+A val26 shape=(351380, 60) clicklog=946227 added_by_eval_hist=0 nmf_iters=(20, 30) 29s
+A eval shape=(529390, 60) clicklog=1009701 added_by_eval_hist=0 nmf_iters=(20, 30) 32s
+B f1 shape=(351560, 60) clicklog=595595 added_by_eval_hist=70505 nmf_iters=(20, 20) 20s
+B f2 shape=(351120, 60) clicklog=681482 added_by_eval_hist=23930 nmf_iters=(20, 30) 23s
+B f3 shape=(349120, 60) clicklog=753289 added_by_eval_hist=9822 nmf_iters=(20, 30) 26s
+B f4 shape=(350400, 60) clicklog=820066 added_by_eval_hist=5596 nmf_iters=(20, 30) 28s
+B f5 shape=(352300, 60) clicklog=884413 added_by_eval_hist=3068 nmf_iters=(20, 30) 27s
+B f6 shape=(351380, 60) clicklog=947991 added_by_eval_hist=1764 nmf_iters=(20, 30) 29s
+B val23 shape=(501550, 60) clicklog=763717 added_by_eval_hist=20250 nmf_iters=(20, 30) 24s
+B val25 shape=(439640, 60) clicklog=886177 added_by_eval_hist=4832 nmf_iters=(20, 30) 30s
+B val26 shape=(351380, 60) clicklog=947991 added_by_eval_hist=1764 nmf_iters=(20, 30) 30s
+B eval shape=(529390, 60) clicklog=1013190 added_by_eval_hist=3489 nmf_iters=(20, 30) 34s
+MK_DONE

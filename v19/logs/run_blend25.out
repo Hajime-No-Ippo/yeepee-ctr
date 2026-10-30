@@ -1,0 +1,9 @@
+{"cut": 25, "tag": "nmBs_s", "seed": 0, "n": 745456, "nf": 484, "min": 1.2, "load_s": 8, "ds_s": 6, "fit_s": 53, "pred_s": 5, "auc": {"400": 0.81695, "500": 0.81713}}
+ep3 86s auc 0.81716
+ep3 80s auc 0.81723
+ep3 74s auc 0.81728
+{"cut": 25, "tag": "nmAs_s", "seed": 0, "n": 745456, "nf": 484, "min": 8.2, "load_s": 14, "ds_s": 412, "fit_s": 56, "pred_s": 4, "auc": {"400": 0.81691, "500": 0.81694}}
+ep3 96s auc 0.81721
+ep3 80s auc 0.81725
+ep3 80s auc 0.81733
+BLEND_DONE_25

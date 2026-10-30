@@ -1,0 +1,7 @@
+{"cut": 25, "tag": "coAp", "seed": 0, "n": 1402200, "nf": 460, "load_s": 16, "ds_s": 12, "fit_s": 260, "min": 5.1, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81719}}
+{"cut": 25, "tag": "coBp", "seed": 0, "n": 1402200, "nf": 460, "load_s": 9, "ds_s": 12, "fit_s": 289, "min": 5.4, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81704}}
+{"cut": 23, "tag": "coAp", "seed": 0, "n": 702680, "nf": 460, "load_s": 4, "ds_s": 7, "fit_s": 703, "min": 12.2, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.79631}}
+{"cut": 23, "tag": "coBp", "seed": 0, "n": 702680, "nf": 460, "load_s": 16, "ds_s": 7, "fit_s": 138, "min": 3.0, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.79633}}
+{"cut": 26, "tag": "coAp", "seed": 0, "n": 1402940, "nf": 460, "load_s": 26, "ds_s": 10, "fit_s": 268, "min": 5.3, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.82599}}
+{"cut": 26, "tag": "coBp", "seed": 0, "n": 1402940, "nf": 460, "load_s": 9, "ds_s": 10, "fit_s": 267, "min": 4.9, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.82581}}
+LGB_DONE
