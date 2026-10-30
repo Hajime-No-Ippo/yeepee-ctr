@@ -1,0 +1,7 @@
+== A S 25 0 08:51:17
+{"drop": "", "cut": 25, "tag": "A_S", "seed": 0, "n": 1402200, "nf": 401, "load_s": 11, "ds_s": 19, "fit_s": 694, "min": 12.4, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81737}}
+== A S 25 1 09:03:45
+{"drop": "", "cut": 25, "tag": "A_S", "seed": 1, "n": 1402200, "nf": 401, "load_s": 8, "ds_s": 12, "fit_s": 272, "min": 5.2, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81758}}
+== A base 25 1 09:09:01
+{"drop": "", "cut": 25, "tag": "A_base", "seed": 1, "n": 1402200, "nf": 484, "load_s": 8, "ds_s": 14, "fit_s": 318, "min": 6.0, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81751}}
+QUEUE3_DONE

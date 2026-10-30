@@ -1,1 +1,21 @@
-== B base 25 1 05:59:12
+== B base 25 1 07:21:48
+{"drop": "", "cut": 25, "tag": "B_base", "seed": 1, "n": 1402200, "nf": 484, "load_s": 10, "ds_s": 23, "fit_s": 1390, "min": 24.1, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81726}}
+== B S 25 0 07:45:56
+{"drop": "", "cut": 25, "tag": "B_S", "seed": 0, "n": 1402200, "nf": 401, "load_s": 8, "ds_s": 12, "fit_s": 286, "min": 5.5, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81732}}
+== B S 25 1 07:51:27
+{"drop": "", "cut": 25, "tag": "B_S", "seed": 1, "n": 1402200, "nf": 401, "load_s": 8, "ds_s": 13, "fit_s": 278, "min": 5.3, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81753}}
+== B SP 25 0 07:56:48
+{"drop": "", "cut": 25, "tag": "B_SP", "seed": 0, "n": 1402200, "nf": 382, "load_s": 7, "ds_s": 12, "fit_s": 264, "min": 5.1, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81727}}
+== B SP 25 1 08:01:55
+{"drop": "", "cut": 25, "tag": "B_SP", "seed": 1, "n": 1402200, "nf": 382, "load_s": 7, "ds_s": 12, "fit_s": 264, "min": 5.1, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81731}}
+== B base 23 1 08:07:01
+{"drop": "", "cut": 23, "tag": "B_base", "seed": 1, "n": 702680, "nf": 484, "load_s": 4, "ds_s": 8, "fit_s": 159, "min": 3.3, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.79653}}
+== B S 23 0 08:10:19
+{"drop": "", "cut": 23, "tag": "B_S", "seed": 0, "n": 702680, "nf": 401, "load_s": 3, "ds_s": 8, "fit_s": 140, "min": 2.9, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.79654}}
+== B S 23 1 08:13:16
+{"drop": "", "cut": 23, "tag": "B_S", "seed": 1, "n": 702680, "nf": 401, "load_s": 3, "ds_s": 7, "fit_s": 143, "min": 3.0, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.7964}}
+== B SP 23 0 08:16:16
+{"drop": "", "cut": 23, "tag": "B_SP", "seed": 0, "n": 702680, "nf": 382, "load_s": 4, "ds_s": 7, "fit_s": 136, "min": 2.9, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.79627}}
+== B SP 23 1 08:19:09
+{"drop": "", "cut": 23, "tag": "B_SP", "seed": 1, "n": 702680, "nf": 382, "load_s": 3, "ds_s": 7, "fit_s": 135, "min": 2.8, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.79638}}
+QUEUE1_DONE

@@ -47,3 +47,38 @@ C23 (4 days, harder, staleness up to 4d): AUC by staleness <6h .812, 6-24h .804,
 - Possibly more valuable: train/eval staleness mismatch (train folds are all <1 day stale, eval 33% >1 day, up to 7d; seq-feature gain by staleness was ok per v9d) — see recommendation.
 
 ## Log of experiments below (steps 3,4) — appended as they finish
+
+## STEP 3 — across-slate calibration (DONE)  [logged 2026-10-30 ~07:15 Europe/Dublin]
+Score = z - c*lse(z) + a*P, P = slate P(click) model (LightGBM, trained out-of-time, step3.py), (a,c) tuned on C23 dwbig -> a=.3, c=.5, tested on C25.
+- C25 B blend: .81830 -> .81873 (+.00044; event-bootstrap sd .00007, P(>0)=1.00). C25 A blend: .81829 -> .81869 (+.00040, sd .00007).
+- No C23 hurt (params tuned there). Grid is a narrow ridge (c~.5,a~.2-.3; c=.25,a=.1-.2 +.0003); off-ridge hurts down to -.004.
+- Segments B: <1d +.00037, >=1d +.00068, with-history +.00043, empty-hist +.00104 (A empty-hist -.0029, caveat).
+- Candidates (out/, copied to Mac ~/Downloads/huawei, shasum -c OK):
+  submission_v21slate_B_TRANSDUCTIVE.csv.zip 07949d2df6bcaca6e634bb230898fe305afb3c0b7ffede18cc76eebc0ef0dc58
+  probe_v21slate_B_TRANSDUCTIVE_p33_w80.csv.zip acbebeac5f42f1555fceda8212d4945ec7508bd57fbc22a488983323799ba4eb
+  submission_v21slate_A_trainonly.csv.zip ef4d73da90b254e17857b84f8d9ef9561d2eb210998c9056d32ebea0d7b82664
+  probe_v21slate_A_trainonly_p33_w80.csv.zip c327e57af99e6ce84909b8a432a37226ce702acbf2919f6db65bc162263017f4
+  (uncompressed CSVs deleted from out/ to save space; regenerate with mk21.py)
+
+## STEP 4 — generator fit (NOT RUN; resume notes)
+mlp21list.py is written (listwise slate softmax w/ outside option; copy of v19/mlp17.py; syntax-checked only). Box was busy (load ~4, Code Buddy s0_ref.py running) so heavy run was not started.
+Resume: /workspace/venv_v17/bin/python mlp21list.py 25 v21list --ep 4 --seed 0 --loss list --lr feat_lr2,feat_tt,feat_pp,feat_sqC,feat_dw,feat_Bp,feat_NBs  (also --loss bce baseline, and cut 23), when pgrep idle; then test as blend member and stacked with step-3 correction.
+STEP 5 (position): excluded by owner; slot AUC .4979/.4990 (null).
+
+## STEP 4 results so far [2026-10-30 ~08:00 Europe/Dublin]  (mlp21list.py: listwise slate softmax + outside option, 1 seed, 4 ep; OOM fixed by in-place transform)
+Standalone (global / within / slate sum_p AUC):
+- C25 B list-MLP s0: .81854 / .80691 / .6790  (v19 blend: .8183/.80705/.6701; dwbig .81742)
+- C23 B list-MLP s0: .79798 / .78607 / .6567  (dwbig .79647/.78505/.6475)
+Blend (logit-converted list score; w = weight of list in (1-w)*z_v19 + w*list):
+- C25 on v19 blend: w.25 .81873, w.5 .81892, w.75 .81886 ; with slate corr (.3,.5): .81893/.81896/.81880 ; v21slate = .81873
+- C23 on dwbig (v19 blend preds not stored at C23): w.25 .79773, .5 .79842, .75 .79850; dwbig .79647; v21slate-dwbig .79691; corr on top adds ~0 (list absorbs it).
+
+## STEP 4 FINAL [2026-10-30 ~10:00 Europe/Dublin]
+List-MLP (mlp21list.py, listwise softmax + outside option), B variant, 3 seeds, ep3 (final) logits->logit space, blend z=(1-w)*v19blend + w*list.
+- Standalone C25: s0 .81854, s1 .81844, 3-seed avg .81856 (within .80694, slate sum_p AUC .6792); BCE same arch .81739 (slate .6697). C23: s0 .79798, 3-seed .79818 (dwbig .79647).
+- Blend w=.4/.5/.6/.7 C25 (v19 blend .8183; v21slate .81873): .81887/.81891/.81892/.81889. C23 (dwbig .79647; v21slate-on-dwbig .79691): .79827/.79849/.79862/.79865.
+- Slate corr on top adds ~0 / negative at C23 (list absorbs it). Chosen (tuned C23): w=.6, no slate corr. C25 .81892 (+.00019 over v21slate), C23 +.00215 over dwbig (+.00171 over v21slate).
+- A variant: list s0 C25 .81857 / C23 .79799; blend w=.6: C25 .81894 (A v21slate .81869, A v19 .81829), C23 .79865 (A dwbig .79679).
+- L2-LR member (lr21.py, torch linear, same rank-gauss inputs): standalone C25 .81043, C23 .78943; adding to list-blend w=.05/.1/.2: C25 .81887/.81877/.81846 (base .81892), C23 .79858/.79849/.79818 (base .79862) -> NULL/negative.
+- Staleness-matched training: NOT re-run; prior /workspace/huawei/staleness_test (27 Oct) found delay-matched rows B/B_w -.0001..-.0036 rw AUC on both folds. Skipped.
+- Candidates (C27: 3 seeds each, sliding f3..f6): out/submission_v21list_{B_TRANSDUCTIVE,A_trainonly}.csv.zip, probe_..._p33_w80; sha in SHA256SUMS_v21list.txt; copied to Mac, shasum OK.

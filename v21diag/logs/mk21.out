@@ -1,0 +1,6 @@
+submission_v21slate_B_TRANSDUCTIVE 07949d2df6bcaca6e634bb230898fe305afb3c0b7ffede18cc76eebc0ef0dc58
+ spearman vs v19 blend 0.99819 slate P pct1/50/99 [-0.93  0.56  2.  ]
+probe_v21slate_B_TRANSDUCTIVE_p33_w80 acbebeac5f42f1555fceda8212d4945ec7508bd57fbc22a488983323799ba4eb
+submission_v21slate_A_trainonly ef4d73da90b254e17857b84f8d9ef9561d2eb210998c9056d32ebea0d7b82664
+ spearman vs v19 blend 0.99821 slate P pct1/50/99 [-0.92  0.56  1.99]
+probe_v21slate_A_trainonly_p33_w80 c327e57af99e6ce84909b8a432a37226ce702acbf2919f6db65bc162263017f4

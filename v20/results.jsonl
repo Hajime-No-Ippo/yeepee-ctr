@@ -1,1 +1,6 @@
 {"cut": 25, "tag": "ref484", "seed": 0, "nf": 484, "fit_s": 391, "rounds": 1000, "params": {}, "auc": {"400": 0.81649, "700": 0.81727, "1000": 0.81748}, "wall_s": 442, "threads": 4, "peak_rss_mb_process": 5417, "stage": "ref"}
+{"cut": 25, "tag": "ref484", "seed": 1, "nf": 484, "fit_s": 337, "rounds": 1000, "params": {}, "auc": {"400": 0.81649, "700": 0.81724, "1000": 0.81748}, "wall_s": 390, "threads": 4, "peak_rss_mb_process": 5314, "stage": "ref"}
+{"cut": 25, "tag": "ref484", "seed": 2, "nf": 484, "fit_s": 588, "rounds": 1000, "params": {}, "auc": {"400": 0.81652, "700": 0.81739, "1000": 0.81752}, "wall_s": 627, "threads": 4, "peak_rss_mb_process": 5543, "stage": "ref"}
+{"cut": 23, "tag": "ref484", "seed": 0, "nf": 484, "fit_s": 175, "rounds": 1000, "params": {}, "auc": {"400": 0.79599, "700": 0.79658, "1000": 0.79665}, "wall_s": 229, "threads": 4, "peak_rss_mb_process": 8957, "stage": "ref"}
+{"cut": 23, "tag": "ref484", "seed": 1, "nf": 484, "fit_s": 176, "rounds": 1000, "params": {}, "auc": {"400": 0.79596, "700": 0.7966, "1000": 0.79657}, "wall_s": 225, "threads": 4, "peak_rss_mb_process": 8957, "stage": "ref"}
+{"cut": 23, "tag": "ref484", "seed": 2, "nf": 484, "fit_s": 172, "rounds": 1000, "params": {}, "auc": {"400": 0.79598, "700": 0.79665, "1000": 0.7967}, "wall_s": 220, "threads": 4, "peak_rss_mb_process": 8957, "stage": "ref"}

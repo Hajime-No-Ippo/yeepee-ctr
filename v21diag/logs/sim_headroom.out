@@ -1,0 +1,8 @@
+base global 0.8183 slate AUC(lse) 0.66744
+row prob = prior_has*share: 0.817
+evidence d=0.1: slate AUC of posterior 0.6736 (+0.0018)  global=0.81715 (+0.00015)
+evidence d=0.2: slate AUC of posterior 0.6772 (+0.0054)  global=0.81754 (+0.00054)
+evidence d=0.3: slate AUC of posterior 0.6864 (+0.0146)  global=0.81820 (+0.00121)
+evidence d=0.5: slate AUC of posterior 0.7118 (+0.0400)  global=0.82040 (+0.00340)
+evidence d=0.8: slate AUC of posterior 0.7559 (+0.0841)  global=0.82527 (+0.00827)
+evidence d=1.2: slate AUC of posterior 0.8281 (+0.1563)  global=0.83444 (+0.01744)

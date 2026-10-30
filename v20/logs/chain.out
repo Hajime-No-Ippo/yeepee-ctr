@@ -1,0 +1,17 @@
+03:53:37 START s3_av
+04:20:08 END s3_av rc=0
+04:20:08 START s0_ref
+05:54:45 START s3_av
+05:54:45 END s3_av rc=127
+chain.sh: line 4: /workspace/venv/bin/python: No such file or directory
+05:54:45 START s0_ref
+05:54:45 END s0_ref rc=127
+chain.sh: line 4: /workspace/venv/bin/python: No such file or directory
+05:56:28 START s3_av
+06:00:28 RESUME after repair (venv .venv, out/ rebuilt, s3_av skipped, s7_avdrop added)
+06:00:28 START preflight
+06:00:29 END preflight rc=0
+06:00:29 START s0_ref
+./chain.sh: line 9: 48010 Killed                  taskset -c ${V20_CORES:-0-3} $P $1.py >> logs/$1.log 2>&1
+08:51:28 END s0_ref rc=137
+08:51:29 FATAL stage s0_ref failed (see logs/s0_ref.log) 1

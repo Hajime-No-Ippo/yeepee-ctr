@@ -1,0 +1,8 @@
+ spearman v19 vs list 0.993
+submission_v21list_B_TRANSDUCTIVE d05721fe22cad1341b5229cfac92b6fea06bfa5013ff11951e8555147058c498
+ spearman vs v19 blend 0.99738
+probe_v21list_B_TRANSDUCTIVE_p33_w80 e3dccedb861a82835a62eb5dbeb738569ac19c6bd6994c71491a8052e848ef01
+ spearman v19 vs list 0.993
+submission_v21list_A_trainonly a6bc3515deebc609af12807554873a7f87124316538ab6c0e97b1950f4ea0a48
+ spearman vs v19 blend 0.9974
+probe_v21list_A_trainonly_p33_w80 94771ea9e52902671e5fc5f43a4b274b43a3f870f1ac3f5f3477aa6444df8ce9

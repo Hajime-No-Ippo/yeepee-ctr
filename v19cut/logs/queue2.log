@@ -1,0 +1,13 @@
+== B base 25 0 08:22:13
+{"drop": "", "cut": 25, "tag": "B_base", "seed": 0, "n": 1402200, "nf": 484, "load_s": 8, "ds_s": 16, "fit_s": 312, "min": 6.0, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81742}}
+== B SPC 25 0 08:28:13
+{"drop": "", "cut": 25, "tag": "B_SPC", "seed": 0, "n": 1402200, "nf": 370, "load_s": 7, "ds_s": 11, "fit_s": 250, "min": 4.8, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81702}}
+== B SPC 25 1 08:33:03
+{"drop": "", "cut": 25, "tag": "B_SPC", "seed": 1, "n": 1402200, "nf": 370, "load_s": 7, "ds_s": 12, "fit_s": 254, "min": 4.9, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.81718}}
+== B SPC 23 0 08:37:57
+{"drop": "", "cut": 23, "tag": "B_SPC", "seed": 0, "n": 702680, "nf": 370, "load_s": 3, "ds_s": 7, "fit_s": 131, "min": 2.8, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.7963}}
+== B SPC 23 1 08:40:46
+{"drop": "", "cut": 23, "tag": "B_SPC", "seed": 1, "n": 702680, "nf": 370, "load_s": 3, "ds_s": 7, "fit_s": 132, "min": 2.8, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.7964}}
+== B base 23 0 08:43:34
+{"drop": "", "cut": 23, "tag": "B_base", "seed": 0, "n": 702680, "nf": 484, "load_s": 4, "ds_s": 8, "fit_s": 154, "min": 3.2, "obj": "binary", "max_bin": 255, "auc": {"1000": 0.79647}}
+QUEUE2_DONE

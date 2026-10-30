@@ -13,3 +13,5 @@
 06:00:28 START preflight
 06:00:29 END preflight rc=0
 06:00:29 START s0_ref
+08:51:28 END s0_ref rc=137
+08:51:29 FATAL stage s0_ref failed (see logs/s0_ref.log) 1

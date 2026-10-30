@@ -13,20 +13,23 @@ rs=np.random.RandomState(123); Xs=[];ys=[]
 for n in trn:
     X,m,f=matrix(n,1.0,extra=extra); y=m['clicked'].to_numpy(); assert len(y)%10==0 and (m['eid'].to_numpy().reshape(-1,10)==m['eid'].to_numpy().reshape(-1,10)[:,:1]).all(); feats=f; keep=[i for i,c in enumerate(feats) if not re.search(DR,c)]; Xs.append(np.ascontiguousarray(X[:,keep])); ys.append(y); del X; gc.collect()
 fl=[feats[i] for i in keep]
-X=np.concatenate(Xs); del Xs; y=np.concatenate(ys).astype(np.float32); gc.collect()
+NR=sum(len(a_) for a_ in Xs); X=np.empty((NR,Xs[0].shape[1]),np.float32); o_=0
+while Xs:
+    a_=Xs.pop(0); X[o_:o_+len(a_)]=a_; o_+=len(a_); del a_; gc.collect()
+y=np.concatenate(ys).astype(np.float32); gc.collect()
 vn='eval' if a.cut==27 else f'val{a.cut}'; Xv,mv,fv=matrix(vn,1.0,extra=extra); Xv=Xv[:,[fv.index(c) for c in fl]]
 # rank-gauss via train quantiles (101 knots); NaN -> 0 + flag
 from scipy.special import ndtri
 qs=np.linspace(0.001,0.999,101); Q=np.nanquantile(X[::7],qs,axis=0).astype(np.float32)   # (101,F)
 nanc=np.where(np.isnan(X[::7]).any(0)|np.isnan(Xv[::7]).any(0))[0]; G=ndtri(qs).astype(np.float32)
 def tr(Z):
-    out=np.empty((len(Z),Z.shape[1]+len(nanc)),np.float32)
-    for j in range(Z.shape[1]):
+    F=Z.shape[1]; fl_=np.isnan(Z[:,nanc]); 
+    for j in range(F):
         q=np.nan_to_num(Q[:,j],nan=0.0); v=Z[:,j]; u,ix=np.unique(q,return_index=True)
-        o=np.interp(v,u,G[ix]) if len(u)>1 else np.zeros_like(v); o[np.isnan(v)]=0; out[:,j]=o
-    out[:,Z.shape[1]:]=np.isnan(Z[:,nanc]); return out
-X=np.nan_to_num(tr(X),copy=False); gc.collect(); Xv=np.nan_to_num(tr(Xv),copy=False); gc.collect(); print('prep',X.shape,round(time.time()-t0),'s',flush=True)
-D=X.shape[1]
+        nn_=np.isnan(v); o=np.interp(np.nan_to_num(v),u,G[ix]) if len(u)>1 else np.zeros_like(v); o[nn_]=0; Z[:,j]=o
+    return Z,fl_
+X,FX=tr(X); gc.collect(); Xv,FV=tr(Xv); gc.collect(); print('prep',X.shape,FX.shape,round(time.time()-t0),'s',flush=True)
+D=X.shape[1]+len(nanc)
 class Net(nn.Module):
     def __init__(s,D,h,dr):
         super().__init__()
@@ -36,14 +39,16 @@ class Net(nn.Module):
         h=s.t(x); sc=s.o(h).squeeze(-1); H=h.view(-1,10,h.shape[1]); c=s.c(torch.cat([H.mean(1),H.max(1).values],1)).squeeze(-1)
         return sc,c
 net=Net(D,a.hid,a.drop); opt=torch.optim.AdamW(net.parameters(),1e-3,weight_decay=1e-4); bce=nn.BCEWithLogitsLoss()
-Xt=torch.from_numpy(X); Yt=torch.from_numpy(y); Xvt=torch.from_numpy(Xv); E=len(y)//10
+Xt=torch.from_numpy(X); Ft=torch.from_numpy(FX); Yt=torch.from_numpy(y); Xvt=torch.from_numpy(Xv); Fvt=torch.from_numpy(FV);
+def gx(A,B,j): return torch.cat([A[j],B[j].float()],1)
+E=len(y)//10
 bs=256; steps=a.ep*((E+bs-1)//bs); sch=torch.optim.lr_scheduler.OneCycleLR(opt,2e-3,total_steps=steps,pct_start=0.1); S=[]
 def score(sc,c):   # log p_i of the conditional logit with outside option c (logit of "no click")
     Sg=sc.view(-1,10); lse=torch.logsumexp(torch.cat([Sg,c[:,None]],1),1,keepdim=True); return (Sg-lse).reshape(-1)
 for ep in range(a.ep):
     net.train(); perm=torch.randperm(E)
     for b in range(0,E,bs):
-        e=perm[b:b+bs]; j=(e[:,None]*10+torch.arange(10)[None]).reshape(-1); opt.zero_grad(); sc,c=net(Xt[j]); yy=Yt[j]
+        e=perm[b:b+bs]; j=(e[:,None]*10+torch.arange(10)[None]).reshape(-1); opt.zero_grad(); sc,c=net(gx(Xt,Ft,j)); yy=Yt[j]
         if a.loss=='list':
             Sg=sc.view(-1,10); Y=yy.view(-1,10); lse=torch.logsumexp(torch.cat([Sg,c[:,None]],1),1)
             tgt=torch.where(Y.sum(1)>0,(Sg*Y).sum(1),c); l=(lse-tgt).mean()+a.alpha*bce(sc,yy)
@@ -51,7 +56,7 @@ for ep in range(a.ep):
         l.backward(); opt.step(); sch.step()
     net.eval()
     with torch.no_grad():
-        outs=[net(Xvt[b:b+65000]) for b in range(0,len(Xv),65000)]   # 65000 divisible by 10
+        outs=[net(gx(Xvt,Fvt,slice(b,b+65000))) for b in range(0,len(Xv),65000)]   # 65000 divisible by 10
         p=torch.cat([score(o[0],o[1]) if a.loss=='list' else o[0] for o in outs]).numpy()
     S.append(p); msg=f'ep{ep} {time.time()-t0:.0f}s'
     if a.cut!=27: msg+=f' auc {roc_auc_score(mv["clicked"].to_numpy(),p):.5f}'

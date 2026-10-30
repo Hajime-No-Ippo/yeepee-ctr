@@ -1,0 +1,30 @@
+build 23 Fri Oct 30 06:49:06 GMT 2026
+  mu=np.nanmean(Xr,1); mx=np.nanmax(Xr,1); sd=np.nanstd(Xr,1)
+  mu=np.nanmean(Xr,1); mx=np.nanmax(Xr,1); sd=np.nanstd(Xr,1)
+  np.subtract(arr, avg, out=arr, casting='unsafe', where=where)
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+f1 (35156, 1464) 0.6350836272613494 5
+f2 (35112, 1464) 0.6359079516974254 10
+val23 (50155, 1464) 0.6291695743196092 19
+build 25 Fri Oct 30 06:49:56 GMT 2026
+  mu=np.nanmean(Xr,1); mx=np.nanmax(Xr,1); sd=np.nanstd(Xr,1)
+  mu=np.nanmean(Xr,1); mx=np.nanmax(Xr,1); sd=np.nanstd(Xr,1)
+  np.subtract(arr, avg, out=arr, casting='unsafe', where=where)
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+f1 (35156, 1464) 0.6350836272613494 5
+f2 (35112, 1464) 0.6359079516974254 10
+f3 (34912, 1464) 0.6275492667277727 15
+f4 (35040, 1464) 0.6272260273972603 20
+val25 (43964, 1464) 0.6335183331816941 27
+fit 23 Fri Oct 30 06:50:55 GMT 2026
+  np.subtract(arr, avg, out=arr, casting='unsafe', where=where)
+{"cut": 23, "v": "B", "n": 70268, "nf": 1350, "slateAUC_by_round": {"100": 0.65173, "200": 0.6535, "300": 0.65348, "400": 0.65334, "600": 0.65231}}
+[(np.str_('mu_sq_lse'), 8441), (np.str_('mx_sq_lse'), 6630), (np.str_('mu_v2_u_ctr'), 4960), (np.str_('mu_coB_ppb12_cos'), 3842), (np.str_('mu_coB_pp12_cos'), 3710), (np.str_('mu_coB_pp16_cos'), 3419), (np.str_('mu_us_ctr'), 3022), (np.str_('mx_v2_u_ctr'), 2422), (np.str_('mx_coB_ppb12_cos'), 2052), (np.str_('mx_coB_pp12_cos'), 1984), (np.str_('mx_sq_logit'), 1943), (np.str_('mu_coB_pp12x_cos'), 1366), (np.str_('mu_tB_dot'), 1363), (np.str_('mx_coB_pp16_cos'), 1355), (np.str_('mx_us_ctr'), 1320), (np.str_('mu_v2_svd_maxsim'), 1195), (np.str_('mu_tB_mean'), 1177), (np.str_('mu_coB_pp12_ucos_dot'), 1131), (np.str_('mx_coB_pp12x_cos'), 1029), (np.str_('mu_c_hist_minus_sk'), 1012), (np.str_('mu_sq_logit'), 896), (np.str_('mu_coB_pp_prod3'), 872), (np.str_('mx_tA_cos'), 864), (np.str_('mx_x_pp_con05_k32'), 856), (np.str_('mu_x_pp_con05_k32'), 846)]
+fit 25 Fri Oct 30 06:51:52 GMT 2026
+  np.subtract(arr, avg, out=arr, casting='unsafe', where=where)
+{"cut": 25, "v": "B", "n": 140220, "nf": 1348, "slateAUC_by_round": {"100": 0.67376, "200": 0.67594, "300": 0.6763, "400": 0.67609, "600": 0.67514}}
+[(np.str_('mu_sq_lse'), 19779), (np.str_('mx_sq_lse'), 14657), (np.str_('mu_v2_u_ctr'), 13500), (np.str_('mu_us_ctr'), 8883), (np.str_('mx_v2_u_ctr'), 7291), (np.str_('mu_coB_ppb12_cos'), 6679), (np.str_('mu_coB_pp12_cos'), 6180), (np.str_('mx_coB_pp12_cos'), 5655), (np.str_('mu_tB_dot'), 3814), (np.str_('mx_sq_logit'), 3786), (np.str_('mu_coB_pp16_cos'), 3747), (np.str_('mx_us_ctr'), 3440), (np.str_('mx_tA_cos'), 2939), (np.str_('mu_tB_mean'), 2832), (np.str_('mu_c_hist_minus_sk'), 2825), (np.str_('mu_coB_pp12_ucos_dot'), 2573), (np.str_('mu_c_hist_minus_skrec'), 2554), (np.str_('mx_tB_mean'), 2335), (np.str_('mx_lr12_con05'), 2094), (np.str_('mx_coB_pp16_cos'), 2049), (np.str_('mx_coB_ppb12_cos'), 1656), (np.str_('mu_x_pp_con05_k32'), 1587), (np.str_('mx_coB_pp12x_cos'), 1583), (np.str_('mu_c_hist'), 1413), (np.str_('mx_c_hist_minus_skrec'), 1406)]
+{"v": "B", "round_idx": 0, "C23_best_delta": 0.00044, "a": 0.3, "c": 0.5, "slateAUC23": 0.6535, "C25_dwbig_base": 0.81742, "C25_dwbig_delta@C23tuned": 0.0005, "C25_dwbig_oracle_grid_delta": 0.0005, "C25_blend_base": 0.8183, "C25_blend_delta@C23tuned": 0.00043, "C25_blend_oracle_grid_delta": 0.00043, "slateAUC25": 0.6759}
+{"v": "B", "round_idx": 1, "C23_best_delta": 0.00039, "a": 0.2, "c": 0.5, "slateAUC23": 0.6533, "C25_dwbig_base": 0.81742, "C25_dwbig_delta@C23tuned": 0.00041, "C25_dwbig_oracle_grid_delta": 0.00043, "C25_blend_base": 0.8183, "C25_blend_delta@C23tuned": 0.00037, "C25_blend_oracle_grid_delta": 0.00035, "slateAUC25": 0.6761}
+{"v": "B", "round_idx": 2, "C23_best_delta": 0.00038, "a": 0.2, "c": 0.5, "slateAUC23": 0.6523, "C25_dwbig_base": 0.81742, "C25_dwbig_delta@C23tuned": 0.0004, "C25_dwbig_oracle_grid_delta": 0.00038, "C25_blend_base": 0.8183, "C25_blend_delta@C23tuned": 0.00036, "C25_blend_oracle_grid_delta": 0.0003, "slateAUC25": 0.6751}
+STEP3_DONE Fri Oct 30 06:52:59 GMT 2026
