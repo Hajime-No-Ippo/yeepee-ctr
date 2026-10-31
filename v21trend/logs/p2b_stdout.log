@@ -1,0 +1,29 @@
+{"variant": "coA_cl", "fold": 3, "n_train": 275412, "nf": 490, "load_s": 4, "dataset_s": 6, "fit_s": 15, "total_s": 34, "rounds": 300, "threads": 4, "auc": {"f3": 0.80405, "val23": 0.79503}}
+{"variant": "coA_cl", "fold": 4, "n_train": 411654, "nf": 490, "load_s": 2, "dataset_s": 6, "fit_s": 21, "total_s": 37, "rounds": 300, "threads": 4, "auc": {"f4": 0.81048, "val23": 0.81912}}
+{"variant": "coA_cl", "fold": 5, "n_train": 548409, "nf": 490, "load_s": 3, "dataset_s": 7, "fit_s": 28, "total_s": 50, "rounds": 300, "threads": 4, "auc": {"f5": 0.81948, "val25": 0.81609, "val23": 0.81572}}
+{"variant": "coA_cl", "fold": 6, "n_train": 685979, "nf": 490, "load_s": 4, "dataset_s": 8, "fit_s": 34, "total_s": 58, "rounds": 300, "threads": 4, "auc": {"f6": 0.82498, "val25": 0.83389, "val23": 0.81335}}
+{"variant": "coA_co2", "fold": 3, "n_train": 275412, "nf": 474, "load_s": 2, "dataset_s": 5, "fit_s": 14, "total_s": 28, "rounds": 300, "threads": 4, "auc": {"f3": 0.8043, "val23": 0.79499}}
+{"variant": "coA_co2", "fold": 4, "n_train": 411654, "nf": 474, "load_s": 2, "dataset_s": 6, "fit_s": 20, "total_s": 35, "rounds": 300, "threads": 4, "auc": {"f4": 0.81077, "val23": 0.81846}}
+{"variant": "coA_co2", "fold": 5, "n_train": 548409, "nf": 474, "load_s": 3, "dataset_s": 6, "fit_s": 27, "total_s": 47, "rounds": 300, "threads": 4, "auc": {"f5": 0.81937, "val25": 0.8161, "val23": 0.81554}}
+{"variant": "coA_co2", "fold": 6, "n_train": 685979, "nf": 474, "load_s": 3, "dataset_s": 7, "fit_s": 35, "total_s": 56, "rounds": 300, "threads": 4, "auc": {"f6": 0.8251, "val25": 0.83345, "val23": 0.81343}}
+{"variant": "coA_dec", "fold": 3, "n_train": 275412, "nf": 511, "load_s": 2, "dataset_s": 5, "fit_s": 15, "total_s": 29, "rounds": 300, "threads": 4, "auc": {"f3": 0.80381, "val23": 0.79456}}
+{"variant": "coA_dec", "fold": 4, "n_train": 411654, "nf": 511, "load_s": 2, "dataset_s": 6, "fit_s": 21, "total_s": 36, "rounds": 300, "threads": 4, "auc": {"f4": 0.81048, "val23": 0.81887}}
+{"variant": "coA_dec", "fold": 5, "n_train": 548409, "nf": 511, "load_s": 3, "dataset_s": 7, "fit_s": 85, "total_s": 112, "rounds": 300, "threads": 4, "auc": {"f5": 0.81917, "val25": 0.8158, "val23": 0.81578}}
+{"variant": "coA_dec", "fold": 6, "n_train": 685979, "nf": 511, "load_s": 11, "dataset_s": 10, "fit_s": 34, "total_s": 66, "rounds": 300, "threads": 4, "auc": {"f6": 0.82509, "val25": 0.83374, "val23": 0.81336}}
+Traceback (most recent call last):
+  File "/workspace/huawei/v21trend/rollval_t.py", line 218, in <module>
+    a=ap.parse_args(); {'days':cmd_days,'plan':cmd_plan,'fit':cmd_fit,'slate':cmd_slate,'score':cmd_score}[a.cmd](a)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/workspace/huawei/v21trend/rollval_t.py", line 63, in cmd_fit
+    X,y,_,fl=load_X(f'f{k}',extra,NEGF,a.seed); Xs.append(X); ys.append(y)
+             ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/huawei/v21trend/rollval_t.py", line 48, in load_X
+    X=t.select(fl).to_numpy(); assert X.dtype==np.float32; del t; gc.collect()
+                                      ^^^^^^^^^^^^^^^^^^^
+AssertionError
+P2B_FIT_DONE
+{"variant": "coA_cs", "fold": 3, "n_train": 275412, "nf": 471, "load_s": 1, "dataset_s": 5, "fit_s": 14, "total_s": 27, "rounds": 300, "threads": 4, "auc": {"f3": 0.80376, "val23": 0.7947}}
+{"variant": "coA_cs", "fold": 4, "n_train": 411654, "nf": 471, "load_s": 2, "dataset_s": 6, "fit_s": 21, "total_s": 35, "rounds": 300, "threads": 4, "auc": {"f4": 0.81057, "val23": 0.81842}}
+{"variant": "coA_cs", "fold": 5, "n_train": 548409, "nf": 471, "load_s": 2, "dataset_s": 6, "fit_s": 26, "total_s": 45, "rounds": 300, "threads": 4, "auc": {"f5": 0.81947, "val25": 0.8161, "val23": 0.81581}}
+{"variant": "coA_cs", "fold": 6, "n_train": 685979, "nf": 471, "load_s": 3, "dataset_s": 7, "fit_s": 32, "total_s": 52, "rounds": 300, "threads": 4, "auc": {"f6": 0.82503, "val25": 0.83339, "val23": 0.81307}}
+CS_DONE

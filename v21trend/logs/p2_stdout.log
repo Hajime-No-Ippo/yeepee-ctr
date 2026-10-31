@@ -1,0 +1,42 @@
+FEATS_DONE
+Traceback (most recent call last):
+  File "/workspace/huawei/v21trend/rollval_t.py", line 216, in <module>
+    a=ap.parse_args(); {'days':cmd_days,'plan':cmd_plan,'fit':cmd_fit,'slate':cmd_slate,'score':cmd_score}[a.cmd](a)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/workspace/huawei/v21trend/rollval_t.py", line 57, in cmd_fit
+    extra=getvar(a.variant); log=open(f'{R}/logs/fit_log.jsonl','a')
+  File "/workspace/huawei/v21trend/rollval_t.py", line 54, in getvar
+    b,*xs=v.split('+'); return VARIANTS[b]+tuple('feat_'+x for x in xs)
+                               ~~~~~~~~^^^
+KeyError: 'coA_dec'
+Traceback (most recent call last):
+  File "/workspace/huawei/v21trend/rollval_t.py", line 216, in <module>
+    a=ap.parse_args(); {'days':cmd_days,'plan':cmd_plan,'fit':cmd_fit,'slate':cmd_slate,'score':cmd_score}[a.cmd](a)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/workspace/huawei/v21trend/rollval_t.py", line 57, in cmd_fit
+    extra=getvar(a.variant); log=open(f'{R}/logs/fit_log.jsonl','a')
+  File "/workspace/huawei/v21trend/rollval_t.py", line 54, in getvar
+    b,*xs=v.split('+'); return VARIANTS[b]+tuple('feat_'+x for x in xs)
+                               ~~~~~~~~^^^
+KeyError: 'coA_cs'
+Traceback (most recent call last):
+  File "/workspace/huawei/v21trend/rollval_t.py", line 216, in <module>
+    a=ap.parse_args(); {'days':cmd_days,'plan':cmd_plan,'fit':cmd_fit,'slate':cmd_slate,'score':cmd_score}[a.cmd](a)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/workspace/huawei/v21trend/rollval_t.py", line 57, in cmd_fit
+    extra=getvar(a.variant); log=open(f'{R}/logs/fit_log.jsonl','a')
+  File "/workspace/huawei/v21trend/rollval_t.py", line 54, in getvar
+    b,*xs=v.split('+'); return VARIANTS[b]+tuple('feat_'+x for x in xs)
+                               ~~~~~~~~^^^
+KeyError: 'coA_co2'
+Traceback (most recent call last):
+  File "/workspace/huawei/v21trend/rollval_t.py", line 216, in <module>
+    a=ap.parse_args(); {'days':cmd_days,'plan':cmd_plan,'fit':cmd_fit,'slate':cmd_slate,'score':cmd_score}[a.cmd](a)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/workspace/huawei/v21trend/rollval_t.py", line 57, in cmd_fit
+    extra=getvar(a.variant); log=open(f'{R}/logs/fit_log.jsonl','a')
+  File "/workspace/huawei/v21trend/rollval_t.py", line 54, in getvar
+    b,*xs=v.split('+'); return VARIANTS[b]+tuple('feat_'+x for x in xs)
+                               ~~~~~~~~^^^
+KeyError: 'coA_cl'
+P2_FIT_DONE

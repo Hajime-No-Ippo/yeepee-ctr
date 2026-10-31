@@ -1,0 +1,17 @@
+{"variant": "coA_trI", "fold": 3, "n_train": 275412, "nf": 479, "load_s": 4, "dataset_s": 6, "fit_s": 14, "total_s": 34, "rounds": 300, "threads": 4, "auc": {"f3": 0.80394, "val23": 0.79495}}
+{"variant": "coA_trI", "fold": 4, "n_train": 411654, "nf": 479, "load_s": 2, "dataset_s": 6, "fit_s": 21, "total_s": 37, "rounds": 300, "threads": 4, "auc": {"f4": 0.81062, "val23": 0.8188}}
+{"variant": "coA_trI", "fold": 5, "n_train": 548409, "nf": 479, "load_s": 2, "dataset_s": 7, "fit_s": 27, "total_s": 48, "rounds": 300, "threads": 4, "auc": {"f5": 0.8195, "val25": 0.81608, "val23": 0.81585}}
+{"variant": "coA_trI", "fold": 6, "n_train": 685979, "nf": 479, "load_s": 5, "dataset_s": 8, "fit_s": 34, "total_s": 57, "rounds": 300, "threads": 4, "auc": {"f6": 0.8253, "val25": 0.83376, "val23": 0.81328}}
+{"variant": "coA_trU", "fold": 3, "n_train": 275412, "nf": 485, "load_s": 1, "dataset_s": 5, "fit_s": 16, "total_s": 29, "rounds": 300, "threads": 4, "auc": {"f3": 0.80382, "val23": 0.79468}}
+{"variant": "coA_trU", "fold": 4, "n_train": 411654, "nf": 485, "load_s": 2, "dataset_s": 7, "fit_s": 22, "total_s": 37, "rounds": 300, "threads": 4, "auc": {"f4": 0.81062, "val23": 0.81888}}
+{"variant": "coA_trU", "fold": 5, "n_train": 548409, "nf": 485, "load_s": 2, "dataset_s": 7, "fit_s": 28, "total_s": 47, "rounds": 300, "threads": 4, "auc": {"f5": 0.81944, "val25": 0.81609, "val23": 0.81582}}
+{"variant": "coA_trU", "fold": 6, "n_train": 685979, "nf": 485, "load_s": 4, "dataset_s": 8, "fit_s": 64, "total_s": 86, "rounds": 300, "threads": 4, "auc": {"f6": 0.82487, "val25": 0.83371, "val23": 0.81322}}
+{"variant": "coA_trIU", "fold": 3, "n_train": 275412, "nf": 504, "load_s": 1, "dataset_s": 5, "fit_s": 15, "total_s": 28, "rounds": 300, "threads": 4, "auc": {"f3": 0.80419, "val23": 0.79497}}
+{"variant": "coA_trIU", "fold": 4, "n_train": 411654, "nf": 504, "load_s": 2, "dataset_s": 6, "fit_s": 22, "total_s": 37, "rounds": 300, "threads": 4, "auc": {"f4": 0.81051, "val23": 0.81937}}
+{"variant": "coA_trIU", "fold": 5, "n_train": 548409, "nf": 504, "load_s": 3, "dataset_s": 7, "fit_s": 28, "total_s": 49, "rounds": 300, "threads": 4, "auc": {"f5": 0.81941, "val25": 0.81595, "val23": 0.81611}}
+{"variant": "coA_trIU", "fold": 6, "n_train": 685979, "nf": 504, "load_s": 4, "dataset_s": 8, "fit_s": 36, "total_s": 58, "rounds": 300, "threads": 4, "auc": {"f6": 0.82519, "val25": 0.83416, "val23": 0.81384}}
+{"variant": "coA", "fold": 3, "n_train": 275885, "nf": 460, "load_s": 1, "dataset_s": 5, "fit_s": 14, "total_s": 26, "rounds": 300, "threads": 4, "auc": {"f3": 0.80401, "val23": 0.79499}}
+{"variant": "coA", "fold": 4, "n_train": 412463, "nf": 460, "load_s": 2, "dataset_s": 6, "fit_s": 20, "total_s": 34, "rounds": 300, "threads": 4, "auc": {"f4": 0.81065, "val23": 0.81799}}
+{"variant": "coA", "fold": 5, "n_train": 549094, "nf": 460, "load_s": 3, "dataset_s": 6, "fit_s": 26, "total_s": 425, "rounds": 300, "threads": 4, "auc": {"f5": 0.81976, "val25": 0.81634, "val23": 0.81552}}
+{"variant": "coA", "fold": 6, "n_train": 686756, "nf": 460, "load_s": 17, "dataset_s": 8, "fit_s": 33, "total_s": 71, "rounds": 300, "threads": 4, "auc": {"f6": 0.82501, "val25": 0.83363, "val23": 0.81299}}
+SCREEN_DONE
