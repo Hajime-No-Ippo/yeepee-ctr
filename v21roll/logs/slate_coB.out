@@ -1,0 +1,52 @@
+/workspace/huawei/v21roll/rollval.py:76: RuntimeWarning: Mean of empty slice
+  Xr=X.reshape(E,10,-1); F=np.concatenate([np.nanmean(Xr,1),np.nanmax(Xr,1),np.nanstd(Xr,1)],1).astype(np.float32); del X,Xr; gc.collect()
+/workspace/huawei/v21roll/rollval.py:76: RuntimeWarning: All-NaN slice encountered
+  Xr=X.reshape(E,10,-1); F=np.concatenate([np.nanmean(Xr,1),np.nanmax(Xr,1),np.nanstd(Xr,1)],1).astype(np.float32); del X,Xr; gc.collect()
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_nanfunctions_impl.py:1845: RuntimeWarning: invalid value encountered in subtract
+  np.subtract(arr, avg, out=arr, casting='unsafe', where=where)
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/workspace/huawei/v21roll/rollval.py:76: RuntimeWarning: Mean of empty slice
+  Xr=X.reshape(E,10,-1); F=np.concatenate([np.nanmean(Xr,1),np.nanmax(Xr,1),np.nanstd(Xr,1)],1).astype(np.float32); del X,Xr; gc.collect()
+/workspace/huawei/v21roll/rollval.py:76: RuntimeWarning: All-NaN slice encountered
+  Xr=X.reshape(E,10,-1); F=np.concatenate([np.nanmean(Xr,1),np.nanmax(Xr,1),np.nanstd(Xr,1)],1).astype(np.float32); del X,Xr; gc.collect()
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_nanfunctions_impl.py:1845: RuntimeWarning: invalid value encountered in subtract
+  np.subtract(arr, avg, out=arr, casting='unsafe', where=where)
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+{"variant": "coBs", "fold": 3, "n_slates_train": 70268, "srounds": 600, "total_s": 39, "auc_base_corr_slateAUC": {"f3": [0.8041, 0.80443, 0.6567], "val23": [0.79486, 0.79519, 0.6517]}}
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_nanfunctions_impl.py:1845: RuntimeWarning: invalid value encountered in subtract
+  np.subtract(arr, avg, out=arr, casting='unsafe', where=where)
+/workspace/huawei/v21roll/rollval.py:76: RuntimeWarning: Mean of empty slice
+  Xr=X.reshape(E,10,-1); F=np.concatenate([np.nanmean(Xr,1),np.nanmax(Xr,1),np.nanstd(Xr,1)],1).astype(np.float32); del X,Xr; gc.collect()
+/workspace/huawei/v21roll/rollval.py:76: RuntimeWarning: All-NaN slice encountered
+  Xr=X.reshape(E,10,-1); F=np.concatenate([np.nanmean(Xr,1),np.nanmax(Xr,1),np.nanstd(Xr,1)],1).astype(np.float32); del X,Xr; gc.collect()
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+{"variant": "coBs", "fold": 4, "n_slates_train": 105180, "srounds": 600, "total_s": 32, "auc_base_corr_slateAUC": {"f4": [0.81067, 0.81085, 0.6646], "val23": [0.81684, 0.81924, 0.7174]}}
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_nanfunctions_impl.py:1845: RuntimeWarning: invalid value encountered in subtract
+  np.subtract(arr, avg, out=arr, casting='unsafe', where=where)
+/workspace/huawei/v21roll/rollval.py:76: RuntimeWarning: Mean of empty slice
+  Xr=X.reshape(E,10,-1); F=np.concatenate([np.nanmean(Xr,1),np.nanmax(Xr,1),np.nanstd(Xr,1)],1).astype(np.float32); del X,Xr; gc.collect()
+/workspace/huawei/v21roll/rollval.py:76: RuntimeWarning: All-NaN slice encountered
+  Xr=X.reshape(E,10,-1); F=np.concatenate([np.nanmean(Xr,1),np.nanmax(Xr,1),np.nanstd(Xr,1)],1).astype(np.float32); del X,Xr; gc.collect()
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/workspace/huawei/v21roll/rollval.py:76: RuntimeWarning: Mean of empty slice
+  Xr=X.reshape(E,10,-1); F=np.concatenate([np.nanmean(Xr,1),np.nanmax(Xr,1),np.nanstd(Xr,1)],1).astype(np.float32); del X,Xr; gc.collect()
+/workspace/huawei/v21roll/rollval.py:76: RuntimeWarning: All-NaN slice encountered
+  Xr=X.reshape(E,10,-1); F=np.concatenate([np.nanmean(Xr,1),np.nanmax(Xr,1),np.nanstd(Xr,1)],1).astype(np.float32); del X,Xr; gc.collect()
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_nanfunctions_impl.py:1845: RuntimeWarning: invalid value encountered in subtract
+  np.subtract(arr, avg, out=arr, casting='unsafe', where=where)
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+{"variant": "coBs", "fold": 5, "n_slates_train": 140220, "srounds": 600, "total_s": 47, "auc_base_corr_slateAUC": {"f5": [0.81913, 0.81965, 0.6769], "val25": [0.81582, 0.81634, 0.6739], "val23": [0.81468, 0.81672, 0.7066]}}
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_nanfunctions_impl.py:1845: RuntimeWarning: invalid value encountered in subtract
+  np.subtract(arr, avg, out=arr, casting='unsafe', where=where)
+/workspace/huawei/v21roll/rollval.py:76: RuntimeWarning: Mean of empty slice
+  Xr=X.reshape(E,10,-1); F=np.concatenate([np.nanmean(Xr,1),np.nanmax(Xr,1),np.nanstd(Xr,1)],1).astype(np.float32); del X,Xr; gc.collect()
+/workspace/huawei/v21roll/rollval.py:76: RuntimeWarning: All-NaN slice encountered
+  Xr=X.reshape(E,10,-1); F=np.concatenate([np.nanmean(Xr,1),np.nanmax(Xr,1),np.nanstd(Xr,1)],1).astype(np.float32); del X,Xr; gc.collect()
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+{"variant": "coBs", "fold": 6, "n_slates_train": 175450, "srounds": 600, "total_s": 47, "auc_base_corr_slateAUC": {"f6": [0.82503, 0.82523, 0.6808], "val25": [0.83312, 0.83508, 0.7258], "val23": [0.81263, 0.81423, 0.6973]}}

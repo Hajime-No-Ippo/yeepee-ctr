@@ -1,0 +1,16 @@
+{"variant": "v12", "fold": 3, "n_train": 275412, "nf": 435, "load_s": 1, "dataset_s": 4, "fit_s": 14, "total_s": 29, "rounds": 300, "threads": 4, "auc": {"f3": 0.80299, "val23": 0.79366}}
+{"variant": "v12", "fold": 4, "n_train": 411654, "nf": 435, "load_s": 2, "dataset_s": 6, "fit_s": 19, "total_s": 34, "rounds": 300, "threads": 4, "auc": {"f4": 0.80943, "val23": 0.81592}}
+{"variant": "v12", "fold": 5, "n_train": 548409, "nf": 435, "load_s": 2, "dataset_s": 6, "fit_s": 25, "total_s": 45, "rounds": 300, "threads": 4, "auc": {"f5": 0.81876, "val25": 0.81528, "val23": 0.813}}
+{"variant": "v12", "fold": 6, "n_train": 685979, "nf": 435, "load_s": 3, "dataset_s": 8, "fit_s": 30, "total_s": 52, "rounds": 300, "threads": 4, "auc": {"f6": 0.82437, "val25": 0.83237, "val23": 0.81085}}
+{"variant": "coA", "fold": 3, "n_train": 275412, "nf": 460, "load_s": 3, "dataset_s": 7, "fit_s": 15, "total_s": 32, "rounds": 300, "threads": 4, "auc": {"f3": 0.804, "val23": 0.79483}}
+{"variant": "coA", "fold": 4, "n_train": 411654, "nf": 460, "load_s": 2, "dataset_s": 6, "fit_s": 22, "total_s": 38, "rounds": 300, "threads": 4, "auc": {"f4": 0.81082, "val23": 0.81884}}
+{"variant": "coA", "fold": 5, "n_train": 548409, "nf": 460, "load_s": 4, "dataset_s": 7, "fit_s": 27, "total_s": 49, "rounds": 300, "threads": 4, "auc": {"f5": 0.81973, "val25": 0.81628, "val23": 0.81566}}
+{"variant": "coA", "fold": 6, "n_train": 685979, "nf": 460, "load_s": 4, "dataset_s": 8, "fit_s": 33, "total_s": 54, "rounds": 300, "threads": 4, "auc": {"f6": 0.82532, "val25": 0.83382, "val23": 0.81338}}
+{"variant": "coB", "fold": 3, "n_train": 275412, "nf": 460, "load_s": 2, "dataset_s": 5, "fit_s": 14, "total_s": 27, "rounds": 300, "threads": 4, "auc": {"f3": 0.8041, "val23": 0.79486}}
+{"variant": "coB", "fold": 4, "n_train": 411654, "nf": 460, "load_s": 2, "dataset_s": 6, "fit_s": 20, "total_s": 34, "rounds": 300, "threads": 4, "auc": {"f4": 0.81067, "val23": 0.81684}}
+{"variant": "coB", "fold": 5, "n_train": 548409, "nf": 460, "load_s": 2, "dataset_s": 6, "fit_s": 25, "total_s": 43, "rounds": 300, "threads": 4, "auc": {"f5": 0.81913, "val25": 0.81582, "val23": 0.81468}}
+{"variant": "coB", "fold": 6, "n_train": 685979, "nf": 460, "load_s": 3, "dataset_s": 7, "fit_s": 32, "total_s": 52, "rounds": 300, "threads": 4, "auc": {"f6": 0.82503, "val25": 0.83312, "val23": 0.81263}}
+{"variant": "coBs", "fold": 3, "n_slates_train": 70268, "srounds": 600, "total_s": 39, "auc_base_corr_slateAUC": {"f3": [0.8041, 0.80443, 0.6567], "val23": [0.79486, 0.79519, 0.6517]}}
+{"variant": "coBs", "fold": 4, "n_slates_train": 105180, "srounds": 600, "total_s": 32, "auc_base_corr_slateAUC": {"f4": [0.81067, 0.81085, 0.6646], "val23": [0.81684, 0.81924, 0.7174]}}
+{"variant": "coBs", "fold": 5, "n_slates_train": 140220, "srounds": 600, "total_s": 47, "auc_base_corr_slateAUC": {"f5": [0.81913, 0.81965, 0.6769], "val25": [0.81582, 0.81634, 0.6739], "val23": [0.81468, 0.81672, 0.7066]}}
+{"variant": "coBs", "fold": 6, "n_slates_train": 175450, "srounds": 600, "total_s": 47, "auc_base_corr_slateAUC": {"f6": [0.82503, 0.82523, 0.6808], "val25": [0.83312, 0.83508, 0.7258], "val23": [0.81263, 0.81423, 0.6973]}}

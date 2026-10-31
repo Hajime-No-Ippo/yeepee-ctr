@@ -1,0 +1,4 @@
+{"variant": "v12", "fold": 3, "n_train": 275412, "nf": 435, "load_s": 1, "dataset_s": 4, "fit_s": 14, "total_s": 29, "rounds": 300, "threads": 4, "auc": {"f3": 0.80299, "val23": 0.79366}}
+{"variant": "v12", "fold": 4, "n_train": 411654, "nf": 435, "load_s": 2, "dataset_s": 6, "fit_s": 19, "total_s": 34, "rounds": 300, "threads": 4, "auc": {"f4": 0.80943, "val23": 0.81592}}
+{"variant": "v12", "fold": 5, "n_train": 548409, "nf": 435, "load_s": 2, "dataset_s": 6, "fit_s": 25, "total_s": 45, "rounds": 300, "threads": 4, "auc": {"f5": 0.81876, "val25": 0.81528, "val23": 0.813}}
+{"variant": "v12", "fold": 6, "n_train": 685979, "nf": 435, "load_s": 3, "dataset_s": 8, "fit_s": 30, "total_s": 52, "rounds": 300, "threads": 4, "auc": {"f6": 0.82437, "val25": 0.83237, "val23": 0.81085}}

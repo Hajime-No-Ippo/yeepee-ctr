@@ -1,0 +1,4 @@
+{"variant": "coB", "fold": 3, "n_train": 275412, "nf": 460, "load_s": 2, "dataset_s": 5, "fit_s": 14, "total_s": 27, "rounds": 300, "threads": 4, "auc": {"f3": 0.8041, "val23": 0.79486}}
+{"variant": "coB", "fold": 4, "n_train": 411654, "nf": 460, "load_s": 2, "dataset_s": 6, "fit_s": 20, "total_s": 34, "rounds": 300, "threads": 4, "auc": {"f4": 0.81067, "val23": 0.81684}}
+{"variant": "coB", "fold": 5, "n_train": 548409, "nf": 460, "load_s": 2, "dataset_s": 6, "fit_s": 25, "total_s": 43, "rounds": 300, "threads": 4, "auc": {"f5": 0.81913, "val25": 0.81582, "val23": 0.81468}}
+{"variant": "coB", "fold": 6, "n_train": 685979, "nf": 460, "load_s": 3, "dataset_s": 7, "fit_s": 32, "total_s": 52, "rounds": 300, "threads": 4, "auc": {"f6": 0.82503, "val25": 0.83312, "val23": 0.81263}}
