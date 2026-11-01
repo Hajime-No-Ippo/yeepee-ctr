@@ -1,0 +1,67 @@
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (1402200, 484) (1402200, 241) 56 s
+/workspace/huawei/v21seq/seq21.py:74: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.slayers>0 and not a.noslate: s.sl=nn.TransformerEncoder(nn.TransformerEncoderLayer(tk,4,2*tk,0.1,batch_first=True,norm_first=True),a.slayers)
+seed0 ep0 107s auc 0.81565
+seed0 ep1 203s auc 0.81675
+seed0 ep2 255s auc 0.81774
+seed0 ep3 305s auc 0.81777
+seed0 ep4 355s auc 0.81874
+seed0 ep5 420s auc 0.81893
+/workspace/huawei/v21seq/seq21.py:74: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.slayers>0 and not a.noslate: s.sl=nn.TransformerEncoder(nn.TransformerEncoderLayer(tk,4,2*tk,0.1,batch_first=True,norm_first=True),a.slayers)
+seed1 ep0 472s auc 0.81525
+seed1 ep1 524s auc 0.81613
+seed1 ep2 576s auc 0.81758
+seed1 ep3 833s auc 0.81858
+seed1 ep4 891s auc 0.81875
+seed1 ep5 945s auc 0.81885
+/workspace/huawei/v21seq/seq21.py:74: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.slayers>0 and not a.noslate: s.sl=nn.TransformerEncoder(nn.TransformerEncoderLayer(tk,4,2*tk,0.1,batch_first=True,norm_first=True),a.slayers)
+seed2 ep0 994s auc 0.81450
+seed2 ep1 1044s auc 0.81699
+seed2 ep2 1097s auc 0.81726
+seed2 ep3 1146s auc 0.81833
+seed2 ep4 1198s auc 0.81870
+seed2 ep5 1253s auc 0.81886
+/workspace/huawei/v21seq/seq21.py:74: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.slayers>0 and not a.noslate: s.sl=nn.TransformerEncoder(nn.TransformerEncoderLayer(tk,4,2*tk,0.1,batch_first=True,norm_first=True),a.slayers)
+seed3 ep0 1304s auc 0.81601
+seed3 ep1 1358s auc 0.81763
+seed3 ep2 1413s auc 0.81748
+seed3 ep3 1464s auc 0.81825
+seed3 ep4 1513s auc 0.81879
+seed3 ep5 1563s auc 0.81885
+/workspace/huawei/v21seq/seq21.py:74: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.slayers>0 and not a.noslate: s.sl=nn.TransformerEncoder(nn.TransformerEncoderLayer(tk,4,2*tk,0.1,batch_first=True,norm_first=True),a.slayers)
+seed4 ep0 1613s auc 0.81592
+seed4 ep1 1660s auc 0.81624
+seed4 ep2 4091s auc 0.81804
+seed4 ep3 4143s auc 0.81840
+seed4 ep4 4195s auc 0.81894
+seed4 ep5 4246s auc 0.81895
+/workspace/huawei/v21seq/seq21.py:74: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.slayers>0 and not a.noslate: s.sl=nn.TransformerEncoder(nn.TransformerEncoderLayer(tk,4,2*tk,0.1,batch_first=True,norm_first=True),a.slayers)
+seed5 ep0 4301s auc 0.81642
+seed5 ep1 4350s auc 0.81738
+seed5 ep2 8713s auc 0.81781
+seed5 ep3 8770s auc 0.81825
+seed5 ep4 8823s auc 0.81882
+seed5 ep5 8881s auc 0.81896
+/workspace/huawei/v21seq/seq21.py:74: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.slayers>0 and not a.noslate: s.sl=nn.TransformerEncoder(nn.TransformerEncoderLayer(tk,4,2*tk,0.1,batch_first=True,norm_first=True),a.slayers)
+seed6 ep0 8935s auc 0.81538
+seed6 ep1 8989s auc 0.81714
+seed6 ep2 17956s auc 0.81737
+seed6 ep3 18010s auc 0.81847
+seed6 ep4 18062s auc 0.81880
+seed6 ep5 18116s auc 0.81898
+/workspace/huawei/v21seq/seq21.py:74: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.slayers>0 and not a.noslate: s.sl=nn.TransformerEncoder(nn.TransformerEncoderLayer(tk,4,2*tk,0.1,batch_first=True,norm_first=True),a.slayers)
+seed7 ep0 18170s auc 0.81449
+seed7 ep1 18348s auc 0.81673
+seed7 ep2 18403s auc 0.81776
+seed7 ep3 18455s auc 0.81791
+seed7 ep4 18506s auc 0.81900
+seed7 ep5 18557s auc 0.81904
