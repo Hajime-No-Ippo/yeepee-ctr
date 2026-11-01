@@ -1,0 +1,23 @@
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (1402200, 484) (1402200, 241) 52 s
+/workspace/huawei/v21seq/seq21.py:62: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.enc=='trf': s.trf=nn.TransformerEncoder(nn.TransformerEncoderLayer(hd,4,2*hd,0.1,batch_first=True,norm_first=True),1)
+/workspace/huawei/v21seq/seq21.py:66: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.slayers>0 and not a.noslate: s.sl=nn.TransformerEncoder(nn.TransformerEncoderLayer(tk,4,2*tk,0.1,batch_first=True,norm_first=True),a.slayers)
+seed1 ep0 200s auc 0.81403
+seed1 ep1 346s auc 0.81712
+seed1 ep2 1203s auc 0.81805
+seed1 ep3 1801s auc 0.81855
+seed1 ep4 2004s auc 0.81885
+seed1 ep5 2219s auc 0.81892
+/workspace/huawei/v21seq/seq21.py:62: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  class Net(nn.Module):
+/workspace/huawei/v21seq/seq21.py:66: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  s.tab_o=nn.Linear(h//2,1)
+seed2 ep0 2378s auc 0.81575
+seed2 ep1 2814s auc 0.81739
+seed2 ep2 2983s auc 0.81792
+seed2 ep3 3158s auc 0.81861
+seed2 ep4 3900s auc 0.81914
+seed2 ep5 4069s auc 0.81905

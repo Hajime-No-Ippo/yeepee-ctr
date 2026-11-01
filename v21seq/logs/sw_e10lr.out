@@ -1,0 +1,15 @@
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (702680, 484) (702680, 241) 27 s
+/workspace/huawei/v21seq/seq21.py:66: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.slayers>0 and not a.noslate: s.sl=nn.TransformerEncoder(nn.TransformerEncoderLayer(tk,4,2*tk,0.1,batch_first=True,norm_first=True),a.slayers)
+seed0 ep0 55s auc 0.79415
+seed0 ep1 83s auc 0.79326
+seed0 ep2 112s auc 0.79700
+seed0 ep3 141s auc 0.79715
+seed0 ep4 170s auc 0.79687
+seed0 ep5 550s auc 0.79802
+seed0 ep6 580s auc 0.79753
+seed0 ep7 608s auc 0.79780
+seed0 ep8 637s auc 0.79759
+seed0 ep9 665s auc 0.79766

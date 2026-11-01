@@ -1,0 +1,23 @@
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (1402940, 484) (1402940, 241) 52 s
+/workspace/huawei/v21seq/seq21.py:70: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.enc=='trf': s.trf=nn.TransformerEncoder(nn.TransformerEncoderLayer(hd,4,2*hd,0.1,batch_first=True,norm_first=True),1)
+/workspace/huawei/v21seq/seq21.py:74: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.slayers>0 and not a.noslate: s.sl=nn.TransformerEncoder(nn.TransformerEncoderLayer(tk,4,2*tk,0.1,batch_first=True,norm_first=True),a.slayers)
+seed0 ep0 269s auc 0.82435
+seed0 ep1 443s auc 0.82545
+seed0 ep2 689s auc 0.82659
+seed0 ep3 853s auc 0.82729
+seed0 ep4 1013s auc 0.82764
+seed0 ep5 1262s auc 0.82779
+/workspace/huawei/v21seq/seq21.py:70: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.enc=='trf': s.trf=nn.TransformerEncoder(nn.TransformerEncoderLayer(hd,4,2*hd,0.1,batch_first=True,norm_first=True),1)
+/workspace/huawei/v21seq/seq21.py:74: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.slayers>0 and not a.noslate: s.sl=nn.TransformerEncoder(nn.TransformerEncoderLayer(tk,4,2*tk,0.1,batch_first=True,norm_first=True),a.slayers)
+seed1 ep0 1420s auc 0.82350
+seed1 ep1 1576s auc 0.82423
+seed1 ep2 2240s auc 0.82636
+seed1 ep3 2398s auc 0.82693
+seed1 ep4 2554s auc 0.82767
+seed1 ep5 2977s auc 0.82784

@@ -1,0 +1,6 @@
+/workspace/huawei/v21seq/gbdt21.py:19: RuntimeWarning: Mean of empty slice
+  mu=np.nanmean(Z,1,keepdims=True); mx=np.nanmax(Z,1,keepdims=True)
+/workspace/huawei/v21seq/gbdt21.py:19: RuntimeWarning: All-NaN slice encountered
+  mu=np.nanmean(Z,1,keepdims=True); mx=np.nanmax(Z,1,keepdims=True)
+load 7 s (702680, 604)
+{"cut": 23, "tag": "gl_xe", "var": "A", "obj": "rank_xendcg", "rel": 40, "nf": 604, "fit_s": 135, "min": 3.0, "params": "{\"num_leaves\":63,\"learning_rate\":0.03,\"objective_seed\":1}", "auc": {"200": 0.79127, "400": 0.79098, "700": 0.78974, "1000": 0.78787}, "auc_within_slate_demeaned": {"200": 0.78973, "400": 0.78948, "700": 0.78855, "1000": 0.78703}}

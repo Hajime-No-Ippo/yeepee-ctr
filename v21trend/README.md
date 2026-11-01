@@ -29,3 +29,4 @@ Gate (>= +.0002 mean on folds, positive on C23 and C25): not met by any set. No 
 ## Runtime impact (if one were adopted)
 feat_cs/co2/cl: ~10-30 s per cut incl. eval (25 s), single core; feat_dec ~3 s per table; trI/trU a few s per table. Negligible vs budget; training cost +3-10% (more features).
 MLP sequence branch (not done): needs an end-to-end history encoder in mlp17, many times slower per epoch on 4 CPU cores; likely breaks the 15-min budget unless history is precomputed/frozen.
+Step0: feat_* caches deleted Sat Oct 31 22:23:28 GMT 2026
