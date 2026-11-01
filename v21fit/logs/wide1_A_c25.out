@@ -1,0 +1,9 @@
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (1402200, 484) (1402200, 241) 52 s
+seed0 ep0 98s auc 0.81508
+seed0 ep1 146s auc 0.81589
+seed0 ep2 195s auc 0.81736
+seed0 ep3 242s auc 0.81809
+seed0 ep4 288s auc 0.81875
+seed0 ep5 333s auc 0.81886

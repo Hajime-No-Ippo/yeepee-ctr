@@ -1,0 +1,67 @@
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (1402940, 484) (1402940, 241) 53 s
+/workspace/huawei/v21seq/seq21.py:74: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.slayers>0 and not a.noslate: s.sl=nn.TransformerEncoder(nn.TransformerEncoderLayer(tk,4,2*tk,0.1,batch_first=True,norm_first=True),a.slayers)
+seed0 ep0 3034s auc 0.82298
+seed0 ep1 3083s auc 0.82550
+seed0 ep2 3128s auc 0.82611
+seed0 ep3 3174s auc 0.82722
+seed0 ep4 3219s auc 0.82765
+seed0 ep5 3266s auc 0.82782
+/workspace/huawei/v21seq/seq21.py:74: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.slayers>0 and not a.noslate: s.sl=nn.TransformerEncoder(nn.TransformerEncoderLayer(tk,4,2*tk,0.1,batch_first=True,norm_first=True),a.slayers)
+seed1 ep0 3314s auc 0.82195
+seed1 ep1 14228s auc 0.82549
+seed1 ep2 14277s auc 0.82684
+seed1 ep3 14326s auc 0.82726
+seed1 ep4 14375s auc 0.82762
+seed1 ep5 14425s auc 0.82780
+/workspace/huawei/v21seq/seq21.py:74: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.slayers>0 and not a.noslate: s.sl=nn.TransformerEncoder(nn.TransformerEncoderLayer(tk,4,2*tk,0.1,batch_first=True,norm_first=True),a.slayers)
+seed2 ep0 14475s auc 0.82490
+seed2 ep1 14524s auc 0.82440
+seed2 ep2 14572s auc 0.82674
+seed2 ep3 14621s auc 0.82735
+seed2 ep4 14669s auc 0.82793
+seed2 ep5 14717s auc 0.82787
+/workspace/huawei/v21seq/seq21.py:74: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.slayers>0 and not a.noslate: s.sl=nn.TransformerEncoder(nn.TransformerEncoderLayer(tk,4,2*tk,0.1,batch_first=True,norm_first=True),a.slayers)
+seed3 ep0 14766s auc 0.82387
+seed3 ep1 17237s auc 0.82428
+seed3 ep2 17285s auc 0.82563
+seed3 ep3 17333s auc 0.82726
+seed3 ep4 17381s auc 0.82765
+seed3 ep5 17431s auc 0.82782
+/workspace/huawei/v21seq/seq21.py:74: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.slayers>0 and not a.noslate: s.sl=nn.TransformerEncoder(nn.TransformerEncoderLayer(tk,4,2*tk,0.1,batch_first=True,norm_first=True),a.slayers)
+seed4 ep0 17478s auc 0.82203
+seed4 ep1 21945s auc 0.82606
+seed4 ep2 22013s auc 0.82667
+seed4 ep3 22075s auc 0.82738
+seed4 ep4 22138s auc 0.82768
+seed4 ep5 22191s auc 0.82787
+/workspace/huawei/v21seq/seq21.py:74: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.slayers>0 and not a.noslate: s.sl=nn.TransformerEncoder(nn.TransformerEncoderLayer(tk,4,2*tk,0.1,batch_first=True,norm_first=True),a.slayers)
+seed5 ep0 28181s auc 0.81950
+seed5 ep1 28236s auc 0.82336
+seed5 ep2 28284s auc 0.82659
+seed5 ep3 28332s auc 0.82741
+seed5 ep4 28380s auc 0.82770
+seed5 ep5 28430s auc 0.82776
+/workspace/huawei/v21seq/seq21.py:74: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.slayers>0 and not a.noslate: s.sl=nn.TransformerEncoder(nn.TransformerEncoderLayer(tk,4,2*tk,0.1,batch_first=True,norm_first=True),a.slayers)
+seed6 ep0 28480s auc 0.82456
+seed6 ep1 28674s auc 0.82542
+seed6 ep2 28725s auc 0.82666
+seed6 ep3 28776s auc 0.82680
+seed6 ep4 28827s auc 0.82776
+seed6 ep5 28876s auc 0.82788
+/workspace/huawei/v21seq/seq21.py:74: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.slayers>0 and not a.noslate: s.sl=nn.TransformerEncoder(nn.TransformerEncoderLayer(tk,4,2*tk,0.1,batch_first=True,norm_first=True),a.slayers)
+seed7 ep0 28927s auc 0.82026
+seed7 ep1 29134s auc 0.82623
+seed7 ep2 29185s auc 0.82683
+seed7 ep3 29236s auc 0.82744
+seed7 ep4 29285s auc 0.82764
+seed7 ep5 29335s auc 0.82778

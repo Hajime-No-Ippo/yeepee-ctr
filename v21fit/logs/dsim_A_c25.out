@@ -1,0 +1,20 @@
+/workspace/venv_v17/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+prep (1402200, 484) (1402200, 241) 47 s
+distill: real events 140220 pseudo events 43964 mean teacher p 0.06319999694824219
+/workspace/huawei/v21fit/dist21.py:84: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.slayers>0 and not a.noslate: s.sl=nn.TransformerEncoder(nn.TransformerEncoderLayer(tk,4,2*tk,0.1,batch_first=True,norm_first=True),a.slayers)
+seed0 ep0 108s auc 0.81588
+seed0 ep1 168s auc 0.81794
+seed0 ep2 230s auc 0.81801
+seed0 ep3 291s auc 0.81868
+seed0 ep4 352s auc 0.81890
+seed0 ep5 413s auc 0.81901
+/workspace/huawei/v21fit/dist21.py:84: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  if a.slayers>0 and not a.noslate: s.sl=nn.TransformerEncoder(nn.TransformerEncoderLayer(tk,4,2*tk,0.1,batch_first=True,norm_first=True),a.slayers)
+seed1 ep0 485s auc 0.81433
+seed1 ep1 547s auc 0.81720
+seed1 ep2 608s auc 0.81767
+seed1 ep3 670s auc 0.81881
+seed1 ep4 731s auc 0.81893
+seed1 ep5 792s auc 0.81904
