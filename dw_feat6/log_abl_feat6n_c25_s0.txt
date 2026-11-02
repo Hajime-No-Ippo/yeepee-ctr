@@ -1,0 +1,2 @@
+loaded (1402200, 487) extra: ['gap_over_hgap', 'p_streak', 'p_since_first'] 17
+{'tag': 'feat6n', 'cut': 25, 'seed': 0, 'nf': 487, 'auc': {400: 0.81642, 700: 0.81714, 1000: 0.81733}, 'wall_s': 1036}

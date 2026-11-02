@@ -1,0 +1,28 @@
+C23: base L(q=.665) 0.79825 | G7 0.76818 G8 0.77476 rho(G7,G8) 0.937
+ DIR1 gain e-5 vs L alone; rows share7 (0,.5,1), cols total graph weight (L+w*G, rel):
+  s7=0.00 +112.9 +141.3 +156.6 +161.8 +158.8
+  s7=0.25 +109.1 +137.2 +153.0 +159.1 +157.3
+  s7=0.50 +103.1 +128.8 +142.4 +146.5 +142.9
+  s7=0.75  +95.0 +116.1 +124.8 +124.1 +115.6
+  s7=1.00  +84.7  +99.0 +100.4  +91.8  +75.3
+ DIR2: scale of ours/D base vs graph (same as total w above, i.e. lowering base share = raising w): see rows above; best w locally ~.2-.3 (rel to L std units)
+ DIR3: q (D share, ->Q2-like at 1) with G8 at w .2 and G7+G8 mix: 
+  q=0.33 G8 +126.3  mix +111.8   abs AUC(Lq+.2G8) 0.80027
+  q=0.50 G8 +139.3  mix +124.9   abs AUC(Lq+.2G8) 0.80011
+  q=0.67 G8 +156.6  mix +142.4   abs AUC(Lq+.2G8) 0.79982
+  q=0.80 G8 +174.5  mix +160.3   abs AUC(Lq+.2G8) 0.79948
+  q=1.00 G8 +207.1  mix +193.0   abs AUC(Lq+.2G8) 0.79882
+C25: base L(q=.665) 0.81909 | G7 0.79514 G8 0.80117 rho(G7,G8) 0.964
+ DIR1 gain e-5 vs L alone; rows share7 (0,.5,1), cols total graph weight (L+w*G, rel):
+  s7=0.00 +111.9 +143.4 +163.3 +174.1 +177.6
+  s7=0.25 +106.4 +136.4 +155.2 +165.3 +168.4
+  s7=0.50  +99.5 +126.5 +142.5 +150.0 +150.6
+  s7=0.75  +91.4 +113.9 +125.4 +128.4 +124.6
+  s7=1.00  +81.7  +98.4 +103.7 +100.3  +90.2
+ DIR2: scale of ours/D base vs graph (same as total w above, i.e. lowering base share = raising w): see rows above; best w locally ~.2-.3 (rel to L std units)
+ DIR3: q (D share, ->Q2-like at 1) with G8 at w .2 and G7+G8 mix: 
+  q=0.33 G8 +140.8  mix +119.9   abs AUC(Lq+.2G8) 0.82083
+  q=0.50 G8 +150.4  mix +129.5   abs AUC(Lq+.2G8) 0.82083
+  q=0.67 G8 +163.3  mix +142.5   abs AUC(Lq+.2G8) 0.82072
+  q=0.80 G8 +176.6  mix +155.9   abs AUC(Lq+.2G8) 0.82057
+  q=1.00 G8 +200.9  mix +180.1   abs AUC(Lq+.2G8) 0.82022

@@ -1,0 +1,17 @@
+rho G7 {'EN': np.float64(0.9054), 'E0': np.float64(0.9159), 'A': np.float64(0.8894), 'D': np.float64(0.881), 'P': np.float64(0.8623), 'v5': np.float64(0.8189), 'v8r': np.float64(0.9159), 'S': np.float64(0.8979), 'slB': np.float64(0.8935), 'listA': np.float64(0.8905)} 
+rho G8 {'EN': np.float64(0.9173), 'E0': np.float64(0.9272), 'A': np.float64(0.8919), 'D': np.float64(0.8828), 'P': np.float64(0.8609), 'v5': np.float64(0.8178), 'v8r': np.float64(0.9169), 'S': np.float64(0.9009), 'slB': np.float64(0.8957), 'listA': np.float64(0.8928)} r78 0.9748
+stage1 ESS 1924
+stage2 draws 45330
+ESS 1142
+G7    post mean 0.80574 5/95 0.80368 0.80790
+G8    post mean 0.80850 5/95 0.80619 0.81074
+dloc  post mean 0.00276 5/95 -0.00029 0.00592
+aD    post mean 0.81815 5/95 0.81695 0.81939
+ours  post mean 0.81935 5/95 0.81858 0.82026
+v5    post mean 0.79258 5/95 0.79032 0.79389
+v8r   post mean 0.81476 5/95 0.81350 0.81546
+fit gains vs EN {'Q2': np.float64(0.000135), 'R1': np.float64(0.000199), 'S1': np.float64(0.000241), 'T1': np.float64(0.000245), 'G1': np.float64(0.000111), 'G2': np.float64(0.00027), 'G3': np.float64(0.000261)} 
+obs              [1.60e-04 2.02e-04 2.45e-04 2.40e-04 9.90e-05 2.57e-04 2.61e-04] 
+resid (obs-fit)  [ 2.5e-05  3.0e-06  4.0e-06 -5.0e-06 -1.2e-05 -1.3e-05  0.0e+00]
+posterior-mean gains vs S1: G1 -0.000130 G2 +0.000028 G3 +0.000020; G3 vs G2 -0.000009 (obs +.000004)
+saved

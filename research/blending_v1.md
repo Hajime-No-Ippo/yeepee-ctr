@@ -129,3 +129,15 @@ Recipe: v20/s0_ref.py config (lib20 DWBIG, 1000 rounds, seed 42), 2 threads, tra
 | 488 (+sq4) | .79628 | -.00038 | .81745 | -.00002 | -.00014 / .00000 |
 
 Verdict: the 6 missing features do not improve; 490 is a wash (one cutoff down .0002, the other up .0001, within seed noise ~1e-4), and adds nothing to the blend. Keep 484. C26 not run (one seed per config; ~30 min per run at 2 threads).
+
+## 9. Features beyond 490 (measured 2 Nov 2026, Europe/Dublin; seed 0 unless noted)
+Base 490 = ref484 + feat_tmx. Recipe = fs490.py (lib20 DWBIG, 1000 rounds, 2 threads, train-only). Script `blending_v1_scripts/fsx.py`, eval `fsx_eval.py` -> `out/fsx_eval.json`. Queue `run_fsx4.sh` still running more seeds/blocks.
+
+| Block (+cols) | C23 single, d vs 490 | C25 single, d vs 490 | Blend4 delta C23 / C25 | rho to blend4 | Verdict |
+|---|---|---|---|---|---|
+| gf: LightGCN graph feats (v21gfeat 3-seed train-only cache) + within-slate demean/z (+24) | .79740, +.00096 | .81851, +.00095 | +.00016 / +.00029 | .986-.987 | PASS (seed 0) |
+| ttsc: two-tower slate-competition (+20) | .79694, +.00050 | .81760 (s1 .81758), +.00003 | +.00001 / +.00004 | .988-.989 | C23 only; fail |
+| ttbag: two-tower bag (+11) | .79664, +.00021 | .81759, +.00002 | -.00006 / +.00003 | .988-.989 | fail |
+
+Provenance: `feat9/mk_gf_evz.py` reads only train rows; graph features come from graphs fitted on train clicks before each table's day (v21gfeat). No eval rows.
+Caveat: gf comes from the same LightGCN family whose standalone member had rho .905 with ErBrown's EN and gave only +1.2e-5 public, so its public lift on top of EN may be smaller than the local +.001.
