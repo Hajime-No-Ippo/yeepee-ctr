@@ -59,3 +59,11 @@ S2 c07841bc942902e1a73c0b7800ee88c99da6482cc315c467fbb00c3fcdb93c00
 - Keep D as float32 as stored; the original run used it that way and the operation order in `blend_probes.py` mirrors mkQ/mkR/mkS, otherwise a handful of near-tied rows can move one rank step (~2e-6, harmless).
 - Private inputs stay in the private cache dataset only (access needs your HF login). This repo never holds predictions.
 - Fit story and calibration (binormal AUC model, posterior from public scores R1/Q2): `STATUS.md`, `recal.py`, `reopt2.py`-`reopt4.py`, `addon*.py`.
+
+## Update 2026-11-02: inputs are also in this repo (one-off exception, approved by Eric)
+The six core arrays (`EN.npy E0.npy A_all.npy D_dcn.npy v8regen.npy v5.npy`, D_dcn stays float32) plus `MANIFEST.md` / `MANIFEST.json` are committed under **`v21fit/blend_inputs/`** (about 22 MB total, each file under 5 MB). This is a one-off exception to the "no predictions in code repos" rule and covers only these files; the scheduled sync still excludes `.npy` elsewhere. The fit-only extras stay only in the private cache dataset.
+Default `--inputs` is therefore `v21fit/blend_inputs` (no download needed):
+```
+python v21fit/blend_probes.py --inputs v21fit/blend_inputs --rowid-from <any v21fit probe zip> --out ./v21fit_rebuilt
+```
+Verify files against `v21fit/blend_inputs/MANIFEST.json` (sha256, shape, dtype). The private cache folder `v21fit_blend_inputs/` in `Eric-Yyvuw/yeepee-ctr-cache` holds the same bytes.

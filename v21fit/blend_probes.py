@@ -26,7 +26,7 @@ PROBES={  # name -> params (c, g, q, v8, v5); v8/v5 weights are ADDED (negative 
  'S2':('probe_v21fit_S2_R1step_c097_g129_q75_v8m079_v5m015',(0.09693596102582225,0.1285964186161041,0.75,-0.078587083614776,-0.015)),
 }
 def main():
-    ap=argparse.ArgumentParser(); ap.add_argument('--inputs',required=True); ap.add_argument('--rowid-from',required=True)
+    ap=argparse.ArgumentParser(); ap.add_argument('--inputs',default='v21fit/blend_inputs'); ap.add_argument('--rowid-from',required=True)
     ap.add_argument('--out',default='.'); ap.add_argument('--only',default=','.join(PROBES)); a=ap.parse_args()
     z=zipfile.ZipFile(a.rowid_from); rows=list(csv.reader(io.TextIOWrapper(z.open(z.namelist()[0]),'utf-8')))
     assert rows[0][0]=='rowid'; rid=[r[0] for r in rows[1:]]; assert len(rid)==529390
