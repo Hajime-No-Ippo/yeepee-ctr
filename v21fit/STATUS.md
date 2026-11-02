@@ -87,3 +87,18 @@ No jobs running.
 2. Other forms (forms.py, C25 .3z+.3M+.4D): rank .81949, zscore-logit .81949, probit-rank .81950, rank^2 .81950, rank^.5 .81949, sigmoid prob .81946 => all equal (+-.00001). NULL.
    Negative weight on p33 (sensP.py): sign/size depends on its assumed public AUC (.800 -> opt wP -.134 gain +.0005; .8052 -> -.039, +.00004; .810 -> +.07): unsupported, skipped. v5 has no known public score -> skipped.
 - 22:00: v21dcn worker running r1 screening on C23/C25 only (cores 0-5); no C27 eval array yet. Polling its out/ and ens/*c27* every ~20 min (until ~00:45).
+- 22:28 v21dcn findings (its STATUS): standalone DCN AUC stuck .8182-.8184 at C25; best gains vs our D baseline +.0001..+.0002 (r0_base +18e-5, xdrop .1 +10e-5); no improved C27 eval array yet.
+- 22:37 Round 3 done: range + forms tests complete (see above). v21dcn out/ empty, no C27 eval array -> no new probes built. Best set remains Q1 > P1 > Q2 (all on Mac, shasum OK).
+
+## 23:05 Blending on Q1 (pt253u)
+Add-on tests (addon.py/addon2.py/addon3.py, MC 1500, paired vs Q1, mean-input Q1 pred .828988):
+- E0, A, D, slateB, listA, S(EBDISTILL), P(p33): ~0 gain (|mean|<=.00005, P>0 .5-.75). Q1 internal weights (E0 coef .136, g .098, A:DCN split) are on a flat optimum: grid best = Q1 (q .75 same pred), any change -0.00000 to -.00004.
+- v5 AUC reset to U(.784,.794) (val25 .7844 -> public ~.79; earlier .795-.815 guess was too high). Negative weights help: v8regen -.03 +.000073 (P .95); v5 -.03 +.000180 (P .99); both (-.03,-.015) +.000166 (5/95 +.000062/+.000266). Stress: if v5 public >=.795, gain ~0 (+.000005). Positive v5 weight hurts (-.000227).
+- Built probe_v21fit_R1_Q1_m030v8regen_m015v5 (sha a3b7720c...212d), on Mac, verified.
+
+## 01:10 Public scores + recalibration (pt254u)
+Public: R1 = .829058 (+.000202 vs EN .828856), Q2 = .829016 (+.000160). Q1 not yet reported.
+Prior-mean preds were R1 +.000295, Q2 +.000131 -> R1 over by .00009, Q2 under by .00003.
+Posterior (30000 draws, ESS 5085, obs noise sd .00006 each + shared bias sd .00005): bias ~0 (sd .000048); aD .8186 (prior .8183; 5/95 .8173-.8199); aV5 .7908 (.7859-.7938); aV8regen .8145 (.8132-.8154); ours (A) .8195 unchanged. Posterior gains vs EN: Q2 +.000147, R1 +.000216, Q1 +.000096 -> Q1 predicted public .828952 (5/95 .828887-.829015).
+Re-opt vs R1: unshrunk opt (c .049, g .169, q 1, v8r -.098, v5 -.070) +.00028 but far extrapolation. Built S1 (1/3 step: c .109 g .123 q .665 v8r -.052 v5 -.033; +.000128, 5/95 +.000022/+.000244, P .98) and S2 (v5 held -.015, 1/2 step: c .097 g .129 q .75 v8r -.079; +.000114, 5/95 -.00002/+.000249, P .92; robust to v5 AUC>=.795). S1 collapses to -.00002 if v5 public >=.795.
+sha S1 6f1795dd...ad03, S2 5b225516...174d. On Mac, verified.
