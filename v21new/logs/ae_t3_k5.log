@@ -1,0 +1,13 @@
+samples 830301
+step 50 28s
+step 100 55s
+step 150 82s
+step 200 109s
+ep 1 loss 9.1954 110s
+ep 1 110s val25 auc raw 0.55237 demeaned 0.55336
+ep 2 loss 8.4065 219s
+ep 2 219s val25 auc raw 0.58923 demeaned 0.59390
+ep 3 loss 7.4306 327s
+ep 3 328s val25 auc raw 0.63121 demeaned 0.63746
+ep 4 loss 6.5507 436s
+ep 4 437s val25 auc raw 0.65212 demeaned 0.65816

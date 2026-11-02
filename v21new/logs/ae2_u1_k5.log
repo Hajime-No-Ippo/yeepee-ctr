@@ -1,0 +1,15 @@
+pairs 783043 users 51044
+ep 1 loss 9.0370 100s
+ep 1 101s val25 auc raw 0.57230 demeaned 0.57523
+ep 2 loss 8.2920 198s
+ep 2 199s val25 auc raw 0.67459 demeaned 0.68148
+ep 3 loss 7.5273 295s
+ep 3 296s val25 auc raw 0.69989 demeaned 0.70812
+ep 4 loss 7.0610 394s
+ep 4 394s val25 auc raw 0.70237 demeaned 0.71054
+ep 5 loss 6.7707 515s
+ep 5 516s val25 auc raw 0.70249 demeaned 0.71058
+ep 6 loss 6.5696 618s
+ep 6 619s val25 auc raw 0.70115 demeaned 0.70910
+ep 7 loss 6.4240 722s
+ep 7 723s val25 auc raw 0.70018 demeaned 0.70795
