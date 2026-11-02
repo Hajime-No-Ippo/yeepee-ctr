@@ -1,0 +1,7 @@
+prep (1402200, 484) (1402200, 241) 53 s
+CFG {'noseq': False, 'arch': 'dcn', 'hid': 512, 'drop': 0.4, 'lr': 0.0007, 'elr': 0.0003, 'ep': 3, 'alpha': 0.3, 'cl': 3, 'bs': 256, 'edrop': 0.3, 'needseq': 1, 'enc': 'din', 'aug': 0.3, 'name': 'r6_seq', 'seeds': [0]}
+seed0 ep0 205s auc 0.81781
+seed0 ep1 354s auc 0.81787
+seed0 ep2 501s auc 0.81455
+CFG {'noseq': False, 'arch': 'dcn', 'hid': 512, 'drop': 0.4, 'lr': 0.0007, 'elr': 0.0003, 'ep': 3, 'alpha': 0.3, 'cl': 3, 'bs': 256, 'edrop': 0.3, 'needseq': 1, 'enc': 'trf', 'aug': 0.3, 'name': 'r6_seqtrf', 'seeds': [0]}
+seed0 ep0 667s auc 0.81722

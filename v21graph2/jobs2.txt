@@ -1,0 +1,7 @@
+5 u4 --seed 0 --steps 500 --lr 1e-2 --L 2 --d 64 --l2 3e-3 --save 250,350,500
+5 u4 --seed 1 --steps 500 --lr 1e-2 --L 2 --d 64 --l2 3e-3 --save 250,350,500
+5 u4 --seed 2 --steps 500 --lr 1e-2 --L 2 --d 64 --l2 3e-3 --save 250,350,500
+3 u1b --seed 10 --steps 800 --lr 1e-2 --L 3 --d 64 --l2 3e-3 --save 800
+3 u4b --seed 0 --steps 1100 --lr 1e-2 --L 2 --d 64 --l2 3e-3 --save 500,800,1100
+3 u4b --seed 1 --steps 1100 --lr 1e-2 --L 2 --d 64 --l2 3e-3 --save 500,800,1100
+3 u4b --seed 2 --steps 1100 --lr 1e-2 --L 2 --d 64 --l2 3e-3 --save 500,800,1100

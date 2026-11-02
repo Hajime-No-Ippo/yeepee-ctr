@@ -1,0 +1,7 @@
+skip 23 [Errno 2] No such file or directory: '/workspace/huawei/v21graph/out/emb_u1_k3_s0.npz'
+C25 s_uv: auc 0.75684 rho_M 0.726 base: w0.05:+30 w0.1:+21 w0.2:-108 w0.3:-385 | stackD: w0.05:+33 w0.1:+26 w0.2:-100 w0.3:-375
+C25 s_h: auc 0.76588 rho_M 0.771 base: w0.05:+20 w0.1:+9 w0.2:-106 w0.3:-345 | stackD: w0.05:+23 w0.1:+14 w0.2:-98 w0.3:-335
+C25 cos_max: auc 0.71053 rho_M 0.521 base: w0.05:+1 w0.1:-56 w0.2:-334 w0.3:-851 | stackD: w0.05:+5 w0.1:-47 w0.2:-321 w0.3:-835
+C25 cos_mean: auc 0.76800 rho_M 0.771 base: w0.05:+27 w0.1:+21 w0.2:-82 w0.3:-307 | stackD: w0.05:+29 w0.1:+26 w0.2:-73 w0.3:-297
+C25 dm(uv)+dm(h): auc 0.76893 rho_M 0.771 base: w0.05:+26 w0.1:+22 w0.2:-78 w0.3:-297 | stackD: w0.05:+29 w0.1:+25 w0.2:-72 w0.3:-290
+C25 crossfit: [M,z] 0.81832 (blend 0.81921)  +graph 0.81883  delta +51e-5

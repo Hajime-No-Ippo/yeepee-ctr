@@ -1,0 +1,3 @@
+ttbag 25 loaded (1402200, 495) 9
+extra cols: 11 ['tm_inh', 'tm_cos', 'tm_cos_in', 'tm_cos_out', 'tm_cos_dm', 'tm_inh_n', 'tbg_dot', 'tbg_s0dot', 'tbg_lse', 'tbg_dmean', 'tbg_dot_z']
+{'tag': 'fsx_ttbag', 'nx': 11, 'cut': 25, 'seed': 0, 'nf': 495, 'auc': {400: 0.81656, 700: 0.81736, 1000: 0.81759}, 'wall_s': 802}

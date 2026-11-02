@@ -1,0 +1,4 @@
+{"name": "item", "cut": 25, "nfeat": 10, "base": 0.81907, "control": 0.81897, "test": 0.81892, "d_vs_ctrl": -5e-05, "d_vs_base": -0.00015, "ci": [-0.00018, 8e-05], "sd": 7e-05, "noise_d": [-0.0]}
+{"name": "user", "cut": 25, "nfeat": 3, "base": 0.81907, "control": 0.81897, "test": 0.81901, "d_vs_ctrl": 4e-05, "d_vs_base": -6e-05, "ci": [-3e-05, 0.00012], "sd": 4e-05, "noise_d": [8e-05]}
+{"name": "taste", "cut": 25, "nfeat": 9, "base": 0.81907, "control": 0.81897, "test": 0.81898, "d_vs_ctrl": 1e-05, "d_vs_base": -9e-05, "ci": [-0.00013, 0.00011], "sd": 6e-05, "noise_d": [-0.00016]}
+{"name": "all", "cut": 25, "nfeat": 22, "base": 0.81907, "control": 0.81897, "test": 0.81899, "d_vs_ctrl": 2e-05, "d_vs_base": -8e-05, "ci": [-0.00012, 0.00015], "sd": 7e-05, "noise_d": [-7e-05]}

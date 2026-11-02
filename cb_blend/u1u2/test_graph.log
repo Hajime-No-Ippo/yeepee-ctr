@@ -1,0 +1,61 @@
+== 2. Reproduce Grok gains (.4z+.6M base, rank blend (1-w)b+wG, dm sum3, all available seeds) ==
+C23: n_seeds=5 standalone AUC 0.76844 rho_M(pearson on ranks) 0.822
+   vs base (AUC 0.79902): w0.05:+41 w0.1:+60 w0.15:+59 w0.2:+37 w0.3:-69
+   vs eq4 (AUC 0.79911): w0.05:+39 w0.1:+57 w0.15:+55 w0.2:+32 w0.3:-75
+   vs stackD (AUC 0.79900): w0.05:+39 w0.1:+57 w0.15:+54 w0.2:+31 w0.3:-76
+C25: n_seeds=7 standalone AUC 0.79835 rho_M(pearson on ranks) 0.879
+   vs base (AUC 0.81921): w0.05:+39 w0.1:+62 w0.15:+70 w0.2:+63 w0.3:+3
+   vs eq4 (AUC 0.81952): w0.05:+39 w0.1:+62 w0.15:+70 w0.2:+62 w0.3:+2
+   vs stackD (AUC 0.81949): w0.05:+39 w0.1:+63 w0.15:+71 w0.2:+64 w0.3:+4
+C26: n_seeds=5 standalone AUC 0.80783 rho_M(pearson on ranks) 0.886
+   vs A50 (AUC 0.82798): w0.05:+40 w0.1:+65 w0.15:+75 w0.2:+70 w0.3:+16
+C25 first 5 seeds (Grok interim cfg): AUC 0.79646 w0.05:+38 w0.1:+60 w0.15:+65 w0.2:+54
+C23 first 4 seeds (Grok interim cfg): AUC 0.76508 w0.05:+37 w0.1:+52 w0.15:+44 w0.2:+14
+
+== 3. Held-out w (choose w on one fold by max gain, score on the other) ==
+dm sum3 (Grok)                     vs base   : fit23->C25: w=0.125 in-fold +62 HELD +68 (±21) [w.1 +62] | fit25->C23: w=0.150 in-fold +70 HELD +59 (±22) [w.1 +60] | mean held +63.2e-5
+dm sum3 (Grok)                     vs eq4    : fit23->C25: w=0.125 in-fold +59 HELD +68 (±21) [w.1 +62] | fit25->C23: w=0.150 in-fold +70 HELD +55 (±23) [w.1 +57] | mean held +61.6e-5
+RAW sum3 (no slate demean)         vs base   : fit23->C25: w=0.125 in-fold +62 HELD +73 (±25) [w.1 +67] | fit25->C23: w=0.150 in-fold +75 HELD +57 (±26) [w.1 +61] | mean held +64.8e-5
+RAW sum3 (no slate demean)         vs eq4    : fit23->C25: w=0.125 in-fold +64 HELD +73 (±24) [w.1 +67] | fit25->C23: w=0.150 in-fold +75 HELD +60 (±26) [w.1 +63] | mean held +66.8e-5
+dm s_uv+s_h                        vs base   : fit23->C25: w=0.125 in-fold +66 HELD +72 (±22) [w.1 +65] | fit25->C23: w=0.150 in-fold +74 HELD +63 (±21) [w.1 +64] | mean held +67.1e-5
+dm cos_mean                        vs base   : fit23->C25: w=0.100 in-fold +46 HELD +52 (±17) [w.1 +52] | fit25->C23: w=0.125 in-fold +55 HELD +44 (±22) [w.1 +46] | mean held +47.9e-5
+
+== C26 (only M,big exist; graph u1 k6) ==
+M/big 50-50 base 0.82798; M alone 0.82797; graph standalone 0.80783
+  gain vs M/big: w0.025:+22 w0.05:+40 w0.075:+54 w0.1:+65 w0.15:+75 w0.2:+70 w0.3:+16
+
+== Seed sensitivity (dm sum3; gain vs .4z+.6M at w=.1 / best-w; standalone AUC) ==
+C23 u1b single seeds:
+   b_s0     AUC 0.73365 gain w.1 +12 best +26@0.05
+   b_s1     AUC 0.73068 gain w.1 -3 best +19@0.05
+   b_s2     AUC 0.73020 gain w.1 -13 best +14@0.05
+   b_s3     AUC 0.73297 gain w.1 +5 best +22@0.05
+   b_s4     AUC 0.73351 gain w.1 +17 best +29@0.05
+   first 1 seeds: AUC 0.73365 gain w.1 +12 w.05 +26 best +26@0.05
+   first 2 seeds: AUC 0.75227 gain w.1 +35 w.05 +32 best +37@0.075
+   first 3 seeds: AUC 0.76015 gain w.1 +42 w.05 +34 best +42@0.1
+   first 5 seeds: AUC 0.76844 gain w.1 +60 w.05 +41 best +62@0.125
+C25 u1 single seeds:
+   _s0      AUC 0.77318 gain w.1 +28 best +32@0.075
+   _s1      AUC 0.77207 gain w.1 +21 best +27@0.075
+   _s2      AUC 0.77361 gain w.1 +32 best +35@0.075
+   _s3      AUC 0.77351 gain w.1 +26 best +30@0.075
+   _s4      AUC 0.77452 gain w.1 +30 best +33@0.075
+   _s5      AUC 0.77508 gain w.1 +35 best +37@0.075
+   _s9      AUC 0.77316 gain w.1 +16 best +23@0.075
+   first 1 seeds: AUC 0.77318 gain w.1 +28 w.05 +29 best +32@0.075
+   first 2 seeds: AUC 0.78630 gain w.1 +44 w.05 +33 best +44@0.1
+   first 3 seeds: AUC 0.79177 gain w.1 +53 w.05 +36 best +54@0.125
+   first 7 seeds: AUC 0.79835 gain w.1 +62 w.05 +39 best +70@0.15
+C26 u1 single seeds:
+   _s0      AUC 0.79047 gain w.1 +36 best +36@0.1
+   _s1      AUC 0.78991 gain w.1 +43 best +43@0.1
+   _s2      AUC 0.79197 gain w.1 +47 best +47@0.1
+   _s3      AUC 0.79070 gain w.1 +42 best +42@0.1
+   _s4      AUC 0.79022 gain w.1 +33 best +34@0.075
+   first 1 seeds: AUC 0.79047 gain w.1 +36 w.05 +30 best +36@0.1
+   first 2 seeds: AUC 0.80080 gain w.1 +56 w.05 +37 best +58@0.125
+   first 3 seeds: AUC 0.80484 gain w.1 +62 w.05 +40 best +69@0.15
+   first 5 seeds: AUC 0.80783 gain w.1 +65 w.05 +40 best +75@0.15
+C23 u1(350 steps) seed0 only: AUC 0.72728 gain w.1 -2 (compare u1b seed0 above)
+NOTE u2 (slate 3, bpr .5, drop .2): v21graph/logs/u2.log stops at step 450 (val25 .7475), no embeddings were saved -> cannot be scored.

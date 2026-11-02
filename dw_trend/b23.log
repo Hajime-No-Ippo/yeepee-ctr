@@ -1,0 +1,6 @@
+/workspace/huawei/dw_trend/trend.py:62: RuntimeWarning: invalid value encountered in log
+  gap_tr=np.where(ok,np.log((gr+600)/(go+600)),np.nan)
+/workspace/huawei/dw_trend/trend.py:64: RuntimeWarning: invalid value encountered in log
+  overdue=np.where(ln>=3,np.log((tev-last+600)/(gm+600)),np.nan)
+23 (501550, 14) 140 s
+(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)

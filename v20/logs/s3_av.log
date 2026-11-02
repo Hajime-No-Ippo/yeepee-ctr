@@ -1,0 +1,11 @@
+03:52:58 guard waiting on ['390020:530%:/workspace/venv/bin/python mlp17.py 27 nmBsmlp --ep 4 --seed 0 --lr feat_lr2,fea', '390850:0.0%:/workspace/venv/bin/python v17run.py --data /workspace/v17smoke_data --work /wor', '393845:0.0%:/bin/sh -c /workspace/venv/bin/python ens.py 27 Bbig --seeds 0 --rounds 1000 --s']
+03:53:38 guard waiting on ['395819:146%:/workspace/venv/bin/python mlp17.py 27 nmBsmlp --ep 4 --seed 1 --lr feat_lr2,fea', '396192:128%:/workspace/venv/bin/python mlp12.py 27 Bmlp --ep 4 --seed 2 --lr feat_lr2,feat_t']
+04:03:38 guard waiting on ['400098:647%:/workspace/venv/bin/python xlgb17.py 27 nmAs --lr feat_lr2,feat_tt,feat_pp,feat_']
+04:13:38 guard waiting on ['407649:196%:/workspace/venv/bin/python mlp17.py 27 nmAsmlp --ep 4 --seed 1 --lr feat_lr2,fea']
+(1129390, 401)
+fold 0 0.9999999181427761
+fold 1 0.9999999881023399
+fold 2 0.9999999388315957
+AV AUC 0.9999999483589038 flagged 44
+taskset: failed to execute /workspace/venv/bin/python: No such file or directory
+05:56:29 guard waiting on ['42002:176%:/workspace/venv_v17/bin/python seq11.py f1 f2 f3 f4 val25', '42142:174%:/workspace/venv_v17/bin/python seq11.py f1 f2 f3 f4 val25', '42275:173%:/workspace/venv_v17/bin/python seq11.py f1 f2 f3 f4 val25']

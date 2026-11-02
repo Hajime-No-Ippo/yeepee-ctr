@@ -1,0 +1,2 @@
+gf 25 loaded (1402200, 508) 24
+extra cols: 24 ['tm_inh', 'tm_cos', 'tm_cos_in', 'tm_cos_out', 'tm_cos_dm', 'tm_inh_n', 'g_suv', 'g_sh', 'g_cosm', 'g_cosx', 'g_G', 'g_Gsd', 'g_udeg', 'g_ideg', 'g_suv_dm', 'g_suv_z', 'g_sh_dm', 'g_sh_z', 'g_cosm_dm', 'g_cosm_z', 'g_cosx_dm', 'g_cosx_z', 'g_G_dm', 'g_G_z']

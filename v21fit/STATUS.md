@@ -102,3 +102,15 @@ Prior-mean preds were R1 +.000295, Q2 +.000131 -> R1 over by .00009, Q2 under by
 Posterior (30000 draws, ESS 5085, obs noise sd .00006 each + shared bias sd .00005): bias ~0 (sd .000048); aD .8186 (prior .8183; 5/95 .8173-.8199); aV5 .7908 (.7859-.7938); aV8regen .8145 (.8132-.8154); ours (A) .8195 unchanged. Posterior gains vs EN: Q2 +.000147, R1 +.000216, Q1 +.000096 -> Q1 predicted public .828952 (5/95 .828887-.829015).
 Re-opt vs R1: unshrunk opt (c .049, g .169, q 1, v8r -.098, v5 -.070) +.00028 but far extrapolation. Built S1 (1/3 step: c .109 g .123 q .665 v8r -.052 v5 -.033; +.000128, 5/95 +.000022/+.000244, P .98) and S2 (v5 held -.015, 1/2 step: c .097 g .129 q .75 v8r -.079; +.000114, 5/95 -.00002/+.000249, P .92; robust to v5 AUC>=.795). S1 collapses to -.00002 if v5 public >=.795.
 sha S1 6f1795dd...ad03, S2 5b225516...174d. On Mac, verified.
+
+## 01:25 Branch candidates built (not copied to Mac)
+T1 a1 sha 76864cea...38da, T2 a2 0ff962eb...40d7, T3 b f2e52d2e...f2be, T4 c 8b9c55fb...e693 (all in out/, appended to SHA256SUMS_v21fit.txt; validated 529390 rows, merged order, no NaN).
+Other add-ons on R1 (posterior draws): v5c-like (same direction as v5, unvalidated AUC guess), pbp3, p33blend70 (-.03: +.000036, P .89), slateA/B ~0, p3_d16 -.01 +.000013: nothing independent clears the bar. DCN extra snapshots: rho with D .9996 (no new info); D members rho .995-.998 with D; v21dcn worker found no better array (out/ empty).
+
+## 01:20 S1 public = .829101 (+.000043 vs R1, pred +.000128). S2 not scored.
+Recal on EN,Q2,R1,S1 (30000 draws, sig .00004/.00006, tau .00005): bias ~0; aD .8183 (unchanged), aV5 .7918-.7923 (5/95 .788-.794), aV8r .8146 (.8133-.8154). Fit gains vs EN: Q2 .00012-.00014, R1 .000201-.000204, S1 .000267-.000282 (obs .000160/.000202/.000245). Q1 pred AUC .828958-.828969.
+Gains vs S1: T1 +.00003/+.00004 (P>0 .75/.79; P>=.00005 .32/.43), T2 +.00002/+.00004 (P>0 .60/.66), T3 +.00001, S2 -.00001 (P>0 .45). T1 below bar -> copied as LOW CONFIDENCE; T2 not copied; S2 not worth upload.
+
+## 01:55 T1 public = .829096 (S1 .829101, R1 .829058): T1 -.000005 vs S1. No more probes requested.
+Refit on EN,Q2,R1,S1,T1 (36000 draws, ESS 1126/2547, sig .00004/.00006): fit gains vs EN Q2 .000119-.000137 (obs .000160), R1 .000205 (.000202), S1 .000249-.000254 (.000245), T1 .000253-.000264 (.000240). aV5 .7923-.7926 (5/95 .789-.794), aV8r .8146-.8147, aD .8181, ours .8194. Along R1->full line (t: R1 0, S1 .33, T1 .667) predicted vs S1: t=.45 +.000006/+.000008, t=.55 +.000007/+.000011, T1 +.000004/+.000010: flat. Refit optimum (c,g,q,v8,v5)=(.112,.150,.758,-.078,-.040) (sig .00004) or (.100,.172,.36,-.101,-.044) (sig .00006): +.000011/+.000023 vs S1, 50% shrunk +.000008/+.000016 -> below noise. S1 stays best estimate. No probes made or copied.
+reweight.py added (usage in its docstring; needs post5.npz, pS1.npy): new-array weight on S1, shrunk 50%, bar +.00005 & P>0>.7.

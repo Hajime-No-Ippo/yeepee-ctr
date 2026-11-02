@@ -1,0 +1,5 @@
+prep (1402200, 484) (1402200, 241) 53 s
+CFG {'noseq': True, 'arch': 'dcn', 'hid': 512, 'drop': 0.4, 'lr': 0.0007, 'elr': 0.0003, 'ep': 3, 'alpha': 1.0, 'cl': 3, 'bs': 256, 'edrop': 0.3, 'lw': 0.0, 'name': 'r9_bce', 'seeds': [0]}
+seed0 ep0 164s auc 0.81581
+seed0 ep1 272s auc 0.81646
+seed0 ep2 381s auc 0.81639

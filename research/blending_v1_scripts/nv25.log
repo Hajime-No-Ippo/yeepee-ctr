@@ -1,0 +1,15 @@
+[    12s] loaded (1402200, 484) (439640, 484)
+[    13s] rowid aligned
+[    18s] sliced (1402200, 250)
+[    37s] leaf gbdt trained; its val AUC 0.81446
+[    43s] leaves done
+[    52s] C 0.03 0.81091
+[    52s] leaf_lr_C0.03 standalone AUC 0.81091
+[    59s] C 0.3 0.80996
+[    59s] leaf_lr_C0.3 standalone AUC 0.80996
+[    79s] FM ep 0 0.80958
+[    96s] FM ep 1 0.80123
+[   112s] FM ep 2 0.7968
+[   128s] FM ep 3 0.78994
+[   230s] gdrop standalone AUC 0.81173
+[   230s] done

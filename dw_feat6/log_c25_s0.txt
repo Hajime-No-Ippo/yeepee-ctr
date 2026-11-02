@@ -1,0 +1,2 @@
+loaded (1402200, 490) extra: ['g_suv', 'g_suv_z', 'g_cosx', 'gap_over_hgap', 'p_streak', 'p_since_first'] 14
+{'tag': 'f6', 'cut': 25, 'seed': 0, 'nf': 490, 'auc': {400: 0.81789, 700: 0.8186, 1000: 0.81883}, 'wall_s': 985}

@@ -1,0 +1,8 @@
+prep (1402200, 484) (1402200, 241) 51 s
+CFG {'noseq': True, 'arch': 'dcn', 'hid': 512, 'drop': 0.4, 'lr': 0.0007, 'elr': 0.0003, 'ep': 3, 'alpha': 0.3, 'cl': 3, 'bs': 256, 'edrop': 0.3, 'xdrop': 0.25, 'name': 'r3_xd25', 'seeds': [0]}
+seed0 ep0 162s auc 0.81675
+seed0 ep1 274s auc 0.81751
+seed0 ep2 387s auc 0.81821
+CFG {'noseq': True, 'arch': 'dcn', 'hid': 512, 'drop': 0.4, 'lr': 0.0007, 'elr': 0.0003, 'ep': 4, 'alpha': 0.3, 'cl': 3, 'bs': 256, 'edrop': 0.3, 'xdrop': 0.4, 'name': 'r3_xd4e4', 'seeds': [0]}
+seed0 ep0 499s auc 0.81568
+seed0 ep1 611s auc 0.81677

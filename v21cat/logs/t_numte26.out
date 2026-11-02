@@ -1,0 +1,6 @@
+/workspace/huawei/v21cat/train.py:32: RuntimeWarning: Mean of empty slice
+  mu=np.nanmean(Z,1,keepdims=True); mx=np.nanmax(Z,1,keepdims=True); rk=(np.argsort(np.argsort(np.where(np.isnan(Z),-np.inf,Z),1),1)).astype(np.float32)/9.
+/workspace/huawei/v21cat/train.py:32: RuntimeWarning: All-NaN slice encountered
+  mu=np.nanmean(Z,1,keepdims=True); mx=np.nanmax(Z,1,keepdims=True); rk=(np.argsort(np.argsort(np.where(np.isnan(Z),-np.inf,Z),1),1)).astype(np.float32)/9.
+load 16 s (1402940, 280)
+{"cut": 26, "var": "numte", "tag": "", "nf": 280, "seed": 0, "fit_s": 288, "total_min": 5.4, "params": "{}", "auc": {"600": 0.82493}}

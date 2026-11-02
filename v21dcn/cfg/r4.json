@@ -1,0 +1,58 @@
+[
+{
+"noseq": true,
+"arch": "dcn",
+"hid": 512,
+"drop": 0.4,
+"lr": 0.0007,
+"elr": 0.0003,
+"ep": 3,
+"alpha": 0.3,
+"cl": 3,
+"bs": 256,
+"edrop": 0.3,
+"dm": 1.0,
+"name": "r4_dm1",
+"seeds": [
+0
+]
+},
+{
+"noseq": true,
+"arch": "dcn",
+"hid": 512,
+"drop": 0.4,
+"lr": 0.0007,
+"elr": 0.0003,
+"ep": 3,
+"alpha": 0.3,
+"cl": 3,
+"bs": 256,
+"edrop": 0.3,
+"dm": 3.0,
+"name": "r4_dm3",
+"seeds": [
+0
+]
+},
+{
+"noseq": true,
+"arch": "dcn",
+"hid": 512,
+"drop": 0.4,
+"lr": 0.0007,
+"elr": 0.0003,
+"ep": 3,
+"alpha": 0.3,
+"cl": 4,
+"bs": 256,
+"edrop": 0.3,
+"dm": 1.0,
+"xdrop": 0.1,
+"cr": 64,
+"name": "r4_dm1x",
+"seeds": [
+0
+]
+}
+]

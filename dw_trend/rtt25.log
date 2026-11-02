@@ -1,0 +1,2 @@
+{"name": "TT_group", "cut": 25, "nfeat": 9, "base": 0.81907, "control": 0.81897, "test": 0.819, "d_vs_ctrl": 3e-05, "d_vs_base": -7e-05, "ci": [-0.00011, 0.00015], "sd": 7e-05, "noise_d": [-5e-05]}
+{"name": "TT_plus_all", "cut": 25, "nfeat": 31, "base": 0.81907, "control": 0.81897, "test": 0.81899, "d_vs_ctrl": 2e-05, "d_vs_base": -8e-05, "ci": [-0.00014, 0.00015], "sd": 7e-05, "noise_d": [-5e-05]}

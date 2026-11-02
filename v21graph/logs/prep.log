@@ -1,0 +1,20 @@
+53003 50000
+tab f1 35156
+tab f2 35112
+tab f3 34912
+tab f4 35040
+tab f5 35230
+tab f6 35138
+tab val23 50155
+tab val25 43964
+tab val26 35138
+g 1 525090
+g 2 657552
+g 3 743467
+g 4 814470
+g 5 881345
+g 6 946227
+g 7 1009701
+eval unseen users 1453
+eval hist items unseen (dropped) 0 of 708389
+tab eval 52939

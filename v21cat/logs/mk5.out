@@ -1,0 +1,8 @@
+day5 svd+km 4s
+day5 aggs 9s
+/workspace/huawei/v21cat/mkcat.py:106: RuntimeWarning: Mean of empty slice
+  F['p5_mean']=np.nanmean(pc,1); F['p5_max']=np.nanmax(pc,1); F['p5_min']=np.nanmin(pc,1); F['p5_lift']=np.nansum(lg,1); F['p5_nsum']=np.nansum(pn,1)
+/workspace/huawei/v21cat/mkcat.py:106: RuntimeWarning: All-NaN slice encountered
+  F['p5_mean']=np.nanmean(pc,1); F['p5_max']=np.nanmax(pc,1); F['p5_min']=np.nanmin(pc,1); F['p5_lift']=np.nansum(lg,1); F['p5_nsum']=np.nansum(pn,1)
+day5 f5 (352300, 59) 10s
+day5 val25 (439640, 59) 12s

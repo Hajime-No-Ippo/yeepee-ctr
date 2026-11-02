@@ -1,0 +1,13 @@
+tmx 23 loaded (702680, 490) ['tm_inh', 'tm_cos', 'tm_cos_in', 'tm_cos_out', 'tm_cos_dm', 'tm_inh_n'] [] 13
+extra cols: ['tm_inh', 'tm_cos', 'tm_cos_in', 'tm_cos_out', 'tm_cos_dm', 'tm_inh_n']
+{'tag': 'tmx', 'cut': 23, 'seed': 0, 'nf': 490, 'auc': {400: 0.79579, 700: 0.79641, 1000: 0.79644}, 'wall_s': 1772}
+sq4 23 loaded (702680, 488) [] ['sq_pdot', 'sq_pcos', 'sq_mdot', 'sq_mcos'] 40
+extra cols: ['sq_pdot', 'sq_pcos', 'sq_mdot', 'sq_mcos']
+{'tag': 'sq4', 'cut': 23, 'seed': 0, 'nf': 488, 'auc': {400: 0.79576, 700: 0.79627, 1000: 0.79628}, 'wall_s': 900}
+tmx 25 loaded (1402200, 490) ['tm_inh', 'tm_cos', 'tm_cos_in', 'tm_cos_out', 'tm_cos_dm', 'tm_inh_n'] [] 9
+extra cols: ['tm_inh', 'tm_cos', 'tm_cos_in', 'tm_cos_out', 'tm_cos_dm', 'tm_inh_n']
+{'tag': 'tmx', 'cut': 25, 'seed': 0, 'nf': 490, 'auc': {400: 0.8166, 700: 0.81734, 1000: 0.81756}, 'wall_s': 1742}
+sq4 25 loaded (1402200, 488) [] ['sq_pdot', 'sq_pcos', 'sq_mdot', 'sq_mcos'] 9
+extra cols: ['sq_pdot', 'sq_pcos', 'sq_mdot', 'sq_mcos']
+{'tag': 'sq4', 'cut': 25, 'seed': 0, 'nf': 488, 'auc': {400: 0.81648, 700: 0.81731, 1000: 0.81745}, 'wall_s': 861}
+ALLDONE

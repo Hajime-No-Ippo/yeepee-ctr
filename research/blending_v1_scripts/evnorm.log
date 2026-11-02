@@ -1,0 +1,12 @@
+23 base 0.79911
+23 lam -0.2 B+lam*(B-evmean) 0.7985 B+lam*(B-lse) 0.79887 B+lam*(B-evmax) 0.7978
+23 lam -0.1 B+lam*(B-evmean) 0.79897 B+lam*(B-lse) 0.7991 B+lam*(B-evmax) 0.79894
+23 lam 0.1 B+lam*(B-evmean) 0.79908 B+lam*(B-lse) 0.79901 B+lam*(B-evmax) 0.79876
+23 lam 0.2 B+lam*(B-evmean) 0.79894 B+lam*(B-lse) 0.79884 B+lam*(B-evmax) 0.79815
+23 lam 0.4 B+lam*(B-evmean) 0.79854 B+lam*(B-lse) 0.79843 B+lam*(B-evmax) 0.79664
+25 base 0.81952
+25 lam -0.2 B+lam*(B-evmean) 0.81921 B+lam*(B-lse) 0.81915 B+lam*(B-evmax) 0.81798
+25 lam -0.1 B+lam*(B-evmean) 0.81952 B+lam*(B-lse) 0.81945 B+lam*(B-evmax) 0.81919
+25 lam 0.1 B+lam*(B-evmean) 0.81936 B+lam*(B-lse) 0.81945 B+lam*(B-evmax) 0.81936
+25 lam 0.2 B+lam*(B-evmean) 0.81912 B+lam*(B-lse) 0.81931 B+lam*(B-evmax) 0.81893
+25 lam 0.4 B+lam*(B-evmean) 0.81853 B+lam*(B-lse) 0.81893 B+lam*(B-evmax) 0.81773

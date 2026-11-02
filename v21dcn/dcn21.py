@@ -13,7 +13,7 @@ ap.add_argument('--d',type=int,default=32); ap.add_argument('--hd',type=int,defa
 ap.add_argument('--edrop',type=float,default=0.1); ap.add_argument('--aug',type=float,default=0.0); ap.add_argument('--alpha',type=float,default=0.0)
 ap.add_argument('--lr',type=float,default=2e-3); ap.add_argument('--elr',type=float,default=1e-3); ap.add_argument('--bs',type=int,default=256); ap.add_argument('--noseq',action='store_true'); ap.add_argument('--noslate',action='store_true')
 ap.add_argument('--nf',type=int,default=0); ap.add_argument('--arch',default='mlp'); ap.add_argument('--cl',type=int,default=3); ap.add_argument('--maxtrain',type=int,default=0); ap.add_argument('--teacher',default=''); ap.add_argument('--tw',type=float,default=1.0); ap.add_argument('--outdir',default='/workspace/huawei/v21dcn/ens')
-ap.add_argument('--needseq',type=int,default=0); ap.add_argument('--cfg',default='',help='json file: list of {name,seeds,<overrides>} run in one process (data loaded once)')
+ap.add_argument('--dm',type=float,default=0.0); ap.add_argument('--needseq',type=int,default=0); ap.add_argument('--cfg',default='',help='json file: list of {name,seeds,<overrides>} run in one process (data loaded once)')
 ap.add_argument('--cr',type=int,default=0,help='low-rank cross rank (0=full)'); ap.add_argument('--stack',type=int,default=0); ap.add_argument('--fmk',type=int,default=0)
 ap.add_argument('--wd',type=float,default=1e-4); ap.add_argument('--lw',type=float,default=1.0); ap.add_argument('--cos',type=int,default=0); ap.add_argument('--candid',type=int,default=0)
 ap.add_argument('--pct',type=float,default=0.1); ap.add_argument('--ls',type=float,default=0.0); ap.add_argument('--gate',type=int,default=0); ap.add_argument('--xdrop',type=float,default=0.0); ap.add_argument('--noise',type=float,default=0.0)
@@ -91,6 +91,13 @@ class Net(nn.Module):
             s.mix=nn.Sequential(nn.Linear(fin,h//2),nn.BatchNorm1d(h//2),nn.SiLU(),nn.Dropout(dr))
             if a.stack: s.t=lambda x:s.mix(torch.cat([s.dp(s._cross(x))]+([s._fm(x)] if a.fmk>0 else []),1))
             else: s.t=lambda x:s.mix(torch.cat([s._cross(x),s.dp(x)]+([s._fm(x)] if a.fmk>0 else []),1))
+        elif a.arch=='fin':
+            mk_=lambda:nn.Sequential(nn.Linear(D,h),nn.BatchNorm1d(h),nn.SiLU(),nn.Dropout(dr),nn.Linear(h,h//2),nn.BatchNorm1d(h//2),nn.SiLU(),nn.Dropout(dr))
+            gg=lambda:nn.Sequential(nn.Linear(D,128),nn.SiLU(),nn.Linear(128,D))
+            s.g1=gg(); s.g2=gg(); s.m1=mk_(); s.m2=mk_(); s.mix=nn.Sequential(nn.Linear(3*(h//2),h//2),nn.BatchNorm1d(h//2),nn.SiLU(),nn.Dropout(dr))
+            def _f(x):
+                h1=s.m1(x*2*torch.sigmoid(s.g1(x))); h2=s.m2(x*2*torch.sigmoid(s.g2(x))); return s.mix(torch.cat([h1,h2,h1*h2],1))
+            s.t=_f
         else: s.t=nn.Sequential(nn.Linear(D,h),nn.BatchNorm1d(h),nn.SiLU(),nn.Dropout(dr),nn.Linear(h,h//2),nn.BatchNorm1d(h//2),nn.SiLU(),nn.Dropout(dr))
         s.tab_o=nn.Linear(h//2,1)
         s.emb=nn.Embedding(NI+1,d,padding_idx=NI); w=np.zeros((NI+1,d),np.float32); w[:NI]=init[:,:d]; s.emb.weight.data=torch.from_numpy(w)
@@ -110,6 +117,7 @@ class Net(nn.Module):
         return s.cbn(xl)
     def forward(s,x,cand,hi,hg,c1,c2,train=False,aug=0.0):   # x (B*10,D); cand (B*10); hi,hg (B,20); c1,c2 (B*10,20)
         B=hi.shape[0]
+        if a.dm>0: x=x+a.dm*(x-x.view(B,10,-1).mean(1,keepdim=True).expand(B,10,x.shape[1]).reshape(B*10,-1))
         if train and a.xdrop>0: x=x*(torch.rand_like(x)>a.xdrop).float()/(1-a.xdrop)
         if train and a.noise>0: x=x+a.noise*torch.randn_like(x)
         h=s.t(x); sc_tab=s.tab_o(h).squeeze(-1)

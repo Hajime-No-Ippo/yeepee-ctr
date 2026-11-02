@@ -1,0 +1,12 @@
+23 base80 AUC all 0.7949 fresh 0.8043 stale 0.7722 24 s
+23 w AUC all 0.7938 fresh 0.8030 stale 0.7716 22 s
+23 wt AUC all 0.7938 fresh 0.8038 stale 0.7696 21 s
+23 t AUC all 0.7947 fresh 0.8040 stale 0.7723 24 s
+25 base80 AUC all 0.8157 fresh 0.8191 stale 0.8016 43 s
+25 w AUC all 0.8150 fresh 0.8184 stale 0.8005 37 s
+25 wt AUC all 0.8147 fresh 0.8184 stale 0.7996 42 s
+25 t AUC all 0.8153 fresh 0.8186 stale 0.8015 47 s
+26 base80 AUC all 0.8237 fresh 0.8237  39 s
+26 w AUC all 0.8232 fresh 0.8232  45 s
+26 wt AUC all 0.8234 fresh 0.8234  36 s
+26 t AUC all 0.8237 fresh 0.8237  47 s

@@ -1,0 +1,4 @@
+5 u8 --seed 0 --steps 500 --lr 1e-2 --L 5 --d 64 --l2 3e-3 --save 250,350,500
+5 u9 --seed 0 --steps 500 --lr 1e-2 --L 6 --d 64 --l2 3e-3 --save 250,350,500
+5 u8 --seed 1 --steps 500 --lr 1e-2 --L 5 --d 64 --l2 3e-3 --save 250,350,500
+5 u9 --seed 1 --steps 500 --lr 1e-2 --L 6 --d 64 --l2 3e-3 --save 250,350,500

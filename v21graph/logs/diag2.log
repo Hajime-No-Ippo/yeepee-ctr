@@ -1,0 +1,7 @@
+C23 s_uv: auc 0.70757 rho_M 0.597 base: w0.05:+25 w0.1:-8 w0.2:-228 w0.3:-661 | stackD: w0.05:+28 w0.1:-1 w0.2:-214 w0.3:-644
+C23 s_h: auc 0.73033 rho_M 0.682 base: w0.05:+22 w0.1:+4 w0.2:-153 w0.3:-470 | stackD: w0.05:+26 w0.1:+11 w0.2:-138 w0.3:-451
+C23 cos_max: auc 0.68164 rho_M 0.439 base: w0.05:+10 w0.1:-42 w0.2:-331 w0.3:-889 | stackD: w0.05:+12 w0.1:-38 w0.2:-322 w0.3:-877
+C23 cos_mean: auc 0.72990 rho_M 0.680 base: w0.05:+23 w0.1:+3 w0.2:-156 w0.3:-478 | stackD: w0.05:+27 w0.1:+11 w0.2:-142 w0.3:-459
+C23 dm(uv)+dm(h): auc 0.72981 rho_M 0.671 base: w0.05:+28 w0.1:+14 w0.2:-135 w0.3:-449 | stackD: w0.05:+34 w0.1:+25 w0.2:-115 w0.3:-421
+skip 25 'U300 is not a file in the archive'
+C23 crossfit: [M,z] 0.79826 (blend 0.79902)  +graph 0.79875  delta +49e-5

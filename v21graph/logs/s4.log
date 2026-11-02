@@ -1,0 +1,8 @@
+edges 784246 slate events 490420
+step 250 23s val25 auc raw 0.66840 demeaned 0.67258
+step 500 43s val25 auc raw 0.69020 demeaned 0.69437
+step 750 63s val25 auc raw 0.69712 demeaned 0.70136
+step 1000 84s val25 auc raw 0.70067 demeaned 0.70507
+step 1250 105s val25 auc raw 0.70265 demeaned 0.70704
+step 1500 126s val25 auc raw 0.70370 demeaned 0.70812
+done 126.36419486999512

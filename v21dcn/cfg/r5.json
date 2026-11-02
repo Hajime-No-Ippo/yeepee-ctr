@@ -1,0 +1,36 @@
+[
+{
+"noseq": true,
+"arch": "fin",
+"hid": 512,
+"drop": 0.4,
+"lr": 0.0007,
+"elr": 0.0003,
+"ep": 3,
+"alpha": 0.3,
+"cl": 3,
+"bs": 256,
+"edrop": 0.3,
+"name": "r5_fin",
+"seeds": [
+0
+]
+},
+{
+"noseq": true,
+"arch": "fin",
+"hid": 512,
+"drop": 0.3,
+"lr": 0.0015,
+"elr": 0.0005,
+"ep": 3,
+"alpha": 0.3,
+"cl": 3,
+"bs": 256,
+"edrop": 0.3,
+"name": "r5_fin_hi",
+"seeds": [
+0
+]
+}
+]

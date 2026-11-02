@@ -1,0 +1,942 @@
+{
+ "n_in": 484,
+ "near_constant": {},
+ "n_dropped_redundant": 83,
+ "n_clusters": 56,
+ "n_kept": 401,
+ "kept": [
+  "tB_dot_z",
+  "tB_dmean",
+  "coA_pp12_cos_z",
+  "sq_logit",
+  "tB_dot",
+  "coA_pp12_cos",
+  "sq_z",
+  "coA_ppb12_cos",
+  "sq_gap2",
+  "coA_pp_prod2",
+  "sq_gap",
+  "coA_pp_prod1",
+  "coA_pp12_ucos_dot",
+  "coA_pp_prod3",
+  "v2_u_ctr",
+  "c_hist",
+  "coA_ppb12_cos_z",
+  "coA_pp12x_cos_z",
+  "sq_dm",
+  "coA_pp16_cos",
+  "c_hist_minus_sk",
+  "tA_dmax",
+  "coA_pp12x_cos",
+  "coA_pp_prod4",
+  "joint32_cos_clkpart_z",
+  "nmA_nmfP_lift",
+  "v2_ip_per_imp",
+  "lr4_z",
+  "lr16_con05_dmax",
+  "coA_pp_prod0",
+  "coA_pp_prod11",
+  "lr4_cos",
+  "impsvd16_cos_z",
+  "coA_pp_prod6",
+  "lr4_dmax",
+  "coA_pp_prod7",
+  "lr12_con1",
+  "coA_pp_prod5",
+  "us_ctr",
+  "x_pp_con05_k32",
+  "tA_cos",
+  "coA_pp_prod10",
+  "sq_lse",
+  "lr16_dmax",
+  "coA_pp_prod9",
+  "hist_cos_imp8",
+  "tA_z",
+  "nmA_nmfU_lift",
+  "nmA_nmfU_wu_rec",
+  "v2_i_ctr_tb_diff",
+  "hist_cos_imp8_z",
+  "sq_pcos_dm",
+  "coA_pp12_unorm",
+  "v2_svd_last",
+  "coA_pp16_cos_z",
+  "nmA_nmfP_aff_z",
+  "lr16_con05",
+  "impsvd16_cos",
+  "impsvd_rec",
+  "impsvd8_cos",
+  "ev_sv_k32_imax20_mean",
+  "coA_pp_prod8",
+  "nmA_nmfU_aff_z",
+  "sq_anull",
+  "nmA_nmfP_ient",
+  "impsvd_cos_z",
+  "cent_imp_max",
+  "x_pp_con05_k32_z",
+  "cent_clk_mean_dm",
+  "hist_maxsim_imp64",
+  "ev_it_imp_z",
+  "nmA_nmfU_wu_rec_z",
+  "lr12_z",
+  "joint32_cos_clkpart",
+  "sq_amax",
+  "sq_sd",
+  "x_clctr64_lift_z",
+  "sq_mcos_dm",
+  "nmA_nmfP_uent",
+  "cent_clk_mean",
+  "cent_imp_top3",
+  "v2_h_gap_mean",
+  "coA_pp8_cos",
+  "impsvd64_cos_z",
+  "cent_imp_mean_dm",
+  "hist_cos_imp64",
+  "ev_mf_score_mean",
+  "x_con05_k128",
+  "skipsvd32_cos_z",
+  "impsvd8_cos_z",
+  "nmA_nmfU_aff",
+  "nmA_nmfP_cos_dm",
+  "sv_k16_udot",
+  "nmA_nmfU_cos_dm",
+  "impsvd_cos",
+  "skipsvd32_cos",
+  "tB_mean",
+  "x_pp_last3_z",
+  "lr12_con05_dmax",
+  "coA_pp8_cos_z",
+  "lr10_dmax",
+  "cent_imp_mean",
+  "nmA_nmfP_max5",
+  "cent_clk_max",
+  "lr10_con05_dmax",
+  "nmA_nmfU_cos_z",
+  "v2_h_since_first",
+  "ev_mf_dot_mean",
+  "lr12_con1_z",
+  "sv_k32_udot",
+  "x_pp_last3",
+  "hist_cos_imp128",
+  "v2_svd16_cos_dm",
+  "ev_mf_dot_z",
+  "lr12_cos",
+  "v2_i_ctr_tb_dm",
+  "slate_clk_coh",
+  "lr10_con1",
+  "v2_i_imp_rate",
+  "hist_cos_impspace",
+  "sv_k32_hnorm",
+  "hist_cos_impspace_z",
+  "v2_ev_svd_max",
+  "hist_maxsim_imp64_z",
+  "lr4_con05",
+  "v2_svd_hnorm",
+  "it_trend6",
+  "sq_aent",
+  "ev_sv_k16_ucos_z",
+  "v2_svd_maxsim_dm",
+  "v2_ip_dec3",
+  "x_icon05_k64",
+  "nmA_nmfU_cos",
+  "hist_cos_imp64_z",
+  "x_pp_hcos",
+  "cent_clk_top3",
+  "v2_u_since_ev",
+  "x_con05_k128_z",
+  "lr4_con05_z",
+  "slate_imp_coh",
+  "v2_ip_n_dm",
+  "sv_k16_ucos",
+  "ev_sv_k16_ucos_max",
+  "sq_ecos_dm",
+  "lr16_cos",
+  "impsvd128_cos",
+  "v2_svd_maxsim",
+  "hist_cos_imp128_z",
+  "nmA_nmfP_last3",
+  "mf_score",
+  "it_trend24",
+  "lr10_con05",
+  "c_impall",
+  "v2_svd16_cos",
+  "x_clctr256_lift_z",
+  "x_conr1_k64_z",
+  "v2_i_ctr_tb",
+  "sv_k64_ncos",
+  "sq_amean",
+  "ev_it_ctr_max",
+  "ev_it_imp_mean",
+  "x_pp_hcos_z",
+  "ev_it_clk_dec2d_max",
+  "nmA_nmfP_decay5",
+  "it_ctr6",
+  "impsvd128_cos_z",
+  "lr6_z",
+  "v2_svd32_cos_dm",
+  "lr16_con1",
+  "x_icon05_k64_z",
+  "sv_k64_con1",
+  "sv_k16_hcos",
+  "v2_ev_svd_mean",
+  "ev_sv_k32_hcos_mean",
+  "ev_sv_k16_ucos_mean",
+  "v2_svd24_cos_dm",
+  "it_imptrend24",
+  "v2_ev_ipdec_mean",
+  "ev_mf_score_z",
+  "ev_it_ctr24_max",
+  "lr4_con1",
+  "ev_it_nclk_all_mean",
+  "ev_it_nclk_all_z",
+  "ev_it_imp_max",
+  "sv_k64_udot",
+  "ev_sv_k32_hcos_max",
+  "ev_it_ctr24_mean",
+  "v2_svd_top3",
+  "ev_sv_k32_imax20_z",
+  "nmA_nmfP_cos",
+  "ev_it_ctr24_z",
+  "impsvd64_cos",
+  "ev_mf_score_max",
+  "tB_lse",
+  "lr16_z",
+  "lr6_cos",
+  "v2_svd_top3_dm",
+  "ev_sv_k64_hcos_max",
+  "lr4_con1_z",
+  "x_icos_k64",
+  "ev_sv_k64_ucos_max",
+  "ev_sv_k32_imax20_max",
+  "x_conr1_k64",
+  "sq_rank",
+  "us_repeat_rate",
+  "nmA_nmfP_aff_e3",
+  "v2_svd32_cos",
+  "ev_sv_k32_ucos_z",
+  "v2_ip_dec1_dm",
+  "x_clctr64",
+  "v2_svd_ucos",
+  "ev_sv_k32_ucos_max",
+  "ev_sv_k32_hcos_z",
+  "lr6_con1",
+  "sv_k32_imax5",
+  "lr12_con1_dmax",
+  "lr10_con1_z",
+  "v2_svd24_cos",
+  "lr16_con1_dmax",
+  "v2_ev_ictr_mean",
+  "v2_ip_dec1_rmax",
+  "lr4_con05_dmax",
+  "v2_i_imp",
+  "lr16_con1_z",
+  "v2_svd48_cos_dm",
+  "v2_svd_cos_dm",
+  "mf_dot",
+  "sq_ecos",
+  "lr10_con05_z",
+  "lr4_con1_dmax",
+  "ev_sv_k64_ucos_mean",
+  "lr6_con05_z",
+  "x_con05_k32_z",
+  "lr10_con1_dmax",
+  "lr8_z",
+  "sv_k32_imax20",
+  "ev_sv_k32_ucos_mean",
+  "ev_sv_k64_con05_max",
+  "lr8_cos",
+  "v2_svd48_cos",
+  "x_con05_k32",
+  "sv_k32_ucos",
+  "x_clctr64_z",
+  "lr12_con05_z",
+  "ev_mf_dot_max",
+  "lr12_con05",
+  "lr8_con1",
+  "lr12_dmax",
+  "lr8_con05_dmax",
+  "ev_sv_k64_ccos_max",
+  "lr16_con05_z",
+  "v2_ip_dec1",
+  "mf_bi",
+  "lr10_cos",
+  "v2_i_ctr_dm",
+  "v2_ip_users",
+  "ev_sv_k64_con05_mean",
+  "v2_svd_ucos_dm",
+  "lr6_con1_z",
+  "nmA_nmfP_cos_p1",
+  "v2_h_since_last",
+  "lr6_con1_dmax",
+  "x_conr05_k64",
+  "v2_svd_cos",
+  "ev_it_clk_dec2d_z",
+  "x_conr05_k64_z",
+  "lr8_dmax",
+  "us_since_ev",
+  "x_clctr256_z",
+  "x_crcos_k64",
+  "lr6_dmax",
+  "x_clctr256",
+  "lr8_con1_z",
+  "lr10_z",
+  "lr6_con05",
+  "ev_sv_k64_con025_mean",
+  "it_ctr24",
+  "lr8_con1_dmax",
+  "sv_k32_hcos",
+  "x_crcos_k64_z",
+  "ev_sv_k64_con025_max",
+  "ev_it_nclk_all_max",
+  "sv_k64_ccos",
+  "v2_svd_cos_rmax",
+  "v2_ev_co_max",
+  "ev_sv_k64_ccos_mean",
+  "lr8_con05_z",
+  "v2_co_rw_dm",
+  "x_icos_k64_z",
+  "it_nclk_warm",
+  "ev_sv_k64_ucos_z",
+  "v2_up_uniq",
+  "ev_sv_k64_con05_z",
+  "us_nclk_warm",
+  "ev_sv_k64_hcos_mean",
+  "lr8_con05",
+  "it_imp24",
+  "sv_k64_ucos",
+  "c_skrec",
+  "v2_co_max_dm",
+  "sv_k64_hcos",
+  "v2_u_ev",
+  "lr6_con05_dmax",
+  "ev_sv_k64_hcos_z",
+  "x_climp64",
+  "sv_k64_con05",
+  "v2_co_sum_dm",
+  "it_ctr",
+  "ev_sv_k64_ccos_z",
+  "it_imp6",
+  "ev_sv_k64_con025_z",
+  "v2_h_uniq_ratio",
+  "x_clctr64_lift_rk",
+  "sv_k64_con025",
+  "ev_it_imp_rk",
+  "v2_h_uniq",
+  "x_clctr64_lift",
+  "ev_co_cos_max20_mean",
+  "ev_co_cos_max20_max",
+  "v2_i_ctr_tb_rk",
+  "ev_co_cos_rw_mean",
+  "x_clctr256_lift_rk",
+  "impsvd_cos_rk",
+  "x_pp_con05_k32_rk",
+  "v2_uip_n_dm",
+  "ev_it_nclk_all_rk",
+  "ev_sv_k16_ucos_rk",
+  "x_pp_last3_rk",
+  "ev_co_cos_rw_z",
+  "ev_mf_dot_rk",
+  "v2_svd_top3_rk",
+  "ev_it_ctr24_rk",
+  "v2_svd_maxsim_rk",
+  "v2_svd16_cos_rk",
+  "v2_co_rw",
+  "x_con05_k128_rk",
+  "ev_co_cos_max20_z",
+  "ev_it_clk_dec2d_rk",
+  "v2_ip_3d",
+  "x_con05_k32_rk",
+  "x_pp_hcos_rk",
+  "ev_co_tr_max5_mean",
+  "v2_svd24_cos_rk",
+  "x_clctr256_rk",
+  "v2_svd_ucos_rk",
+  "v2_svd32_cos_rk",
+  "v2_svd48_cos_rk",
+  "v2_h_len",
+  "v2_ip_dec1_rk",
+  "x_icon05_k64_rk",
+  "v2_tr_last3_dm",
+  "v2_h_1d_before_last",
+  "x_clctr64_rk",
+  "x_conr1_k64_rk",
+  "ev_mf_score_rk",
+  "ev_sv_k32_imax20_rk",
+  "ev_sv_k32_ucos_rk",
+  "x_climp256",
+  "x_clctr256_lift",
+  "ev_it_ctr_rk",
+  "x_crcos_k64_rk",
+  "v2_co_last3",
+  "v2_i_clk",
+  "x_conr05_k64_rk",
+  "v2_svd_cos_rk",
+  "ev_sv_k32_hcos_rk",
+  "ev_sv_k64_hcos_rk",
+  "ev_sv_k64_ucos_rk",
+  "x_icos_k64_rk",
+  "ev_sv_k64_con05_rk",
+  "us_nclk_win",
+  "v2_inh_since",
+  "us_nclk24",
+  "ev_sv_k64_con025_rk",
+  "co_cos_mean5",
+  "ev_sv_k64_ccos_rk",
+  "v2_co_rw_rk",
+  "it_clk6",
+  "co_cos_max20",
+  "co_tr_mean20",
+  "ev_co_tr_max5_z",
+  "it_clk24",
+  "v2_inh_pos",
+  "v2_trp_last3",
+  "co_cos_last",
+  "v2_uip_n",
+  "v2_ui_since_imp",
+  "ev_hist_n_all_mean",
+  "co_tr_max5",
+  "ev_hist_noclk_rk",
+  "ev_co_tr_last_mean",
+  "hist_since_imp",
+  "ev_co_tr_last_z",
+  "ev_hist_noclk_max",
+  "v2_ui_noclk",
+  "hist_n_warm",
+  "co_tr_last",
+  "v2_trp_last",
+  "hist_n_win",
+  "us_nohist",
+  "us_cold"
+ ],
+ "dropped": {
+  "coA_pp12_cos_dm": {
+   "kept_in_favour_of": "coA_pp12_cos_z",
+   "abs_spearman": 0.9885
+  },
+  "c_hist_minus_skrec": {
+   "kept_in_favour_of": "c_hist_minus_sk",
+   "abs_spearman": 0.9897
+  },
+  "nmA_nmfP_aff": {
+   "kept_in_favour_of": "nmA_nmfP_lift",
+   "abs_spearman": 0.9818
+  },
+  "nmA_nmfP_cos_z": {
+   "kept_in_favour_of": "nmA_nmfP_cos_dm",
+   "abs_spearman": 0.9815
+  },
+  "it_imp_rate": {
+   "kept_in_favour_of": "v2_i_imp_rate",
+   "abs_spearman": 0.9998
+  },
+  "it_clk_dec2d": {
+   "kept_in_favour_of": "v2_ip_dec3",
+   "abs_spearman": 0.993
+  },
+  "nmA_nmfU_cos_e10": {
+   "kept_in_favour_of": "nmA_nmfU_cos",
+   "abs_spearman": 0.9864
+  },
+  "c_skall": {
+   "kept_in_favour_of": "c_impall",
+   "abs_spearman": 0.9813
+  },
+  "ev_it_clk_dec2d_mean": {
+   "kept_in_favour_of": "v2_ev_ipdec_mean",
+   "abs_spearman": 0.981
+  },
+  "nmA_nmfP_cos_e10": {
+   "kept_in_favour_of": "nmA_nmfP_cos",
+   "abs_spearman": 0.9853
+  },
+  "ev_it_ctr_mean": {
+   "kept_in_favour_of": "v2_ev_ictr_mean",
+   "abs_spearman": 0.9998
+  },
+  "it_imp": {
+   "kept_in_favour_of": "v2_i_imp",
+   "abs_spearman": 0.9999
+  },
+  "ev_it_ctr_z": {
+   "kept_in_favour_of": "v2_i_ctr_dm",
+   "abs_spearman": 0.9848
+  },
+  "it_nusers": {
+   "kept_in_favour_of": "v2_ip_users",
+   "abs_spearman": 0.9998
+  },
+  "v2_ip_n": {
+   "kept_in_favour_of": "v2_ip_users",
+   "abs_spearman": 0.9921
+  },
+  "it_nclk_all": {
+   "kept_in_favour_of": "v2_ip_users",
+   "abs_spearman": 0.9919
+  },
+  "nmA_nmfP_cos_e3": {
+   "kept_in_favour_of": "nmA_nmfP_cos_p1",
+   "abs_spearman": 0.9897
+  },
+  "us_since_clk": {
+   "kept_in_favour_of": "v2_h_since_last",
+   "abs_spearman": 0.9875
+  },
+  "v2_up_since": {
+   "kept_in_favour_of": "v2_h_since_last",
+   "abs_spearman": 1.0
+  },
+  "v2_i_ctr1d": {
+   "kept_in_favour_of": "it_ctr24",
+   "abs_spearman": 0.9999
+  },
+  "v2_ip_warm": {
+   "kept_in_favour_of": "it_nclk_warm",
+   "abs_spearman": 0.9998
+  },
+  "us_nuniq": {
+   "kept_in_favour_of": "v2_up_uniq",
+   "abs_spearman": 0.9998
+  },
+  "v2_up_n": {
+   "kept_in_favour_of": "v2_up_uniq",
+   "abs_spearman": 0.9867
+  },
+  "us_nclk_all": {
+   "kept_in_favour_of": "v2_up_uniq",
+   "abs_spearman": 0.9865
+  },
+  "x_con05_k64_z": {
+   "kept_in_favour_of": "ev_sv_k64_con05_z",
+   "abs_spearman": 1.0
+  },
+  "v2_i_imp1d": {
+   "kept_in_favour_of": "it_imp24",
+   "abs_spearman": 0.9998
+  },
+  "us_nev": {
+   "kept_in_favour_of": "v2_u_ev",
+   "abs_spearman": 0.9998
+  },
+  "x_con05_k64": {
+   "kept_in_favour_of": "sv_k64_con05",
+   "abs_spearman": 1.0
+  },
+  "v2_i_ctr": {
+   "kept_in_favour_of": "it_ctr",
+   "abs_spearman": 0.9998
+  },
+  "ev_co_cos_rw_max": {
+   "kept_in_favour_of": "ev_co_cos_rw_mean",
+   "abs_spearman": 0.9965
+  },
+  "v2_uip_n_rk": {
+   "kept_in_favour_of": "v2_uip_n_dm",
+   "abs_spearman": 0.9968
+  },
+  "ev_hist_n_all_z": {
+   "kept_in_favour_of": "v2_uip_n_dm",
+   "abs_spearman": 0.9966
+  },
+  "ev_hist_n_all_rk": {
+   "kept_in_favour_of": "v2_uip_n_dm",
+   "abs_spearman": 0.9966
+  },
+  "v2_ip_n_rk": {
+   "kept_in_favour_of": "ev_it_nclk_all_rk",
+   "abs_spearman": 0.9998
+  },
+  "v2_co_max": {
+   "kept_in_favour_of": "v2_co_rw",
+   "abs_spearman": 0.9943
+  },
+  "v2_co_mean": {
+   "kept_in_favour_of": "v2_co_rw",
+   "abs_spearman": 0.9971
+  },
+  "v2_co_sum": {
+   "kept_in_favour_of": "v2_co_rw",
+   "abs_spearman": 0.9962
+  },
+  "v2_co_rw_rmax": {
+   "kept_in_favour_of": "v2_co_rw",
+   "abs_spearman": 0.996
+  },
+  "v2_co_sum_rmax": {
+   "kept_in_favour_of": "v2_co_rw",
+   "abs_spearman": 0.9929
+  },
+  "v2_co_cnt": {
+   "kept_in_favour_of": "v2_co_rw",
+   "abs_spearman": 0.9949
+  },
+  "v2_co_nz": {
+   "kept_in_favour_of": "v2_co_rw",
+   "abs_spearman": 0.9951
+  },
+  "ev_co_cos_max20_rk": {
+   "kept_in_favour_of": "ev_co_cos_max20_z",
+   "abs_spearman": 0.9893
+  },
+  "ev_co_cos_rw_rk": {
+   "kept_in_favour_of": "ev_co_cos_max20_z",
+   "abs_spearman": 0.9893
+  },
+  "ev_co_tr_max5_max": {
+   "kept_in_favour_of": "ev_co_tr_max5_mean",
+   "abs_spearman": 0.9996
+  },
+  "us_hlen": {
+   "kept_in_favour_of": "v2_h_len",
+   "abs_spearman": 0.9999
+  },
+  "v2_tr_last3_rk": {
+   "kept_in_favour_of": "v2_tr_last3_dm",
+   "abs_spearman": 0.9925
+  },
+  "v2_i_ctr_rk": {
+   "kept_in_favour_of": "ev_it_ctr_rk",
+   "abs_spearman": 0.9998
+  },
+  "it_clk": {
+   "kept_in_favour_of": "v2_i_clk",
+   "abs_spearman": 0.9998
+  },
+  "x_con05_k64_rk": {
+   "kept_in_favour_of": "ev_sv_k64_con05_rk",
+   "abs_spearman": 1.0
+  },
+  "v2_u_clk": {
+   "kept_in_favour_of": "us_nclk_win",
+   "abs_spearman": 0.9998
+  },
+  "v2_uip_since": {
+   "kept_in_favour_of": "v2_inh_since",
+   "abs_spearman": 0.996
+  },
+  "v2_up_1d": {
+   "kept_in_favour_of": "us_nclk24",
+   "abs_spearman": 0.9998
+  },
+  "co_cos_max5": {
+   "kept_in_favour_of": "co_cos_mean5",
+   "abs_spearman": 0.9999
+  },
+  "v2_co_sum_rk": {
+   "kept_in_favour_of": "v2_co_rw_rk",
+   "abs_spearman": 0.9948
+  },
+  "v2_co_max_rk": {
+   "kept_in_favour_of": "v2_co_rw_rk",
+   "abs_spearman": 0.9928
+  },
+  "co_cos_mean20": {
+   "kept_in_favour_of": "co_cos_max20",
+   "abs_spearman": 0.9995
+  },
+  "co_cos_rw": {
+   "kept_in_favour_of": "co_cos_max20",
+   "abs_spearman": 0.9994
+  },
+  "co_cos_sum20": {
+   "kept_in_favour_of": "co_cos_max20",
+   "abs_spearman": 0.9997
+  },
+  "co_tr_max20": {
+   "kept_in_favour_of": "co_tr_mean20",
+   "abs_spearman": 0.9999
+  },
+  "ev_co_tr_max5_rk": {
+   "kept_in_favour_of": "ev_co_tr_max5_z",
+   "abs_spearman": 0.993
+  },
+  "v2_i_clk1d": {
+   "kept_in_favour_of": "it_clk24",
+   "abs_spearman": 0.9998
+  },
+  "v2_ip_1d": {
+   "kept_in_favour_of": "it_clk24",
+   "abs_spearman": 0.9998
+  },
+  "v2_tr_last3": {
+   "kept_in_favour_of": "v2_trp_last3",
+   "abs_spearman": 1.0
+  },
+  "hist_n_all": {
+   "kept_in_favour_of": "v2_uip_n",
+   "abs_spearman": 0.9998
+  },
+  "hist_since_clk": {
+   "kept_in_favour_of": "v2_uip_n",
+   "abs_spearman": 0.9997
+  },
+  "v2_inh_cnt": {
+   "kept_in_favour_of": "v2_uip_n",
+   "abs_spearman": 0.9955
+  },
+  "hist_n_own": {
+   "kept_in_favour_of": "v2_uip_n",
+   "abs_spearman": 0.9953
+  },
+  "hist_pos": {
+   "kept_in_favour_of": "v2_uip_n",
+   "abs_spearman": 0.9952
+  },
+  "hist_in": {
+   "kept_in_favour_of": "v2_uip_n",
+   "abs_spearman": 0.9998
+  },
+  "ev_hist_n_all_max": {
+   "kept_in_favour_of": "ev_hist_n_all_mean",
+   "abs_spearman": 0.9979
+  },
+  "v2_ev_n_inh": {
+   "kept_in_favour_of": "ev_hist_n_all_mean",
+   "abs_spearman": 0.9909
+  },
+  "co_tr_mean5": {
+   "kept_in_favour_of": "co_tr_max5",
+   "abs_spearman": 1.0
+  },
+  "v2_ui_noclk_rk": {
+   "kept_in_favour_of": "ev_hist_noclk_rk",
+   "abs_spearman": 0.9996
+  },
+  "ev_hist_noclk_z": {
+   "kept_in_favour_of": "ev_hist_noclk_rk",
+   "abs_spearman": 1.0
+  },
+  "v2_ui_noclk_dm": {
+   "kept_in_favour_of": "ev_hist_noclk_rk",
+   "abs_spearman": 0.9995
+  },
+  "ev_co_tr_last_max": {
+   "kept_in_favour_of": "ev_co_tr_last_mean",
+   "abs_spearman": 1.0
+  },
+  "v2_ui_imp": {
+   "kept_in_favour_of": "hist_since_imp",
+   "abs_spearman": 0.9996
+  },
+  "hist_imp": {
+   "kept_in_favour_of": "hist_since_imp",
+   "abs_spearman": 1.0
+  },
+  "ev_co_tr_last_rk": {
+   "kept_in_favour_of": "ev_co_tr_last_z",
+   "abs_spearman": 0.9999
+  },
+  "ev_hist_noclk_mean": {
+   "kept_in_favour_of": "ev_hist_noclk_max",
+   "abs_spearman": 0.9999
+  },
+  "hist_noclk": {
+   "kept_in_favour_of": "v2_ui_noclk",
+   "abs_spearman": 0.9994
+  },
+  "v2_tr_last": {
+   "kept_in_favour_of": "v2_trp_last",
+   "abs_spearman": 1.0
+  },
+  "v2_ui_clk": {
+   "kept_in_favour_of": "hist_n_win",
+   "abs_spearman": 0.9998
+  }
+ },
+ "clusters": {
+  "coA_pp12_cos_z": [
+   "coA_pp12_cos_dm"
+  ],
+  "c_hist_minus_sk": [
+   "c_hist_minus_skrec"
+  ],
+  "nmA_nmfP_lift": [
+   "nmA_nmfP_aff"
+  ],
+  "nmA_nmfP_cos_dm": [
+   "nmA_nmfP_cos_z"
+  ],
+  "v2_i_imp_rate": [
+   "it_imp_rate"
+  ],
+  "v2_ip_dec3": [
+   "it_clk_dec2d"
+  ],
+  "nmA_nmfU_cos": [
+   "nmA_nmfU_cos_e10"
+  ],
+  "c_impall": [
+   "c_skall"
+  ],
+  "v2_ev_ipdec_mean": [
+   "ev_it_clk_dec2d_mean"
+  ],
+  "nmA_nmfP_cos": [
+   "nmA_nmfP_cos_e10"
+  ],
+  "v2_ev_ictr_mean": [
+   "ev_it_ctr_mean"
+  ],
+  "v2_i_imp": [
+   "it_imp"
+  ],
+  "v2_i_ctr_dm": [
+   "ev_it_ctr_z"
+  ],
+  "v2_ip_users": [
+   "it_nusers",
+   "v2_ip_n",
+   "it_nclk_all"
+  ],
+  "nmA_nmfP_cos_p1": [
+   "nmA_nmfP_cos_e3"
+  ],
+  "v2_h_since_last": [
+   "us_since_clk",
+   "v2_up_since"
+  ],
+  "it_ctr24": [
+   "v2_i_ctr1d"
+  ],
+  "it_nclk_warm": [
+   "v2_ip_warm"
+  ],
+  "v2_up_uniq": [
+   "us_nuniq",
+   "v2_up_n",
+   "us_nclk_all"
+  ],
+  "ev_sv_k64_con05_z": [
+   "x_con05_k64_z"
+  ],
+  "it_imp24": [
+   "v2_i_imp1d"
+  ],
+  "v2_u_ev": [
+   "us_nev"
+  ],
+  "sv_k64_con05": [
+   "x_con05_k64"
+  ],
+  "it_ctr": [
+   "v2_i_ctr"
+  ],
+  "ev_co_cos_rw_mean": [
+   "ev_co_cos_rw_max"
+  ],
+  "v2_uip_n_dm": [
+   "v2_uip_n_rk",
+   "ev_hist_n_all_z",
+   "ev_hist_n_all_rk"
+  ],
+  "ev_it_nclk_all_rk": [
+   "v2_ip_n_rk"
+  ],
+  "v2_co_rw": [
+   "v2_co_max",
+   "v2_co_mean",
+   "v2_co_sum",
+   "v2_co_rw_rmax",
+   "v2_co_sum_rmax",
+   "v2_co_cnt",
+   "v2_co_nz"
+  ],
+  "ev_co_cos_max20_z": [
+   "ev_co_cos_max20_rk",
+   "ev_co_cos_rw_rk"
+  ],
+  "ev_co_tr_max5_mean": [
+   "ev_co_tr_max5_max"
+  ],
+  "v2_h_len": [
+   "us_hlen"
+  ],
+  "v2_tr_last3_dm": [
+   "v2_tr_last3_rk"
+  ],
+  "ev_it_ctr_rk": [
+   "v2_i_ctr_rk"
+  ],
+  "v2_i_clk": [
+   "it_clk"
+  ],
+  "ev_sv_k64_con05_rk": [
+   "x_con05_k64_rk"
+  ],
+  "us_nclk_win": [
+   "v2_u_clk"
+  ],
+  "v2_inh_since": [
+   "v2_uip_since"
+  ],
+  "us_nclk24": [
+   "v2_up_1d"
+  ],
+  "co_cos_mean5": [
+   "co_cos_max5"
+  ],
+  "v2_co_rw_rk": [
+   "v2_co_sum_rk",
+   "v2_co_max_rk"
+  ],
+  "co_cos_max20": [
+   "co_cos_mean20",
+   "co_cos_rw",
+   "co_cos_sum20"
+  ],
+  "co_tr_mean20": [
+   "co_tr_max20"
+  ],
+  "ev_co_tr_max5_z": [
+   "ev_co_tr_max5_rk"
+  ],
+  "it_clk24": [
+   "v2_i_clk1d",
+   "v2_ip_1d"
+  ],
+  "v2_trp_last3": [
+   "v2_tr_last3"
+  ],
+  "v2_uip_n": [
+   "hist_n_all",
+   "hist_since_clk",
+   "v2_inh_cnt",
+   "hist_n_own",
+   "hist_pos",
+   "hist_in"
+  ],
+  "ev_hist_n_all_mean": [
+   "ev_hist_n_all_max",
+   "v2_ev_n_inh"
+  ],
+  "co_tr_max5": [
+   "co_tr_mean5"
+  ],
+  "ev_hist_noclk_rk": [
+   "v2_ui_noclk_rk",
+   "ev_hist_noclk_z",
+   "v2_ui_noclk_dm"
+  ],
+  "ev_co_tr_last_mean": [
+   "ev_co_tr_last_max"
+  ],
+  "hist_since_imp": [
+   "v2_ui_imp",
+   "hist_imp"
+  ],
+  "ev_co_tr_last_z": [
+   "ev_co_tr_last_rk"
+  ],
+  "ev_hist_noclk_max": [
+   "ev_hist_noclk_mean"
+  ],
+  "v2_ui_noclk": [
+   "hist_noclk"
+  ],
+  "v2_trp_last": [
+   "v2_tr_last"
+  ],
+  "hist_n_win": [
+   "v2_ui_clk"
+  ]
+ },
+ "method": "rank (NaN->mean rank) Pearson on ranks = Spearman; greedy by descending mean gain: keep representative, drop later cols with |rho|>0.98 vs a kept one"
+}

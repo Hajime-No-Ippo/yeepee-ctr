@@ -1,0 +1,35 @@
+prep (702680, 484) (702680, 241) 32 s
+CFG {'noseq': True, 'arch': 'dcn', 'hid': 512, 'drop': 0.4, 'lr': 0.0007, 'elr': 0.0003, 'ep': 3, 'alpha': 0.3, 'cl': 3, 'bs': 256, 'edrop': 0.3, 'name': 'r0_base', 'seeds': [0]}
+seed0 ep0 93s auc 0.79637
+seed0 ep1 153s auc 0.79745
+seed0 ep2 213s auc 0.79675
+CFG {'noseq': True, 'arch': 'dcn', 'hid': 512, 'drop': 0.4, 'lr': 0.0007, 'elr': 0.0005, 'ep': 3, 'alpha': 0.3, 'cl': 3, 'bs': 256, 'edrop': 0.4, 'candid': 1, 'name': 'r1_cid', 'seeds': [0]}
+seed0 ep0 273s auc 0.79650
+seed0 ep1 333s auc 0.79645
+seed0 ep2 393s auc 0.79322
+CFG {'noseq': True, 'arch': 'dcn', 'hid': 512, 'drop': 0.4, 'lr': 0.0007, 'elr': 0.0003, 'ep': 3, 'alpha': 1.0, 'cl': 3, 'bs': 256, 'edrop': 0.3, 'name': 'r1_a1', 'seeds': [0]}
+seed0 ep0 452s auc 0.79648
+seed0 ep1 516s auc 0.79713
+seed0 ep2 577s auc 0.79662
+CFG {'noseq': True, 'arch': 'dcn', 'hid': 512, 'drop': 0.4, 'lr': 0.0007, 'elr': 0.0003, 'ep': 3, 'alpha': 0.1, 'cl': 3, 'bs': 256, 'edrop': 0.3, 'name': 'r1_a01', 'seeds': [0]}
+seed0 ep0 638s auc 0.79628
+seed0 ep1 698s auc 0.79743
+seed0 ep2 760s auc 0.79684
+CFG {'noseq': True, 'arch': 'dcn', 'hid': 512, 'drop': 0.4, 'lr': 0.0007, 'elr': 0.0003, 'ep': 3, 'alpha': 0.3, 'cl': 5, 'bs': 256, 'edrop': 0.3, 'name': 'r1_cl5', 'seeds': [0]}
+seed0 ep0 834s auc 0.79604
+seed0 ep1 909s auc 0.79721
+seed0 ep2 983s auc 0.79384
+CFG {'noseq': True, 'arch': 'dcn', 'hid': 512, 'drop': 0.4, 'lr': 0.0007, 'elr': 0.0003, 'ep': 3, 'alpha': 0.3, 'cl': 4, 'bs': 256, 'edrop': 0.3, 'cr': 64, 'name': 'r1_cr64', 'seeds': [0]}
+seed0 ep0 1038s auc 0.79468
+seed0 ep1 1095s auc 0.79739
+seed0 ep2 1152s auc 0.79768
+CFG {'noseq': True, 'arch': 'dcn', 'hid': 1024, 'drop': 0.5, 'lr': 0.0007, 'elr': 0.0003, 'ep': 3, 'alpha': 0.3, 'cl': 3, 'bs': 256, 'edrop': 0.3, 'name': 'r1_h1024', 'seeds': [0]}
+seed0 ep0 1244s auc 0.79605
+seed0 ep1 1327s auc 0.79684
+seed0 ep2 1412s auc 0.79667
+CFG {'noseq': True, 'arch': 'dcn', 'hid': 512, 'drop': 0.4, 'lr': 0.0007, 'elr': 0.0003, 'ep': 3, 'alpha': 0.3, 'cl': 3, 'bs': 256, 'edrop': 0.3, 'fmk': 16, 'name': 'r1_fm16', 'seeds': [0]}
+seed0 ep0 1478s auc 0.79529
+seed0 ep1 1541s auc 0.79707
+seed0 ep2 1608s auc 0.79601
+CFG {'noseq': True, 'arch': 'dcn', 'hid': 512, 'drop': 0.4, 'lr': 0.0007, 'elr': 0.0003, 'ep': 3, 'alpha': 0.3, 'cl': 3, 'bs': 256, 'edrop': 0.3, 'stack': 1, 'name': 'r1_stack', 'seeds': [0]}
+seed0 ep0 1669s auc 0.79578

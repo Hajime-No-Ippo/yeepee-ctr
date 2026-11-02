@@ -1,0 +1,1 @@
+[{"noseq": true, "arch": "dcn", "hid": 512, "drop": 0.4, "lr": 0.0007, "elr": 0.0003, "ep": 3, "alpha": 0.3, "cl": 3, "bs": 256, "edrop": 0.3, "name": "r1_xdrop", "xdrop": 0.1, "seeds": [1, 2, 3, 4]}]

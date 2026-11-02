@@ -1,0 +1,39 @@
+{
+ "candidate": "eq4: z .25, M .25, big .25, D .25 (rank/N, nonneg, sum 1)",
+ "weights": {
+  "z": 0.25,
+  "M": 0.25,
+  "big": 0.25,
+  "D": 0.25
+ },
+ "transform": "global rank/N only",
+ "members": {
+  "z": "v19 stack C25 (b+d+2*mlp)/4 / dwbig C23 (nmAs*) ; eval: v19/ens nmAs*_c27",
+  "M": "ctl6 8 seeds last epoch, logit mean (v21seq/ens/ctl6_A_c{cut}_s*)",
+  "big": "v21seq_big_A seeds (3/3/2)",
+  "D": "DCN-v2 bag: C25 = dcn4 ep2 + dcn6 ep2 + dcn7 ep1 (v21fit/ens); C23 = PROXY (v21dcn r1 cfgs peak epoch)"
+ },
+ "in_family_equivalent": "z .25 / ctl6-family (M+big) .50 / D .25",
+ "folds": {
+  "C23": {
+   "auc": 0.7991111265217292,
+   "delta_vs_base_1e5": 8.8,
+   "rho_vs_M": 0.9975585258617966,
+   "note": "D at C23 is a proxy"
+  },
+  "C25": {
+   "auc": 0.8195152489360575,
+   "delta_vs_base_1e5": 30.2,
+   "rho_vs_M": 0.9986409481753186,
+   "note": "D snapshots/configs were picked on C25 -> optimistic"
+  },
+  "C26": "z, D, ref have no C26 predictions; only M/big (M/big 50-50 .82798 = A_all)"
+ },
+ "alt_if_D_dropped": {
+  "z": 0.3333333333333333,
+  "M": 0.3333333333333333,
+  "big": 0.3333333333333333
+ },
+ "ref484": "not included (inconsistent held-out sign)",
+ "public_fit_note": "weights are for OUR fold-OOF combination only; Grok Bot keeps public-score fitting on top of EN"
+}

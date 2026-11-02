@@ -1,0 +1,42 @@
+[
+{
+"noseq": false,
+"arch": "dcn",
+"hid": 512,
+"drop": 0.4,
+"lr": 0.0007,
+"elr": 0.0003,
+"ep": 3,
+"alpha": 0.3,
+"cl": 3,
+"bs": 256,
+"edrop": 0.3,
+"needseq": 1,
+"enc": "din",
+"aug": 0.3,
+"name": "r6_seq",
+"seeds": [
+0
+]
+},
+{
+"noseq": false,
+"arch": "dcn",
+"hid": 512,
+"drop": 0.4,
+"lr": 0.0007,
+"elr": 0.0003,
+"ep": 3,
+"alpha": 0.3,
+"cl": 3,
+"bs": 256,
+"edrop": 0.3,
+"needseq": 1,
+"enc": "trf",
+"aug": 0.3,
+"name": "r6_seqtrf",
+"seeds": [
+0
+]
+}
+]

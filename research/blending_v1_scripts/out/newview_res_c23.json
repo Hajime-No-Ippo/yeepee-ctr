@@ -1,0 +1,10 @@
+{
+ "leafgbdt_val": 0.7934,
+ "leaf_lr_C0.03": 0.78726,
+ "leaf_lr_C0.3": 0.78503,
+ "leaf_fm_ep0": 0.79122,
+ "leaf_fm_ep1": 0.78345,
+ "leaf_fm_ep2": 0.77424,
+ "leaf_fm_ep3": 0.75911,
+ "gdrop": 0.79005
+}

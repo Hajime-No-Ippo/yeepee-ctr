@@ -1,0 +1,44 @@
+day1 svd+km 3s
+day1 aggs 3s
+/workspace/huawei/v21cat/mkcat.py:106: RuntimeWarning: Mean of empty slice
+  F['p5_mean']=np.nanmean(pc,1); F['p5_max']=np.nanmax(pc,1); F['p5_min']=np.nanmin(pc,1); F['p5_lift']=np.nansum(lg,1); F['p5_nsum']=np.nansum(pn,1)
+/workspace/huawei/v21cat/mkcat.py:106: RuntimeWarning: All-NaN slice encountered
+  F['p5_mean']=np.nanmean(pc,1); F['p5_max']=np.nanmax(pc,1); F['p5_min']=np.nanmin(pc,1); F['p5_lift']=np.nansum(lg,1); F['p5_nsum']=np.nansum(pn,1)
+day1 f1 (351560, 59) 5s
+day2 svd+km 3s
+day2 aggs 5s
+/workspace/huawei/v21cat/mkcat.py:106: RuntimeWarning: Mean of empty slice
+  F['p5_mean']=np.nanmean(pc,1); F['p5_max']=np.nanmax(pc,1); F['p5_min']=np.nanmin(pc,1); F['p5_lift']=np.nansum(lg,1); F['p5_nsum']=np.nansum(pn,1)
+/workspace/huawei/v21cat/mkcat.py:106: RuntimeWarning: All-NaN slice encountered
+  F['p5_mean']=np.nanmean(pc,1); F['p5_max']=np.nanmax(pc,1); F['p5_min']=np.nanmin(pc,1); F['p5_lift']=np.nansum(lg,1); F['p5_nsum']=np.nansum(pn,1)
+day2 f2 (351120, 59) 6s
+day3 svd+km 3s
+day3 aggs 5s
+/workspace/huawei/v21cat/mkcat.py:106: RuntimeWarning: Mean of empty slice
+  F['p5_mean']=np.nanmean(pc,1); F['p5_max']=np.nanmax(pc,1); F['p5_min']=np.nanmin(pc,1); F['p5_lift']=np.nansum(lg,1); F['p5_nsum']=np.nansum(pn,1)
+/workspace/huawei/v21cat/mkcat.py:106: RuntimeWarning: All-NaN slice encountered
+  F['p5_mean']=np.nanmean(pc,1); F['p5_max']=np.nanmax(pc,1); F['p5_min']=np.nanmin(pc,1); F['p5_lift']=np.nansum(lg,1); F['p5_nsum']=np.nansum(pn,1)
+day3 f3 (349120, 59) 6s
+day3 val23 (501550, 59) 8s
+day4 svd+km 3s
+day4 aggs 7s
+/workspace/huawei/v21cat/mkcat.py:106: RuntimeWarning: Mean of empty slice
+  F['p5_mean']=np.nanmean(pc,1); F['p5_max']=np.nanmax(pc,1); F['p5_min']=np.nanmin(pc,1); F['p5_lift']=np.nansum(lg,1); F['p5_nsum']=np.nansum(pn,1)
+/workspace/huawei/v21cat/mkcat.py:106: RuntimeWarning: All-NaN slice encountered
+  F['p5_mean']=np.nanmean(pc,1); F['p5_max']=np.nanmax(pc,1); F['p5_min']=np.nanmin(pc,1); F['p5_lift']=np.nansum(lg,1); F['p5_nsum']=np.nansum(pn,1)
+day4 f4 (350400, 59) 8s
+day6 svd+km 3s
+day6 aggs 11s
+/workspace/huawei/v21cat/mkcat.py:106: RuntimeWarning: Mean of empty slice
+  F['p5_mean']=np.nanmean(pc,1); F['p5_max']=np.nanmax(pc,1); F['p5_min']=np.nanmin(pc,1); F['p5_lift']=np.nansum(lg,1); F['p5_nsum']=np.nansum(pn,1)
+/workspace/huawei/v21cat/mkcat.py:106: RuntimeWarning: All-NaN slice encountered
+  F['p5_mean']=np.nanmean(pc,1); F['p5_max']=np.nanmax(pc,1); F['p5_min']=np.nanmin(pc,1); F['p5_lift']=np.nansum(lg,1); F['p5_nsum']=np.nansum(pn,1)
+day6 f6 (351380, 59) 12s
+day6 val26 (351380, 59) 13s
+day7 svd+km 4s
+day7 aggs 14s
+/workspace/huawei/v21cat/mkcat.py:106: RuntimeWarning: Mean of empty slice
+  F['p5_mean']=np.nanmean(pc,1); F['p5_max']=np.nanmax(pc,1); F['p5_min']=np.nanmin(pc,1); F['p5_lift']=np.nansum(lg,1); F['p5_nsum']=np.nansum(pn,1)
+/workspace/huawei/v21cat/mkcat.py:106: RuntimeWarning: All-NaN slice encountered
+  F['p5_mean']=np.nanmean(pc,1); F['p5_max']=np.nanmax(pc,1); F['p5_min']=np.nanmin(pc,1); F['p5_lift']=np.nansum(lg,1); F['p5_nsum']=np.nansum(pn,1)
+day7 eval (529390, 59) 15s

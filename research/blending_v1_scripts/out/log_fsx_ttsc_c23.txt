@@ -1,0 +1,3 @@
+ttsc 23 loaded (702680, 504) 11
+extra cols: 20 ['tm_inh', 'tm_cos', 'tm_cos_in', 'tm_cos_out', 'tm_cos_dm', 'tm_inh_n', 'rd_cosA', 'rd_dotB', 'rd_cosB', 'sc_gap1', 'sc_gap2', 'sc_ent', 'sb_gap1', 'sb_gap2', 'sb_ent', 'rdB_gap1', 'rdB_gap2', 'rdB_ent', 'rd_cosA_dm', 'rd_cosA_z']
+{'tag': 'fsx_ttsc', 'nx': 20, 'cut': 23, 'seed': 0, 'nf': 504, 'auc': {400: 0.79628, 700: 0.79693, 1000: 0.79694}, 'wall_s': 668}

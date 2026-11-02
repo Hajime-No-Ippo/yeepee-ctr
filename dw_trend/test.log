@@ -1,0 +1,4 @@
+PASS: labels at/after cutoff never used ( 13 train-only + 5 TT features identical )
+power check: item features changed when pre-cutoff labels randomised: ['it_tr_ratio', 'it_tr_slope', 'it_clk_gr', 'it_hrs_clk']
+PASS: TT features independent of ALL labels
+PASS: train-only item features ignore post-cutoff impressions

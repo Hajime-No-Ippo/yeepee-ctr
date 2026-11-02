@@ -1,0 +1,67 @@
+noise [-0.0003701718111975838, -0.00039420072767559766, -0.0003571123887982086]
+g_suv 1e-05
+g_sh -0.00032
+g_cosm -0.00026
+g_cosx -0.00028
+g_G -0.00023
+g_Gsd -0.00041
+g_udeg -6e-05
+g_ideg -0.00038
+p_nev -5e-05
+p_evrate -5e-05
+/workspace/huawei/dw_feat6/screen2.py:11: RuntimeWarning: Mean of empty slice
+  with np.errstate(all='ignore'): return (g-np.nanmean(g,1,keepdims=True)).ravel()
+p_ctr -6e-05
+p_ctr_s -0.00011
+/workspace/huawei/dw_feat6/screen2.py:11: RuntimeWarning: Mean of empty slice
+  with np.errstate(all='ignore'): return (g-np.nanmean(g,1,keepdims=True)).ravel()
+p_l3 -1e-05
+p_streak 2e-05
+/workspace/huawei/dw_feat6/screen2.py:11: RuntimeWarning: Mean of empty slice
+  with np.errstate(all='ignore'): return (g-np.nanmean(g,1,keepdims=True)).ravel()
+p_gapm -0.00018
+/workspace/huawei/dw_feat6/screen2.py:11: RuntimeWarning: Mean of empty slice
+  with np.errstate(all='ignore'): return (g-np.nanmean(g,1,keepdims=True)).ravel()
+p_gapsd -0.0002
+/workspace/huawei/dw_feat6/screen2.py:11: RuntimeWarning: Mean of empty slice
+  with np.errstate(all='ignore'): return (g-np.nanmean(g,1,keepdims=True)).ravel()
+p_since_ev -0.00013
+/workspace/huawei/dw_feat6/screen2.py:11: RuntimeWarning: Mean of empty slice
+  with np.errstate(all='ignore'): return (g-np.nanmean(g,1,keepdims=True)).ravel()
+p_since_first -0.00015
+/workspace/huawei/dw_feat6/screen2.py:11: RuntimeWarning: Mean of empty slice
+  with np.errstate(all='ignore'): return (g-np.nanmean(g,1,keepdims=True)).ravel()
+p_gap_ratio -0.00022
+h_len -2e-05
+/workspace/huawei/dw_feat6/screen2.py:11: RuntimeWarning: Mean of empty slice
+  with np.errstate(all='ignore'): return (g-np.nanmean(g,1,keepdims=True)).ravel()
+h_span -0.00011
+/workspace/huawei/dw_feat6/screen2.py:11: RuntimeWarning: Mean of empty slice
+  with np.errstate(all='ignore'): return (g-np.nanmean(g,1,keepdims=True)).ravel()
+h_since_last -4e-05
+/workspace/huawei/dw_feat6/screen2.py:11: RuntimeWarning: Mean of empty slice
+  with np.errstate(all='ignore'): return (g-np.nanmean(g,1,keepdims=True)).ravel()
+h_gap_mean -0.00015
+/workspace/huawei/dw_feat6/screen2.py:11: RuntimeWarning: Mean of empty slice
+  with np.errstate(all='ignore'): return (g-np.nanmean(g,1,keepdims=True)).ravel()
+h_gap_sd -7e-05
+/workspace/huawei/dw_feat6/screen2.py:11: RuntimeWarning: Mean of empty slice
+  with np.errstate(all='ignore'): return (g-np.nanmean(g,1,keepdims=True)).ravel()
+h_gap_last -0.00029
+h_1d -3e-05
+h_3d -4e-05
+h_7d -1e-05
+h_warm -3e-05
+h_win -3e-05
+h_uniq -0.0
+h_uniq_ratio -5e-05
+/workspace/huawei/dw_feat6/screen2.py:11: RuntimeWarning: Mean of empty slice
+  with np.errstate(all='ignore'): return (g-np.nanmean(g,1,keepdims=True)).ravel()
+h_rate_day -0.00011
+p_clk_per_ev -5e-05
+/workspace/huawei/dw_feat6/screen2.py:11: RuntimeWarning: Mean of empty slice
+  with np.errstate(all='ignore'): return (g-np.nanmean(g,1,keepdims=True)).ravel()
+implied_cpe -0.00012
+/workspace/huawei/dw_feat6/screen2.py:11: RuntimeWarning: Mean of empty slice
+  with np.errstate(all='ignore'): return (g-np.nanmean(g,1,keepdims=True)).ravel()
+gap_over_hgap -3e-05

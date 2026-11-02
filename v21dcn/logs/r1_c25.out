@@ -1,0 +1,26 @@
+prep (1402200, 484) (1402200, 241) 48 s
+CFG {'noseq': True, 'arch': 'dcn', 'hid': 512, 'drop': 0.4, 'lr': 0.0007, 'elr': 0.0003, 'ep': 3, 'alpha': 0.3, 'cl': 3, 'bs': 256, 'edrop': 0.3, 'name': 'r0_base', 'seeds': [0]}
+seed0 ep0 159s auc 0.81753
+seed0 ep1 268s auc 0.81814
+seed0 ep2 375s auc 0.81821
+CFG {'noseq': True, 'arch': 'dcn', 'hid': 512, 'drop': 0.4, 'lr': 0.0007, 'elr': 0.0005, 'ep': 3, 'alpha': 0.3, 'cl': 3, 'bs': 256, 'edrop': 0.4, 'candid': 1, 'name': 'r1_cid', 'seeds': [0]}
+seed0 ep0 485s auc 0.81772
+seed0 ep1 597s auc 0.81757
+seed0 ep2 708s auc 0.81496
+CFG {'noseq': True, 'arch': 'dcn', 'hid': 512, 'drop': 0.4, 'lr': 0.0007, 'elr': 0.0003, 'ep': 3, 'alpha': 1.0, 'cl': 3, 'bs': 256, 'edrop': 0.3, 'name': 'r1_a1', 'seeds': [0]}
+seed0 ep0 820s auc 0.81756
+seed0 ep1 930s auc 0.81810
+seed0 ep2 1042s auc 0.81827
+CFG {'noseq': True, 'arch': 'dcn', 'hid': 512, 'drop': 0.4, 'lr': 0.0007, 'elr': 0.0003, 'ep': 3, 'alpha': 0.1, 'cl': 3, 'bs': 256, 'edrop': 0.3, 'name': 'r1_a01', 'seeds': [0]}
+seed0 ep0 1155s auc 0.81752
+seed0 ep1 1267s auc 0.81801
+seed0 ep2 1379s auc 0.81825
+CFG {'noseq': True, 'arch': 'dcn', 'hid': 512, 'drop': 0.4, 'lr': 0.0007, 'elr': 0.0003, 'ep': 3, 'alpha': 0.3, 'cl': 5, 'bs': 256, 'edrop': 0.3, 'name': 'r1_cl5', 'seeds': [0]}
+seed0 ep0 1518s auc 0.81714
+seed0 ep1 1650s auc 0.81801
+seed0 ep2 1781s auc 0.81648
+CFG {'noseq': True, 'arch': 'dcn', 'hid': 512, 'drop': 0.4, 'lr': 0.0007, 'elr': 0.0003, 'ep': 3, 'alpha': 0.3, 'cl': 4, 'bs': 256, 'edrop': 0.3, 'cr': 64, 'name': 'r1_cr64', 'seeds': [0]}
+seed0 ep0 1879s auc 0.81702
+seed0 ep1 1978s auc 0.81804
+seed0 ep2 2074s auc 0.81838
+CFG {'noseq': True, 'arch': 'dcn', 'hid': 1024, 'drop': 0.5, 'lr': 0.0007, 'elr': 0.0003, 'ep': 3, 'alpha': 0.3, 'cl': 3, 'bs': 256, 'edrop': 0.3, 'name': 'r1_h1024', 'seeds': [0]}

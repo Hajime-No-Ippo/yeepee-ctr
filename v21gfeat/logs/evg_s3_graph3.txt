@@ -1,0 +1,12 @@
+=== C23 base(eq4) 0.79911 | graph 0.75627 | gfeat 0.79751 (rho_M 0.9748, rho_G 0.8139) | control 0.79673 (rho_M 0.9760)
+  base+graph best w=0.1: 0.79955 (+44e-5)  all: 0.05:+36 0.075:+43 0.1:+44 0.125:+38 0.15:+25 0.2:-20
+  3-way base+graph+gfeat: best (wG,v)=(0.05, 0.2) 0.79971 => beyond base+graph(best w) +16.5e-5 | at wG=.1: v0.05:+7 v0.1:+12 v0.15:+15 v0.2:+15 v0.3:+10 v0.4:-3
+  3-way base+graph+control: best (wG,v)=(0.1, 0.15) 0.79964 => beyond base+graph(best w) +9.0e-5 | at wG=.1: v0.05:+5 v0.1:+8 v0.15:+9 v0.2:+8 v0.3:+0 v0.4:-16
+=== C25 base(eq4) 0.81952 | graph 0.78829 | gfeat 0.81765 (rho_M 0.9795, rho_G 0.8697) | control 0.81625 (rho_M 0.9804)
+  base+graph best w=0.125: 0.82008 (+57e-5)  all: 0.05:+39 0.075:+50 0.1:+56 0.125:+57 0.15:+52 0.2:+28
+  3-way base+graph+gfeat: best (wG,v)=(0.1, 0.15) 0.82019 => beyond base+graph(best w) +10.7e-5 | at wG=.1: v0.05:+5 v0.1:+9 v0.15:+11 v0.2:+10 v0.3:+4 v0.4:-11
+  3-way base+graph+control: best (wG,v)=(0.1, 0.05) 0.82009 => beyond base+graph(best w) +0.5e-5 | at wG=.1: v0.05:+0 v0.1:-0 v0.15:-3 v0.2:-8 v0.3:-23 v0.4:-47
+=== C26 base(M/big) 0.82798 | graph 0.80117 | gfeat 0.82655 (rho_M 0.9803, rho_G 0.8988) | control 0.82478 (rho_M 0.9817)
+  base+graph best w=0.125: 0.82856 (+59e-5)  all: 0.05:+38 0.075:+49 0.1:+56 0.125:+59 0.15:+56 0.2:+39
+  3-way base+graph+gfeat: best (wG,v)=(0.1, 0.2) 0.82879 => beyond base+graph(best w) +22.8e-5 | at wG=.1: v0.05:+7 v0.1:+15 v0.15:+20 v0.2:+23 v0.3:+21 v0.4:+10
+  3-way base+graph+control: best (wG,v)=(0.1, 0.1) 0.82857 => beyond base+graph(best w) +0.9e-5 | at wG=.1: v0.05:+0 v0.1:+1 v0.15:-1 v0.2:-5 v0.3:-19 v0.4:-42

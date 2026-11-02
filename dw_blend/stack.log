@@ -1,0 +1,22 @@
+23 501550 ['z', 'M', 'big', 'list1', 'D', 'ref', 'A']
+25 439640 ['z', 'M', 'big', 'list1', 'D', 'ref', 'A']
+common ['z', 'M', 'big', 'list1', 'D', 'ref', 'A']
+base .4z+.6M {23: 0.7990232864217723, 25: 0.8192135441681012}
+equal-rank all 23 0.7990947978947697
+equal-rank all 25 0.8195086335632887
+logits only train C23 -> test C25 0.81928 vs base 0.81921 delta 6e-05 rounds 122
+logits only train C25 -> test C23 0.79845 vs base 0.79902 delta -0.00057 rounds 100
+logits only userCV C23 0.79856 delta -0.00047
+logits only userCV C25 0.81909 delta -0.00012
++event-dev train C23 -> test C25 0.8192 vs base 0.81921 delta -1e-05 rounds 124
++event-dev train C25 -> test C23 0.79849 vs base 0.79902 delta -0.00054 rounds 97
++event-dev userCV C23 0.79859 delta -0.00044
++event-dev userCV C25 0.81916 delta -6e-05
++meta train C23 -> test C25 0.81932 vs base 0.81921 delta 0.00011 rounds 136
++meta train C25 -> test C23 0.79871 vs base 0.79902 delta -0.00031 rounds 98
++meta userCV C23 0.79862 delta -0.0004
++meta userCV C25 0.81914 delta -8e-05
++meta+event-dev train C23 -> test C25 0.81924 vs base 0.81921 delta 2e-05 rounds 95
++meta+event-dev train C25 -> test C23 0.79858 vs base 0.79902 delta -0.00045 rounds 106
++meta+event-dev userCV C23 0.79866 delta -0.00037
++meta+event-dev userCV C25 0.81917 delta -4e-05
